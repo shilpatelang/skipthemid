@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Restaurant {
+  id        String   @id // Mapbox feature ID
+  name      String
+  longitude Float
+  latitude  Float
+  address   String?
+  category  String? // "restaurant", "bar", etc.
+  syncedAt  DateTime @default(now())
+  dishes    Dish[]
+}
+
+model Dish {
+  id           String   @id @default(cuid())
+  name         String
+  tag          String // "BEST" or "MID" (SQLite has no enums)
+  price        Float?
+  restaurantId String
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+  userId       String
+  votes        Vote[]
+  createdAt    DateTime @default(now())
+}
+
+model Vote {
+  id        String   @id @default(cuid())
+  value     Int // +1 or -1
+  dishId    String
+  dish      Dish     @relation(fields: [dishId], references: [id])
+  userId    String
+  createdAt DateTime @default(now())
+
+  @@unique([dishId, userId])
+}
