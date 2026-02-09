@@ -19,6 +19,48 @@ model Restaurant {
   dishes    Dish[]
 }
 
+// --- NextAuth models ---
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  dishes        Dish[]
+  votes         Vote[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// --- App models ---
+
 model Dish {
   id           String   @id @default(cuid())
   name         String
@@ -27,6 +69,7 @@ model Dish {
   restaurantId String
   restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
   userId       String
+  user         User       @relation(fields: [userId], references: [id])
   votes        Vote[]
   createdAt    DateTime @default(now())
 }
@@ -37,6 +80,7 @@ model Vote {
   dishId    String
   dish      Dish     @relation(fields: [dishId], references: [id])
   userId    String
+  user      User     @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())
 
   @@unique([dishId, userId])

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Providers from "@/components/Providers";
+import AuthButton from "@/components/ui/AuthButton";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Providers>
+          <header className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-4 py-3">
+            <h1 className="text-lg font-bold text-gray-900">SkipTheMid</h1>
+            <AuthButton />
+          </header>
+          {children}
+        </Providers>
       </body>
     </html>
   );
