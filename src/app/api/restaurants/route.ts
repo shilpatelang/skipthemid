@@ -1,11 +1,21 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { toFeatureCollection } from "@/lib/geojson";
 
 export async function GET() {
-  const restaurants = await prisma.restaurant.findMany({
-    include: { dishes: { select: { tag: true } } },
-  });
+  const restaurants = await prisma.restaurant.findMany();
 
-  return NextResponse.json(toFeatureCollection(restaurants));
+  return NextResponse.json({
+    type: "FeatureCollection",
+    features: restaurants.map((r) => ({
+      type: "Feature",
+      id: r.id,
+      geometry: { type: "Point", coordinates: [r.longitude, r.latitude] },
+      properties: {
+        id: r.id,
+        name: r.name,
+        address: r.address,
+        category: r.category,
+      },
+    })),
+  });
 }

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SkipTheMid",
-  description: "Find the best dishes. Skip the mid.",
+  description: "A food encyclopedia for the curious eater.",
 };
 
 export default function RootLayout({
@@ -30,8 +30,18 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <header className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-4 py-3">
-            <h1 className="text-lg font-bold text-gray-900">SkipTheMid</h1>
+          <header className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
+            <nav className="flex items-center gap-6">
+              <a href="/" className="text-lg font-bold text-gray-900">
+                SkipTheMid
+              </a>
+              <a
+                href="/map"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900"
+              >
+                Map
+              </a>
+            </nav>
             <AuthButton />
           </header>
           {children}

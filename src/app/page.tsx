@@ -1,12 +1,34 @@
-"use client";
+import { prisma } from "@/lib/prisma";
+import Hero from "@/components/landing/Hero";
+import FeaturedDishes from "@/components/landing/FeaturedDishes";
 
-import dynamic from "next/dynamic";
+export default async function Home() {
+  const dishes = await prisma.dish.findMany({
+    include: { ratings: { select: { value: true } } },
+    orderBy: { createdAt: "desc" },
+  });
 
-const MapContainer = dynamic(
-  () => import("@/components/map/MapContainer"),
-  { ssr: false }
-);
+  const featured = dishes.map((d) => {
+    const avg =
+      d.ratings.length > 0
+        ? d.ratings.reduce((sum, r) => sum + r.value, 0) / d.ratings.length
+        : null;
+    return {
+      slug: d.slug,
+      name: d.name,
+      cuisine: d.cuisine,
+      category: d.category,
+      origin: d.origin,
+      description: d.description,
+      avgRating: avg ? Math.round(avg * 10) / 10 : null,
+      ratingCount: d.ratings.length,
+    };
+  });
 
-export default function Home() {
-  return <MapContainer />;
+  return (
+    <main className="mx-auto max-w-6xl px-4">
+      <Hero />
+      <FeaturedDishes dishes={featured} />
+    </main>
+  );
 }
