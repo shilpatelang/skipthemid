@@ -10,18 +10,31 @@ export async function POST(request: NextRequest) {
 
   const { dishId, value } = await request.json();
 
-  if (!dishId || typeof value !== "number" || value < 1 || value > 5) {
+  if (
+    !dishId ||
+    typeof value !== "number" ||
+    value < 0.5 ||
+    value > 5 ||
+    value % 0.5 !== 0
+  ) {
     return NextResponse.json(
-      { error: "dishId and value (1-5) are required" },
+      { error: "dishId and value (0.5–5 in half-star increments) are required" },
       { status: 400 }
     );
   }
 
-  const rating = await prisma.rating.upsert({
-    where: { dishId_userId: { dishId, userId: session.user.id } },
-    update: { value },
-    create: { dishId, userId: session.user.id, value },
-  });
+  try {
+    const rating = await prisma.rating.upsert({
+      where: { dishId_userId: { dishId, userId: session.user.id } },
+      update: { value },
+      create: { dishId, userId: session.user.id, value },
+    });
 
-  return NextResponse.json(rating);
+    return NextResponse.json(rating);
+  } catch {
+    return NextResponse.json(
+      { error: "Failed to save rating. Try signing out and back in." },
+      { status: 500 }
+    );
+  }
 }

@@ -26,6 +26,8 @@ const DISHES = [
     category: "Street Food",
     latitude: 9.9312,
     longitude: 76.2673,
+    imageUrl:
+      "https://images.unsplash.com/photo-1737140790080-2476f8600131?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Ceviche de Conchas Negras",
@@ -36,6 +38,8 @@ const DISHES = [
     category: "Seafood",
     latitude: -3.5669,
     longitude: -80.4515,
+    imageUrl:
+      "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Adjarian Khachapuri",
@@ -46,6 +50,8 @@ const DISHES = [
     category: "Bread",
     latitude: 41.6168,
     longitude: 41.6367,
+    imageUrl:
+      "https://images.unsplash.com/photo-1668094688280-cc63bb9ff1b6?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Rendang Padang",
@@ -56,6 +62,8 @@ const DISHES = [
     category: "Curry",
     latitude: -0.7399,
     longitude: 100.8,
+    imageUrl:
+      "https://images.unsplash.com/photo-1688084546323-fcd3f9d8389b?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Mole Negro",
@@ -66,6 +74,8 @@ const DISHES = [
     category: "Sauce",
     latitude: 17.0732,
     longitude: -96.7266,
+    imageUrl:
+      "https://images.unsplash.com/photo-1675718343369-b2e46a5ceeca?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Saksang",
@@ -76,6 +86,8 @@ const DISHES = [
     category: "Stew",
     latitude: 2.5893,
     longitude: 98.6738,
+    imageUrl:
+      "https://images.unsplash.com/photo-1627054886476-0cdee47fde3d?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Tolma",
@@ -86,6 +98,8 @@ const DISHES = [
     category: "Appetizer",
     latitude: 40.1872,
     longitude: 44.5152,
+    imageUrl:
+      "https://images.unsplash.com/photo-1621953723422-6023013f659d?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Lanzhou Beef Noodles",
@@ -96,6 +110,8 @@ const DISHES = [
     category: "Noodles",
     latitude: 36.0611,
     longitude: 103.8343,
+    imageUrl:
+      "https://images.unsplash.com/photo-1701480253822-1842236c9a97?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Thieboudienne",
@@ -106,6 +122,8 @@ const DISHES = [
     category: "Rice Dish",
     latitude: 16.0179,
     longitude: -16.4896,
+    imageUrl:
+      "https://images.unsplash.com/photo-1665332305771-e49a5dd5ba80?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Mansaf",
@@ -116,6 +134,8 @@ const DISHES = [
     category: "Rice Dish",
     latitude: 31.9454,
     longitude: 35.9284,
+    imageUrl:
+      "https://images.unsplash.com/photo-1747518596416-2da5e5218d83?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Cuy Asado",
@@ -126,6 +146,8 @@ const DISHES = [
     category: "Roast",
     latitude: -13.532,
     longitude: -71.9675,
+    imageUrl:
+      "https://images.unsplash.com/photo-1665024050282-fccc78bcb8a8?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Açaí na Tigela",
@@ -136,6 +158,8 @@ const DISHES = [
     category: "Dessert",
     latitude: -1.4558,
     longitude: -48.5024,
+    imageUrl:
+      "https://images.unsplash.com/photo-1590288488147-f46142daf112?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Plov",
@@ -146,6 +170,8 @@ const DISHES = [
     category: "Rice Dish",
     latitude: 41.2995,
     longitude: 69.2401,
+    imageUrl:
+      "https://images.unsplash.com/photo-1745090970294-e66987ca59e7?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Bánh Xèo",
@@ -156,6 +182,8 @@ const DISHES = [
     category: "Street Food",
     latitude: 10.8231,
     longitude: 106.6297,
+    imageUrl:
+      "https://images.unsplash.com/photo-1676700310660-e92d03e259c3?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Doro Wat",
@@ -166,6 +194,8 @@ const DISHES = [
     category: "Stew",
     latitude: 8.9806,
     longitude: 38.7578,
+    imageUrl:
+      "https://images.unsplash.com/photo-1688040738506-acfe9334bf5c?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Halo-Halo",
@@ -176,6 +206,8 @@ const DISHES = [
     category: "Dessert",
     latitude: 14.5995,
     longitude: 120.9842,
+    imageUrl:
+      "https://images.unsplash.com/photo-1661000717951-5689826e838d?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Kokoreç",
@@ -186,6 +218,8 @@ const DISHES = [
     category: "Street Food",
     latitude: 41.0082,
     longitude: 28.9784,
+    imageUrl:
+      "https://images.unsplash.com/photo-1629316791889-1ca8eeaa9fa3?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Pierogi Ruskie",
@@ -196,6 +230,8 @@ const DISHES = [
     category: "Dumpling",
     latitude: 50.0647,
     longitude: 19.945,
+    imageUrl:
+      "https://images.unsplash.com/photo-1662116663511-9d79d49da183?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Bunny Chow",
@@ -206,6 +242,8 @@ const DISHES = [
     category: "Street Food",
     latitude: -29.8587,
     longitude: 31.0218,
+    imageUrl:
+      "https://images.unsplash.com/photo-1735634256390-8eb5dd090d06?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Khao Soi",
@@ -216,6 +254,8 @@ const DISHES = [
     category: "Noodles",
     latitude: 18.7883,
     longitude: 98.9853,
+    imageUrl:
+      "https://images.unsplash.com/photo-1675150303909-1bb94e33132f?auto=format&fit=crop&w=800&q=80",
   },
 ];
 

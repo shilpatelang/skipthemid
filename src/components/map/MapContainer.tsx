@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Map, Source, Layer, Popup } from "react-map-gl/mapbox";
 import type { MapRef, MapMouseEvent } from "react-map-gl/mapbox";
@@ -40,8 +40,8 @@ const clusterLayer = {
       25,
       32,
     ] as ExpressionSpecification,
-    "circle-stroke-width": 2,
-    "circle-stroke-color": "#ffffff",
+    "circle-stroke-width": 1.5,
+    "circle-stroke-color": "rgba(251, 191, 36, 0.3)",
   },
 };
 
@@ -56,34 +56,45 @@ const clusterCountLayer = {
     "text-size": 13,
   },
   paint: {
-    "text-color": "#000000",
+    "text-color": "#ffffff",
   },
 };
 
-const dishLayer = {
-  id: "dishes",
-  type: "symbol" as const,
+// Outer glow ring — animated by requestAnimationFrame
+const dishGlowLayer = {
+  id: "dish-glow",
+  type: "circle" as const,
   source: "dishes",
   filter: ["!", ["has", "point_count"]],
-  layout: {
-    "icon-image": "pin-sdf",
-    "icon-size": 1.0,
-    "icon-allow-overlap": true,
-    "icon-anchor": "bottom" as const,
-  },
   paint: {
-    "icon-color": "#f59e0b",
-    "icon-halo-color": [
+    "circle-radius": 13,
+    "circle-color": "#f59e0b",
+    "circle-opacity": 0.3,
+    "circle-stroke-width": 0,
+  },
+};
+
+// Inner core dot — static, crisp
+const dishCoreLayer = {
+  id: "dish-core",
+  type: "circle" as const,
+  source: "dishes",
+  filter: ["!", ["has", "point_count"]],
+  paint: {
+    "circle-radius": 5,
+    "circle-color": "#fbbf24",
+    "circle-opacity": 0.9,
+    "circle-stroke-width": [
       "case",
       ["boolean", ["feature-state", "hover"], false],
-      "#92400e",
-      "transparent",
+      2.5,
+      1.5,
     ] as ExpressionSpecification,
-    "icon-halo-width": [
+    "circle-stroke-color": [
       "case",
       ["boolean", ["feature-state", "hover"], false],
-      2,
-      0,
+      "#ffffff",
+      "#f59e0b",
     ] as ExpressionSpecification,
   },
 };
@@ -95,15 +106,16 @@ const labelLayer = {
   filter: ["!", ["has", "point_count"]],
   layout: {
     "text-field": ["get", "name"] as ["get", string],
-    "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"] as string[],
-    "text-size": 11,
-    "text-offset": [0, 0.5] as [number, number],
+    "text-font": ["Noto Serif Bold", "Arial Unicode MS Bold"] as string[],
+    "text-size": 14,
+    "text-offset": [0, 1.4] as [number, number],
     "text-anchor": "top" as const,
+    "text-letter-spacing": 0.05,
   },
   paint: {
-    "text-color": "#333333",
-    "text-halo-color": "#ffffff",
-    "text-halo-width": 1.5,
+    "text-color": "#ffffff",
+    "text-halo-color": "rgba(0, 0, 0, 0.85)",
+    "text-halo-width": 2,
   },
 };
 
@@ -123,24 +135,47 @@ export default function MapContainer({ geojson }: MapContainerProps) {
   const router = useRouter();
   const mapRef = useRef<MapRef>(null);
   const hoveredId = useRef<string | null>(null);
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [mapLoaded, setMapLoaded] = useState(false);
   const [popupInfo, setPopupInfo] = useState<PopupInfo | null>(null);
 
   const onMapLoad = useCallback(() => {
+    setMapLoaded(true);
+  }, []);
+
+  // Pulse animation for the glow layer
+  useEffect(() => {
+    if (!mapLoaded) return;
     const map = mapRef.current?.getMap();
     if (!map) return;
 
-    map.loadImage("/icons/pin.png", (error, image) => {
-      if (error) {
-        console.error("Failed to load pin icon:", error);
-        return;
+    let animationId: number;
+    const startTime = performance.now();
+
+    function animate() {
+      const elapsed = performance.now() - startTime;
+      const t = Math.sin((elapsed / 2000) * Math.PI * 2);
+
+      const radius = 13 + t * 3;
+      const opacity = 0.275 + t * 0.125;
+
+      try {
+        if (map!.getLayer("dish-glow")) {
+          map!.setPaintProperty("dish-glow", "circle-radius", radius);
+          map!.setPaintProperty("dish-glow", "circle-opacity", opacity);
+        }
+      } catch {
+        // Layer may not exist yet during initial render
       }
-      if (!map.hasImage("pin-sdf")) {
-        map.addImage("pin-sdf", image!, { sdf: true });
-      }
-      setImageLoaded(true);
-    });
-  }, []);
+
+      animationId = requestAnimationFrame(animate);
+    }
+
+    animationId = requestAnimationFrame(animate);
+
+    return () => {
+      cancelAnimationFrame(animationId);
+    };
+  }, [mapLoaded]);
 
   const onMouseEnter = useCallback((e: MapMouseEvent) => {
     const map = mapRef.current?.getMap();
@@ -226,14 +261,14 @@ export default function MapContainer({ geojson }: MapContainerProps) {
       mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
       initialViewState={WORLD_VIEW}
       style={{ width: "100%", height: "100vh" }}
-      mapStyle="mapbox://styles/mapbox/streets-v12"
-      interactiveLayerIds={["clusters", "dishes"]}
+      mapStyle="mapbox://styles/mapbox/dark-v11"
+      interactiveLayerIds={["clusters", "dish-glow", "dish-core"]}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={onClick}
       onLoad={onMapLoad}
     >
-      {geojson && imageLoaded && (
+      {geojson && (
         <Source
           id="dishes"
           type="geojson"
@@ -245,7 +280,8 @@ export default function MapContainer({ geojson }: MapContainerProps) {
         >
           <Layer {...clusterLayer} />
           <Layer {...clusterCountLayer} />
-          <Layer {...dishLayer} />
+          <Layer {...dishGlowLayer} />
+          <Layer {...dishCoreLayer} />
           <Layer {...labelLayer} />
         </Source>
       )}
@@ -257,12 +293,14 @@ export default function MapContainer({ geojson }: MapContainerProps) {
           closeButton={false}
           closeOnClick={false}
           anchor="bottom"
-          offset={[0, -40] as [number, number]}
+          offset={[0, -15] as [number, number]}
         >
-          <div className="px-2 py-1.5 text-sm">
-            <p className="font-semibold text-gray-900">{popupInfo.name}</p>
-            <p className="text-xs text-gray-500">
-              {popupInfo.cuisine} · {popupInfo.origin}
+          <div className="px-4 py-3">
+            <p className="font-serif text-lg font-bold text-brown">
+              {popupInfo.name}
+            </p>
+            <p className="mt-1 text-sm text-brown">
+              {popupInfo.origin}
             </p>
           </div>
         </Popup>

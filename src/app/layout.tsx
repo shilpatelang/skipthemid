@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import Providers from "@/components/Providers";
 import AuthButton from "@/components/ui/AuthButton";
 import "./globals.css";
@@ -12,6 +12,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -27,23 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
       >
         <Providers>
-          <header className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
-            <nav className="flex items-center gap-6">
-              <a href="/" className="text-lg font-bold text-gray-900">
-                SkipTheMid
-              </a>
-              <a
-                href="/map"
-                className="text-sm font-medium text-gray-600 hover:text-gray-900"
-              >
-                Map
-              </a>
-            </nav>
-            <AuthButton />
-          </header>
+          <AuthButton />
           {children}
         </Providers>
       </body>

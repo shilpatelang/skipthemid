@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { ChefHat } from "lucide-react";
+import { scaleAmount, convertUnit } from "@/lib/unitConversion";
 
 interface Ingredient {
   name: string;
@@ -30,6 +33,13 @@ interface DishTabsProps {
   mapImageUrl: string;
 }
 
+type Tab = "recipe" | "where";
+
+const TABS: { id: Tab; label: string }[] = [
+  { id: "recipe", label: "Recipe" },
+  { id: "where", label: "Where to Eat" },
+];
+
 export default function DishTabs({
   ingredients,
   steps,
@@ -41,32 +51,46 @@ export default function DishTabs({
   mapImageUrl,
 }: DishTabsProps) {
   const hasRecipe = (ingredients && ingredients.length > 0) || (steps && steps.length > 0);
-  const [activeTab, setActiveTab] = useState<"recipe" | "where">("recipe");
+  const [activeTab, setActiveTab] = useState<Tab>("recipe");
+  const [unitSystem, setUnitSystem] = useState<"metric" | "imperial">("metric");
+  const [targetServings, setTargetServings] = useState<number>(servings ?? 4);
 
   return (
     <div>
-      <div className="border-b border-gray-200">
+      {/* Tab navigation with sliding indicator */}
+      <div className="border-b border-white/10">
         <nav className="-mb-px flex gap-2">
-          <button
-            onClick={() => setActiveTab("recipe")}
-            className={`px-5 py-4 text-lg font-medium transition-colors ${
-              activeTab === "recipe"
-                ? "border-b-2 border-amber-500 text-gray-900"
-                : "border-b-2 border-transparent text-gray-400 hover:text-gray-600"
-            }`}
-          >
-            Recipe
-          </button>
-          <button
-            onClick={() => setActiveTab("where")}
-            className={`px-5 py-4 text-lg font-medium transition-colors ${
-              activeTab === "where"
-                ? "border-b-2 border-amber-500 text-gray-900"
-                : "border-b-2 border-transparent text-gray-400 hover:text-gray-600"
-            }`}
-          >
-            Where to Eat
-          </button>
+          {TABS.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className="relative px-5 py-4 text-lg font-medium transition-colors"
+            >
+              <span
+                className={
+                  activeTab === tab.id
+                    ? "text-white"
+                    : "text-white/50 hover:text-white/80"
+                }
+              >
+                {tab.label}
+                {tab.id === "where" && places.length > 0 && (
+                  <span className="ml-2 inline-flex items-center justify-center rounded-full bg-gold px-2 py-0.5 text-xs font-bold text-charcoal">
+                    {places.length}
+                  </span>
+                )}
+              </span>
+
+              {/* Sliding gold underline */}
+              {activeTab === tab.id && (
+                <motion.div
+                  layoutId="tab-indicator"
+                  className="absolute inset-x-0 -bottom-px h-[3px] rounded-full bg-gold"
+                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                />
+              )}
+            </button>
+          ))}
         </nav>
       </div>
 
@@ -79,23 +103,37 @@ export default function DishTabs({
                 {(prepTime || cookTime || servings) && (
                   <div className="flex flex-wrap gap-6 text-base">
                     {prepTime && (
-                      <span className="flex items-center gap-2 rounded-lg bg-amber-50 px-3.5 py-2 text-amber-800">
+                      <span className="flex items-center gap-2 rounded-lg bg-amber-500/10 px-3.5 py-2 text-amber-400">
                         <span className="text-lg">🔪</span>
                         <span className="font-medium">{prepTime} min</span>
-                        <span className="text-amber-600">prep</span>
+                        <span className="text-amber-500/60">prep</span>
                       </span>
                     )}
                     {cookTime && (
-                      <span className="flex items-center gap-2 rounded-lg bg-orange-50 px-3.5 py-2 text-orange-800">
+                      <span className="flex items-center gap-2 rounded-lg bg-orange-500/10 px-3.5 py-2 text-orange-400">
                         <span className="text-lg">🔥</span>
                         <span className="font-medium">{cookTime} min</span>
-                        <span className="text-orange-600">cook</span>
+                        <span className="text-orange-500/60">cook</span>
                       </span>
                     )}
                     {servings && (
-                      <span className="flex items-center gap-2 rounded-lg bg-blue-50 px-3.5 py-2 text-blue-800">
+                      <span className="flex items-center gap-2 rounded-lg bg-blue-500/10 px-3.5 py-2 text-blue-400">
                         <span className="text-lg">🍽️</span>
-                        <span className="font-medium">Serves {servings}</span>
+                        <button
+                          onClick={() => setTargetServings(Math.max(1, targetServings - 1))}
+                          className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold hover:bg-blue-500/30 transition-colors"
+                        >
+                          −
+                        </button>
+                        <span className="min-w-[1.5rem] text-center font-medium tabular-nums">
+                          {targetServings}
+                        </span>
+                        <button
+                          onClick={() => setTargetServings(targetServings + 1)}
+                          className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold hover:bg-blue-500/30 transition-colors"
+                        >
+                          +
+                        </button>
                       </span>
                     )}
                   </div>
@@ -104,23 +142,52 @@ export default function DishTabs({
                 {/* Ingredients */}
                 {ingredients && ingredients.length > 0 && (
                   <div>
-                    <h3 className="mb-4 text-lg font-semibold text-gray-900">
-                      Ingredients
-                    </h3>
-                    <ul className="space-y-3">
-                      {ingredients.map((ing, i) => (
-                        <li
-                          key={i}
-                          className="flex items-baseline gap-3 border-b border-gray-100 pb-3 last:border-0"
+                    <div className="mb-4 flex items-center justify-between">
+                      <h3 className="text-lg font-semibold text-white">
+                        Ingredients
+                      </h3>
+                      <div className="flex items-center gap-1 text-sm">
+                        <button
+                          onClick={() => setUnitSystem("metric")}
+                          className={`rounded-full px-3 py-1 transition-colors ${
+                            unitSystem === "metric"
+                              ? "bg-gold/20 font-medium text-gold"
+                              : "text-white/40 hover:text-white/60"
+                          }`}
                         >
-                          <span className="min-w-[5.5rem] text-lg font-medium text-gray-900">
-                            {ing.amount}{ing.unit ? ` ${ing.unit}` : ""}
-                          </span>
-                          <span className="text-lg text-gray-600">
-                            {ing.name}
-                          </span>
-                        </li>
-                      ))}
+                          Metric
+                        </button>
+                        <button
+                          onClick={() => setUnitSystem("imperial")}
+                          className={`rounded-full px-3 py-1 transition-colors ${
+                            unitSystem === "imperial"
+                              ? "bg-gold/20 font-medium text-gold"
+                              : "text-white/40 hover:text-white/60"
+                          }`}
+                        >
+                          Imperial
+                        </button>
+                      </div>
+                    </div>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                      {ingredients.map((ing, i) => {
+                        const ratio = servings ? targetServings / servings : 1;
+                        const scaled = scaleAmount(ing.amount, ratio);
+                        const { amount: displayAmt, unit: displayUnit } = convertUnit(scaled, ing.unit, unitSystem);
+                        return (
+                          <li
+                            key={i}
+                            className="flex items-baseline gap-3 border-b border-white/10 pb-3"
+                          >
+                            <span className="min-w-[5.5rem] text-lg font-medium text-white tabular-nums">
+                              {displayAmt}{displayUnit ? ` ${displayUnit}` : ""}
+                            </span>
+                            <span className="text-lg text-white/60">
+                              {ing.name}
+                            </span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 )}
@@ -128,16 +195,16 @@ export default function DishTabs({
                 {/* Steps */}
                 {steps && steps.length > 0 && (
                   <div>
-                    <h3 className="mb-4 text-lg font-semibold text-gray-900">
+                    <h3 className="mb-4 text-lg font-semibold text-white">
                       Directions
                     </h3>
                     <ol className="space-y-5">
                       {steps.map((step, i) => (
                         <li key={i} className="flex gap-4">
-                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-semibold text-amber-700">
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold/20 text-sm font-semibold text-gold">
                             {i + 1}
                           </span>
-                          <p className="text-lg leading-relaxed text-gray-600 pt-0.5">
+                          <p className="text-lg leading-relaxed text-white/70 pt-0.5">
                             {step}
                           </p>
                         </li>
@@ -147,7 +214,13 @@ export default function DishTabs({
                 )}
               </div>
             ) : (
-              <p className="text-base text-gray-400">Recipe coming soon.</p>
+              /* Styled empty state */
+              <div className="flex flex-col items-center justify-center rounded-xl bg-white/5 px-8 py-16 text-center">
+                <ChefHat className="mb-4 h-12 w-12 text-white/20" />
+                <p className="font-mono text-sm uppercase tracking-wider text-white/40">
+                  Recipe coming soon
+                </p>
+              </div>
             )}
           </div>
         )}
@@ -155,7 +228,7 @@ export default function DishTabs({
         {activeTab === "where" && (
           <div className="space-y-6">
             {mapImageUrl && (
-              <div className="overflow-hidden rounded-lg border border-gray-100">
+              <div className="overflow-hidden rounded-lg border border-white/10">
                 <img
                   src={mapImageUrl}
                   alt={`Map showing ${origin}`}
@@ -166,16 +239,16 @@ export default function DishTabs({
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium uppercase tracking-wide text-gray-400">
+                <p className="text-sm font-medium uppercase tracking-wide text-white/40">
                   Origin
                 </p>
-                <p className="mt-1 text-xl font-medium text-gray-900">
+                <p className="mt-1 text-xl font-medium text-white">
                   {origin}
                 </p>
               </div>
               <Link
                 href="/map"
-                className="rounded-lg bg-gray-900 px-5 py-2.5 text-base font-medium text-white transition-colors hover:bg-gray-800"
+                className="cta-glow rounded-lg bg-gold px-5 py-2.5 text-base font-medium text-charcoal transition-colors hover:bg-gold/90"
               >
                 View on World Map
               </Link>
@@ -183,16 +256,16 @@ export default function DishTabs({
 
             {places.length > 0 && (
               <div>
-                <h3 className="mb-4 text-sm font-medium uppercase tracking-wide text-gray-400">
+                <h3 className="mb-4 text-sm font-medium uppercase tracking-wide text-white/40">
                   Recommended Places
                 </h3>
-                <ul className="divide-y divide-gray-50">
+                <ul className="divide-y divide-white/10">
                   {places.map((place) => (
                     <li key={place.id} className="py-4 first:pt-0 last:pb-0">
-                      <p className="text-base font-medium text-gray-900">
+                      <p className="text-base font-medium text-white">
                         {place.name}
                       </p>
-                      <p className="mt-1 text-sm text-gray-400">
+                      <p className="mt-1 text-sm text-white/40">
                         {[place.address, `${place.city}, ${place.country}`]
                           .filter(Boolean)
                           .join(" — ")}
@@ -204,7 +277,7 @@ export default function DishTabs({
             )}
 
             {places.length === 0 && (
-              <p className="text-base text-gray-400">
+              <p className="text-base text-white/40">
                 No places listed yet.
               </p>
             )}
