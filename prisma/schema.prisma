@@ -66,7 +66,11 @@ model Dish {
   name        String
   slug        String   @unique
   description String
-  recipe      String?
+  ingredients Json?    // [{name, amount, unit}]
+  steps       Json?    // ["step 1", "step 2", ...]
+  prepTime    Int?     // minutes
+  cookTime    Int?     // minutes
+  servings    Int?
   origin      String   // e.g. "Kerala, India"
   cuisine     String   // e.g. "South Indian"
   category    String   // e.g. "Street Food", "Curry", "Dessert"
@@ -76,6 +80,19 @@ model Dish {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   ratings     Rating[]
+  places      Place[]
+}
+
+model Place {
+  id        String  @id @default(cuid())
+  name      String
+  address   String?
+  city      String
+  country   String
+  latitude  Float
+  longitude Float
+  dishId    String
+  dish      Dish    @relation(fields: [dishId], references: [id], onDelete: Cascade)
 }
 
 model Rating {

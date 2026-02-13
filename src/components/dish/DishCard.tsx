@@ -24,20 +24,24 @@ export default function DishCard({
   return (
     <Link
       href={`/dish/${slug}`}
-      className="block rounded-lg border border-gray-200 p-4 transition-shadow hover:shadow-md"
+      className="group block rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
     >
-      <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
-      <div className="mt-1 flex flex-wrap gap-1.5">
-        <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800">
-          {cuisine}
-        </span>
-        <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800">
-          {origin}
-        </span>
+      <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wide text-gray-400">
+        <span>{cuisine}</span>
+        <span className="text-gray-200">·</span>
+        <span>{origin}</span>
       </div>
-      <p className="mt-2 line-clamp-2 text-sm text-gray-600">{description}</p>
-      <div className="mt-3">
+      <h3 className="mt-2 text-xl font-semibold text-gray-900 group-hover:text-amber-600 transition-colors">
+        {name}
+      </h3>
+      <p className="mt-2 line-clamp-2 text-base leading-relaxed text-gray-500">
+        {description}
+      </p>
+      <div className="mt-4 flex items-center justify-between">
         <StarRating average={avgRating} count={ratingCount} size="sm" />
+        <span className="text-sm text-gray-300 transition-colors group-hover:text-amber-500">
+          →
+        </span>
       </div>
     </Link>
   );
