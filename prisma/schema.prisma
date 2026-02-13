@@ -8,15 +8,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Kept from Phase 0 — already seeded from Mapbox.
+// Will be linked to dishes via junction table in Phase 2.
 model Restaurant {
   id        String   @id // Mapbox feature ID
   name      String
   longitude Float
   latitude  Float
   address   String?
-  category  String? // "restaurant", "bar", etc.
+  category  String? // venue type: "restaurant", "bar", etc.
   syncedAt  DateTime @default(now())
-  dishes    Dish[]
 }
 
 // --- NextAuth models ---
@@ -29,8 +30,7 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
-  dishes        Dish[]
-  votes         Vote[]
+  ratings       Rating[]
 }
 
 model Account {
@@ -62,25 +62,46 @@ model Session {
 // --- App models ---
 
 model Dish {
-  id           String   @id @default(cuid())
-  name         String
-  tag          String // "BEST" or "MID" (SQLite has no enums)
-  price        Float?
-  restaurantId String
-  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
-  userId       String
-  user         User       @relation(fields: [userId], references: [id])
-  votes        Vote[]
-  createdAt    DateTime @default(now())
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String
+  ingredients Json?    // [{name, amount, unit}]
+  steps       Json?    // ["step 1", "step 2", ...]
+  prepTime    Int?     // minutes
+  cookTime    Int?     // minutes
+  servings    Int?
+  origin      String   // e.g. "Kerala, India"
+  cuisine     String   // e.g. "South Indian"
+  category    String   // e.g. "Street Food", "Curry", "Dessert"
+  imageUrl    String?
+  latitude    Float    // Origin location for map pin
+  longitude   Float    // Origin location for map pin
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  ratings     Rating[]
+  places      Place[]
 }
 
-model Vote {
-  id        String   @id @default(cuid())
-  value     Int // +1 or -1
+model Place {
+  id        String  @id @default(cuid())
+  name      String
+  address   String?
+  city      String
+  country   String
+  latitude  Float
+  longitude Float
   dishId    String
-  dish      Dish     @relation(fields: [dishId], references: [id])
+  dish      Dish    @relation(fields: [dishId], references: [id], onDelete: Cascade)
+}
+
+model Rating {
+  id        String   @id @default(cuid())
+  value     Int      // 1–5 stars
+  dishId    String
+  dish      Dish     @relation(fields: [dishId], references: [id], onDelete: Cascade)
   userId    String
-  user      User     @relation(fields: [userId], references: [id])
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
 
   @@unique([dishId, userId])

@@ -1,50 +1,54 @@
-import type { Restaurant } from "@/generated/prisma";
+import type { Dish, Rating } from "@/generated/prisma";
 
-export interface RestaurantProperties {
+export interface DishProperties {
+  id: string;
+  slug: string;
   name: string;
-  address: string | null;
-  category: string | null;
-  dishCount: number;
-  bestCount: number;
-  midCount: number;
+  cuisine: string;
+  category: string;
+  origin: string;
+  avgRating: number | null;
+  ratingCount: number;
 }
 
-export interface RestaurantFeature {
+export interface DishFeature {
   type: "Feature";
   id: string;
   geometry: { type: "Point"; coordinates: [number, number] };
-  properties: RestaurantProperties;
+  properties: DishProperties;
 }
 
-export interface RestaurantFeatureCollection {
+export interface DishFeatureCollection {
   type: "FeatureCollection";
-  features: RestaurantFeature[];
+  features: DishFeature[];
 }
 
-export function toFeatureCollection(
-  restaurants: (Restaurant & {
-    _count?: { dishes: number };
-    dishes?: { tag: string }[];
-  })[]
-): RestaurantFeatureCollection {
+export function toDishFeatureCollection(
+  dishes: (Dish & { ratings: Pick<Rating, "value">[] })[]
+): DishFeatureCollection {
   return {
     type: "FeatureCollection",
-    features: restaurants.map((r) => {
-      const dishes = r.dishes ?? [];
+    features: dishes.map((d) => {
+      const avg =
+        d.ratings.length > 0
+          ? d.ratings.reduce((sum, r) => sum + r.value, 0) / d.ratings.length
+          : null;
       return {
-        type: "Feature",
-        id: r.id,
+        type: "Feature" as const,
+        id: d.id,
         geometry: {
-          type: "Point",
-          coordinates: [r.longitude, r.latitude],
+          type: "Point" as const,
+          coordinates: [d.longitude, d.latitude] as [number, number],
         },
         properties: {
-          name: r.name,
-          address: r.address,
-          category: r.category,
-          dishCount: dishes.length,
-          bestCount: dishes.filter((d) => d.tag === "BEST").length,
-          midCount: dishes.filter((d) => d.tag === "MID").length,
+          id: d.id,
+          slug: d.slug,
+          name: d.name,
+          cuisine: d.cuisine,
+          category: d.category,
+          origin: d.origin,
+          avgRating: avg ? Math.round(avg * 10) / 10 : null,
+          ratingCount: d.ratings.length,
         },
       };
     }),

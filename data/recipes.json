@@ -1,0 +1,28 @@
+{
+  "jackfruit-banana-blossom-skewers": {
+    "ingredients": [
+      {"name": "young green jackfruit (canned in brine)", "amount": "400", "unit": "g"},
+      {"name": "fresh banana blossom", "amount": "1", "unit": "large"},
+      {"name": "coconut oil", "amount": "2", "unit": "tbsp"},
+      {"name": "ginger-garlic paste", "amount": "1", "unit": "tbsp"},
+      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
+      {"name": "kashmiri red chili powder", "amount": "1", "unit": "tsp"},
+      {"name": "garam masala", "amount": "1", "unit": "tsp"},
+      {"name": "thick coconut milk", "amount": "100", "unit": "ml"},
+      {"name": "curry leaves", "amount": "10", "unit": "leaves"},
+      {"name": "lemon juice", "amount": "1", "unit": "tbsp"}
+    ],
+    "steps": [
+      "Prepare the banana blossom by removing the tough outer purple bracts until you reach the pale heart; slice into thick wedges and soak in acidulated water to prevent browning.",
+      "Drain and rinse the young jackfruit, removing any hard core pieces, and pat dry.",
+      "In a large bowl, whisk together coconut milk, ginger-garlic paste, turmeric, chili powder, garam masala, and salt.",
+      "Toss the jackfruit pieces and banana blossom wedges in the marinade and let sit for at least 30 minutes.",
+      "Thread the marinated jackfruit and banana blossom alternately onto soaked wooden skewers.",
+      "Heat coconut oil in a grill pan over medium-high heat and sear the skewers for 4-5 minutes per side until charred and tender.",
+      "Garnish with flash-fried curry leaves and a squeeze of fresh lemon juice before serving."
+    ],
+    "prepTime": 45,
+    "cookTime": 15,
+    "servings": 4
+  }
+}
