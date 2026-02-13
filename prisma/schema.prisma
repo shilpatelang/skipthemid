@@ -28,6 +28,7 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
   image         String?
+  password      String?   // hashed; null for OAuth-only users
   accounts      Account[]
   sessions      Session[]
   ratings       Rating[]
@@ -97,7 +98,7 @@ model Place {
 
 model Rating {
   id        String   @id @default(cuid())
-  value     Int      // 1–5 stars
+  value     Float    // 0.5–5 stars (half-star increments)
   dishId    String
   dish      Dish     @relation(fields: [dishId], references: [id], onDelete: Cascade)
   userId    String

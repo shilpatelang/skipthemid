@@ -2,6 +2,9 @@ import { prisma } from "@/lib/prisma";
 import Hero from "@/components/landing/Hero";
 import FeaturedDishes from "@/components/landing/FeaturedDishes";
 
+const HERO_BG =
+  "https://images.unsplash.com/photo-1579196479727-de5490858892?auto=format&fit=crop&w=1920&q=80";
+
 export default async function Home() {
   const dishes = await prisma.dish.findMany({
     include: { ratings: { select: { value: true } } },
@@ -20,14 +23,15 @@ export default async function Home() {
       category: d.category,
       origin: d.origin,
       description: d.description,
+      imageUrl: d.imageUrl,
       avgRating: avg ? Math.round(avg * 10) / 10 : null,
       ratingCount: d.ratings.length,
     };
   });
 
   return (
-    <main className="mx-auto max-w-6xl px-4">
-      <Hero />
+    <main className="bg-charcoal">
+      <Hero backgroundImage={HERO_BG} />
       <FeaturedDishes dishes={featured} />
     </main>
   );

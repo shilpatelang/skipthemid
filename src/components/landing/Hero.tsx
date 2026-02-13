@@ -1,33 +1,45 @@
 import Link from "next/link";
 
-export default function Hero() {
+interface HeroProps {
+  backgroundImage: string;
+}
+
+export default function Hero({ backgroundImage }: HeroProps) {
   return (
-    <section className="py-20 text-center">
-      <p className="text-xs font-medium uppercase tracking-widest text-amber-600">
-        A Food Encyclopedia
-      </p>
-      <h2 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Discover the World&apos;s
-        <br />
-        Most Extraordinary Dishes
-      </h2>
-      <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-gray-400">
-        Explore exotic, lesser-known authentic dishes from every corner of the
-        globe.
-      </p>
-      <div className="mt-10 flex justify-center gap-3">
-        <Link
-          href="/map"
-          className="rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-gray-800"
-        >
-          Explore Map
-        </Link>
-        <a
-          href="#dishes"
-          className="rounded-lg border border-gray-200 px-6 py-3 text-sm font-medium text-gray-600 transition-colors hover:border-gray-300 hover:text-gray-900"
-        >
-          Browse Dishes
-        </a>
+    <section
+      className="relative flex min-h-[85vh] items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-charcoal" />
+
+      {/* Content */}
+      <div className="relative z-10 px-4 text-center">
+        <h1 className="mt-6 font-serif text-5xl font-bold leading-tight tracking-[0.15em] text-white sm:text-6xl lg:text-7xl">
+          SkipTheMid
+        </h1>
+        <p className="mt-2 font-serif text-2xl font-light tracking-wide text-white/80 sm:text-3xl">
+          Discover the World&apos;s Most Extraordinary Dishes
+        </p>
+        <div className="mt-10 flex justify-center gap-4">
+          <Link
+            href="/map"
+            className="cta-glow rounded-lg bg-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-charcoal"
+          >
+            Explore Map
+          </Link>
+          <a
+            href="#dishes"
+            className="cta-glow rounded-lg bg-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-charcoal"
+          >
+            Browse Dishes
+          </a>
+        </div>
       </div>
     </section>
   );
