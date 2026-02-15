@@ -24,5 +24,470 @@
     "prepTime": 45,
     "cookTime": 15,
     "servings": 4
+  },
+  "ceviche-de-conchas-negras": {
+    "ingredients": [
+      {"name": "black clams (conchas negras)", "amount": "24", "unit": "pieces"},
+      {"name": "lime juice (freshly squeezed)", "amount": "10", "unit": "limes"},
+      {"name": "red onion (finely diced)", "amount": "1", "unit": "large"},
+      {"name": "ají limo pepper (minced)", "amount": "1", "unit": "pepper"},
+      {"name": "garlic paste", "amount": "1", "unit": "tsp"},
+      {"name": "fresh cilantro (chopped)", "amount": "2", "unit": "tbsp"},
+      {"name": "rocoto pepper paste", "amount": "1", "unit": "tbsp"},
+      {"name": "salt", "amount": "1", "unit": "tsp"},
+      {"name": "boiled sweet potato (slices)", "amount": "2", "unit": "servings"},
+      {"name": "choclo (large-grain Peruvian corn)", "amount": "1", "unit": "cup"}
+    ],
+    "steps": [
+      "Scrub the black clams thoroughly under cold water to remove any mud or grit.",
+      "Carefully pry open each clam over a bowl to catch all the dark, briny liquor; extract the meat and place it into the bowl with the juice.",
+      "Season the meat and juice with salt, pepper, garlic paste, and rocoto paste, stirring gently.",
+      "Add the finely diced red onion and minced ají limo, then pour over the fresh lime juice.",
+      "Toss in the fresh cilantro and mix well; let it marinate for no more than 2-5 minutes to keep the clams tender.",
+      "Serve immediately in small bowls, accompanied by slices of sweet potato and choclo."
+    ],
+    "prepTime": 25,
+    "cookTime": 0,
+    "servings": 2
+  },
+  "adjarian-khachapuri": {
+    "ingredients": [
+      {"name": "all-purpose flour", "amount": "500", "unit": "g"},
+      {"name": "warm water", "amount": "150", "unit": "ml"},
+      {"name": "warm milk", "amount": "100", "unit": "ml"},
+      {"name": "dry active yeast", "amount": "7", "unit": "g"},
+      {"name": "sulguni cheese (or mozzarella)", "amount": "300", "unit": "g"},
+      {"name": "imeruli cheese (or feta/ricotta mix)", "amount": "300", "unit": "g"},
+      {"name": "eggs (for topping + dough)", "amount": "5", "unit": "pieces"},
+      {"name": "unsalted butter", "amount": "50", "unit": "g"},
+      {"name": "salt", "amount": "1", "unit": "tsp"},
+      {"name": "sugar", "amount": "1", "unit": "tsp"}
+    ],
+    "steps": [
+      "Mix flour, yeast, sugar, and salt; gradually add warm water, milk, and a splash of oil to form a smooth dough. Let rise for 1.5 hours.",
+      "Grate the Sulguni and Imeruli cheeses together, mixing in one egg to bind the filling into a thick paste.",
+      "Divide the dough into balls; roll each into an oval and roll up the long sides toward the center, pinching the ends to form a boat shape.",
+      "Fill the center of the boat generously with the cheese mixture and brush the dough edges with egg wash.",
+      "Bake at 230°C (450°F) for 12-15 minutes until the crust is golden and cheese is bubbling.",
+      "Remove from oven, use a spoon to make a well in the cheese, and drop a raw egg yolk into the center.",
+      "Add a thick slice of butter and return to the oven for 1 minute (the yolk should remain runny). Serve hot to be mixed at the table."
+    ],
+    "prepTime": 110,
+    "cookTime": 15,
+    "servings": 4
+  },
+  "rendang-padang": {
+    "ingredients": [
+      {"name": "beef chuck (cubed)", "amount": "1000", "unit": "g"},
+      {"name": "thick coconut milk", "amount": "1.5", "unit": "l"},
+      {"name": "lemongrass (bruised)", "amount": "2", "unit": "stalks"},
+      {"name": "galangal (thinly sliced)", "amount": "50", "unit": "g"},
+      {"name": "turmeric leaf", "amount": "1", "unit": "piece"},
+      {"name": "shallots", "amount": "100", "unit": "g"},
+      {"name": "garlic", "amount": "50", "unit": "g"},
+      {"name": "red chilies (keriting)", "amount": "150", "unit": "g"},
+      {"name": "toasted coconut (kerisik)", "amount": "3", "unit": "tbsp"}
+    ],
+    "steps": [
+      "Blend shallots, garlic, ginger, and chilies into a smooth spice paste (bumbu).",
+      "In a heavy-bottomed pot, combine coconut milk, spice paste, lemongrass, galangal, and turmeric leaf over medium heat.",
+      "Bring to a boil, then add the beef and lower heat to a simmer, stirring occasionally.",
+      "Once the coconut milk thickens and turns oily (kalio stage), add the toasted coconut (kerisik) and salt.",
+      "Continue cooking on very low heat, stirring constantly, until the liquid evaporates and the spices dark brown and cling to the meat.",
+      "Serve at room temperature; it’s best eaten the following day."
+    ],
+    "prepTime": 45,
+    "cookTime": 240,
+    "servings": 6
+  },
+  "mole-negro": {
+    "ingredients": [
+      {"name": "mulato chiles (dried)", "amount": "6", "unit": "pieces"},
+      {"name": "pasilla chiles (dried)", "amount": "4", "unit": "pieces"},
+      {"name": "mexican chocolate (Ibarra/Abuelita)", "amount": "100", "unit": "g"},
+      {"name": "plantain (fried)", "amount": "1/2", "unit": "piece"},
+      {"name": "white bread (bolillo/toasted)", "amount": "1", "unit": "slice"},
+      {"name": "sesame seeds (toasted)", "amount": "1/4", "unit": "cup"},
+      {"name": "almonds", "amount": "1/4", "unit": "cup"},
+      {"name": "cinnamon stick (mexican)", "amount": "1", "unit": "piece"},
+      {"name": "chicken stock", "amount": "1.5", "unit": "l"},
+      {"name": "lard", "amount": "3", "unit": "tbsp"}
+    ],
+    "steps": [
+      "Remove seeds from chiles and fry the seeds in a pan until completely charred and black; soak the seeds in water to remove bitterness.",
+      "Toast the chiles lightly, then soak in hot water until soft; blend with the charred seeds.",
+      "Sauté onions, garlic, raisins, almonds, and plantains in lard until golden; blend with spices and bread to create a thick paste.",
+      "Fry the combined pastes in a large pot with lard until fragrant and darkened.",
+      "Slowly whisk in chicken stock and the chocolate, simmering until the sauce reaches a velvet-thick consistency.",
+      "Serve over poached turkey or chicken with a garnish of sesame seeds."
+    ],
+    "prepTime": 90,
+    "cookTime": 60,
+    "servings": 8
+  },
+  "saksang": {
+    "ingredients": [
+      {"name": "pork belly or shoulder (cubed)", "amount": "1000", "unit": "g"},
+      {"name": "pork blood (or beef blood substitute)", "amount": "100", "unit": "ml"},
+      {"name": "andaliman pepper (batak pepper)", "amount": "2", "unit": "tbsp"},
+      {"name": "lime leaves", "amount": "5", "unit": "leaves"},
+      {"name": "shallots", "amount": "10", "unit": "pieces"},
+      {"name": "bird's eye chilies", "amount": "10", "unit": "pieces"},
+      {"name": "galangal", "amount": "3", "unit": "cm"},
+      {"name": "lemongrass", "amount": "2", "unit": "stalks"}
+    ],
+    "steps": [
+      "Grind shallots, garlic, ginger, turmeric, and chilies into a paste; crush the andaliman pepper separately.",
+      "Sauté the spice paste with lemongrass and lime leaves until aromatic.",
+      "Add the pork cubes and cook until the meat is browned and juices are released.",
+      "Add a small amount of water and simmer until the pork is tender and the liquid has reduced by half.",
+      "Lower the heat and slowly pour in the blood, stirring constantly to prevent curdling until the sauce turns dark and thickens.",
+      "Finish with crushed andaliman pepper for the signature numbing citrus finish."
+    ],
+    "prepTime": 30,
+    "cookTime": 60,
+    "servings": 5
+  },
+  "tolma": {
+    "ingredients": [
+      {"name": "grape leaves (brined or fresh)", "amount": "50", "unit": "leaves"},
+      {"name": "ground beef (80/20)", "amount": "500", "unit": "g"},
+      {"name": "short-grain rice", "amount": "100", "unit": "g"},
+      {"name": "onion (finely minced)", "amount": "2", "unit": "medium"},
+      {"name": "fresh cilantro (chopped)", "amount": "1", "unit": "bunch"},
+      {"name": "fresh dill (chopped)", "amount": "1", "unit": "bunch"},
+      {"name": "dried purple basil", "amount": "1", "unit": "tbsp"},
+      {"name": "tomato paste", "amount": "2", "unit": "tbsp"},
+      {"name": "matzoon (or greek yogurt)", "amount": "200", "unit": "g"},
+      {"name": "garlic (minced)", "amount": "3", "unit": "cloves"}
+    ],
+    "steps": [
+      "Blanch grape leaves in boiling water for 2 minutes if fresh, or rinse thoroughly if brined.",
+      "In a bowl, combine ground beef, rice, onions, chopped herbs, tomato paste, salt, and pepper; mix by hand until tacky.",
+      "Place a leaf flat, add a tablespoon of filling at the base, and roll tightly into a small cylinder, tucking the sides in.",
+      "Line the bottom of a heavy pot with torn leaves and pack the tolma in tight, circular layers.",
+      "Add enough water or light broth to barely cover them; weight them down with an inverted plate to prevent unrolling.",
+      "Simmer on low heat for 45-50 minutes until the rice is tender and water is absorbed.",
+      "Serve hot with a side of matzoon mixed with minced garlic."
+    ],
+    "prepTime": 60,
+    "cookTime": 50,
+    "servings": 6
+  },
+  "lanzhou-beef-noodles": {
+    "ingredients": [
+      {"name": "high-protein wheat flour", "amount": "500", "unit": "g"},
+      {"name": "peng hui (alkaline water)", "amount": "1", "unit": "tsp"},
+      {"name": "beef shank", "amount": "800", "unit": "g"},
+      {"name": "white radish (daikon/sliced)", "amount": "1", "unit": "large"},
+      {"name": "star anise", "amount": "3", "unit": "pieces"},
+      {"name": "cassia bark (cinnamon)", "amount": "1", "unit": "piece"},
+      {"name": "sichuan peppercorns", "amount": "1", "unit": "tsp"},
+      {"name": "chili oil", "amount": "4", "unit": "tbsp"},
+      {"name": "fresh cilantro & scallions", "amount": "50", "unit": "g"}
+    ],
+    "steps": [
+      "Simmer beef shank with star anise, cassia, ginger, and peppercorns for 3 hours; strain to keep the broth crystal clear.",
+      "Mix flour with water and alkaline solution (peng hui); knead until the gluten is highly elastic and the dough doesn't snap when stretched.",
+      "Pull and fold the dough repeatedly into thin strands (or slice into thin ribbons if hand-pulling is too technical).",
+      "Boil the fresh noodles for only 1-2 minutes until they float.",
+      "Parboil the radish slices in the beef broth until translucent.",
+      "Assemble by placing noodles in a bowl, topping with thin slices of the cooked beef and radish.",
+      "Ladle the hot, clear broth over the top and garnish heavily with cilantro, scallions, and a signature swirl of deep red chili oil."
+    ],
+    "prepTime": 120,
+    "cookTime": 180,
+    "servings": 4
+  },
+  "thieboudienne": {
+    "ingredients": [
+      {"name": "white fish (grouper or snapper)", "amount": "1000", "unit": "g"},
+      {"name": "broken jasmine rice", "amount": "500", "unit": "g"},
+      {"name": "tomato paste", "amount": "150", "unit": "g"},
+      {"name": "guédj (dried fermented fish)", "amount": "50", "unit": "g"},
+      {"name": "cassava (peeled/chunked)", "amount": "1", "unit": "large"},
+      {"name": "eggplant", "amount": "1", "unit": "medium"},
+      {"name": "carrots", "amount": "2", "unit": "large"},
+      {"name": "habanero pepper", "amount": "1", "unit": "pepper"},
+      {"name": "parsley & garlic (for stuffing)", "amount": "1", "unit": "cup"}
+    ],
+    "steps": [
+      "Make a 'rof' (herb paste) by pounding parsley, garlic, and chili; poke holes in the fish and stuff it with this paste.",
+      "Sear the fish in oil until golden, then remove and set aside.",
+      "Fry onions and tomato paste in the same oil until the oil separates; add the fermented fish (guédj) for deep umami.",
+      "Add water, cassava, eggplant, and carrots; simmer until vegetables are tender, then remove them and set aside.",
+      "Wash the broken rice and steam it over the bubbling broth for 15 minutes.",
+      "Add the pre-steamed rice into the broth, ensuring the liquid level is just right to absorb without burning.",
+      "Arrange the fish and vegetables back on top of the rice for the final 10 minutes of steaming. Serve on a large communal platter."
+    ],
+    "prepTime": 40,
+    "cookTime": 70,
+    "servings": 6
+  },
+  "mansaf": {
+    "ingredients": [
+      {"name": "lamb shoulder (large chunks)", "amount": "1500", "unit": "g"},
+      {"name": "jameed (rehydrated and blended)", "amount": "500", "unit": "g"},
+      {"name": "basmati rice", "amount": "600", "unit": "g"},
+      {"name": "shrak (markook) flatbread", "amount": "2", "unit": "large sheets"},
+      {"name": "turmeric", "amount": "1", "unit": "tsp"},
+      {"name": "toasted pine nuts & almonds", "amount": "100", "unit": "g"},
+      {"name": "ghee (samneh)", "amount": "3", "unit": "tbsp"},
+      {"name": "bay leaves & cardamom pods", "amount": "5", "unit": "pieces"},
+      {"name": "fresh parsley (chopped)", "amount": "1/2", "unit": "cup"}
+    ],
+    "steps": [
+      "Boil the lamb chunks with cardamom and bay leaves, skimming the foam until the meat is halfway cooked; drain and set the meat aside.",
+      "Slowly whisk the liquefied jameed into a large pot and bring to a gentle simmer, stirring constantly in one direction to prevent curdling.",
+      "Add the lamb to the jameed sauce and simmer on low for 1-2 hours until the meat is 'falling off the bone' tender.",
+      "Cook the rice with ghee and turmeric to give it a vibrant yellow color and rich aroma.",
+      "To assemble, layer a large platter with shrak bread and ladle a small amount of jameed sauce to soak it.",
+      "Mound the rice over the bread, arrange the lamb pieces on top, and pour more sauce over the entire dish.",
+      "Garnish heavily with toasted nuts and parsley. Serve the remaining sauce in a bowl on the side to be poured by guests."
+    ],
+    "prepTime": 40,
+    "cookTime": 120,
+    "servings": 6
+  },
+  "cuy-asado": {
+    "ingredients": [
+      {"name": "whole guinea pig (cleaned)", "amount": "1", "unit": "piece"},
+      {"name": "huacatay (black mint) paste", "amount": "3", "unit": "tbsp"},
+      {"name": "garlic (minced)", "amount": "4", "unit": "cloves"},
+      {"name": "cumin", "amount": "1", "unit": "tsp"},
+      {"name": "ají amarillo paste", "amount": "2", "unit": "tbsp"},
+      {"name": "chicha de jora (corn beer)", "amount": "100", "unit": "ml"},
+      {"name": "vegetable oil", "amount": "4", "unit": "tbsp"},
+      {"name": "salt & pepper", "amount": "1", "unit": "tsp"}
+    ],
+    "steps": [
+      "Pat the cuy completely dry; this is the most important step for achieving crispy skin.",
+      "Create a marinade by mixing huacatay, garlic, cumin, ají amarillo, and chicha de jora.",
+      "Rub the marinade inside the cavity and all over the skin; let it rest in the fridge for at least 4 hours (uncovered to dry the skin).",
+      "Traditionally roasted on a spit, but for home use: place on a wire rack over a baking tray.",
+      "Roast at 180°C (350°F) for 45 minutes, then increase to 220°C (425°F) for 10 minutes to blister the skin.",
+      "Serve whole or halved, accompanied by 'papa helada' (boiled potatoes) and an onion salsa (sarsa criolla)."
+    ],
+    "prepTime": 250,
+    "cookTime": 60,
+    "servings": 2
+  },
+  "acai-na-tigela": {
+    "ingredients": [
+      {"name": "pure unsweetened açaí pulp (frozen)", "amount": "500", "unit": "g"},
+      {"name": "manioc flour (farinha de mandioca d'água)", "amount": "1", "unit": "cup"},
+      {"name": "tapioca pearls (crunchy variety)", "amount": "1/2", "unit": "cup"},
+      {"name": "fried river fish (charaki or snapper)", "amount": "2", "unit": "fillets"},
+      {"name": "sugar (optional/on the side)", "amount": "1", "unit": "tbsp"}
+    ],
+    "steps": [
+      "Thaw the pure açaí pulp slightly until it reaches a thick, creamy, pudding-like consistency.",
+      "Pour the deep purple cream into a clay bowl; do not blend with bananas or juice.",
+      "Prepare the fried fish separately, seasoned simply with salt and lime.",
+      "Serve the bowl of açaí alongside the hot fish.",
+      "The diner sprinkles the crunchy manioc flour over the açaí with each spoonful, alternating bites with the salty fish.",
+      "If desired, a very small amount of sugar can be sprinkled on top to balance the earthy bitterness."
+    ],
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2
+  },
+  "plov": {
+    "ingredients": [
+      {"name": "lamb or beef (large cubes)", "amount": "1000", "unit": "g"},
+      {"name": "devzira rice (or laser rice)", "amount": "1000", "unit": "g"},
+      {"name": "carrots (mix of yellow and orange, julienned)", "amount": "1000", "unit": "g"},
+      {"name": "onions (sliced)", "amount": "3", "unit": "large"},
+      {"name": "lamb fat (tail fat/kuyruk) or oil", "amount": "300", "unit": "ml"},
+      {"name": "whole garlic bulbs", "amount": "2", "unit": "pieces"},
+      {"name": "cumin seeds (crushed)", "amount": "2", "unit": "tbsp"},
+      {"name": "dried barberries (zereshk)", "amount": "2", "unit": "tbsp"},
+      {"name": "chickpeas (soaked)", "amount": "100", "unit": "g"}
+    ],
+    "steps": [
+      "Heat the fat in a heavy cast-iron Kazan until smoking; sear the meat until deeply browned and remove.",
+      "Fry the onions until golden brown, then add the carrots and cook until softened; return the meat to the pot.",
+      "Add water to barely cover, add spices, barberries, and chickpeas; simmer for 40 minutes to create the 'Zirvak' (flavor base).",
+      "Place whole garlic bulbs into the liquid, then layer the washed rice evenly over the top—do not stir.",
+      "Add boiling water over a slotted spoon so as not to disturb the rice layer, until it's 2cm above the rice.",
+      "Cook on high until water evaporates, then poke holes to the bottom for steam, cover tightly, and steam on very low for 20 minutes.",
+      "Remove garlic, mix the layers thoroughly, and serve on a large 'Lagan' platter."
+    ],
+    "prepTime": 45,
+    "cookTime": 90,
+    "servings": 8
+  },
+  "banh-xeo": {
+    "ingredients": [
+      {"name": "rice flour", "amount": "200", "unit": "g"},
+      {"name": "turmeric powder", "amount": "1", "unit": "tsp"},
+      {"name": "coconut milk", "amount": "250", "unit": "ml"},
+      {"name": "pork belly (thinly sliced)", "amount": "150", "unit": "g"},
+      {"name": "shrimp (peeled)", "amount": "150", "unit": "g"},
+      {"name": "mung bean sprouts", "amount": "200", "unit": "g"},
+      {"name": "mustard leaves and lettuce", "amount": "1", "unit": "bunch"},
+      {"name": "nuoc cham (dipping sauce)", "amount": "100", "unit": "ml"},
+      {"name": "sparkling water", "amount": "100", "unit": "ml"}
+    ],
+    "steps": [
+      "Whisk rice flour, turmeric, coconut milk, and sparkling water (for extra bubbles) into a thin batter; let rest for 30 minutes.",
+      "Heat a large wok or skillet with oil; sauté a few slices of pork and shrimp until just cooked.",
+      "Pour a thin layer of batter into the pan, swirling quickly to coat the edges; it should make a loud 'hissing' sound.",
+      "Place a handful of bean sprouts on one half, cover with a lid for 2 minutes to steam the sprouts.",
+      "Remove lid and cook for another 2 minutes until the edges are crispy and start to lift away from the pan.",
+      "Fold the crepe in half and slide onto a plate.",
+      "To eat: tear a piece of the crepe, wrap it inside a large mustard or lettuce leaf with fresh herbs, and dip in nuoc cham."
+    ],
+    "prepTime": 40,
+    "cookTime": 20,
+    "servings": 4
+  },
+  "doro-wat": {
+    "ingredients": [
+      {"name": "red onions (finely minced)", "amount": "2000", "unit": "g"},
+      {"name": "chicken drumsticks (skinned)", "amount": "1000", "unit": "g"},
+      {"name": "niter kibbeh (spiced butter)", "amount": "150", "unit": "g"},
+      {"name": "berbere spice blend", "amount": "1/2", "unit": "cup"},
+      {"name": "hard-boiled eggs", "amount": "6", "unit": "pieces"},
+      {"name": "garlic & ginger paste", "amount": "3", "unit": "tbsp"},
+      {"name": "lemon juice", "amount": "2", "unit": "tbsp"},
+      {"name": "injera (fermented flatbread)", "amount": "4", "unit": "pieces"}
+    ],
+    "steps": [
+      "Slow-cook the minced onions in a dry pot over low heat for 45 minutes, stirring constantly until they lose all moisture and turn into a jam-like paste.",
+      "Add the niter kibbeh and let it melt into the onions; then stir in the berbere spice and cook for another 15 minutes.",
+      "Add the garlic-ginger paste and a splash of wine or broth if the mixture is too dry; the base should be deep mahogany.",
+      "Add the chicken drumsticks, coating them thoroughly in the onion paste; cover and simmer for 45 minutes until tender.",
+      "Make small incisions in the hard-boiled eggs and add them to the pot for the last 10 minutes to soak up the sauce.",
+      "Finish with a squeeze of lemon juice.",
+      "Serve on a large piece of injera; use the bread as your only utensil to scoop up the chicken and sauce."
+    ],
+    "prepTime": 60,
+    "cookTime": 120,
+    "servings": 6
+  },
+  "halo-halo": {
+    "ingredients": [
+      {"name": "shaved ice", "amount": "2", "unit": "cups"},
+      {"name": "evaporated milk", "amount": "1/2", "unit": "cup"},
+      {"name": "ube halaya (purple yam jam)", "amount": "1", "unit": "scoop"},
+      {"name": "leche flan (custard)", "amount": "1", "unit": "slice"},
+      {"name": "sweetened mung beans", "amount": "1", "unit": "tbsp"},
+      {"name": "macapuno (coconut sport) strings", "amount": "1", "unit": "tbsp"},
+      {"name": "kaong (palm fruit)", "amount": "1", "unit": "tbsp"},
+      {"name": "pinipig (toasted pounded rice)", "amount": "1", "unit": "tsp"},
+      {"name": "ube ice cream", "amount": "1", "unit": "scoop"}
+    ],
+    "steps": [
+      "In a tall glass, layer the bottom with sweetened beans, macapuno, kaong, and other preserved fruits.",
+      "Fill the glass with finely shaved ice until it reaches the brim.",
+      "Pour the evaporated milk generously over the ice, letting it seep down to the bottom layers.",
+      "Top the ice with a scoop of ube halaya and a square of leche flan.",
+      "Place a final scoop of ube ice cream on top and sprinkle with crunchy pinipig.",
+      "Serve with a long spoon; the diner must vigorously mix everything together before eating."
+    ],
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 1
+  },
+  "kokorec": {
+    "ingredients": [
+      {"name": "lamb intestines (cleaned/bleached)", "amount": "500", "unit": "g"},
+      {"name": "lamb sweetbreads", "amount": "200", "unit": "g"},
+      {"name": "dried oregano", "amount": "2", "unit": "tbsp"},
+      {"name": "pul biber (aleppo pepper)", "amount": "1", "unit": "tbsp"},
+      {"name": "cumin", "amount": "1", "unit": "tsp"},
+      {"name": "crusty white bread (baguette style)", "amount": "2", "unit": "rolls"},
+      {"name": "tomato (finely diced)", "amount": "1", "unit": "medium"},
+      {"name": "green bell pepper (finely diced)", "amount": "1", "unit": "piece"}
+    ],
+    "steps": [
+      "Thread the lamb sweetbreads onto a horizontal skewer.",
+      "Carefully wrap the cleaned intestines around the sweetbreads tightly to form a thick log (spit).",
+      "Roast over a charcoal fire (or a high-heat grill), rotating constantly until the exterior is deeply browned and crispy.",
+      "Slice a portion of the meat off the log and place it on a flat griddle.",
+      "Chop the meat finely with spatulas on the heat, mixing in the diced tomatoes and peppers.",
+      "Season aggressively with oregano, pul biber, cumin, and salt.",
+      "Slice the bread open, press it onto the meat to soak up the fats, then fill with the chopped mixture. Serve hot."
+    ],
+    "prepTime": 60,
+    "cookTime": 45,
+    "servings": 4
+  },
+  "pierogi-ruskie": {
+    "ingredients": [
+      {"name": "all-purpose flour", "amount": "500", "unit": "g"},
+      {"name": "warm water", "amount": "250", "unit": "ml"},
+      {"name": "twaróg (or dry farmer's cheese)", "amount": "300", "unit": "g"},
+      {"name": "russet potatoes (peeled/boiled)", "amount": "500", "unit": "g"},
+      {"name": "onions (finely diced)", "amount": "2", "unit": "large"},
+      {"name": "butter", "amount": "100", "unit": "g"},
+      {"name": "sour cream (for serving)", "amount": "1", "unit": "cup"},
+      {"name": "salt & black pepper", "amount": "1", "unit": "tsp"}
+    ],
+    "steps": [
+      "Mash the boiled potatoes while hot and mix with the twaróg until smooth; season heavily with black pepper.",
+      "Sauté half the onions in butter until golden brown and stir them into the potato-cheese filling.",
+      "Knead flour and warm water into a soft, elastic dough; let it rest under a warm bowl for 30 minutes.",
+      "Roll dough thin and cut circles using a glass; place a spoonful of filling in the center and pinch edges to seal.",
+      "Boil in salted water until they float, then cook for 2 more minutes.",
+      "Sauté the remaining onions in plenty of butter until caramelized; toss the boiled pierogi in the onion butter to brown slightly.",
+      "Serve with a side of cold sour cream."
+    ],
+    "prepTime": 60,
+    "cookTime": 20,
+    "servings": 4
+  },
+  "bunny-chow": {
+    "ingredients": [
+      {"name": "unsliced white bread loaf", "amount": "1", "unit": "loaf"},
+      {"name": "lamb or mutton (cubed)", "amount": "800", "unit": "g"},
+      {"name": "oil", "amount": "3", "unit": "tbsp"},
+      {"name": "onions (finely chopped)", "amount": "2", "unit": "medium"},
+      {"name": "durban curry powder (hot)", "amount": "3", "unit": "tbsp"},
+      {"name": "star anise", "amount": "2", "unit": "pieces"},
+      {"name": "curry leaves", "amount": "12", "unit": "leaves"},
+      {"name": "potatoes (cubed)", "amount": "2", "unit": "large"},
+      {"name": "ginger-garlic paste", "amount": "2", "unit": "tbsp"},
+      {"name": "tomato (chopped)", "amount": "1", "unit": "large"}
+    ],
+    "steps": [
+      "Heat oil and sauté star anise, cinnamon stick, and curry leaves; add onions and ginger-garlic paste until golden.",
+      "Add the Durban curry powder and tomatoes, cooking until the oil begins to separate from the spice base.",
+      "Add the meat and brown thoroughly; then add potatoes and enough water to create a thick, rich gravy.",
+      "Simmer for 1 hour until the meat is tender and the potatoes have slightly thickened the sauce.",
+      "Cut the loaf of bread in half (or quarters) and hollow out the center, keeping the bread 'plug' intact.",
+      "Ladle the hot curry into the bread cavity, letting the gravy soak into the walls of the loaf.",
+      "Place the 'plug' back on top and serve with a side of carrot salad (sambal)."
+    ],
+    "prepTime": 20,
+    "cookTime": 70,
+    "servings": 2
+  },
+  "khao-soi": {
+    "ingredients": [
+      {"name": "egg noodles (fresh)", "amount": "500", "unit": "g"},
+      {"name": "chicken thighs (bone-in)", "amount": "4", "unit": "pieces"},
+      {"name": "coconut milk", "amount": "800", "unit": "ml"},
+      {"name": "khao soi curry paste", "amount": "4", "unit": "tbsp"},
+      {"name": "palm sugar", "amount": "1", "unit": "tbsp"},
+      {"name": "fish sauce", "amount": "3", "unit": "tbsp"},
+      {"name": "pickled mustard greens (sliced)", "amount": "1/2", "unit": "cup"},
+      {"name": "shallots (sliced)", "amount": "4", "unit": "pieces"},
+      {"name": "dried chili oil", "amount": "2", "unit": "tbsp"},
+      {"name": "lime wedges", "amount": "4", "unit": "pieces"}
+    ],
+    "steps": [
+      "Fry the curry paste in a thick layer of coconut cream until the oil splits and becomes fragrant.",
+      "Add chicken thighs and remaining coconut milk; simmer gently for 45 minutes until the meat is tender.",
+      "Season the broth with palm sugar and fish sauce to balance the spicy, salty, and sweet notes.",
+      "Boil 3/4 of the egg noodles until soft and set aside.",
+      "Deep-fry the remaining 1/4 of the noodles until they are golden and extremely crispy.",
+      "Place the soft noodles in a bowl, ladle over the chicken and plenty of broth.",
+      "Top with the crispy noodles and serve with a side plate of pickled mustard greens, raw shallots, and lime."
+    ],
+    "prepTime": 30,
+    "cookTime": 45,
+    "servings": 4
   }
 }

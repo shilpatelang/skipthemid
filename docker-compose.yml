@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN: ${NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+    container_name: skipthemid
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - path: .env.production
+        required: false
+    environment:
+      - DATABASE_URL=file:/app/data-volume/prod.db
+      - HOSTNAME=0.0.0.0
+    volumes:
+      - sqlite-data:/app/data-volume
+
+volumes:
+  sqlite-data:

@@ -2,6 +2,8 @@ import { prisma } from "@/lib/prisma";
 import Hero from "@/components/landing/Hero";
 import FeaturedDishes from "@/components/landing/FeaturedDishes";
 
+export const dynamic = "force-dynamic";
+
 const HERO_BG =
   "https://images.unsplash.com/photo-1579196479727-de5490858892?auto=format&fit=crop&w=1920&q=80";
 

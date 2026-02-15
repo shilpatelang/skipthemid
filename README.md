@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkipTheMid
+
+A dish-centric food encyclopedia — explore global dishes, see where they originate on a map, find places that serve them, and rate your favorites.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Database:** SQLite via Prisma v6
+- **Auth:** NextAuth v5 (Google OAuth + credentials)
+- **Maps:** Mapbox GL JS v3
+- **Styling:** Tailwind CSS v4
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 22+
+- A Mapbox account (public + secret tokens)
+
+### Setup
 
 ```bash
+# Install dependencies
+npm install
+
+# Copy env template and fill in values
+cp .env.local.example .env.local
+
+# Generate Prisma client
+npx prisma generate
+
+# Run migrations and seed the database
+npx prisma migrate dev
+npx prisma db seed
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Purpose |
+|----------|---------|
+| `DATABASE_URL` | SQLite file path (`file:./dev.db`) |
+| `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN` | Client-side map rendering |
+| `MAPBOX_ACCESS_TOKEN` | Server-side Mapbox API (seed script) |
+| `AUTH_SECRET` | NextAuth session signing |
+| `AUTH_GOOGLE_ID` | Google OAuth client ID |
+| `AUTH_GOOGLE_SECRET` | Google OAuth client secret |
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deployed via Docker on a single VPS with Nginx reverse proxy.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# On the VPS (as deploy user):
+./deploy/setup.sh      # One-time setup
+./deploy/deploy.sh     # Subsequent deploys
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `deploy/` for scripts:
+- `harden.sh` — VPS hardening (UFW, fail2ban, SSH)
+- `setup.sh` — Clone, build, start, configure Nginx
+- `deploy.sh` — Pull, rebuild, restart
+- `nginx.conf` — Reverse proxy config (pre-Certbot)
+- `docker-entrypoint.sh` — Prisma migrations + seed on container start
