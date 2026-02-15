@@ -26,19 +26,19 @@ fi
 cd "$APP_DIR"
 
 # ── 2. Create production env file ────────────────────────────────────────
-if [ ! -f .env.production ]; then
-  echo "[2/5] Creating .env.production from template..."
-  cp .env.production.example .env.production
+if [ ! -f .env ]; then
+  echo "[2/5] Creating .env from template..."
+  cp .env.production.example .env
   echo ""
   echo "  ╔══════════════════════════════════════════════════════════╗"
-  echo "  ║  IMPORTANT: Edit .env.production and fill in secrets!   ║"
-  echo "  ║  Run: nano $APP_DIR/.env.production                     ║"
+  echo "  ║  IMPORTANT: Edit .env and fill in secrets!              ║"
+  echo "  ║  Run: nano $APP_DIR/.env                                ║"
   echo "  ║  Then re-run this script.                               ║"
   echo "  ╚══════════════════════════════════════════════════════════╝"
   echo ""
   exit 0
 else
-  echo "[2/5] .env.production exists."
+  echo "[2/5] .env exists."
 fi
 
 # ── 3. Build Docker image ────────────────────────────────────────────────

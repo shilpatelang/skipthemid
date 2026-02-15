@@ -5,8 +5,7 @@ node_modules
 *.db
 *.db-journal
 .env
-.env.local
-.env.production
+.env.*
 .DS_Store
 deploy/setup.sh
 deploy/deploy.sh
