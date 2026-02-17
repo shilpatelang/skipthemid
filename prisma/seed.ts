@@ -210,7 +210,7 @@ const DISHES = [
     category: "Street Food",
     latitude: 41.0082,
     longitude: 28.9784,
-    imageUrl: "/dishimage/Kokoreç.jpg",
+    imageUrl: "/dishimage/kokorec.jpg",
   },
   {
     name: "Pierogi Ruskie",
