@@ -8,6 +8,8 @@ interface FeaturedDish {
   origin: string;
   description: string;
   imageUrl: string | null;
+  imageCredit: string | null;
+  imageLicenseUrl: string | null;
   avgRating: number | null;
   ratingCount: number;
 }

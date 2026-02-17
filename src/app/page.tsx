@@ -26,6 +26,8 @@ export default async function Home() {
       origin: d.origin,
       description: d.description,
       imageUrl: d.imageUrl,
+      imageCredit: d.imageCredit,
+      imageLicenseUrl: d.imageLicenseUrl,
       avgRating: avg ? Math.round(avg * 10) / 10 : null,
       ratingCount: d.ratings.length,
     };

@@ -6,6 +6,7 @@ import { auth } from "@/lib/auth";
 import StarRating from "@/components/dish/StarRating";
 import RatingInput from "@/components/dish/RatingInput";
 import DishTabs from "@/components/dish/DishTabs";
+import ImageCredit from "@/components/dish/ImageCredit";
 
 export async function generateMetadata({
   params,
@@ -83,6 +84,7 @@ export default async function DishPage({
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              {dish.imageCredit && <ImageCredit credit={dish.imageCredit} licenseUrl={dish.imageLicenseUrl} />}
             </div>
           )}
 

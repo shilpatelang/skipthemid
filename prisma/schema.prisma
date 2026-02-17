@@ -76,6 +76,8 @@ model Dish {
   cuisine     String   // e.g. "South Indian"
   category    String   // e.g. "Street Food", "Curry", "Dessert"
   imageUrl    String?
+  imageCredit     String?  // e.g. "Photo: John Doe / Unsplash"
+  imageLicenseUrl String?  // e.g. "https://creativecommons.org/licenses/by-sa/4.0/"
   latitude    Float    // Origin location for map pin
   longitude   Float    // Origin location for map pin
   createdAt   DateTime @default(now())

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 import StarRating from "./StarRating";
+import ImageCredit from "./ImageCredit";
 
 interface DishCardProps {
   slug: string;
@@ -11,6 +12,8 @@ interface DishCardProps {
   origin: string;
   description: string;
   imageUrl: string | null;
+  imageCredit?: string | null;
+  imageLicenseUrl?: string | null;
   avgRating: number | null;
   ratingCount: number;
   className?: string;
@@ -22,6 +25,8 @@ export default function DishCard({
   cuisine,
   origin,
   imageUrl,
+  imageCredit,
+  imageLicenseUrl,
   avgRating,
   ratingCount,
   className = "",
@@ -46,6 +51,9 @@ export default function DishCard({
 
       {/* Dark gradient overlay for text legibility */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10" />
+
+      {/* Image credit icon — bottom left */}
+      {imageCredit && <ImageCredit credit={imageCredit} licenseUrl={imageLicenseUrl} />}
 
       {/* Origin pill badge — top right */}
       <div className="absolute top-3 right-3 z-10 flex items-center gap-1 rounded-full bg-gold/90 px-2.5 py-1 text-xs font-semibold text-charcoal backdrop-blur-sm">
