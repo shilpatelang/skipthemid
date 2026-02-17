@@ -11,7 +11,7 @@ Before any deploy that includes schema changes, **back up the database first**:
 ssh deploy@<VPS_IP>
 
 # Copy the live DB out of the Docker volume
-docker compose -f ~/skipthemid/docker-compose.yml cp skipthemid:/app/data-volume/prod.db ~/backups/prod-$(date +%Y%m%d-%H%M%S).db
+docker compose -f ~/skipthemid/docker-compose.yml cp app:/app/data-volume/prod.db ~/backups/prod-$(date +%Y%m%d-%H%M%S).db
 ```
 
 Create the backups directory once:
@@ -41,7 +41,7 @@ git log --oneline -10          # find the good commit hash
 git reset --hard <commit-hash>
 
 # 3. Restore the DB backup into the volume
-docker compose cp ~/backups/prod-YYYYMMDD-HHMMSS.db skipthemid:/app/data-volume/prod.db
+docker compose cp ~/backups/prod-YYYYMMDD-HHMMSS.db app:/app/data-volume/prod.db
 # If container is stopped, restore via a temporary container:
 docker run --rm -v skipthemid_sqlite-data:/data -v ~/backups:/backups alpine \
   cp /backups/prod-YYYYMMDD-HHMMSS.db /data/prod.db
@@ -149,14 +149,14 @@ docker compose ps
 docker compose logs --tail=50
 
 # Inspect the DB file size
-docker compose exec skipthemid ls -lh /app/data-volume/prod.db
+docker compose exec app ls -lh /app/data-volume/prod.db
 
 # List all backups
 ls -lh ~/backups/
 
 # Check which migrations have been applied
-docker compose exec skipthemid npx prisma migrate status
+docker compose exec app npx prisma migrate status
 
 # Interactive DB shell (read-only inspection)
-docker compose exec skipthemid npx prisma studio
+docker compose exec app npx prisma studio
 ```
