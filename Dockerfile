@@ -26,7 +26,8 @@ WORKDIR /app
 ENV NODE_ENV=production
 
 RUN addgroup --system --gid 1001 nodejs && \
-    adduser --system --uid 1001 nextjs
+    adduser --system --uid 1001 nextjs && \
+    apk add --no-cache su-exec
 
 # Standalone server + static assets
 COPY --from=builder /app/.next/standalone ./
@@ -55,7 +56,7 @@ RUN chmod +x /app/docker-entrypoint.sh
 # Volume mount point for SQLite persistence
 RUN mkdir -p /app/data-volume && chown nextjs:nodejs /app/data-volume
 
-USER nextjs
+# Entrypoint runs as root to fix volume permissions, then drops to nextjs via su-exec
 EXPOSE 3000
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
