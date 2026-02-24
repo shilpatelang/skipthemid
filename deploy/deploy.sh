@@ -7,7 +7,7 @@
 #   ./deploy/deploy.sh
 #
 # From dev machine (one-liner):
-#   ssh deploy@157.151.227.217 'cd ~/skipthemid && git pull origin main && docker compose build && docker compose down && docker compose up -d'
+#   ssh oci-deploy-236 'cd ~/skipthemid && git pull origin main && docker compose build && docker compose down && docker compose up -d'
 # ─────────────────────────────────────────────────────────────────────────────
 set -euo pipefail
 

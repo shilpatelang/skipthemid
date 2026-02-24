@@ -76,7 +76,13 @@ if [[ -n "$PUBKEY" ]]; then
   echo "  Added provided public key."
 elif [[ -f /root/.ssh/authorized_keys ]]; then
   cp /root/.ssh/authorized_keys "$SSH_DIR/authorized_keys"
-  echo "  Copied root's authorized_keys to $USERNAME."
+  # Strip OCI/cloud provider prefix (no-port-forwarding,...) that blocks non-root users
+  if grep -q 'no-port-forwarding\|Please login as' "$SSH_DIR/authorized_keys"; then
+    sed -i 's/.*ssh-/ssh-/' "$SSH_DIR/authorized_keys"
+    echo "  Copied root's authorized_keys to $USERNAME (stripped cloud provider restrictions)."
+  else
+    echo "  Copied root's authorized_keys to $USERNAME."
+  fi
 else
   echo "  WARNING: No SSH key provided and none found on root."
   echo "  You must manually add a key to $SSH_DIR/authorized_keys"
@@ -208,10 +214,10 @@ echo "  Kernel: SYN flood protection, IP spoof protection, ICMP hardening"
 # ── Restart SSH ─────────────────────────────────────────────────────────────
 
 # Ubuntu uses "ssh", other distros use "sshd"
-if systemctl list-units --type=service --all | grep -q 'sshd.service'; then
-  systemctl restart sshd
-else
+if systemctl list-units --type=service --all | grep -q 'ssh.service'; then
   systemctl restart ssh
+else
+  systemctl restart sshd
 fi
 
 # ── Summary ─────────────────────────────────────────────────────────────────
