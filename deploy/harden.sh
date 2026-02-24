@@ -48,7 +48,7 @@ echo "[1/8] Updating system packages..."
 apt-get update -qq
 DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -qq
 DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
-  ufw fail2ban unattended-upgrades curl git htop
+  ufw fail2ban unattended-upgrades curl git htop iptables-persistent
 
 # ── 2. Create non-root user ────────────────────────────────────────────────
 
@@ -120,6 +120,23 @@ configure_sshd "ClientAliveInterval"   "300"
 configure_sshd "ClientAliveCountMax"   "2"
 
 echo "  SSH: port=$SSH_PORT, root=no, password=no, pubkey=yes"
+
+# ── 4b. Remove OCI default iptables REJECT rule ─────────────────────────────
+# OCI Ubuntu images ship with an iptables REJECT rule that blocks all traffic
+# except SSH, preventing UFW rules from working. Remove it if present.
+
+REMOVED=0
+while iptables -L INPUT -n --line-numbers 2>/dev/null | grep -q 'REJECT.*icmp-host-prohibited'; do
+  REJECT_RULE=$(iptables -L INPUT -n --line-numbers | grep 'REJECT.*icmp-host-prohibited' | head -1 | awk '{print $1}')
+  iptables -D INPUT "$REJECT_RULE"
+  REMOVED=$((REMOVED + 1))
+done
+if [[ $REMOVED -gt 0 ]]; then
+  netfilter-persistent save
+  echo "  Removed $REMOVED OCI default iptables REJECT rule(s)."
+else
+  echo "  No OCI iptables REJECT rule found, skipping."
+fi
 
 # ── 5. Firewall (UFW) ──────────────────────────────────────────────────────
 
