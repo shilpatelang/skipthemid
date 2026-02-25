@@ -4,6 +4,7 @@ dotenv.config();
 import { PrismaClient } from "../src/generated/prisma";
 import { readFileSync, existsSync } from "fs";
 import { resolve } from "path";
+import { createInterface } from "readline";
 
 const prisma = new PrismaClient();
 
@@ -14,6 +15,87 @@ function slugify(text: string): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
+}
+
+function normalize(text: string): string {
+  return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+function bigrams(str: string): Set<string> {
+  const s = normalize(str);
+  const bg = new Set<string>();
+  for (let i = 0; i < s.length - 1; i++) bg.add(s.slice(i, i + 2));
+  return bg;
+}
+
+function diceCoefficient(a: string, b: string): number {
+  const bgA = bigrams(a);
+  const bgB = bigrams(b);
+  if (bgA.size === 0 && bgB.size === 0) return 1;
+  if (bgA.size === 0 || bgB.size === 0) return 0;
+  let intersection = 0;
+  for (const bg of bgA) if (bgB.has(bg)) intersection++;
+  return (2 * intersection) / (bgA.size + bgB.size);
+}
+
+function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 6371;
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLon = ((lon2 - lon1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function checkDuplicates(dishes: typeof DISHES): string[] {
+  const warnings: string[] = [];
+  const NAME_THRESHOLD = 0.5;
+  const GEO_NAME_THRESHOLD = 0.35;
+  const GEO_DISTANCE_KM = 100;
+
+  for (let i = 0; i < dishes.length; i++) {
+    for (let j = i + 1; j < dishes.length; j++) {
+      const a = dishes[i];
+      const b = dishes[j];
+      const sim = diceCoefficient(a.name, b.name);
+
+      const sameCuisine = normalize(a.cuisine) === normalize(b.cuisine);
+      const sameCategory = normalize(a.category) === normalize(b.category);
+      const dist = haversineKm(a.latitude, a.longitude, b.latitude, b.longitude);
+      const geoClose = dist < GEO_DISTANCE_KM;
+
+      let flagged = false;
+
+      if (sim >= NAME_THRESHOLD) {
+        flagged = true;
+      } else if (sim >= GEO_NAME_THRESHOLD && geoClose && (sameCuisine || sameCategory)) {
+        flagged = true;
+      }
+
+      if (flagged) {
+        let msg = `⚠ POSSIBLE DUPLICATE:\n  "${a.name}" ↔ "${b.name}" (name similarity: ${Math.round(sim * 100)}%)`;
+        const shared: string[] = [];
+        if (sameCuisine) shared.push(a.cuisine);
+        if (sameCategory) shared.push(a.category);
+        if (geoClose) shared.push(`~${Math.round(dist)}km apart`);
+        if (shared.length > 0) msg += `\n  Both: ${shared.join(", ")}`;
+        warnings.push(msg);
+      }
+    }
+  }
+  return warnings;
+}
+
+async function confirmContinue(warnings: string[]): Promise<boolean> {
+  for (const w of warnings) console.warn(w);
+  const rl = createInterface({ input: process.stdin, output: process.stdout });
+  return new Promise((resolve) => {
+    rl.question("\nContinue seeding? (y/N) ", (answer) => {
+      rl.close();
+      resolve(answer.trim().toLowerCase() === "y");
+    });
+  });
 }
 
 // ── Dish seed data ──────────────────────────────────────────────────────
@@ -419,6 +501,15 @@ async function seedDishes() {
   const dupes = slugs.filter((s, i) => slugs.indexOf(s) !== i);
   if (dupes.length > 0) {
     console.warn(`WARNING: Slug collisions detected: ${dupes.join(", ")}`);
+  }
+
+  const warnings = checkDuplicates(DISHES);
+  if (warnings.length > 0) {
+    const proceed = await confirmContinue(warnings);
+    if (!proceed) {
+      console.log("Aborted. Fix duplicates and re-run.");
+      return;
+    }
   }
 
   for (const dish of DISHES) {
