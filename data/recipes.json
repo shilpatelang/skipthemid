@@ -489,5 +489,130 @@
     "prepTime": 30,
     "cookTime": 45,
     "servings": 4
+  },
+  "caldillo-de-congrio": {
+  "ingredients": [
+    { "name": "Conger eel (cleaned and sliced)", "amount": "1.5", "unit": "kg" },
+    { "name": "Dry white wine", "amount": "250", "unit": "ml" },
+    { "name": "Heavy cream", "amount": "100", "unit": "ml" },
+    { "name": "Onion (julienned)", "amount": "1", "unit": "large" },
+    { "name": "Garlic cloves (minced)", "amount": "3", "unit": "pcs" },
+    { "name": "Carrots (sliced)", "amount": "2", "unit": "pcs" },
+    { "name": "Potatoes (peeled and sliced)", "amount": "4", "unit": "medium" },
+    { "name": "Fish stock", "amount": "1.5", "unit": "l" },
+    { "name": "Tomato (peeled and chopped)", "amount": "2", "unit": "pcs" },
+    { "name": "Paprika", "amount": "1", "unit": "tsp" },
+    { "name": "Dried oregano", "amount": "1", "unit": "tsp" },
+    { "name": "Fresh cilantro (chopped)", "amount": "15", "unit": "g" }
+  ],
+  "steps": [
+    "Marinate the eel slices in white wine, salt, and pepper for at least 30 minutes.",
+    "In a large pot, sauté the onions, garlic, carrots, and tomatoes until soft.",
+    "Add the paprika and oregano, then pour in the fish stock and the marinade from the eel.",
+    "Add the potatoes and simmer for 15 minutes until they begin to soften.",
+    "Gently place the eel slices into the pot. Simmer for another 10-12 minutes until the fish is opaque and firm.",
+    "Just before serving, stir in the heavy cream and remove from heat.",
+    "Serve in heated clay bowls, garnished with fresh cilantro."
+  ],
+  "prepTime": 40,
+  "cookTime": 35,
+  "servings": 6
+  },
+  "seco-de-chivo": {
+  "ingredients": [
+    { "name": "Goat meat (with bone, cut into pieces)", "amount": "1000", "unit": "g" },
+    { "name": "Chicha de Jora (or dark beer)", "amount": "500", "unit": "ml" },
+    { "name": "Naranjilla juice (or bitter orange juice)", "amount": "120", "unit": "ml" },
+    { "name": "Red onion (finely chopped)", "amount": "2", "unit": "pcs" },
+    { "name": "Green bell pepper (chopped)", "amount": "1", "unit": "pc" },
+    { "name": "Tomatoes (seeded and chopped)", "amount": "3", "unit": "pcs" },
+    { "name": "Garlic (minced)", "amount": "4", "unit": "cloves" },
+    { "name": "Achiote oil (annatto)", "amount": "30", "unit": "ml" },
+    { "name": "Cumin", "amount": "5", "unit": "g" },
+    { "name": "Panela (or brown sugar)", "amount": "15", "unit": "g" },
+    { "name": "Fresh cilantro (finely chopped)", "amount": "30", "unit": "g" }
+  ],
+  "steps": [
+    "Marinate the goat meat in cumin, garlic, salt, and half of the Chicha de Jora for at least 2 hours.",
+    "In a large heavy-bottomed pot, heat the achiote oil and brown the goat meat in batches. Remove and set aside.",
+    "In the same pot, sauté the onions, bell pepper, and tomatoes until soft and fragrant.",
+    "Return the meat to the pot and add the remaining Chicha de Jora, Naranjilla juice, and panela.",
+    "Bring to a boil, then reduce heat to a low simmer. Cover and cook for 2 to 2.5 hours until the meat is falling off the bone.",
+    "Uncover for the last 20 minutes to allow the sauce to reduce into a thick, glossy consistency.",
+    "Stir in the fresh cilantro just before serving with yellow rice and maduros (fried ripe plantains)."
+  ],
+  "prepTime": 30,
+  "cookTime": 150,
+  "servings": 6
+  },
+  "jiggs-dinner": {
+  "ingredients": [
+    { "name": "Salt beef (brined brisket or rib)", "amount": "1.5", "unit": "kg" },
+    { "name": "Yellow split peas", "amount": "300", "unit": "g" },
+    { "name": "Butter", "amount": "30", "unit": "g" },
+    { "name": "Large potatoes (peeled and halved)", "amount": "6", "unit": "pcs" },
+    { "name": "Large carrots (peeled and chunked)", "amount": "4", "unit": "pcs" },
+    { "name": "Green cabbage (cut into wedges)", "amount": "1", "unit": "head" },
+    { "name": "Turnip/Rutabaga (peeled and cubed)", "amount": "1", "unit": "large" },
+    { "name": "Black pepper", "amount": "2", "unit": "g" }
+  ],
+  "steps": [
+    "Soak the salt beef in cold water overnight in the refrigerator to remove excess salt. Rinse before cooking.",
+    "Place the yellow split peas into a cotton 'pudding bag' or several layers of cheesecloth, tying it securely but leaving room for the peas to expand.",
+    "Place the salt beef and the pea bag into a large stockpot. Cover with fresh water and bring to a boil.",
+    "Reduce heat and simmer for about 1.5 to 2 hours until the beef begins to soften.",
+    "Add the turnip, carrots, and cabbage wedges to the pot. Simmer for 20 minutes.",
+    "Add the potatoes and continue simmering for another 20-25 minutes until all vegetables are fork-tender.",
+    "Remove the pea bag. Empty the peas into a bowl, add butter and black pepper, and mash until smooth to create the pease pudding.",
+    "Serve the meat and vegetables on a large platter with the pease pudding on the side."
+  ],
+  "prepTime": 20,
+  "cookTime": 150,
+  "servings": 6
+  },
+  "akutaq": {
+  "ingredients": [
+    { "name": "Reindeer fat or beef tallow (finely shredded)", "amount": "250", "unit": "g" },
+    { "name": "Seal oil (or high-quality vegetable oil)", "amount": "120", "unit": "ml" },
+    { "name": "Wild berries (Cloudberries, Salmonberries, or Blueberries)", "amount": "500", "unit": "g" },
+    { "name": "Fresh clean snow (or crushed ice)", "amount": "250", "unit": "ml" },
+    { "name": "Sugar (optional modern addition)", "amount": "50", "unit": "g" },
+    { "name": "Water", "amount": "60", "unit": "ml" }
+  ],
+  "steps": [
+    "Place the shredded fat in a large bowl and cream it by hand (the heat from your hand is traditional for achieving the right texture) until it becomes light and fluffy.",
+    "Slowly add the seal oil or vegetable oil, a little at a time, while continuing to whip the mixture vigorously.",
+    "Add a small amount of water or snow to the mixture to increase the volume and achieve a white, creamy consistency.",
+    "If using sugar, fold it in slowly until dissolved.",
+    "Gently fold in the wild berries by hand so they remain whole and do not bleed too much color into the white base.",
+    "Chill the mixture in a cold area or freezer until firm but scoopable.",
+    "Serve immediately as a high-energy treat or side dish."
+  ],
+  "prepTime": 45,
+  "cookTime": 0,
+  "servings": 8
+  },
+  "piki-bread": {
+  "ingredients": [
+    { "name": "Finely ground blue cornmeal", "amount": "1000", "unit": "g" },
+    { "name": "Juniper ash (culinary grade)", "amount": "30", "unit": "g" },
+    { "name": "Boiling water", "amount": "1.5", "unit": "l" },
+    { "name": "Cold water", "amount": "500", "unit": "ml" },
+    { "name": "Shortening or marrow fat (for greasing stone)", "amount": "15", "unit": "g" }
+  ],
+  "steps": [
+    "Sift the blue cornmeal into a large traditional clay or mixing bowl.",
+    "Dissolve the juniper ash in cold water and strain through a fine cloth into the cornmeal to remove any grit.",
+    "Gradually add the boiling water to the cornmeal mixture, stirring constantly until it forms a smooth, thin, pourable batter with no lumps.",
+    "Heat the Piki stone (sandstone slab) over a steady fire until a drop of water sizzles and dances on the surface (approx. 350°F).",
+    "Lightly grease the stone with a small amount of fat or oil using a clean cloth.",
+    "Using your fingers or a flat scoop, quickly smear a very thin layer of batter across the hot stone in a single, fluid motion.",
+    "Wait seconds for the edges to curl and the bread to turn translucent. Gently peel the sheet away from the stone.",
+    "While still hot and pliable, place the sheet on a flat surface and roll it tightly into a scroll. Repeat the process, often layering two sheets together before rolling.",
+    "Let the rolls cool until crisp and brittle."
+  ],
+  "prepTime": 60,
+  "cookTime": 120,
+  "servings": 10
   }
 }

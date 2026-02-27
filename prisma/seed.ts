@@ -327,6 +327,64 @@ const DISHES = [
     longitude: 98.9853,
     imageUrl: "/dishimage/khao-soi.jpg",
   },
+  {
+  name: "Caldillo de Congrio",
+  description: "A rich, velvety Chilean fish stew made with Golden or Red Conger eel. The dish is celebrated for its deep oceanic flavors, enhanced by a base of white wine, heavy cream, and aromatic vegetables. It is traditionally served in a paila (clay bowl) to maintain its piping-hot temperature, often garnished with fresh shrimp or mussels.",
+  origin: "San Antonio, Chile",
+  cuisine: "Chilean",
+  category: "Seafood Stew",
+  latitude: -33.5833,
+  longitude: -71.6167,
+  imageUrl: "/dishimage/caldillo-de-congrio.jpg",
+  imageCredit: "Photo: Carlos Varela",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  },
+  {
+  name: "Seco de Chivo",
+  description: "A centerpiece of Ecuadorian celebration dining, this slow-cooked goat stew is prized for its complex, tangy sauce. Traditionally braised in Chicha de Jora (fermented corn beer) or tart Naranjilla juice, the meat becomes exceptionally tender while the sauce thickens with a base of achiote, peppers, and cilantro. It is almost always served with 'Arroz Amarillo' (yellow rice) and sweet fried plantains.",
+  origin: "Santa Elena, Ecuador",
+  cuisine: "Ecuadorian",
+  category: "Stew",
+  latitude: -2.2262,
+  longitude: -80.8587,
+  imageUrl: "/dishimage/seco-de-chivo.jpg",
+  imageCredit: "By Aaroncato89 - Own work, CC BY-SA 4.0", // CC license alternative to Unsplash
+  imageLicenseUrl: "https://commons.wikimedia.org/w/index.php?curid=26943940",
+  },
+  {
+  name: "Jiggs’ Dinner",
+  description: "The soul of Newfoundland Sunday gatherings, this 'boiled dinner' is a masterclass in one-pot efficiency. It centers around salt beef (cured in brine) boiled alongside cabbage, potatoes, carrots, and turnip. The defining element is the 'Pease Pudding'—yellow split peas tied in a cotton bag and boiled in the same pot until they reach a buttery, mashable consistency. It is traditionally finished with a drizzle of turkey gravy and a side of pickled beets.",
+  origin: "St. John's, Canada",
+  cuisine: "Newfoundland",
+  category: "Boiled Dinner",
+  latitude: 47.5615,
+  longitude: -52.7126,
+  imageUrl: "/dishimage/jiggs-dinner.jpg",
+  imageCredit: "Photo: Alycmy, CC BY-SA 4.0", 
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  },
+  {
+  name: "Akutaq",
+  description: "A profound staple of Indigenous Alaskan culture, Akutaq (meaning 'to mix') is a unique, non-dairy 'ice cream' designed for high-calorie sustenance in Arctic climates. Traditionally, it is made by hand-whipping reindeer fat or seal oil until light and fluffy, then folding in fresh snow and wild tundra berries like cloudberries (aqpik) or lingonberries. The result is a savory-sweet, creamy mousse that represents a deep connection to the land and seasonal harvests.",
+  origin: "Bethel, Alaska, USA",
+  cuisine: "Yup'ik / Indigenous Alaskan",
+  category: "Dessert",
+  latitude: 60.7922,
+  longitude: -161.7558,
+  imageUrl: "/dishimage/akutaq.jpg",
+  },
+  {
+  name: "Piki Bread",
+  description: "A ceremonial masterpiece of the Hopi people, Piki is a paper-thin, crisp bread made from finely ground blue corn and culinary juniper ash. The ash not only provides its distinctive smoky-blue hue but also unlocks essential vitamins through nixtamalization. Each sheet is hand-smeared onto a specialized 'Piki stone'—a highly polished sandstone slab heated over a cedar fire—then meticulously rolled while still warm. It has a delicate, popcorn-like flavor and a texture that dissolves instantly on the tongue.",
+  origin: "Hopi Reservation, Arizona",
+  cuisine: "Hopi / Native American",
+  category: "Ceremonial Bread",
+  latitude: 35.8753,
+  longitude: -110.5110,
+  imageUrl: "/dishimage/piki-bread.jpg",
+  imageCredit: "Photo: Alan Levine",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  }
 ];
 
 // ── JSON data loaders ───────────────────────────────────────────────────
@@ -508,7 +566,8 @@ async function seedDishes() {
     const proceed = await confirmContinue(warnings);
     if (!proceed) {
       console.log("Aborted. Fix duplicates and re-run.");
-      return;
+      await prisma.$disconnect();
+      process.exit(0);
     }
   }
 
