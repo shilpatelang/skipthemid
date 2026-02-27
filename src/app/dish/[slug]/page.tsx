@@ -16,9 +16,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const dish = await prisma.dish.findUnique({ where: { slug } });
   if (!dish) return { title: "Dish Not Found" };
+  const description = dish.description.slice(0, 160);
   return {
     title: `${dish.name} — SkipTheMid`,
-    description: dish.description.slice(0, 160),
+    description,
+    openGraph: {
+      title: `${dish.name} — SkipTheMid`,
+      description,
+      type: "article",
+      ...(dish.imageUrl && {
+        images: [{ url: dish.imageUrl, alt: dish.name }],
+      }),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${dish.name} — SkipTheMid`,
+      description,
+      ...(dish.imageUrl && {
+        images: [dish.imageUrl],
+      }),
+    },
   };
 }
 

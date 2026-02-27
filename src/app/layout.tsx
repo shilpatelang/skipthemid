@@ -21,8 +21,22 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://skipthemid.com"),
   title: "SkipTheMid",
   description: "A food encyclopedia for the curious eater.",
+  openGraph: {
+    title: "SkipTheMid",
+    description: "A food encyclopedia for the curious eater.",
+    siteName: "SkipTheMid",
+    type: "website",
+    images: [{ url: "/og-image.jpg", alt: "SkipTheMid" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SkipTheMid",
+    description: "A food encyclopedia for the curious eater.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
