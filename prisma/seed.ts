@@ -4,7 +4,6 @@ dotenv.config();
 import { PrismaClient } from "../src/generated/prisma";
 import { readFileSync, existsSync } from "fs";
 import { resolve } from "path";
-import { createInterface } from "readline";
 
 const prisma = new PrismaClient();
 
@@ -87,16 +86,6 @@ function checkDuplicates(dishes: typeof DISHES): string[] {
   return warnings;
 }
 
-async function confirmContinue(warnings: string[]): Promise<boolean> {
-  for (const w of warnings) console.warn(w);
-  const rl = createInterface({ input: process.stdin, output: process.stdout });
-  return new Promise((resolve) => {
-    rl.question("\nContinue seeding? (y/N) ", (answer) => {
-      rl.close();
-      resolve(answer.trim().toLowerCase() === "y");
-    });
-  });
-}
 
 // ── Dish seed data ──────────────────────────────────────────────────────
 
@@ -384,6 +373,202 @@ const DISHES = [
   imageUrl: "/dishimage/piki-bread.jpg",
   imageCredit: "Photo: Alan Levine",
   imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  },
+  {
+  name: "Chislic",
+  description: "South Dakota's best-kept secret, bite sized cubes of lamb (or venison, or beef) deep fried or grilled until crusty on the outside and juicy within, seasoned with nothing more than garlic salt and served on toothpicks with a sleeve of saltine crackers. Brought to the Great Plains by German-Russian immigrants in the 1870s, chislic is practically unknown outside the state, yet inside it, you'll find it at every bar, VFW hall, and county fair. South Dakota declared it the official state 'nosh' in 2018, cementing its status as a hyper-regional treasure.",
+  origin: "Mitchell, South Dakota, USA",
+  cuisine: "Great Plains / German-Russian American",
+  category: "Street Food",
+  latitude: 43.7095,
+  longitude: -98.0298,
+  imageUrl: "/dishimage/chislic.jpg",
+  },
+  {
+  name: "Sonker",
+  description: "A deep-dish fruit dessert unique to Surry County, North Carolina, and virtually unknown anywhere else. Unlike a cobbler or pie, sonker uses a thin, pourable batter poured over heaps of fruit (sweet potato, strawberry, or peach are the classics), then baked in an oversized dish until bubbly and golden. The real magic is the 'dip,' a warm, pourable milk sauce ladled generously over each serving. The town of Mt. Airy even has a Sonker Trail, a driving tour of the few bakeries and kitchens that still make it. Ask for sonker 50 miles away and you'll get blank stares.",
+  origin: "Mt. Airy, North Carolina, USA",
+  cuisine: "Appalachian",
+  category: "Dessert",
+  latitude: 36.4993,
+  longitude: -80.6073,
+  imageUrl: "/dishimage/sonker.jpg",
+  },
+  {
+  name: "Booyah",
+  description: "A thick, communal stew cooked outdoors in massive cast-iron kettles (sometimes 50+ gallons) over wood fires, simmered for two days straight with chicken, beef, oxtails, and whatever vegetables are in season. Whole communities gather to stir the pot in shifts. The name likely derives from the French 'bouillon,' carried over by Belgian and French-Canadian settlers in northeast Wisconsin. Outside the Fox Valley and Door County, almost nobody knows what booyah is. Inside those communities, it anchors church fundraisers, fire department benefits, and fall festivals. No two batches are ever the same.",
+  origin: "Green Bay, Wisconsin, USA",
+  cuisine: "Upper Midwest / Belgian-American",
+  category: "Stew",
+  latitude: 44.5133,
+  longitude: -88.0133,
+  imageUrl: "/dishimage/booyah.jpg",
+  },
+  {
+  name: "Cochinita Pibil",
+  description: "Whole pork shoulder marinated overnight in achiote paste and bitter orange juice, wrapped in banana leaves, and slow-roasted in an underground pit (a pib) for 8+ hours until it shreds at the touch. The achiote turns the meat a vivid burnt orange. Served on tortillas with habanero-spiked pickled red onions and a ladle of the rendered cooking juices. It's a Mayan technique that predates the Spanish arrival, originally made with wild boar or deer. In the Yucatán it's Sunday breakfast food; outside the peninsula, even within Mexico, authentic pibil is rare.",
+  origin: "Mérida, Yucatán, Mexico",
+  cuisine: "Yucatecan / Mayan",
+  category: "Roast",
+  latitude: 20.9674,
+  longitude: -89.6237,
+  imageUrl: "/dishimage/cochinita-pibil.jpg",
+  },
+  {
+  name: "Pouding Chômeur",
+  description: "Literally 'unemployed man's pudding,' invented by Québécois factory workers during the Great Depression. Simple cake batter is poured into a pan, then hot maple syrup is poured right on top. As it bakes, the batter rises and the syrup sinks, creating a self-saucing dessert with a caramelized, sticky bottom layer and a fluffy cake top. It's on every diner and cabane à sucre menu in Québec but almost completely unknown in anglophone Canada, let alone the rest of the continent. A masterclass in making something extraordinary from almost nothing.",
+  origin: "Montréal, Québec, Canada",
+  cuisine: "Québécois",
+  category: "Dessert",
+  latitude: 45.5017,
+  longitude: -73.5673,
+  imageUrl: "/dishimage/pouding-chomeur.jpg",
+  },
+  {
+  name: "Geoduck Sashimi",
+  description: "The geoduck (pronounced 'gooey-duck') is a grotesquely large burrowing clam native to Puget Sound, with a siphon that can extend over a meter long. Pacific Northwest Indigenous peoples have harvested it for millennia. Prepared as sashimi, the siphon is blanched for seconds, ice-shocked, and sliced paper-thin to reveal a translucent, ivory flesh with an ocean-sweet crunch unlike any other shellfish. It's prized in Japanese and Chinese cuisine (most of the Pacific Northwest harvest is exported to Asia), yet largely ignored by American diners. A single geoduck can live over 150 years.",
+  origin: "Seattle, Washington, USA",
+  cuisine: "Pacific Northwest / Indigenous Coastal",
+  category: "Seafood",
+  latitude: 47.6062,
+  longitude: -122.3321,
+  imageUrl: "/dishimage/geoduck-sashimi.jpg",
+  },
+  {
+  name: "Pepperoni Roll",
+  description: "A soft, yeasted bread roll with sticks or slices of pepperoni baked inside, invented in 1927 by Giuseppe Argiro at the Country Club Bakery in Fairmont, West Virginia. Designed as a portable, no-refrigeration-needed lunch for coal miners who couldn't carry anything perishable into the deep shafts, the pepperoni's fat renders during baking and soaks into the bread from within. The rolls are eaten at room temperature, exactly as the miners did. West Virginia passed a special exemption from USDA labeling laws just so bakeries could keep selling them. Outside Appalachian West Virginia, they're nearly impossible to find.",
+  origin: "Fairmont, West Virginia, USA",
+  cuisine: "Appalachian / Italian-American",
+  category: "Bread",
+  latitude: 39.4851,
+  longitude: -80.1428,
+  imageUrl: "/dishimage/pepperoni-roll.jpg",
+  },
+  {
+  name: "Ployes",
+  description: "Paper-thin buckwheat crepes from the Acadian communities straddling the Maine/New Brunswick border, specifically the St. John River Valley around Madawaska. Made from just buckwheat flour, wheat flour, water, and baking powder, the batter is poured onto a hot griddle and cooked on one side only until the surface is covered in tiny bubbles. Ployes are never flipped. They're used as an edible wrapper for everything: cretons (pork spread), baked beans, chicken stew, or simply rolled up with butter and maple syrup. The Madawaska Acadian Festival crowns a ploye-eating champion every year.",
+  origin: "Madawaska, Maine, USA",
+  cuisine: "Acadian",
+  category: "Bread",
+  latitude: 47.3517,
+  longitude: -68.3312,
+  imageUrl: "/dishimage/ployes.jpg",
+  imageCredit: "Photo: Marknj30",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  },
+  {
+  name: "Horseshoe Sandwich",
+  description: "Springfield, Illinois' proudest and most absurd culinary creation: thick-cut toast topped with a choice of meat (usually ham or hamburger patties), blanketed in a rich Welsh rarebit cheese sauce, then buried under a mountain of french fries. The name comes from the shape of the original ham cut (horseshoe) and the fries standing in for nails. Invented in 1928 at the Leland Hotel, it remains a fiercely local obsession. Every restaurant in Springfield has its own version, and residents will argue endlessly about who makes the best cheese sauce. Order one anywhere else in Illinois and you'll get confused looks.",
+  origin: "Springfield, Illinois, USA",
+  cuisine: "Midwestern American",
+  category: "Sandwich",
+  latitude: 39.7817,
+  longitude: -89.6501,
+  imageUrl: "/dishimage/horseshoe-sandwich.jpg",
+  },
+  {
+  name: "Litti Chokha",
+  description: "Roasted whole wheat dough balls stuffed with sattu (roasted gram flour) mixed with ajwain, mustard oil, and spices, charred directly over cow dung cakes or wood fire until smoky and crackly. Served smashed open and drenched in ghee alongside chokha, a rustic mash of fire roasted eggplant, tomato, and potato seasoned with raw mustard oil and green chilies. It's the defining food of Bihar and Jharkhand, eaten by everyone from farmers to politicians, yet almost completely unknown outside the Hindi belt. The sattu filling is a powerhouse of protein that sustained laborers and travelers for centuries before protein bars existed.",
+  origin: "Patna, Bihar, India",
+  cuisine: "Bihari",
+  category: "Street Food",
+  latitude: 25.6093,
+  longitude: 85.1376,
+  imageUrl: "/dishimage/litti-chokha.jpg",
+  imageCredit: "Photo: Amrita Nityanand Singh",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+  },
+  {
+  name: "Pathar Ka Gosht",
+  description: "Thin slices of marinated lamb or goat cooked directly on a scorching hot granite slab, sizzling tableside. The meat is marinated in a paste of raw papaya, ginger, garlic, green chilies, and a squeeze of lime, then slapped onto the heated stone where it sears in seconds. The granite retains heat so evenly that the meat cooks without any oil, developing a smoky char while staying impossibly tender inside. Invented in the royal kitchens of the Nizam of Hyderabad, it was originally a hunting camp technique where flat river stones served as improvised griddles. Today it survives in a handful of Old City restaurants near the Charminar, served with roomali roti so thin you can read a newspaper through it.",
+  origin: "Hyderabad, Telangana, India",
+  cuisine: "Hyderabadi",
+  category: "Grilled Meat",
+  latitude: 17.3616,
+  longitude: 78.4747,
+  imageUrl: "/dishimage/pathar-ka-gosht.jpg",
+  imageCredit: "Photo: Shaharbano",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+  },
+  {
+  name: "Kottu Roti",
+  description: "Sri Lanka's ultimate late night street food, made by rhythmically chopping leftover godamba roti (a flaky flatbread) on a flat iron griddle with two heavy metal blades, mixing it with shredded vegetables, egg, and a choice of chicken, mutton, or cheese in a spiced curry sauce. The rapid clanging of blades against the griddle creates a percussive symphony that echoes through every street corner after dark, essentially advertising itself. Each kottu stall has its own signature rhythm. The roti shreds absorb the curry sauce while keeping their chew, creating a texture somewhere between fried rice and pasta. Invented in Colombo's street stalls in the 1960s, it was born purely as a way to use up day old roti, and became the island's most iconic comfort food entirely by accident.",
+  origin: "Colombo, Sri Lanka",
+  cuisine: "Sri Lankan",
+  category: "Street Food",
+  latitude: 6.9271,
+  longitude: 79.8612,
+  imageUrl: "/dishimage/kottu-roti.jpg",
+  imageCredit: "Photo: Hasindu Pabasara",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+  },
+  {
+  name: "Smoked Pork with Bamboo Shoot",
+  description: "A dish that shatters every assumption about what Indian food is. Chunks of pork belly are smoked over wood fires for days until intensely flavored, then slow cooked with fermented bamboo shoot, fiery Raja Mircha (one of the world's hottest chilies), and axone (fermented soybean paste that adds a deep, funky umami). There are no curries, no cream, no familiar spice blends. Naga cuisine sits at the crossroads of Southeast Asian and Tibetan food traditions, completely distinct from anything in the rest of India. This dish is daily fare in Naga households and the centerpiece of community feasts called 'khichui,' yet remains almost entirely unknown even to most Indians. The bamboo shoot's sour tang against the pork's smokiness creates a flavor profile that exists nowhere else on the subcontinent.",
+  origin: "Kohima, Nagaland, India",
+  cuisine: "Naga",
+  category: "Stew",
+  latitude: 25.6751,
+  longitude: 94.1086,
+  imageUrl: "/dishimage/smoked-pork-with_bamboo.jpg",
+  imageCredit: "Photo: Satdeep Gill",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+  },
+  {
+  name: "Shorshe Ilish",
+  description: "The crown jewel of Bengali cuisine on both sides of the border, this dish pairs Hilsa (ilish), the most revered and expensive fish in South Asia, with a pungent sauce of freshly ground black and yellow mustard seeds, mustard oil, green chilies, and turmeric. The whole preparation is steamed or gently simmered so the Hilsa's famously delicate, oil rich flesh stays intact while absorbing the sharp, nose clearing heat of raw mustard. Hilsa is an anadromous fish that migrates from the Bay of Bengal into river systems during monsoon season, and its arrival triggers near hysteria in Dhaka and Kolkata. Prices skyrocket, smuggling across the India Bangladesh border spikes, and families plan entire meals around a single prized fish. No other ingredient on the subcontinent commands this level of cultural obsession. The bones are many and treacherous, but devotees consider navigating them part of the ritual.",
+  origin: "Dhaka, Bangladesh",
+  cuisine: "Bengali",
+  category: "Seafood",
+  latitude: 23.8103,
+  longitude: 90.4125,
+  imageUrl: "/dishimage/shorshe-ilish.jpg",
+  imageCredit: "Photo: রিজওয়ান আহমেদ",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+  },
+  {
+  name: "Goshtaba",
+  description: "The grand finale of the Wazwan, Kashmir's legendary 36 course feast served at weddings and celebrations. Goshtaba are enormous, impossibly smooth lamb meatballs pounded by hand for hours using a wooden mallet on a stone slab until the meat becomes a mousse like paste with not a single fiber remaining. The balls are poached gently in a silky yogurt sauce infused with fennel, dry ginger, and Kashmiri saffron. A proper Wazwan requires a team of vaste wazas (master chefs) working through the night, and goshtaba is always served last as the signal that the feast is complete. Guests eat from shared copper plates called traem, four people per plate. If the goshtaba arrives and you can detect any graininess in the meatball, the waza considers it a personal failure. The texture should be so fine it practically dissolves. Outside the Kashmir Valley, almost no one makes it authentically because the pounding technique takes years to master.",
+  origin: "Srinagar, Kashmir, India",
+  cuisine: "Kashmiri",
+  category: "Curry",
+  latitude: 34.0837,
+  longitude: 74.7973,
+  imageUrl: "/dishimage/goshtaba.jpg",
+  },
+  {
+  name: "Sorpotel",
+  description: "A fiery, tangy stew of pork meat, liver, and heart simmered in a dark sauce of toddy vinegar, roasted spices, and tamarind that gets better with each passing day. Sorpotel is never eaten the day it's made. It's cooked days before Christmas or a feast and left to mature at room temperature, the vinegar acting as both preservative and flavor catalyst, deepening into something richer and more complex with every reheat. The dish arrived with Portuguese colonizers in the 16th century (from the Portuguese 'sarapatel') but Goan cooks transformed it beyond recognition, adding Kashmiri chilies, cumin, cloves, and the crucial feni vinegar that gives it a punch no European version ever had. At Goan Catholic weddings, sorpotel is served alongside sannas (steamed rice cakes), beef tongue (lingua), and warm pav. The best sorpotel is always on day three.",
+  origin: "Panaji, Goa, India",
+  cuisine: "Goan",
+  category: "Stew",
+  latitude: 15.4909,
+  longitude: 73.8278,
+  imageUrl: "/dishimage/sorpotel.jpg",
+  imageCredit: "Photo: Sidhesh Kanodia",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+  },
+  {
+  name: "Ker Sangri",
+  description: "A dish that could only exist in the Thar Desert, made entirely from wild plants that survive where almost nothing else grows. Ker are tiny, tart berries from a thorny bush (Capparis decidua) and sangri are long, slender beans from the khejri tree, Rajasthan's sacred 'tree of life.' Both are sun dried and stored for months, then rehydrated and cooked with dried red chilies, dried mango powder (amchur), and mustard oil into a tangy, spicy, intensely concentrated dish. No fresh vegetables, no water to spare, no refrigeration needed. It's survival cuisine perfected over centuries by desert communities where the nearest market could be a two day camel ride away. During the great Rajasthan famines, ker sangri kept entire villages alive. The khejri tree itself is so revered that the Bishnoi community famously gave their lives protecting them from being felled in the 18th century. Outside western Rajasthan, even most Indians have never encountered it.",
+  origin: "Jaisalmer, Rajasthan, India",
+  cuisine: "Rajasthani (Marwari)",
+  category: "Vegetable Dish",
+  latitude: 26.9157,
+  longitude: 70.9083,
+  imageUrl: "/dishimage/ker-sangri.jpg",
+  },
+  {
+  name: "Khar",
+  description: "An ancient Assamese dish built around an ingredient found nowhere else in Indian cooking: khar, an alkaline filtrate made by burning the skin of a specific variety of banana (bhim kol) to ash, then filtering water through it. This pale, amber liquid becomes the base of the dish, into which raw papaya, pulses, or fish are simmered with minimal spices. The khar liquid gives the dish a distinctive slippery, almost soapy quality and a deeply earthy, mineral flavor that takes getting used to but becomes addictive. It's always served as the first course of a traditional Assamese meal (an Assamese thali begins with khar and ends with tenga, a sour dish). The banana peel ash acts as a natural antacid, and Assamese communities have used it medicinally for centuries. The technique of creating alkaline cooking agents from plant ash connects it to Mesoamerican nixtamalization and Chinese kansui noodles, yet these traditions developed entirely independently. Outside Assam, even within the rest of Northeast India, khar is virtually unknown.",
+  origin: "Guwahati, Assam, India",
+  cuisine: "Assamese",
+  category: "Appetizer",
+  latitude: 26.1445,
+  longitude: 91.7362,
+  imageUrl: "/dishimage/khar.jpg",
+  imageCredit: "Photo: Soyuz Sharma",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
   }
 ];
 
@@ -563,12 +748,8 @@ async function seedDishes() {
 
   const warnings = checkDuplicates(DISHES);
   if (warnings.length > 0) {
-    const proceed = await confirmContinue(warnings);
-    if (!proceed) {
-      console.log("Aborted. Fix duplicates and re-run.");
-      await prisma.$disconnect();
-      process.exit(0);
-    }
+    for (const w of warnings) console.warn(w);
+    console.warn("\nProceeding with seeding despite warnings above.\n");
   }
 
   for (const dish of DISHES) {

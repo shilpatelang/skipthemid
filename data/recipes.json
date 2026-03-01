@@ -592,6 +592,231 @@
   "cookTime": 0,
   "servings": 8
   },
+  "chislic": {
+  "ingredients": [
+    { "name": "Lamb leg or shoulder (cubed into 1-inch pieces)", "amount": "1000", "unit": "g" },
+    { "name": "Vegetable oil (for frying)", "amount": "1", "unit": "l" },
+    { "name": "Garlic salt", "amount": "2", "unit": "tbsp" },
+    { "name": "Black pepper", "amount": "1", "unit": "tsp" },
+    { "name": "Saltine crackers (for serving)", "amount": "1", "unit": "sleeve" },
+    { "name": "Toothpicks (for serving)", "amount": "20", "unit": "pcs" }
+  ],
+  "steps": [
+    "Cut the lamb into uniform 1-inch cubes, trimming excess fat but leaving some for flavor.",
+    "Season the cubes generously with garlic salt and black pepper, tossing to coat evenly.",
+    "Heat oil in a deep fryer or heavy pot to 190°C (375°F).",
+    "Fry the cubes in small batches for 3-4 minutes until the exterior is deeply golden and crispy but the interior remains pink and juicy.",
+    "Drain on paper towels and hit immediately with another dusting of garlic salt while still glistening.",
+    "Spear each cube with a toothpick and pile onto a plate alongside saltine crackers."
+  ],
+  "prepTime": 15,
+  "cookTime": 15,
+  "servings": 4
+  },
+  "pepperoni-roll": {
+  "ingredients": [
+    { "name": "Bread flour", "amount": "500", "unit": "g" },
+    { "name": "Warm water", "amount": "300", "unit": "ml" },
+    { "name": "Active dry yeast", "amount": "7", "unit": "g" },
+    { "name": "Sugar", "amount": "1", "unit": "tbsp" },
+    { "name": "Salt", "amount": "1", "unit": "tsp" },
+    { "name": "Olive oil", "amount": "2", "unit": "tbsp" },
+    { "name": "Pepperoni sticks (or thick-sliced pepperoni)", "amount": "300", "unit": "g" }
+  ],
+  "steps": [
+    "Dissolve yeast and sugar in warm water. Let it bloom for 5 minutes until frothy.",
+    "Mix flour and salt, then add the yeast mixture and olive oil. Knead for 8 to 10 minutes until the dough is smooth and elastic.",
+    "Cover and let rise in a warm spot for 1 hour until doubled in size.",
+    "Punch down the dough and divide into 8 equal portions. Roll each into a flat oval.",
+    "Place a pepperoni stick (or a row of overlapping slices) along the center of each oval. Fold the dough over and pinch the seam and ends shut tightly.",
+    "Place seam-side down on a parchment-lined baking sheet. Let rise for 20 minutes.",
+    "Bake at 190°C (375°F) for 18 to 20 minutes until golden brown. The rendered pepperoni fat will have soaked into the bread from the inside.",
+    "Cool on a wire rack. Serve at room temperature, exactly as the miners did."
+  ],
+  "prepTime": 90,
+  "cookTime": 20,
+  "servings": 8
+  },
+  "ployes": {
+  "ingredients": [
+    { "name": "Buckwheat flour", "amount": "250", "unit": "g" },
+    { "name": "All-purpose flour", "amount": "125", "unit": "g" },
+    { "name": "Baking powder", "amount": "2", "unit": "tsp" },
+    { "name": "Salt", "amount": "1/2", "unit": "tsp" },
+    { "name": "Cold water", "amount": "500", "unit": "ml" },
+    { "name": "Boiling water", "amount": "250", "unit": "ml" },
+    { "name": "Butter (for serving)", "amount": "50", "unit": "g" },
+    { "name": "Maple syrup (for serving)", "amount": "100", "unit": "ml" }
+  ],
+  "steps": [
+    "Whisk together buckwheat flour, all-purpose flour, baking powder, and salt in a large bowl.",
+    "Add the cold water and stir until combined, then pour in the boiling water while stirring constantly. The batter should be thin and pourable, like crepe batter.",
+    "Let the batter rest for 5 minutes. It will thicken slightly.",
+    "Heat a lightly greased griddle or cast-iron skillet over medium heat.",
+    "Pour about 1/3 cup of batter onto the griddle and spread into a thin circle. Do NOT flip. Cook on one side only until the entire surface is covered with tiny holes and the top looks dry (about 2 minutes).",
+    "Slide the ploye off the griddle and stack on a plate. Repeat with the remaining batter.",
+    "Serve warm, spread with butter and rolled up, or use as a wrap for cretons, baked beans, or stew."
+  ],
+  "prepTime": 10,
+  "cookTime": 20,
+  "servings": 10
+  },
+  "horseshoe-sandwich": {
+  "ingredients": [
+    { "name": "Thick-cut white bread (Texas toast style)", "amount": "4", "unit": "slices" },
+    { "name": "Hamburger patties (or thick-sliced ham)", "amount": "4", "unit": "pieces" },
+    { "name": "Sharp cheddar cheese (shredded)", "amount": "300", "unit": "g" },
+    { "name": "Whole milk", "amount": "250", "unit": "ml" },
+    { "name": "Dry mustard powder", "amount": "1", "unit": "tsp" },
+    { "name": "Worcestershire sauce", "amount": "1", "unit": "tbsp" },
+    { "name": "Cayenne pepper", "amount": "1/4", "unit": "tsp" },
+    { "name": "Beer (lager)", "amount": "60", "unit": "ml" },
+    { "name": "French fries (thick-cut, frozen or fresh)", "amount": "500", "unit": "g" },
+    { "name": "Butter", "amount": "2", "unit": "tbsp" }
+  ],
+  "steps": [
+    "Fry or bake the french fries until golden and crispy. Keep warm.",
+    "Cook the hamburger patties (or warm the ham slices) to your liking. Set aside.",
+    "For the Welsh rarebit sauce: melt butter in a saucepan over medium-low heat. Add milk, beer, mustard powder, Worcestershire, and cayenne. Heat until steaming but not boiling.",
+    "Gradually stir in the shredded cheddar, a handful at a time, stirring constantly until you have a smooth, thick cheese sauce. Do not let it boil or it will break.",
+    "Toast the bread and place two slices on each plate.",
+    "Top each slice with a hamburger patty, then pile the hot french fries over everything.",
+    "Pour the cheese sauce generously over the entire construction. Serve immediately with a knife and fork."
+  ],
+  "prepTime": 15,
+  "cookTime": 25,
+  "servings": 2
+  },
+  "geoduck-sashimi": {
+  "ingredients": [
+    { "name": "Live geoduck clam", "amount": "1", "unit": "whole" },
+    { "name": "Soy sauce (high quality)", "amount": "3", "unit": "tbsp" },
+    { "name": "Fresh wasabi (grated)", "amount": "1", "unit": "tbsp" },
+    { "name": "Rice vinegar", "amount": "1", "unit": "tbsp" },
+    { "name": "Shiso leaves", "amount": "4", "unit": "leaves" },
+    { "name": "Daikon radish (shredded)", "amount": "100", "unit": "g" },
+    { "name": "Lemon wedges", "amount": "2", "unit": "pieces" },
+    { "name": "Ice water", "amount": "1", "unit": "bowl" }
+  ],
+  "steps": [
+    "Bring a large pot of water to a rolling boil. Prepare a large bowl of ice water.",
+    "Separate the geoduck's siphon from the body by cutting around the base of the shell. Remove the gut ball and set aside (can be used for chowder).",
+    "Dunk the siphon into boiling water for exactly 10 seconds, then immediately plunge it into the ice water. The outer skin will loosen.",
+    "Peel away the tough outer skin of the siphon to reveal the smooth, pale flesh underneath.",
+    "Split the siphon lengthwise and rinse under cold water to remove any sand.",
+    "Slice the siphon crosswise into paper-thin pieces, angling the knife at about 45 degrees for maximum surface area.",
+    "Arrange the slices on a chilled plate over shredded daikon and shiso leaves. Serve immediately with soy sauce, fresh wasabi, and lemon wedges."
+  ],
+  "prepTime": 20,
+  "cookTime": 0,
+  "servings": 2
+  },
+  "pouding-chomeur": {
+  "ingredients": [
+    { "name": "All-purpose flour", "amount": "250", "unit": "g" },
+    { "name": "Granulated sugar", "amount": "150", "unit": "g" },
+    { "name": "Baking powder", "amount": "2", "unit": "tsp" },
+    { "name": "Whole milk", "amount": "180", "unit": "ml" },
+    { "name": "Butter (melted, for batter)", "amount": "60", "unit": "g" },
+    { "name": "Vanilla extract", "amount": "1", "unit": "tsp" },
+    { "name": "Pure maple syrup (dark/robust)", "amount": "400", "unit": "ml" },
+    { "name": "Heavy cream (35%)", "amount": "250", "unit": "ml" },
+    { "name": "Butter (for sauce)", "amount": "60", "unit": "g" },
+    { "name": "Pinch of salt", "amount": "1", "unit": "pinch" }
+  ],
+  "steps": [
+    "Whisk together flour, sugar, baking powder, and salt. Add milk, melted butter, and vanilla, stirring until just combined. Do not overmix.",
+    "Pour the batter into a buttered 9x13 inch baking dish and spread evenly.",
+    "In a saucepan, combine the maple syrup, heavy cream, and butter. Heat over medium until the butter melts and the mixture is hot and smooth. Do not boil.",
+    "Gently pour the hot maple cream sauce over the raw batter. It will look wrong. Trust the process.",
+    "Bake at 175°C (350°F) for 35 to 40 minutes until the cake layer is golden and a toothpick comes out clean. The syrup will have sunk to the bottom and turned into a thick, caramelized sauce.",
+    "Let cool for 10 minutes (the sauce is volcanic), then scoop into bowls, making sure to spoon up the maple sauce from the bottom with each serving."
+  ],
+  "prepTime": 15,
+  "cookTime": 40,
+  "servings": 8
+  },
+  "cochinita-pibil": {
+  "ingredients": [
+    { "name": "Bone-in pork shoulder", "amount": "2000", "unit": "g" },
+    { "name": "Achiote paste (recado rojo)", "amount": "200", "unit": "g" },
+    { "name": "Bitter orange juice (naranja agria)", "amount": "250", "unit": "ml" },
+    { "name": "Banana leaves (thawed if frozen)", "amount": "4", "unit": "large sheets" },
+    { "name": "Garlic cloves", "amount": "6", "unit": "cloves" },
+    { "name": "Black peppercorns", "amount": "1", "unit": "tsp" },
+    { "name": "Dried oregano (Mexican)", "amount": "1", "unit": "tbsp" },
+    { "name": "Salt", "amount": "1", "unit": "tbsp" },
+    { "name": "Red onion (for pickled topping)", "amount": "2", "unit": "large" },
+    { "name": "Habanero pepper", "amount": "1", "unit": "piece" },
+    { "name": "Corn tortillas (for serving)", "amount": "12", "unit": "pieces" }
+  ],
+  "steps": [
+    "Dissolve the achiote paste in bitter orange juice, then blend with garlic, peppercorns, oregano, and salt into a smooth marinade.",
+    "Score the pork deeply and rub the marinade into every cut and surface. Refrigerate overnight or at least 4 hours.",
+    "Pass the banana leaves briefly over an open flame or hot pan to make them pliable.",
+    "Line a deep roasting pan with overlapping banana leaves, leaving enough overhang to wrap the top. Place the marinated pork inside and pour over any remaining marinade.",
+    "Fold the banana leaves tightly over the pork, then seal the pan with a double layer of aluminum foil.",
+    "Roast at 150°C (300°F) for 4 to 5 hours until the pork shreds effortlessly with a fork.",
+    "While the pork roasts, thinly slice the red onions and quick-pickle them in bitter orange juice with a whole habanero and a pinch of salt for at least 1 hour.",
+    "Shred the pork in its juices and serve on warm corn tortillas, topped with the pickled onions and a spoonful of the pan juices."
+  ],
+  "prepTime": 30,
+  "cookTime": 300,
+  "servings": 8
+  },
+  "booyah": {
+  "ingredients": [
+    { "name": "Whole chicken (cut into pieces)", "amount": "1500", "unit": "g" },
+    { "name": "Beef chuck (cubed)", "amount": "500", "unit": "g" },
+    { "name": "Oxtails", "amount": "500", "unit": "g" },
+    { "name": "Green cabbage (chopped)", "amount": "1", "unit": "head" },
+    { "name": "Potatoes (peeled and diced)", "amount": "6", "unit": "medium" },
+    { "name": "Carrots (sliced)", "amount": "4", "unit": "large" },
+    { "name": "Celery stalks (chopped)", "amount": "4", "unit": "stalks" },
+    { "name": "Onions (diced)", "amount": "3", "unit": "large" },
+    { "name": "Canned tomatoes (crushed)", "amount": "800", "unit": "g" },
+    { "name": "Fresh corn kernels", "amount": "2", "unit": "cups" },
+    { "name": "Bay leaves", "amount": "3", "unit": "leaves" },
+    { "name": "Salt and black pepper", "amount": "2", "unit": "tbsp" }
+  ],
+  "steps": [
+    "Place the chicken, beef chuck, and oxtails in a very large stockpot. Cover with cold water and bring to a boil, skimming the foam as it rises.",
+    "Reduce heat and simmer for 2 to 3 hours until all meats are falling apart tender.",
+    "Remove the meats, shred or chop them, and return to the pot. Discard bones and excess fat.",
+    "Add onions, celery, carrots, and crushed tomatoes. Simmer for another hour, stirring occasionally.",
+    "Add potatoes, cabbage, corn, and bay leaves. Continue simmering for 45 minutes until the vegetables are soft and the stew is thick enough that a wooden spoon stands up in it.",
+    "Season generously with salt and pepper. Remove bay leaves.",
+    "Serve in deep bowls with crusty bread. Tastes even better reheated the next day."
+  ],
+  "prepTime": 30,
+  "cookTime": 300,
+  "servings": 12
+  },
+  "sonker": {
+  "ingredients": [
+    { "name": "Fresh peaches (peeled and sliced)", "amount": "1000", "unit": "g" },
+    { "name": "Granulated sugar", "amount": "200", "unit": "g" },
+    { "name": "All-purpose flour", "amount": "250", "unit": "g" },
+    { "name": "Whole milk", "amount": "250", "unit": "ml" },
+    { "name": "Baking powder", "amount": "2", "unit": "tsp" },
+    { "name": "Butter (melted)", "amount": "100", "unit": "g" },
+    { "name": "Vanilla extract", "amount": "1", "unit": "tsp" },
+    { "name": "Cinnamon", "amount": "1", "unit": "tsp" },
+    { "name": "Nutmeg", "amount": "1/4", "unit": "tsp" }
+  ],
+  "steps": [
+    "Toss the sliced peaches with half the sugar, cinnamon, and nutmeg. Let them macerate for 20 minutes until juicy.",
+    "Whisk together flour, remaining sugar, baking powder, milk, melted butter, and vanilla into a thin, pourable batter.",
+    "Pour the fruit and all its juices into a large, deep baking dish (at least 9x13 inches).",
+    "Pour the batter evenly over the top of the fruit. Do not stir.",
+    "Bake at 175°C (350°F) for 45 to 50 minutes until the crust is golden brown and the fruit is bubbling through.",
+    "While the sonker bakes, make the 'dip': heat milk, sugar, butter, and vanilla in a small saucepan until warm and smooth.",
+    "Serve generous scoops of the hot sonker in bowls, ladled with the warm milk dip."
+  ],
+  "prepTime": 30,
+  "cookTime": 50,
+  "servings": 8
+  },
   "piki-bread": {
   "ingredients": [
     { "name": "Finely ground blue cornmeal", "amount": "1000", "unit": "g" },
@@ -614,5 +839,261 @@
   "prepTime": 60,
   "cookTime": 120,
   "servings": 10
+  },
+  "litti-chokha": {
+    "ingredients": [
+      {"name": "whole wheat flour", "amount": "2", "unit": "cups"},
+      {"name": "sattu (roasted gram flour)", "amount": "1", "unit": "cup"},
+      {"name": "mustard oil", "amount": "4", "unit": "tbsp"},
+      {"name": "ajwain (carom seeds)", "amount": "1", "unit": "tsp"},
+      {"name": "kalonji (nigella seeds)", "amount": "1/2", "unit": "tsp"},
+      {"name": "green chilies (finely chopped)", "amount": "3", "unit": "pieces"},
+      {"name": "lemon juice", "amount": "2", "unit": "tbsp"},
+      {"name": "ghee (for drenching)", "amount": "4", "unit": "tbsp"},
+      {"name": "large eggplant", "amount": "1", "unit": "whole"},
+      {"name": "tomatoes", "amount": "3", "unit": "medium"},
+      {"name": "potatoes (boiled)", "amount": "2", "unit": "medium"},
+      {"name": "garlic cloves", "amount": "4", "unit": "pieces"},
+      {"name": "fresh coriander (chopped)", "amount": "2", "unit": "tbsp"},
+      {"name": "salt", "amount": "to taste", "unit": ""}
+    ],
+    "steps": [
+      "Prepare the sattu filling by mixing sattu with chopped green chilies, ajwain, kalonji, 2 tablespoons mustard oil, lemon juice, and salt. Add just enough water to make a moist but not wet mixture.",
+      "Make a firm dough from whole wheat flour, a pinch of salt, and water. Let it rest covered for 20 minutes.",
+      "Divide the dough into golf ball sized portions. Flatten each ball, place a generous spoonful of sattu filling in the center, and seal the edges, rolling gently back into a smooth ball.",
+      "Roast the stuffed balls directly over a charcoal or wood fire (or on a gas flame using a wire rack), turning frequently until the exterior is evenly charred and crispy all around, about 15 minutes.",
+      "For the chokha, roast the whole eggplant and tomatoes directly over flame until the skin is completely blackened and the flesh is soft and smoky.",
+      "Peel the charred eggplant and tomatoes, then mash them together with the boiled potatoes, minced garlic, remaining mustard oil, salt, and chopped coriander into a coarse, rustic mash.",
+      "Crack each litti open with your thumb, drench generously with melted ghee, and serve hot alongside the chokha."
+    ],
+    "prepTime": 40,
+    "cookTime": 30,
+    "servings": 4
+  },
+  "pathar-ka-gosht": {
+    "ingredients": [
+      {"name": "boneless lamb leg (thinly sliced)", "amount": "500", "unit": "g"},
+      {"name": "raw papaya paste", "amount": "2", "unit": "tbsp"},
+      {"name": "ginger paste", "amount": "1", "unit": "tbsp"},
+      {"name": "garlic paste", "amount": "1", "unit": "tbsp"},
+      {"name": "green chilies (slit)", "amount": "4", "unit": "pieces"},
+      {"name": "lime juice", "amount": "2", "unit": "tbsp"},
+      {"name": "red chili powder", "amount": "1", "unit": "tsp"},
+      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
+      {"name": "coriander powder", "amount": "1", "unit": "tsp"},
+      {"name": "salt", "amount": "to taste", "unit": ""},
+      {"name": "black pepper (coarsely ground)", "amount": "1", "unit": "tsp"},
+      {"name": "fresh mint leaves", "amount": "a handful", "unit": ""},
+      {"name": "fresh coriander leaves", "amount": "2", "unit": "tbsp"}
+    ],
+    "steps": [
+      "Slice the lamb into thin, flat pieces about 5mm thick, trimming off any excess fat or sinew.",
+      "Make the marinade by combining raw papaya paste, ginger paste, garlic paste, lime juice, red chili powder, turmeric, coriander powder, black pepper, and salt in a large bowl.",
+      "Coat the lamb slices thoroughly in the marinade, tuck in the slit green chilies, cover, and refrigerate for at least 2 hours (overnight is ideal for maximum tenderness).",
+      "Heat a thick granite slab, cast iron griddle, or heavy stone plate over high flame for at least 20 minutes until it is searingly hot. Do not oil the surface.",
+      "Place the marinated lamb slices directly onto the hot stone in a single layer. They should sizzle immediately on contact.",
+      "Cook for 60 to 90 seconds per side, pressing gently with a spatula, until charred on the outside and just cooked through.",
+      "Transfer to a warm plate, scatter with fresh mint and coriander leaves, and serve immediately with roomali roti or naan."
+    ],
+    "prepTime": 30,
+    "cookTime": 15,
+    "servings": 4
+  },
+  "kottu-roti": {
+    "ingredients": [
+      {"name": "godamba roti or paratha (day old)", "amount": "4", "unit": "pieces"},
+      {"name": "boneless chicken (shredded)", "amount": "200", "unit": "g"},
+      {"name": "eggs", "amount": "2", "unit": "large"},
+      {"name": "leeks (finely sliced)", "amount": "1", "unit": "cup"},
+      {"name": "cabbage (shredded)", "amount": "1", "unit": "cup"},
+      {"name": "carrots (julienned)", "amount": "1/2", "unit": "cup"},
+      {"name": "onion (sliced)", "amount": "1", "unit": "medium"},
+      {"name": "garlic (minced)", "amount": "4", "unit": "cloves"},
+      {"name": "curry leaves", "amount": "1", "unit": "sprig"},
+      {"name": "Sri Lankan curry powder", "amount": "1", "unit": "tbsp"},
+      {"name": "chili flakes", "amount": "1", "unit": "tsp"},
+      {"name": "soy sauce", "amount": "1", "unit": "tbsp"},
+      {"name": "salt", "amount": "to taste", "unit": ""},
+      {"name": "vegetable oil", "amount": "3", "unit": "tbsp"},
+      {"name": "curry sauce or gravy", "amount": "1/2", "unit": "cup"}
+    ],
+    "steps": [
+      "Tear or roughly chop the day old roti into small, irregular strips about the size of your thumb.",
+      "Heat oil on a large flat griddle or heavy skillet over high heat. Add curry leaves, garlic, and sliced onions, stir frying until the onions soften.",
+      "Add the shredded chicken and cook through, then toss in the leeks, cabbage, and carrots, stir frying for 2 minutes until slightly wilted but still crunchy.",
+      "Push the vegetables to one side, crack the eggs onto the griddle, and scramble them roughly before mixing everything together.",
+      "Add the roti strips to the griddle. Using two heavy metal spatulas or cleavers, chop and toss the roti into the vegetable and egg mixture with a rapid rhythmic motion.",
+      "Season with curry powder, chili flakes, soy sauce, and salt. Pour in the curry sauce and continue chopping and tossing until the roti has absorbed the sauce and everything is well combined.",
+      "Serve immediately on a plate or in a banana leaf, with a side of curry sauce for extra dipping."
+    ],
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 2
+  },
+  "smoked-pork-with-bamboo-shoot": {
+    "ingredients": [
+      {"name": "smoked pork belly (cut into chunks)", "amount": "500", "unit": "g"},
+      {"name": "fermented bamboo shoot", "amount": "1", "unit": "cup"},
+      {"name": "axone (fermented soybean paste)", "amount": "2", "unit": "tbsp"},
+      {"name": "Raja Mircha or Bhut Jolokia (whole)", "amount": "2", "unit": "pieces"},
+      {"name": "ginger (crushed)", "amount": "1", "unit": "inch piece"},
+      {"name": "garlic (crushed)", "amount": "5", "unit": "cloves"},
+      {"name": "onion (roughly chopped)", "amount": "1", "unit": "large"},
+      {"name": "mustard oil", "amount": "2", "unit": "tbsp"},
+      {"name": "water", "amount": "2", "unit": "cups"},
+      {"name": "salt", "amount": "to taste", "unit": ""}
+    ],
+    "steps": [
+      "Rinse the smoked pork chunks under water to remove surface soot, then boil them in a pot of water for 15 minutes to soften slightly. Drain and set aside.",
+      "If using whole fermented bamboo shoot, slice it into thin strips. Rinse once if the sourness is too intense, but keep some tang.",
+      "Heat mustard oil in a heavy pot until it just begins to smoke. Add the crushed ginger, garlic, and chopped onion, stirring until the onion turns translucent.",
+      "Add the boiled smoked pork chunks and sear for 5 minutes, letting them pick up some color on the edges.",
+      "Stir in the axone paste, breaking it up so it coats the pork evenly. Cook for 2 minutes until fragrant.",
+      "Add the bamboo shoot strips and whole Raja Mircha. Pour in the water, bring to a boil, then reduce to a low simmer.",
+      "Cover and cook for 40 to 50 minutes until the pork is completely tender and the broth has reduced to a thick, concentrated sauce. Adjust salt and serve with steamed rice."
+    ],
+    "prepTime": 20,
+    "cookTime": 60,
+    "servings": 4
+  },
+  "shorshe-ilish": {
+    "ingredients": [
+      {"name": "Hilsa (ilish) fish steaks", "amount": "4", "unit": "pieces"},
+      {"name": "yellow mustard seeds", "amount": "3", "unit": "tbsp"},
+      {"name": "black mustard seeds", "amount": "1", "unit": "tbsp"},
+      {"name": "mustard oil", "amount": "4", "unit": "tbsp"},
+      {"name": "green chilies (slit)", "amount": "4", "unit": "pieces"},
+      {"name": "turmeric powder", "amount": "1", "unit": "tsp"},
+      {"name": "salt", "amount": "to taste", "unit": ""},
+      {"name": "nigella seeds (kalonji)", "amount": "1/2", "unit": "tsp"},
+      {"name": "water", "amount": "1/2", "unit": "cup"}
+    ],
+    "steps": [
+      "Soak the yellow and black mustard seeds in water for at least 30 minutes, then grind them into a smooth, pungent paste using a mortar and pestle or blender with minimal water.",
+      "Rub the Hilsa steaks gently with turmeric and a pinch of salt. Set aside for 10 minutes.",
+      "Heat mustard oil in a wide, heavy pan until it reaches smoking point, then let it cool slightly. This tames the raw bitterness of the oil.",
+      "Lightly fry the Hilsa steaks for about a minute on each side just to seal them. Remove carefully and set aside.",
+      "In the same oil, add nigella seeds and let them splutter. Stir in the ground mustard paste, remaining turmeric, and salt. Cook for 2 minutes, adding water to loosen it into a sauce consistency.",
+      "Gently place the Hilsa steaks back into the mustard sauce. Tuck in the slit green chilies, drizzle a tablespoon of raw mustard oil over the top, and cover.",
+      "Simmer on low heat for 8 to 10 minutes until the fish is cooked through and the sauce has thickened around it. Serve immediately with steamed white rice."
+    ],
+    "prepTime": 45,
+    "cookTime": 15,
+    "servings": 4
+  },
+  "goshtaba": {
+    "ingredients": [
+      {"name": "boneless lamb (preferably leg, all fat removed)", "amount": "500", "unit": "g"},
+      {"name": "lamb fat or tail fat", "amount": "100", "unit": "g"},
+      {"name": "full-fat yogurt (hung/strained)", "amount": "2", "unit": "cups"},
+      {"name": "fennel powder (saunf)", "amount": "2", "unit": "tsp"},
+      {"name": "dry ginger powder (sonth)", "amount": "1", "unit": "tsp"},
+      {"name": "Kashmiri saffron strands", "amount": "a generous pinch", "unit": ""},
+      {"name": "green cardamom pods", "amount": "4", "unit": "pieces"},
+      {"name": "cloves", "amount": "3", "unit": "pieces"},
+      {"name": "cinnamon stick", "amount": "1", "unit": "small piece"},
+      {"name": "bay leaves", "amount": "2", "unit": "pieces"},
+      {"name": "mustard oil or ghee", "amount": "3", "unit": "tbsp"},
+      {"name": "salt", "amount": "to taste", "unit": ""},
+      {"name": "warm milk (for saffron)", "amount": "2", "unit": "tbsp"}
+    ],
+    "steps": [
+      "Cut the lamb and lamb fat into small pieces. Using a heavy wooden mallet or meat pounder on a flat stone slab, pound the meat and fat together relentlessly until it becomes a completely smooth, paste like consistency with absolutely no visible fibers. This traditionally takes 1 to 2 hours.",
+      "Season the meat paste with half the fennel powder, a pinch of dry ginger, and salt. Mix thoroughly, then shape into large, smooth meatballs roughly the size of a tennis ball. Handle them gently as they are delicate.",
+      "Bring a large pot of salted water to a gentle boil. Carefully lower the meatballs in and poach them for 20 to 25 minutes until they float and are cooked through. Remove with a slotted spoon and set aside.",
+      "Soak the saffron strands in warm milk and set aside. Whisk the hung yogurt until completely smooth with no lumps.",
+      "Heat mustard oil or ghee in a heavy bottomed pot. Add bay leaves, cardamom, cloves, and cinnamon, letting them crackle for 30 seconds.",
+      "Lower the heat and slowly add the whisked yogurt, stirring constantly in one direction to prevent splitting. Add the remaining fennel powder, dry ginger, and salt. Let the sauce simmer gently for 15 minutes until it thickens slightly.",
+      "Slide the poached meatballs into the yogurt sauce, pour over the saffron milk, and simmer on the lowest heat for another 10 minutes so the meatballs absorb the flavors. Serve warm with steamed Kashmiri rice."
+    ],
+    "prepTime": 120,
+    "cookTime": 50,
+    "servings": 4
+  },
+  "sorpotel": {
+    "ingredients": [
+      {"name": "pork shoulder (cubed)", "amount": "300", "unit": "g"},
+      {"name": "pork liver", "amount": "150", "unit": "g"},
+      {"name": "pork heart", "amount": "100", "unit": "g"},
+      {"name": "toddy vinegar or palm vinegar", "amount": "1/2", "unit": "cup"},
+      {"name": "Kashmiri dried red chilies", "amount": "8", "unit": "pieces"},
+      {"name": "cumin seeds", "amount": "1", "unit": "tsp"},
+      {"name": "black peppercorns", "amount": "1", "unit": "tsp"},
+      {"name": "cloves", "amount": "6", "unit": "pieces"},
+      {"name": "cinnamon stick", "amount": "1", "unit": "small piece"},
+      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
+      {"name": "garlic cloves", "amount": "8", "unit": "pieces"},
+      {"name": "ginger (chopped)", "amount": "1", "unit": "inch piece"},
+      {"name": "onions (finely chopped)", "amount": "2", "unit": "medium"},
+      {"name": "tamarind pulp", "amount": "1", "unit": "tbsp"},
+      {"name": "jaggery", "amount": "1", "unit": "tsp"},
+      {"name": "vegetable oil", "amount": "3", "unit": "tbsp"},
+      {"name": "salt", "amount": "to taste", "unit": ""}
+    ],
+    "steps": [
+      "Boil the pork shoulder, liver, and heart together in salted water until just cooked through, about 20 minutes. Reserve the cooking liquid. Cut all the meat into small, uniform cubes.",
+      "Soak the Kashmiri chilies in warm vinegar for 15 minutes, then grind them into a smooth paste along with the cumin, peppercorns, cloves, cinnamon, garlic, and ginger.",
+      "Heat oil in a heavy pot and fry the chopped onions until deep golden brown.",
+      "Add the ground spice paste and turmeric, frying on medium heat for 5 minutes until the oil separates and the raw smell disappears.",
+      "Add the cubed pork, liver, and heart. Stir well to coat everything in the spice paste. Pour in about half a cup of the reserved cooking liquid.",
+      "Stir in the remaining vinegar, tamarind pulp, jaggery, and salt. Bring to a simmer, then cook uncovered on low heat for 30 minutes until the sauce is dark, thick, and clinging to the meat.",
+      "Remove from heat, let it cool completely, and refrigerate. Reheat and serve the next day (or better yet, on day three) with warm pav or sannas."
+    ],
+    "prepTime": 30,
+    "cookTime": 60,
+    "servings": 6
+  },
+  "ker-sangri": {
+    "ingredients": [
+      {"name": "dried ker (caper berries)", "amount": "1/2", "unit": "cup"},
+      {"name": "dried sangri (desert beans)", "amount": "1", "unit": "cup"},
+      {"name": "mustard oil", "amount": "3", "unit": "tbsp"},
+      {"name": "dried red chilies", "amount": "4", "unit": "pieces"},
+      {"name": "cumin seeds", "amount": "1", "unit": "tsp"},
+      {"name": "mustard seeds", "amount": "1/2", "unit": "tsp"},
+      {"name": "asafoetida (hing)", "amount": "a pinch", "unit": ""},
+      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
+      {"name": "red chili powder", "amount": "1", "unit": "tsp"},
+      {"name": "coriander powder", "amount": "1", "unit": "tsp"},
+      {"name": "amchur (dried mango powder)", "amount": "1", "unit": "tsp"},
+      {"name": "salt", "amount": "to taste", "unit": ""}
+    ],
+    "steps": [
+      "Soak the dried sangri beans in water overnight or for at least 8 hours. Soak the dried ker berries separately for 2 hours. Drain both and squeeze out excess water.",
+      "Heat mustard oil in a heavy pan until it reaches smoking point, then let it cool for 30 seconds to remove the raw bitterness.",
+      "Add cumin seeds, mustard seeds, and dried red chilies to the oil. Let them splutter and crackle for a few seconds.",
+      "Add asafoetida and turmeric, stir once, then immediately add the drained sangri beans. Cook on medium heat for 10 minutes, stirring occasionally.",
+      "Add the drained ker berries, red chili powder, and coriander powder. Stir well and cook for another 8 to 10 minutes until both the ker and sangri are tender but still hold their shape.",
+      "Sprinkle the amchur powder and salt, toss everything together, and cook for a final 2 minutes. The dish should be dry with no liquid remaining.",
+      "Serve hot with bajra roti (millet flatbread) or plain chapati."
+    ],
+    "prepTime": 480,
+    "cookTime": 25,
+    "servings": 4
+  },
+  "khar": {
+    "ingredients": [
+      {"name": "raw papaya (peeled, cubed)", "amount": "1", "unit": "medium"},
+      {"name": "khar liquid (banana peel ash filtrate)", "amount": "1/2", "unit": "cup"},
+      {"name": "mustard oil", "amount": "2", "unit": "tbsp"},
+      {"name": "rice (washed, soaked)", "amount": "2", "unit": "tbsp"},
+      {"name": "turmeric powder", "amount": "1/4", "unit": "tsp"},
+      {"name": "green chilies (slit)", "amount": "2", "unit": "pieces"},
+      {"name": "garlic (lightly crushed)", "amount": "3", "unit": "cloves"},
+      {"name": "salt", "amount": "to taste", "unit": ""},
+      {"name": "water", "amount": "1", "unit": "cup"}
+    ],
+    "steps": [
+      "To prepare khar liquid at home, dry the peels of ripe bhim kol bananas in the sun until completely brittle, then burn them to a fine white ash. Place the ash in a muslin cloth, pour water through it slowly, and collect the amber filtrate. Alternatively, use store-bought khar powder dissolved in water.",
+      "Heat mustard oil in a pot until it just smokes, then let it cool slightly.",
+      "Add the crushed garlic and slit green chilies, sauteing for 30 seconds until fragrant.",
+      "Add the cubed raw papaya and turmeric. Stir for a minute to coat.",
+      "Pour in the khar liquid and water. Add the soaked rice grains, which will help thicken the dish as they cook.",
+      "Bring to a gentle boil, then reduce heat and simmer uncovered for 15 to 20 minutes until the papaya is completely soft and the liquid has reduced to a thin, slightly viscous consistency.",
+      "Finish with a drizzle of raw mustard oil, adjust salt, and serve warm as the first course of an Assamese thali with steamed rice."
+    ],
+    "prepTime": 30,
+    "cookTime": 25,
+    "servings": 4
   }
 }
