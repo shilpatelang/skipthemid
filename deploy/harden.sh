@@ -48,7 +48,7 @@ echo "[1/8] Updating system packages..."
 apt-get update -qq
 DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -qq
 DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
-  ufw fail2ban unattended-upgrades curl git htop iptables-persistent
+  ufw fail2ban unattended-upgrades curl git htop
 
 # ── 2. Create non-root user ────────────────────────────────────────────────
 
@@ -132,7 +132,7 @@ while iptables -L INPUT -n --line-numbers 2>/dev/null | grep -q 'REJECT.*icmp-ho
   REMOVED=$((REMOVED + 1))
 done
 if [[ $REMOVED -gt 0 ]]; then
-  netfilter-persistent save
+  iptables-save > /etc/iptables/rules.v4 2>/dev/null || true
   echo "  Removed $REMOVED OCI default iptables REJECT rule(s)."
 else
   echo "  No OCI iptables REJECT rule found, skipping."
@@ -231,11 +231,7 @@ echo "  Kernel: SYN flood protection, IP spoof protection, ICMP hardening"
 # ── Restart SSH ─────────────────────────────────────────────────────────────
 
 # Ubuntu uses "ssh", other distros use "sshd"
-if systemctl list-units --type=service --all | grep -q 'ssh.service'; then
-  systemctl restart ssh
-else
-  systemctl restart sshd
-fi
+systemctl restart ssh 2>/dev/null || systemctl restart sshd
 
 # ── Summary ─────────────────────────────────────────────────────────────────
 
