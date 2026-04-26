@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import Providers from "@/components/Providers";
-import AuthButton from "@/components/ui/AuthButton";
+import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,6 +25,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://skipthemid.com"),
   title: "SkipTheMid",
   description: "A food encyclopedia for the curious eater.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "SkipTheMid",
     description: "A food encyclopedia for the curious eater.",
@@ -50,8 +55,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
       >
         <Providers>
-          <AuthButton />
+          <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

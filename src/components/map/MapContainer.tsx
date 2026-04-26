@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { Map, Source, Layer, Popup } from "react-map-gl/mapbox";
 import type { MapRef, MapMouseEvent } from "react-map-gl/mapbox";
 import type { ExpressionSpecification } from "mapbox-gl";
@@ -10,6 +9,8 @@ import type { DishFeatureCollection } from "@/lib/geojson";
 
 interface MapContainerProps {
   geojson: DishFeatureCollection | null;
+  height?: string;
+  interactive?: boolean;
 }
 
 const WORLD_VIEW = { longitude: 20, latitude: 20, zoom: 2 };
@@ -131,8 +132,7 @@ type PopupInfo = {
 
 // --- Component ---
 
-export default function MapContainer({ geojson }: MapContainerProps) {
-  const router = useRouter();
+export default function MapContainer({ geojson, height = "100vh", interactive = true }: MapContainerProps) {
   const mapRef = useRef<MapRef>(null);
   const hoveredId = useRef<string | null>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -226,42 +226,44 @@ export default function MapContainer({ geojson }: MapContainerProps) {
     setPopupInfo(null);
   }, []);
 
-  const onClick = useCallback(
-    (e: MapMouseEvent) => {
-      const map = mapRef.current?.getMap();
-      if (!map || !e.features?.length) return;
+  const onClick = useCallback((e: MapMouseEvent) => {
+    const map = mapRef.current?.getMap();
+    if (!map || !e.features?.length) return;
 
-      const feature = e.features[0];
+    const feature = e.features[0];
 
-      if (feature.properties?.cluster) {
-        const source = map.getSource("dishes") as mapboxgl.GeoJSONSource;
-        source.getClusterExpansionZoom(
-          feature.properties.cluster_id,
-          (err, zoom) => {
-            if (err || zoom == null) return;
-            map.easeTo({
-              center: (feature.geometry as GeoJSON.Point).coordinates as [
-                number,
-                number,
-              ],
-              zoom,
-            });
-          }
-        );
-      } else if (feature.properties?.slug) {
-        router.push(`/dish/${feature.properties.slug}`);
-      }
-    },
-    [router]
-  );
+    if (feature.properties?.cluster) {
+      const source = map.getSource("dishes") as mapboxgl.GeoJSONSource;
+      source.getClusterExpansionZoom(
+        feature.properties.cluster_id,
+        (err, zoom) => {
+          if (err || zoom == null) return;
+          map.easeTo({
+            center: (feature.geometry as GeoJSON.Point).coordinates as [
+              number,
+              number,
+            ],
+            zoom,
+          });
+        }
+      );
+    } else if (feature.properties?.slug) {
+      window.open(
+        `/dish/${feature.properties.slug}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }
+  }, []);
 
   return (
     <Map
       ref={mapRef}
       mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
       initialViewState={WORLD_VIEW}
-      style={{ width: "100%", height: "100vh" }}
+      style={{ width: "100%", height }}
       mapStyle="mapbox://styles/mapbox/dark-v11"
+      interactive={interactive}
       interactiveLayerIds={["clusters", "dish-glow", "dish-core"]}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
