@@ -42,9 +42,9 @@ export default function Footer() {
             <Link href="/about" className="hover:text-white">
               About us
             </Link>
-            <Link href="/sitemap" className="hover:text-white">
+            <a href="/sitemap.xml" className="hover:text-white">
               Site map
-            </Link>
+            </a>
             <Link href="/privacy" className="hover:text-white">
               Privacy
             </Link>
