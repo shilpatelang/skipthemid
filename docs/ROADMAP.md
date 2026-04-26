@@ -34,27 +34,7 @@ _Decisions pending — pull these into the next conversation._
 
 ---
 
-## Phase 1 — Browse & discovery (NOW)
-
-**Problem:** Landing page dumps all dishes inline. As list grows past ~30, UX collapses.
-
-**Scope:**
-- New `/dishes` page: card grid with search + filters + sort + pagination
-- Filters: country/region, cuisine type, course (street food/dessert/main/snack), veg/non-veg, rating
-- Sort: A–Z, most rated, recently added, by region
-- Search: fuzzy match on dish name + origin
-- Landing page (`/`) becomes curated: "Featured", "New this week", "Surprise me" CTA
-- Promote `/map` as primary discovery path (not buried)
-
-**Schema implications (TBD):**
-- May need `region`, `course`, `dietType` fields on `Dish`
-- Migration + seed update required
-
-**Status:** Not started. Awaiting Plan from Claude before implementation.
-
----
-
-## Phase 2 — Curated content & SEO
+## Phase 2 — Curated content & SEO (NEXT)
 
 - Country/region landing pages: `/cuisine/india`, `/region/karnataka`
 - Curated lists: "Top 25 unsung Indian regional dishes", "Festival foods of South India"
@@ -107,4 +87,4 @@ _Append-only. Records WHY we chose something, so we don't relitigate later._
 
 _Move items here as they ship. Keep the win — date + one-line summary._
 
-- _(none yet)_
+- **2026-04-26 — Phase 1: Browse & discovery.** Landing redo (sticky teal header, brand-icon nav, non-interactive map hero, capped featured rail, branded footer). New `/dishes` page with continent/course/diet filters, debounced search across name+origin+cuisine+category+description, sort (A–Z/Z–A/Newly added/Most rated), and pagination (24/page). Schema gained `continent` / `country` / `region` / `course` / `dietType` with seed-time TAXONOMY map and hard-fail guard. Dish detail page readability bumped + ArrowLeft back link. Map pins + dish cards open in new tab. Branch: `phase-1/browse-discovery`.
