@@ -1,16 +1,18 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { prisma } from "@/lib/prisma";
-import Hero from "@/components/landing/Hero";
+import MapHero from "@/components/landing/MapHero";
 import FeaturedDishes from "@/components/landing/FeaturedDishes";
 
 export const dynamic = "force-dynamic";
 
-const HERO_BG =
-  "https://images.unsplash.com/photo-1579196479727-de5490858892?auto=format&fit=crop&w=1920&q=80";
+const FEATURED_LIMIT = 6;
 
 export default async function Home() {
   const dishes = await prisma.dish.findMany({
     include: { ratings: { select: { value: true } } },
     orderBy: { createdAt: "desc" },
+    take: FEATURED_LIMIT,
   });
 
   const featured = dishes.map((d) => {
@@ -35,8 +37,17 @@ export default async function Home() {
 
   return (
     <main className="bg-charcoal">
-      <Hero backgroundImage={HERO_BG} />
+      <MapHero />
       <FeaturedDishes dishes={featured} />
+      <div className="flex justify-center pb-20">
+        <Link
+          href="/dishes"
+          className="group inline-flex items-center gap-2.5 rounded-lg bg-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-charcoal shadow-lg shadow-gold/20 transition-all hover:gap-3.5 hover:shadow-gold/40"
+        >
+          Browse all dishes
+          <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
+        </Link>
+      </div>
     </main>
   );
 }

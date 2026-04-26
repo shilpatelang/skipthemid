@@ -34,6 +34,8 @@ export default function DishCard({
   return (
     <Link
       href={`/dish/${slug}`}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`group relative block overflow-hidden rounded-2xl ${className}`}
     >
       {/* Background image */}

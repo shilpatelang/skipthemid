@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowLeft } from "lucide-react";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import StarRating from "@/components/dish/StarRating";
@@ -84,9 +85,13 @@ export default async function DishPage({
       <div className="mx-auto max-w-3xl">
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-lg text-white/60 transition-colors hover:text-white/90"
+          className="group inline-flex items-center gap-2 text-base font-medium text-white/70 transition-colors hover:text-gold"
         >
-          <span>←</span> Back to dishes
+          <ArrowLeft
+            className="h-4 w-4 transition-transform group-hover:-translate-x-1"
+            strokeWidth={2.5}
+          />
+          Back to dishes
         </Link>
 
         <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
@@ -106,17 +111,17 @@ export default async function DishPage({
           )}
 
           <div className="p-6 sm:p-8">
-          <div className="flex flex-wrap items-center gap-2 text-sm font-medium uppercase tracking-wide text-white/40">
-            <span>{dish.cuisine}</span>
-            <span className="text-white/20">·</span>
-            <span>{dish.category}</span>
+          <div className="flex flex-wrap items-center gap-2 text-sm font-semibold uppercase tracking-wide">
+            <span className="text-gold">{dish.cuisine}</span>
+            <span className="text-white/30">·</span>
+            <span className="text-white/80">{dish.category}</span>
           </div>
 
           <h1 className="mt-3 font-serif text-4xl font-bold tracking-tight text-white sm:text-5xl">
             {dish.name}
           </h1>
 
-          <p className="mt-3 text-base text-white/50">{dish.origin}</p>
+          <p className="mt-3 text-base text-white/80">{dish.origin}</p>
 
           <div className="mt-4 flex items-center gap-4">
             <StarRating
@@ -145,7 +150,7 @@ export default async function DishPage({
           </section>
 
           <section className="mt-12 border-t border-white/10 pt-8">
-            <h2 className="text-sm font-medium uppercase tracking-wide text-white/40">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-gold">
               Rate this dish
             </h2>
             <div className="mt-3">

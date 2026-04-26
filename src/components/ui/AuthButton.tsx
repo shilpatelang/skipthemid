@@ -13,7 +13,7 @@ export default function AuthButton() {
 
   if (status === "loading") {
     return (
-      <div className="fixed top-8 right-8 z-50 h-12 w-12 animate-pulse rounded-full bg-white/10" />
+      <div className="h-10 w-10 animate-pulse rounded-full bg-white/10" />
     );
   }
 
@@ -21,19 +21,19 @@ export default function AuthButton() {
   if (session?.user) {
     const img = session.user.image;
     return (
-      <div className="fixed top-8 right-8 z-50">
+      <div className="relative">
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 backdrop-blur-xl transition-colors hover:bg-white/15"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-colors hover:bg-white/15"
         >
           {img ? (
             <img
               src={img}
               alt=""
-              className="h-12 w-12 rounded-full object-cover"
+              className="h-10 w-10 rounded-full object-cover"
             />
           ) : (
-            <User size={22} className="text-white" />
+            <User size={20} className="text-white" />
           )}
         </button>
 
@@ -65,9 +65,9 @@ export default function AuthButton() {
     <>
       <button
         onClick={() => setModalOpen(true)}
-        className="fixed top-8 right-8 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 backdrop-blur-xl transition-colors hover:bg-white/15"
+        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-colors hover:bg-white/15"
       >
-        <User size={22} className="text-white" />
+        <User size={20} className="text-white" />
       </button>
 
       {modalOpen && <AuthModal onClose={() => setModalOpen(false)} />}
