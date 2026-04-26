@@ -22,12 +22,12 @@ export default function Footer() {
         {/* Contact */}
         <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-white/70">
           <a
-            href="mailto:shilpatelang.official@gmail.com"
+            href="mailto:skipthemid@gmail.com"
             className="hover:underline"
           >
             <span>Contact us </span>
             <span className="font-semibold text-white">
-              shilpatelang.official@gmail.com
+              skipthemid@gmail.com
             </span>
           </a>
         </div>
