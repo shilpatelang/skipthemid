@@ -50,6 +50,17 @@ interface Ingredient {
   unit: string;
 }
 
+const BASE_URL = "https://skipthemid.com";
+
+// Convert minutes to ISO 8601 duration: 30 -> "PT30M", 90 -> "PT1H30M"
+function minutesToIso(min: number): string {
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  if (h && m) return `PT${h}H${m}M`;
+  if (h) return `PT${h}H`;
+  return `PT${m}M`;
+}
+
 export default async function DishPage({
   params,
 }: {
@@ -84,8 +95,57 @@ export default async function DishPage({
   const ingredients = dish.ingredients as Ingredient[] | null;
   const steps = dish.steps as string[] | null;
 
+  // Schema.org Recipe JSON-LD — unlocks Google rich results
+  // (image, time, rating shown directly in search). Spread-conditional
+  // pattern omits empty fields rather than emitting null/undefined values.
+  const totalMinutes = (dish.prepTime ?? 0) + (dish.cookTime ?? 0);
+  const recipeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    name: dish.name,
+    description: dish.description,
+    ...(dish.imageUrl && { image: `${BASE_URL}${dish.imageUrl}` }),
+    author: {
+      "@type": "Organization",
+      name: "SkipTheMid",
+      url: BASE_URL,
+    },
+    recipeCuisine: dish.cuisine,
+    recipeCategory: dish.category,
+    ...(dish.prepTime && { prepTime: minutesToIso(dish.prepTime) }),
+    ...(dish.cookTime && { cookTime: minutesToIso(dish.cookTime) }),
+    ...(totalMinutes > 0 && { totalTime: minutesToIso(totalMinutes) }),
+    ...(dish.servings && { recipeYield: `${dish.servings} servings` }),
+    ...(ingredients?.length && {
+      recipeIngredient: ingredients.map((i) =>
+        [i.amount, i.unit, i.name].filter(Boolean).join(" ").trim()
+      ),
+    }),
+    ...(steps?.length && {
+      recipeInstructions: steps.map((text) => ({
+        "@type": "HowToStep",
+        text,
+      })),
+    }),
+    ...(avg !== null && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: Math.round(avg * 10) / 10,
+        reviewCount: dish.ratings.length,
+        bestRating: 5,
+        worstRating: 0.5,
+      },
+    }),
+  };
+  // Escape </script> guard against any raw "<" in user content
+  const recipeJsonLdString = JSON.stringify(recipeJsonLd).replace(/</g, "\\u003c");
+
   return (
     <main className="min-h-screen bg-charcoal px-4 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: recipeJsonLdString }}
+      />
       <div className="mx-auto max-w-3xl">
         <Link
           href="/"
