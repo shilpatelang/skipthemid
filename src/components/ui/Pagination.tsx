@@ -5,10 +5,23 @@ interface PaginationProps {
   currentPage: number;
   totalPages: number;
   basePath: string; // e.g. "/dishes" — page query is appended
+  // Other query params to preserve across page navigation (filters, sort, search).
+  // Page=1 omits the page param to keep the canonical URL clean.
+  preservedParams?: Record<string, string | undefined>;
 }
 
-function buildHref(basePath: string, page: number): string {
-  return page === 1 ? basePath : `${basePath}?page=${page}`;
+function buildHref(
+  basePath: string,
+  page: number,
+  preserved: Record<string, string | undefined> = {}
+): string {
+  const params = new URLSearchParams();
+  for (const [k, v] of Object.entries(preserved)) {
+    if (v) params.set(k, v);
+  }
+  if (page > 1) params.set("page", String(page));
+  const qs = params.toString();
+  return qs ? `${basePath}?${qs}` : basePath;
 }
 
 // Build a compact page list: 1 ... N-1 N N+1 ... last
@@ -25,7 +38,12 @@ function pageList(current: number, total: number): (number | "ellipsis")[] {
   return out;
 }
 
-export default function Pagination({ currentPage, totalPages, basePath }: PaginationProps) {
+export default function Pagination({
+  currentPage,
+  totalPages,
+  basePath,
+  preservedParams,
+}: PaginationProps) {
   if (totalPages <= 1) return null;
 
   const pages = pageList(currentPage, totalPages);
@@ -42,7 +60,7 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
   return (
     <nav aria-label="Pagination" className="mt-12 flex items-center justify-center gap-2">
       <Link
-        href={buildHref(basePath, prevPage)}
+        href={buildHref(basePath, prevPage, preservedParams)}
         aria-disabled={atStart}
         className={`${baseBtn} ${atStart ? disabled : enabled}`}
       >
@@ -66,14 +84,18 @@ export default function Pagination({ currentPage, totalPages, basePath }: Pagina
             {p}
           </span>
         ) : (
-          <Link key={p} href={buildHref(basePath, p)} className={`${baseBtn} ${enabled}`}>
+          <Link
+            key={p}
+            href={buildHref(basePath, p, preservedParams)}
+            className={`${baseBtn} ${enabled}`}
+          >
             {p}
           </Link>
         )
       )}
 
       <Link
-        href={buildHref(basePath, nextPage)}
+        href={buildHref(basePath, nextPage, preservedParams)}
         aria-disabled={atEnd}
         className={`${baseBtn} ${atEnd ? disabled : enabled}`}
       >
