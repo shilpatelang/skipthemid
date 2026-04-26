@@ -572,6 +572,69 @@ const DISHES = [
   }
 ];
 
+// ── Filter taxonomy ─────────────────────────────────────────────────────
+// Maps each dish name to structured fields used for /dishes browse filters.
+// MUST contain an entry for every dish in DISHES — the seed throws otherwise.
+//
+// Allowed values:
+//   continent: africa | asia | europe | north-america | south-america | oceania
+//   course:    street-food | main | dessert | appetizer | side | snack
+//   dietType:  vegan | vegetarian | non-vegetarian | contains-egg
+
+interface DishTaxonomy {
+  continent: string;
+  country: string;
+  region?: string;
+  course: string;
+  dietType: string;
+}
+
+const TAXONOMY: Record<string, DishTaxonomy> = {
+  "Jackfruit & Banana Blossom Skewers": { continent: "asia", country: "india", region: "kerala", course: "street-food", dietType: "vegan" },
+  "Ceviche de Conchas Negras": { continent: "south-america", country: "peru", region: "tumbes", course: "appetizer", dietType: "non-vegetarian" },
+  "Adjarian Khachapuri": { continent: "asia", country: "georgia", region: "adjara", course: "main", dietType: "contains-egg" },
+  "Rendang Padang": { continent: "asia", country: "indonesia", region: "west-sumatra", course: "main", dietType: "non-vegetarian" },
+  "Mole Negro": { continent: "north-america", country: "mexico", region: "oaxaca", course: "side", dietType: "vegetarian" },
+  "Saksang": { continent: "asia", country: "indonesia", region: "north-sumatra", course: "main", dietType: "non-vegetarian" },
+  "Tolma": { continent: "asia", country: "armenia", course: "appetizer", dietType: "non-vegetarian" },
+  "Lanzhou Beef Noodles": { continent: "asia", country: "china", region: "gansu", course: "main", dietType: "non-vegetarian" },
+  "Thieboudienne": { continent: "africa", country: "senegal", course: "main", dietType: "non-vegetarian" },
+  "Mansaf": { continent: "asia", country: "jordan", course: "main", dietType: "non-vegetarian" },
+  "Cuy Asado": { continent: "south-america", country: "peru", region: "cusco", course: "main", dietType: "non-vegetarian" },
+  "Açaí na Tigela": { continent: "south-america", country: "brazil", region: "para", course: "dessert", dietType: "vegan" },
+  "Plov": { continent: "asia", country: "uzbekistan", course: "main", dietType: "non-vegetarian" },
+  "Bánh Xèo": { continent: "asia", country: "vietnam", course: "street-food", dietType: "non-vegetarian" },
+  "Doro Wat": { continent: "africa", country: "ethiopia", course: "main", dietType: "non-vegetarian" },
+  "Halo-Halo": { continent: "asia", country: "philippines", course: "dessert", dietType: "vegetarian" },
+  "Kokoreç": { continent: "asia", country: "turkey", course: "street-food", dietType: "non-vegetarian" },
+  "Pierogi Ruskie": { continent: "europe", country: "poland", course: "main", dietType: "vegetarian" },
+  "Bunny Chow": { continent: "africa", country: "south-africa", region: "kwazulu-natal", course: "street-food", dietType: "non-vegetarian" },
+  "Khao Soi": { continent: "asia", country: "thailand", region: "chiang-mai", course: "main", dietType: "non-vegetarian" },
+  "Caldillo de Congrio": { continent: "south-america", country: "chile", course: "main", dietType: "non-vegetarian" },
+  "Seco de Chivo": { continent: "south-america", country: "ecuador", course: "main", dietType: "non-vegetarian" },
+  "Jiggs’ Dinner": { continent: "north-america", country: "canada", region: "newfoundland", course: "main", dietType: "non-vegetarian" },
+  "Akutaq": { continent: "north-america", country: "usa", region: "alaska", course: "dessert", dietType: "non-vegetarian" },
+  "Piki Bread": { continent: "north-america", country: "usa", region: "arizona", course: "side", dietType: "vegan" },
+  "Chislic": { continent: "north-america", country: "usa", region: "south-dakota", course: "snack", dietType: "non-vegetarian" },
+  "Sonker": { continent: "north-america", country: "usa", region: "north-carolina", course: "dessert", dietType: "contains-egg" },
+  "Booyah": { continent: "north-america", country: "usa", region: "wisconsin", course: "main", dietType: "non-vegetarian" },
+  "Cochinita Pibil": { continent: "north-america", country: "mexico", region: "yucatan", course: "main", dietType: "non-vegetarian" },
+  "Pouding Chômeur": { continent: "north-america", country: "canada", region: "quebec", course: "dessert", dietType: "contains-egg" },
+  "Geoduck Sashimi": { continent: "north-america", country: "usa", region: "washington", course: "appetizer", dietType: "non-vegetarian" },
+  "Pepperoni Roll": { continent: "north-america", country: "usa", region: "west-virginia", course: "snack", dietType: "non-vegetarian" },
+  "Ployes": { continent: "north-america", country: "usa", region: "maine", course: "side", dietType: "vegan" },
+  "Horseshoe Sandwich": { continent: "north-america", country: "usa", region: "illinois", course: "main", dietType: "non-vegetarian" },
+  "Litti Chokha": { continent: "asia", country: "india", region: "bihar", course: "street-food", dietType: "vegetarian" },
+  "Pathar Ka Gosht": { continent: "asia", country: "india", region: "telangana", course: "main", dietType: "non-vegetarian" },
+  "Kottu Roti": { continent: "asia", country: "sri-lanka", course: "street-food", dietType: "non-vegetarian" },
+  "Smoked Pork with Bamboo Shoot": { continent: "asia", country: "india", region: "nagaland", course: "main", dietType: "non-vegetarian" },
+  "Shorshe Ilish": { continent: "asia", country: "bangladesh", course: "main", dietType: "non-vegetarian" },
+  "Goshtaba": { continent: "asia", country: "india", region: "kashmir", course: "main", dietType: "non-vegetarian" },
+  "Sorpotel": { continent: "asia", country: "india", region: "goa", course: "main", dietType: "non-vegetarian" },
+  "Ker Sangri": { continent: "asia", country: "india", region: "rajasthan", course: "side", dietType: "vegan" },
+  "Khar": { continent: "asia", country: "india", region: "assam", course: "side", dietType: "vegetarian" },
+};
+
 // ── JSON data loaders ───────────────────────────────────────────────────
 
 interface RecipeData {
@@ -752,14 +815,24 @@ async function seedDishes() {
     console.warn("\nProceeding with seeding despite warnings above.\n");
   }
 
+  // Guard: every dish must have a taxonomy entry before we touch the DB
+  const missing = DISHES.filter((d) => !TAXONOMY[d.name]).map((d) => d.name);
+  if (missing.length > 0) {
+    throw new Error(
+      `Missing TAXONOMY entries for: ${missing.join(", ")}. Add them to seed.ts.`
+    );
+  }
+
   for (const dish of DISHES) {
     const slug = slugify(dish.name);
     const recipe = recipes?.[slug];
+    const taxo = TAXONOMY[dish.name];
 
     await prisma.dish.upsert({
       where: { slug },
       update: {
         ...dish,
+        ...taxo,
         ingredients: recipe?.ingredients ?? undefined,
         steps: recipe?.steps ?? undefined,
         prepTime: recipe?.prepTime ?? undefined,
@@ -768,6 +841,7 @@ async function seedDishes() {
       },
       create: {
         ...dish,
+        ...taxo,
         slug,
         ingredients: recipe?.ingredients ?? undefined,
         steps: recipe?.steps ?? undefined,

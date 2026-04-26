@@ -72,9 +72,18 @@ model Dish {
   prepTime    Int?     // minutes
   cookTime    Int?     // minutes
   servings    Int?
-  origin      String   // e.g. "Kerala, India"
+  origin      String   // e.g. "Kerala, India" — human-readable, used for display
   cuisine     String   // e.g. "South Indian"
-  category    String   // e.g. "Street Food", "Curry", "Dessert"
+  category    String   // e.g. "Street Food", "Curry", "Dessert" — granular display tag
+  // --- Filter taxonomy (slug-style values for URL safety) ---
+  // Defaults are placeholders to satisfy SQLite migrations on existing rows;
+  // seed.ts populates real values via TAXONOMY map. Safe to remove defaults
+  // once schema stabilizes.
+  continent   String   @default("") // africa | asia | europe | north-america | south-america | oceania
+  country     String   @default("") // e.g. "india", "peru", "indonesia"
+  region      String?  // optional state/province slug, e.g. "kerala", "bihar"
+  course      String   @default("") // street-food | main | dessert | appetizer | side | snack
+  dietType    String   @default("") // vegan | vegetarian | non-vegetarian | contains-egg
   imageUrl    String?
   imageCredit     String?  // e.g. "Photo: John Doe / Unsplash"
   imageLicenseUrl String?  // e.g. "https://creativecommons.org/licenses/by-sa/4.0/"

@@ -29,7 +29,6 @@ This positioning drives every product decision. When in doubt: would TasteAtlas 
 
 _Decisions pending — pull these into the next conversation._
 
-- **Filter taxonomy:** Header now uses **continent** as the top filter axis (Africa, Asia, Europe, N./S. America, Oceania). Need to model on `Dish`: `continent`, `country`, `region` (state/province), `course`, `dietType`. URL convention `/dishes?continent=asia`. Schema migration required before Step 2 of Phase 1.
 - **Pagination vs infinite scroll** for `/dishes`: TBD. Claude leans: pagination (24/page) for SEO + back-button.
 - **Dish-image script:** Deferred until after Phase 1. Open: swap Sajjappa for Litti Chokha (Wikimedia covers it), or add manual-URL fallback. Claude leans: manual fallback — needed for ~half of truly-niche dishes anyway.
 
@@ -100,6 +99,7 @@ _Append-only. Records WHY we chose something, so we don't relitigate later._
 - **2026-04-25:** One branch per phase (`phase-N/<name>`), merged with `--no-ff`, never squashed. Reason: makes a whole phase revertable in prod with a single `git revert -m 1`. Direct commits to `main` are forbidden during a phase.
 - **2026-04-25:** Phase 1 landing layout = **B3 (hybrid map hero)**. Top ~55vh interactive Mapbox map with overlay title + CTA, then curated rails (capped, NOT full dump), then "Browse all dishes →" link to `/dishes`. Reason: map is the most distinctive UX; burying it at `/map` undersells it. Hybrid keeps storytelling space + SEO-friendly text below the map.
 - **2026-04-26:** Header = **sticky (not fixed-overlay)** with **always-solid teal-900/95 background**. Reverted earlier "transparent over hero, solid on scroll" decision. Reason: user wanted clear, unobstructed view of map content under the header. Teal/turquoise palette chosen as primary header brand color. Scroll listener removed (no longer needed).
+- **2026-04-26:** Filter taxonomy resolved. Added 5 fields to `Dish`: `continent` (required), `country` (required), `region` (optional state/province), `course` (required: street-food/main/dessert/appetizer/side/snack), `dietType` (required: vegan/vegetarian/non-vegetarian/contains-egg). All slug-style for URL safety (`/dishes?continent=asia&course=dessert`). Existing `category` retained as granular display tag separate from the broader `course` filter. Backfill via TAXONOMY map in seed.ts with hard-fail guard for any unmapped dish.
 
 ---
 
