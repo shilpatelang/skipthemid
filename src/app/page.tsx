@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { prisma } from "@/lib/prisma";
@@ -5,6 +6,17 @@ import MapHero from "@/components/landing/MapHero";
 import FeaturedDishes from "@/components/landing/FeaturedDishes";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  // Absolute title — bypasses the layout template since the brand suffix
+  // pattern doesn't fit the landing page's hero-style title.
+  title: {
+    absolute:
+      "Hyper-regional dishes from around the world — SkipTheMid",
+  },
+  description:
+    "A food encyclopedia of niche regional dishes. Discover what locals eat that the world hasn't found yet — from Awadhi biryani to Sajjappa.",
+};
 
 const FEATURED_LIMIT = 6;
 

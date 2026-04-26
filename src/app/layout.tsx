@@ -23,7 +23,10 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://skipthemid.com"),
-  title: "SkipTheMid",
+  title: {
+    default: "SkipTheMid",
+    template: "%s | SkipTheMid",
+  },
   description: "A food encyclopedia for the curious eater.",
   icons: {
     icon: "/icon.png",

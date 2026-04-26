@@ -18,11 +18,15 @@ export async function generateMetadata({
   const dish = await prisma.dish.findUnique({ where: { slug } });
   if (!dish) return { title: "Dish Not Found" };
   const description = dish.description.slice(0, 160);
+  // Locked title format: "{name} — {origin} | SkipTheMid"
+  // Layout template appends "| SkipTheMid" automatically.
+  const title = `${dish.name} — ${dish.origin}`;
+  const fullTitle = `${title} | SkipTheMid`;
   return {
-    title: `${dish.name} — SkipTheMid`,
+    title,
     description,
     openGraph: {
-      title: `${dish.name} — SkipTheMid`,
+      title: fullTitle,
       description,
       type: "article",
       ...(dish.imageUrl && {
@@ -31,7 +35,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${dish.name} — SkipTheMid`,
+      title: fullTitle,
       description,
       ...(dish.imageUrl && {
         images: [dish.imageUrl],

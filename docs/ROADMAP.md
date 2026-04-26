@@ -34,6 +34,22 @@ _Decisions pending — pull these into the next conversation._
 
 ---
 
+## Phase 1.5 — SEO sprint (NOW)
+
+Quick foundations to maximize organic discovery before Phase 2 content work.
+
+**Scope (6 steps):**
+1. **Per-route meta titles** — landing/map/dishes/dish all get keyword-leading titles. Dish format locked: `"${name} — ${origin} | SkipTheMid"`.
+2. **Real H1 on landing** — current H1 is just the wordmark. Add semantic content H1 with keyword.
+3. **robots.txt + sitemap.xml** — `app/robots.ts` + `app/sitemap.ts` (dynamic from Prisma). Update footer link to `/sitemap.xml`.
+4. **Canonical on /dishes filter combos** → `/dishes` (option A — single canonical, not self-canonical). When Phase 2 ships country/region landing pages, those become canonical for their slice.
+5. **JSON-LD Recipe schema** on every dish page — unlocks Google rich results.
+6. **OG images per dish** — Next.js `ImageResponse` route. Design: dimmed dish photo + name + origin + brand mark.
+
+**Manual follow-ups (post-merge, post-deploy):** submit sitemap to Google Search Console + Bing Webmaster Tools.
+
+---
+
 ## Phase 2 — Curated content & SEO (NEXT)
 
 - Country/region landing pages: `/cuisine/india`, `/region/karnataka`
