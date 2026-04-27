@@ -1,6 +1,11 @@
 import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 
+// Sitemap queries Prisma — must run at request time, not build time
+// (no DATABASE_URL during Docker build stage). Also: dynamic generation
+// keeps sitemap fresh as new dishes are added without rebuilding.
+export const dynamic = "force-dynamic";
+
 const BASE_URL = "https://skipthemid.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

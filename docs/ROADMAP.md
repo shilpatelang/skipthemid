@@ -39,6 +39,7 @@ _Decisions pending — pull these into the next conversation._
 - Country/region landing pages: `/cuisine/india`, `/region/karnataka`
 - Curated lists: "Top 25 unsung Indian regional dishes", "Festival foods of South India"
 - "Trending" / "Newly added" rails on landing page
+- **Human-friendly `/sitemap` HTML page** (TasteAtlas-style: countries, dishes, ingredients in browseable columns). Footer "Site map" link currently goes to /sitemap.xml — works but is XML, not user-friendly. Repoint to /sitemap once HTML page exists.
 
 ---
 
