@@ -34,22 +34,6 @@ _Decisions pending — pull these into the next conversation._
 
 ---
 
-## Phase 1.5 — SEO sprint (NOW)
-
-Quick foundations to maximize organic discovery before Phase 2 content work.
-
-**Scope (6 steps):**
-1. **Per-route meta titles** — landing/map/dishes/dish all get keyword-leading titles. Dish format locked: `"${name} — ${origin} | SkipTheMid"`.
-2. **Real H1 on landing** — current H1 is just the wordmark. Add semantic content H1 with keyword.
-3. **robots.txt + sitemap.xml** — `app/robots.ts` + `app/sitemap.ts` (dynamic from Prisma). Update footer link to `/sitemap.xml`.
-4. **Canonical on /dishes filter combos** → `/dishes` (option A — single canonical, not self-canonical). When Phase 2 ships country/region landing pages, those become canonical for their slice.
-5. **JSON-LD Recipe schema** on every dish page — unlocks Google rich results.
-6. **OG images per dish** — Next.js `ImageResponse` route. Design: dimmed dish photo + name + origin + brand mark.
-
-**Manual follow-ups (post-merge, post-deploy):** submit sitemap to Google Search Console + Bing Webmaster Tools.
-
----
-
 ## Phase 2 — Curated content & SEO (NEXT)
 
 - Country/region landing pages: `/cuisine/india`, `/region/karnataka`
@@ -104,3 +88,6 @@ _Append-only. Records WHY we chose something, so we don't relitigate later._
 _Move items here as they ship. Keep the win — date + one-line summary._
 
 - **2026-04-26 — Phase 1: Browse & discovery.** Landing redo (sticky teal header, brand-icon nav, non-interactive map hero, capped featured rail, branded footer). New `/dishes` page with continent/course/diet filters, debounced search across name+origin+cuisine+category+description, sort (A–Z/Z–A/Newly added/Most rated), and pagination (24/page). Schema gained `continent` / `country` / `region` / `course` / `dietType` with seed-time TAXONOMY map and hard-fail guard. Dish detail page readability bumped + ArrowLeft back link. Map pins + dish cards open in new tab. Branch: `phase-1/browse-discovery`.
+- **2026-04-26 — Phase 1.5: SEO sprint (5 of 6 steps).** Per-route meta titles with `title.template` in layout. Real semantic H1 on landing (keyword-rich). `robots.txt` + dynamic `sitemap.xml` (43 dishes + 3 static routes), footer Site map link wired to /sitemap.xml. Canonical `/dishes` for all filter/page combos. JSON-LD Recipe schema on dish pages (name/image/cuisine/times/ingredients/instructions/aggregateRating). icon.png shrunk 7MB → 572KB (also fixed dev OOM). **Step 6 (per-dish OG cards) parked** — split layout looked good on the brand panel, but dish photos with off-center compositions cropped badly. Revisit when (a) photos are recropped/centered, or (b) we redesign as a corner-thumbnail layout. Manual fallback `og:image = dish.imageUrl` restored so social previews still show the dish photo. Branch: `phase-1.5/seo-sprint`.
+
+**Manual follow-ups after deploy:** submit sitemap to Google Search Console + Bing Webmaster Tools. Validate Recipe rich results at search.google.com/test/rich-results.
