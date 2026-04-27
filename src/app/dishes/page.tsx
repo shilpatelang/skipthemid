@@ -10,9 +10,13 @@ import Pagination from "@/components/ui/Pagination";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Browse all dishes — SkipTheMid",
+  title: "Browse all dishes",
   description:
-    "Hyper-regional dishes you've probably never heard of.",
+    "Hyper-regional dishes from around the world. Filter by continent, course, or diet — search by name, origin, ingredient, or cuisine.",
+  // All filter/page combos (?continent=asia, ?page=2, etc.) canonical to
+  // the bare /dishes URL. Consolidates ranking signal; Phase 2 country/region
+  // landing pages will become canonical for their slice.
+  alternates: { canonical: "/dishes" },
 };
 
 const PAGE_SIZE = 24;
