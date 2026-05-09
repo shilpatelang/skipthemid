@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useCallback, useRef, useEffect } from "react";
-import { Map, Source, Layer, Popup } from "react-map-gl/mapbox";
+import { useCallback, useRef, useEffect, useState } from "react";
+import { Map, Source, Layer } from "react-map-gl/mapbox";
 import type { MapRef, MapMouseEvent } from "react-map-gl/mapbox";
 import type { ExpressionSpecification } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -11,9 +11,51 @@ interface MapContainerProps {
   geojson: DishFeatureCollection | null;
   height?: string;
   interactive?: boolean;
+  initialZoom?: number;
 }
 
 const WORLD_VIEW = { longitude: 20, latitude: 20, zoom: 2 };
+
+// --- Circular icon loader ---
+// Mapbox symbol layers can't apply border-radius to icons, so we pre-render
+// each dish image into a circular-cropped canvas and register it as a map image.
+
+async function loadCircularImage(url: string, size = 64): Promise<ImageData> {
+  return new Promise((resolve, reject) => {
+    const img = new window.Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      const dim = size * 2; // 2x for retina
+      const r = dim / 2;
+      const canvas = document.createElement("canvas");
+      canvas.width = dim;
+      canvas.height = dim;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) {
+        reject(new Error("No 2d context"));
+        return;
+      }
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(r, r, r, 0, Math.PI * 2);
+      ctx.closePath();
+      ctx.clip();
+      const minDim = Math.min(img.width, img.height);
+      const sx = (img.width - minDim) / 2;
+      const sy = (img.height - minDim) / 2;
+      ctx.drawImage(img, sx, sy, minDim, minDim, 0, 0, dim, dim);
+      ctx.restore();
+      ctx.beginPath();
+      ctx.arc(r, r, r - 3, 0, Math.PI * 2);
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "#fbbf24";
+      ctx.stroke();
+      resolve(ctx.getImageData(0, 0, dim, dim));
+    };
+    img.onerror = () => reject(new Error(`Failed to load ${url}`));
+    img.src = url;
+  });
+}
 
 // --- Layer definitions ---
 
@@ -61,12 +103,17 @@ const clusterCountLayer = {
   },
 };
 
-// Outer glow ring — animated by requestAnimationFrame
+// Outer glow ring — animated by requestAnimationFrame.
+// Filter: only render for dishes WITHOUT an image (fallback dot pattern).
 const dishGlowLayer = {
   id: "dish-glow",
   type: "circle" as const,
   source: "dishes",
-  filter: ["!", ["has", "point_count"]],
+  filter: [
+    "all",
+    ["!", ["has", "point_count"]],
+    ["!", ["has", "imageUrl"]],
+  ] as ExpressionSpecification,
   paint: {
     "circle-radius": 13,
     "circle-color": "#f59e0b",
@@ -75,12 +122,16 @@ const dishGlowLayer = {
   },
 };
 
-// Inner core dot — static, crisp
+// Inner core dot — static, crisp. Fallback for dishes without an image.
 const dishCoreLayer = {
   id: "dish-core",
   type: "circle" as const,
   source: "dishes",
-  filter: ["!", ["has", "point_count"]],
+  filter: [
+    "all",
+    ["!", ["has", "point_count"]],
+    ["!", ["has", "imageUrl"]],
+  ] as ExpressionSpecification,
   paint: {
     "circle-radius": 5,
     "circle-color": "#fbbf24",
@@ -100,6 +151,25 @@ const dishCoreLayer = {
   },
 };
 
+// Circular thumbnail. Filter: only dishes WITH an image string.
+// `icon-image` resolves to "dish-<id>", which we register at map load via addImage().
+const dishThumbnailLayer = {
+  id: "dish-thumbnails",
+  type: "symbol" as const,
+  source: "dishes",
+  filter: [
+    "all",
+    ["!", ["has", "point_count"]],
+    ["has", "imageUrl"],
+  ] as ExpressionSpecification,
+  layout: {
+    "icon-image": ["concat", "dish-", ["get", "id"]] as ExpressionSpecification,
+    "icon-size": 0.5,
+    "icon-allow-overlap": true,
+    "icon-anchor": "center" as const,
+  },
+};
+
 const labelLayer = {
   id: "dish-labels",
   type: "symbol" as const,
@@ -109,7 +179,12 @@ const labelLayer = {
     "text-field": ["get", "name"] as ["get", string],
     "text-font": ["Noto Serif Bold", "Arial Unicode MS Bold"] as string[],
     "text-size": 14,
-    "text-offset": [0, 1.4] as [number, number],
+    "text-offset": [
+      "case",
+      ["has", "imageUrl"],
+      ["literal", [0, 2.0]],
+      ["literal", [0, 1.4]],
+    ] as ExpressionSpecification,
     "text-anchor": "top" as const,
     "text-letter-spacing": 0.05,
   },
@@ -120,27 +195,52 @@ const labelLayer = {
   },
 };
 
-// --- Popup info type ---
-
-type PopupInfo = {
-  longitude: number;
-  latitude: number;
-  name: string;
-  cuisine: string;
-  origin: string;
-};
-
 // --- Component ---
 
-export default function MapContainer({ geojson, height = "100vh", interactive = true }: MapContainerProps) {
+export default function MapContainer({ geojson, height = "100vh", interactive = true, initialZoom }: MapContainerProps) {
   const mapRef = useRef<MapRef>(null);
   const hoveredId = useRef<string | null>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
-  const [popupInfo, setPopupInfo] = useState<PopupInfo | null>(null);
 
   const onMapLoad = useCallback(() => {
     setMapLoaded(true);
   }, []);
+
+  // Pre-render dish thumbnails as circular canvas images and register with the map.
+  // Failures are silent — those dishes fall back to the dot layer via the filter.
+  useEffect(() => {
+    if (!mapLoaded || !geojson) return;
+    const map = mapRef.current?.getMap();
+    if (!map) return;
+
+    let cancelled = false;
+    geojson.features.forEach(async (feature) => {
+      const url = feature.properties.imageUrl;
+      if (!url) return;
+      const iconId = `dish-${feature.properties.id}`;
+      if (map.hasImage(iconId)) return;
+      try {
+        const imageData = await loadCircularImage(url);
+        // Guard against the map being torn down mid-load (StrictMode double-mount).
+        // mapRef.current may now point to a fresh map instance, or the captured
+        // map's style may be gone — both would crash mapbox-gl deep in addImage.
+        if (
+          cancelled ||
+          mapRef.current?.getMap() !== map ||
+          !map.style ||
+          map.hasImage(iconId)
+        )
+          return;
+        map.addImage(iconId, imageData, { pixelRatio: 2 });
+      } catch {
+        // Fall back to dot rendering via filter.
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [mapLoaded, geojson]);
 
   // Pulse animation for the glow layer
   useEffect(() => {
@@ -199,16 +299,6 @@ export default function MapContainer({ geojson, height = "100vh", interactive = 
       );
     }
 
-    if (feature.properties?.cluster) return;
-
-    const [lng, lat] = (feature.geometry as GeoJSON.Point).coordinates;
-    setPopupInfo({
-      longitude: lng,
-      latitude: lat,
-      name: feature.properties?.name ?? "",
-      cuisine: feature.properties?.cuisine ?? "",
-      origin: feature.properties?.origin ?? "",
-    });
   }, []);
 
   const onMouseLeave = useCallback(() => {
@@ -223,7 +313,6 @@ export default function MapContainer({ geojson, height = "100vh", interactive = 
       );
       hoveredId.current = null;
     }
-    setPopupInfo(null);
   }, []);
 
   const onClick = useCallback((e: MapMouseEvent) => {
@@ -260,11 +349,11 @@ export default function MapContainer({ geojson, height = "100vh", interactive = 
     <Map
       ref={mapRef}
       mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-      initialViewState={WORLD_VIEW}
+      initialViewState={{ ...WORLD_VIEW, zoom: initialZoom ?? WORLD_VIEW.zoom }}
       style={{ width: "100%", height }}
       mapStyle="mapbox://styles/mapbox/dark-v11"
       interactive={interactive}
-      interactiveLayerIds={["clusters", "dish-glow", "dish-core"]}
+      interactiveLayerIds={["clusters", "dish-thumbnails", "dish-glow", "dish-core"]}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={onClick}
@@ -284,29 +373,11 @@ export default function MapContainer({ geojson, height = "100vh", interactive = 
           <Layer {...clusterCountLayer} />
           <Layer {...dishGlowLayer} />
           <Layer {...dishCoreLayer} />
+          <Layer {...dishThumbnailLayer} />
           <Layer {...labelLayer} />
         </Source>
       )}
 
-      {popupInfo && (
-        <Popup
-          longitude={popupInfo.longitude}
-          latitude={popupInfo.latitude}
-          closeButton={false}
-          closeOnClick={false}
-          anchor="bottom"
-          offset={[0, -15] as [number, number]}
-        >
-          <div className="px-4 py-3">
-            <p className="font-serif text-lg font-bold text-brown">
-              {popupInfo.name}
-            </p>
-            <p className="mt-1 text-sm text-brown">
-              {popupInfo.origin}
-            </p>
-          </div>
-        </Popup>
-      )}
     </Map>
   );
 }
