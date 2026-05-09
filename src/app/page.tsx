@@ -16,9 +16,10 @@ export const metadata: Metadata = {
   },
   description:
     "A food encyclopedia of niche regional dishes. Discover what locals eat that the world hasn't found yet — from Awadhi biryani to Sajjappa.",
+  alternates: { canonical: "/" },
 };
 
-const FEATURED_LIMIT = 6;
+const FEATURED_LIMIT = 20;
 
 export default async function Home() {
   const dishes = await prisma.dish.findMany({

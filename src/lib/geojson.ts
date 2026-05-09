@@ -9,6 +9,7 @@ export interface DishProperties {
   origin: string;
   avgRating: number | null;
   ratingCount: number;
+  imageUrl?: string;
 }
 
 export interface DishFeature {
@@ -49,6 +50,7 @@ export function toDishFeatureCollection(
           origin: d.origin,
           avgRating: avg ? Math.round(avg * 10) / 10 : null,
           ratingCount: d.ratings.length,
+          ...(d.imageUrl ? { imageUrl: d.imageUrl } : {}),
         },
       };
     }),

@@ -13,10 +13,14 @@ export default function MapPage() {
   const [geojson, setGeojson] = useState<DishFeatureCollection | null>(null);
 
   useEffect(() => {
-    fetch("/api/dishes")
+    const ac = new AbortController();
+    fetch("/api/dishes", { signal: ac.signal })
       .then((res) => res.json())
       .then(setGeojson)
-      .catch(console.error);
+      .catch((e) => {
+        if (e.name !== "AbortError") console.error(e);
+      });
+    return () => ac.abort();
   }, []);
 
   return <MapContainer geojson={geojson} />;
