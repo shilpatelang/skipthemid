@@ -569,6 +569,100 @@ const DISHES = [
   imageUrl: "/dishimage/khar.jpg",
   imageCredit: "Photo: Soyuz Sharma",
   imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+  },
+  {
+  name: "Palusami",
+  description: "The Samoan answer to a slow-cooked Sunday roast: bundles of young taro leaves layered with thick coconut cream and sea salt (sometimes a knob of corned beef or chopped onion), wrapped tightly in breadfruit leaves and steamed for hours inside an umu, an above-ground earth oven of hot volcanic stones. The taro leaves soften into a silky, near-spinach texture while the coconut cream curdles into a rich, custard-like sauce that pools at the bottom of every parcel. Raw taro leaves are toxic, but the long, gentle steam destroys the oxalic acid crystals while concentrating their iron-rich flavor. Palusami anchors every to'ona'i (Sunday family meal) and faalavelave (ceremonial gathering) in Samoa, and unwrapping each leaf parcel at the table is a small ritual in itself.",
+  origin: "Apia, Samoa",
+  cuisine: "Samoan",
+  category: "Vegetable Dish",
+  latitude: -13.8506,
+  longitude: -171.7513,
+  imageUrl: "/dishimage/palusami.jpg",
+  imageCredit: "Photo: Cherrie Mio Rhodes",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/de/"
+  },
+  {
+  name: "Tavë Kosi",
+  description: "Albania's most beloved dish and the closest thing the country has to a national dish: chunks of lamb (sometimes chicken) baked in a tangy, billowing custard of strained yogurt, eggs, butter, and rice or flour, finished with a generous rain of dried oregano and paprika. The lamb is first browned with garlic, then submerged in the yogurt-egg mixture and slow-baked in an earthenware pan (the tavë) until the top sets into a golden, soufflé-like crust while the inside stays creamy and almost ricotta-soft. Originating in the central city of Elbasan (locals still call it Tavë Elbasani), it sits at the crossroads of Ottoman lamb traditions and Balkan dairy obsession. Every Albanian grandmother insists hers is the only correct version, and the dish was so culturally entrenched it survived four decades of communist food shortages largely because its ingredients are humble enough to scrape together from any village.",
+  origin: "Elbasan, Albania",
+  cuisine: "Albanian",
+  category: "Casserole",
+  latitude: 41.1125,
+  longitude: 20.0822,
+  imageUrl: "/dishimage/tave-kosi.jpg",
+  imageCredit: "Photo: Violeta Myftari Gatimet Shqiptare",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+  name: "Culurgiones",
+  description: "Sardinia's most beautifully crafted pasta: each one hand-pleated into the shape of a wheat ear, with a tight twisted seam running down the top. The filling is a Sardinian autobiography in a single bite: floury local potatoes, sharp aged pecorino sardo, sheep's-milk fresh cheese, garlic confit in olive oil, and a stunning amount of fresh mint that cuts through the richness with an almost medicinal coolness. Originating in the mountainous Ogliastra region on Sardinia's wild eastern coast, the dish was traditionally made for All Souls' Day and feast days, the spiral pleat meant to symbolize the harvest. The pleating is so technically demanding that Sardinian grandmothers still gather in village kitchens to make them collectively, and many young Sardinians learn the fold as a rite of passage. Served simply, with sage-butter or a thin tomato sauce, never enough to mask the filling or the pleat itself.",
+  origin: "Ogliastra, Sardinia, Italy",
+  cuisine: "Sardinian",
+  category: "Pasta",
+  latitude: 39.8786,
+  longitude: 9.5398,
+  imageUrl: "/dishimage/culurgiones.jpg",
+  imageCredit: "Photo: Amber Hoffman",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/de/"
+  },
+  {
+  name: "Plokkfiskur",
+  description: "Iceland's quintessential cold-weather comfort food: flaked white fish (usually haddock or cod) and boiled potatoes folded into a thick béchamel of butter, flour, and milk, seasoned with onion, white pepper, and sometimes a whisper of curry powder (a strange but beloved post-war addition). Born of frugality and the need to use up leftover boiled fish in a country where nothing edible could ever be wasted, plokkfiskur doesn't appear on tourist menus but lives in every Icelandic home, school cafeteria, and harbor-side workers' canteen. It's eaten with a slice of dark, dense rúgbrauð, the rye bread traditionally steam-baked in geothermal earth, and a smear of butter. The name literally means 'plucked fish,' referring to the way the cooked flesh is pulled apart by hand rather than cut. Reykjavík fishmongers still sell it ready-made in plastic tubs for families too tired after work to assemble it themselves.",
+  origin: "Reykjavík, Iceland",
+  cuisine: "Icelandic",
+  category: "Fish Stew",
+  latitude: 64.1466,
+  longitude: -21.9426,
+  imageUrl: "/dishimage/plokkfiskur.jpg",
+  imageCredit: "Photo: Marco Verch",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/de/"
+  },
+  {
+  name: "Rfissa",
+  description: "A profoundly aromatic Moroccan stew built around msemen (layered, buttery flatbread) torn into shreds and saturated in a fragrant broth of slow-cooked chicken, brown lentils, ras el hanout, saffron, and an arresting amount of fenugreek seed, so much that the whole dish carries a deep, maple-syrup-like sweetness underneath the savory layers. Traditionally prepared for new mothers in the first weeks after childbirth (fenugreek is believed to support milk production and recovery), rfissa straddles the line between everyday food and medicinal nourishment. The dish is built in layers: shredded msemen heaped on a platter, the lentil-and-chicken broth ladled over until the bread softens into pillowy strands, the chicken arranged on top, and finally a flurry of caramelized onions and toasted almonds. Outside Morocco it's almost completely unknown, even most North African restaurants in Europe and North America stick to tagines and couscous, yet inside Moroccan homes it's one of the most-loved family dishes, anchoring births, Eid al-Adha leftovers, and weeknight gatherings alike.",
+  origin: "Fez, Morocco",
+  cuisine: "Moroccan",
+  category: "Stew",
+  latitude: 34.0181,
+  longitude: -5.0078,
+  imageUrl: "/dishimage/rfissa.jpg",
+  imageCredit: "Photo: Mokhtaroo",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by/2.0/de/"
+  },
+  {
+  name: "Khoresh-e Fesenjān",
+  description: "The most sophisticated dish in the Persian canon, and arguably the most ancient: clay tablets from the ruins of Persepolis (c. 515 BCE) list pomegranates and walnuts as royal pantry staples, almost certainly used in a predecessor of this very stew. Modern fesenjān is a slow-simmered khoresh of duck, chicken, or sometimes wild game in a sauce made from nothing but finely ground toasted walnuts and reduced pomegranate molasses, cooked so long that the walnut oil separates and rises in a deep amber slick on top of an almost-black, intensely sour-sweet sauce. There are no other spices, just a touch of saffron and salt. The result is unlike any other stew on earth: rich and lacquered, simultaneously tart and nutty, with a slight bitterness from the walnut skins that keeps it from tipping into dessert. Native to Gilan and Mazandaran along Iran's Caspian coast, where wild duck and pomegranates both grow in abundance, fesenjān is the centerpiece of Yalda Night (the winter solstice) and major weddings. The sauce is so prized that some Gilan families ladle it over rice and skip the meat entirely.",
+  origin: "Rasht, Gilan, Iran",
+  cuisine: "Persian (Gilani)",
+  category: "Stew",
+  latitude: 37.2808,
+  longitude: 49.5832,
+  imageUrl: "/dishimage/khoresh-e-fesenjan.jpg",
+  imageCredit: "Photo: etc",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+  name: "Kuurdak",
+  description: "The closest thing the Kyrgyz nomads have to a sacred dish: chunks of fresh mutton or horse meat, along with the liver, kidneys, and heart, slow-fried in their own rendered tail-fat with nothing more than onions, salt, and sometimes a single chili. No water, no broth, no spice mixture; the entire dish is built on the meat's own fat and the deep caramelization that comes from cooking in a cast-iron kazan over open fire. Traditionally prepared the day an animal is slaughtered, kuurdak is a way of using up every fresh organ before the rest of the carcass is salt-cured or dried for the long Kyrgyz winter. It's the host's gesture of respect to honored guests at a toi (celebration), served straight from the kazan with hot non-bread and a bowl of fermented mare's milk (kymyz) to cut through the richness. The dish travels across Central Asia under different names, qurdaq in Kazakh, qovurdoq in Uzbek, but the Kyrgyz version, made with the fattiest tail meat from highland sheep, remains the most concentrated and most beloved.",
+  origin: "Bishkek, Kyrgyzstan",
+  cuisine: "Kyrgyz",
+  category: "Roast",
+  latitude: 42.8746,
+  longitude: 74.5698,
+  imageUrl: "/dishimage/kuurdak.jpg",
+  imageCredit: "Photo: Rio Murr",
+  imageLicenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+  name: "Peka",
+  description: "A Dalmatian cooking method as much as a dish: chunks of lamb and veal (sometimes octopus, chicken, or game) are arranged in a heavy round pan with whole potatoes, onions, garlic, rosemary, and a generous pour of olive oil and white wine. The pan is covered with a thick bell-shaped iron lid, the peka itself, and buried under glowing embers and ash inside an open hearth, where it slow-roasts for two to three hours. The trapped heat and humidity make the meat impossibly tender while the potatoes absorb the rendered fat, herbs, and meat juices, turning crackling-crisp on top and silken underneath. The technique predates ovens entirely: Illyrian and Roman-era pottery shards found along the Adriatic coast suggest a near-identical method was in use 2,000 years ago. Today peka is an event, not a meal. Ordering one at a Dalmatian konoba (rustic family tavern) typically requires booking 24 hours in advance so the fire can be built and the bell properly heated. Outside Croatia and pockets of Bosnia and Montenegro, the method has almost no global recognition, despite producing what many Croatians consider their country's finest dish.",
+  origin: "Split, Dalmatia, Croatia",
+  cuisine: "Croatian (Dalmatian)",
+  category: "Roast",
+  latitude: 43.5081,
+  longitude: 16.4402,
+  imageUrl: "/dishimage/peka.jpg",
   }
 ];
 
@@ -633,6 +727,14 @@ const TAXONOMY: Record<string, DishTaxonomy> = {
   "Sorpotel": { continent: "asia", country: "india", region: "goa", course: "main", dietType: "non-vegetarian" },
   "Ker Sangri": { continent: "asia", country: "india", region: "rajasthan", course: "side", dietType: "vegan" },
   "Khar": { continent: "asia", country: "india", region: "assam", course: "side", dietType: "vegetarian" },
+  "Palusami": { continent: "oceania", country: "samoa", course: "side", dietType: "vegetarian" },
+  "Tavë Kosi": { continent: "europe", country: "albania", region: "elbasan", course: "main", dietType: "non-vegetarian" },
+  "Culurgiones": { continent: "europe", country: "italy", region: "sardinia", course: "main", dietType: "vegetarian" },
+  "Plokkfiskur": { continent: "europe", country: "iceland", course: "main", dietType: "non-vegetarian" },
+  "Rfissa": { continent: "africa", country: "morocco", course: "main", dietType: "non-vegetarian" },
+  "Khoresh-e Fesenjān": { continent: "asia", country: "iran", region: "gilan", course: "main", dietType: "non-vegetarian" },
+  "Kuurdak": { continent: "asia", country: "kyrgyzstan", course: "main", dietType: "non-vegetarian" },
+  "Peka": { continent: "europe", country: "croatia", region: "dalmatia", course: "main", dietType: "non-vegetarian" },
 };
 
 // ── JSON data loaders ───────────────────────────────────────────────────

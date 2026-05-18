@@ -1095,5 +1095,225 @@
     "prepTime": 30,
     "cookTime": 25,
     "servings": 4
+  },
+  "palusami": {
+    "ingredients": [
+      { "name": "young taro leaves (or substitute spinach)", "amount": "30", "unit": "leaves" },
+      { "name": "thick coconut cream", "amount": "400", "unit": "ml" },
+      { "name": "yellow onion (finely diced)", "amount": "1", "unit": "medium" },
+      { "name": "corned beef (optional, diced)", "amount": "200", "unit": "g" },
+      { "name": "sea salt", "amount": "1", "unit": "tsp" },
+      { "name": "breadfruit or banana leaves (for wrapping)", "amount": "8", "unit": "large leaves" }
+    ],
+    "steps": [
+      "Trim the thick stems and central ribs from the taro leaves so they fold without cracking.",
+      "Stack 3 to 4 leaves overlapping into a cup shape in your palm, like flower petals.",
+      "Spoon 2 tablespoons of coconut cream into the center of each cup; season with a pinch of salt, a little onion, and corned beef if using.",
+      "Fold the leaf edges up and over the filling to seal each parcel; press gently to compact.",
+      "Wrap each parcel in one or two breadfruit or banana leaves and tie with kitchen twine.",
+      "Steam in a covered pot over simmering water, or in a 160C oven on a tray with a shallow layer of water.",
+      "Cook for 2 to 2.5 hours, until the taro leaves are silky-soft and the coconut cream has thickened into a custard.",
+      "Unwrap at the table and eat with the rich coconut cream that has pooled inside each parcel."
+    ],
+    "prepTime": 30,
+    "cookTime": 150,
+    "servings": 6
+  },
+  "tave-kosi": {
+    "ingredients": [
+      { "name": "lamb shoulder (cut into 4 cm cubes)", "amount": "1", "unit": "kg" },
+      { "name": "unsalted butter", "amount": "80", "unit": "g" },
+      { "name": "garlic (sliced)", "amount": "4", "unit": "cloves" },
+      { "name": "short-grain rice", "amount": "100", "unit": "g" },
+      { "name": "strained Greek yogurt (full fat)", "amount": "700", "unit": "g" },
+      { "name": "eggs", "amount": "4", "unit": "large" },
+      { "name": "all-purpose flour", "amount": "3", "unit": "tbsp" },
+      { "name": "sweet paprika", "amount": "1", "unit": "tsp" },
+      { "name": "dried oregano", "amount": "1", "unit": "tsp" },
+      { "name": "salt", "amount": "1.5", "unit": "tsp" },
+      { "name": "ground black pepper", "amount": "0.5", "unit": "tsp" }
+    ],
+    "steps": [
+      "Preheat the oven to 180C. Pat the lamb dry and season with salt and pepper.",
+      "Melt half the butter in a heavy oven-safe pan (an earthenware tave is traditional); brown the lamb on all sides over high heat with the sliced garlic.",
+      "Add 250 ml of water, cover, and braise in the oven for 40 minutes.",
+      "Stir in the rice and spread it evenly through the meat; return to the oven for 10 minutes uncovered.",
+      "In a bowl, whisk together the yogurt, eggs, flour, oregano, and a pinch of salt until smooth.",
+      "Pour the yogurt custard over the lamb; dot with the remaining butter and dust the top with paprika.",
+      "Bake uncovered for 30 to 40 minutes, until the top is golden, set, and lightly puffed.",
+      "Rest for 15 minutes before serving; the custard firms as it cools."
+    ],
+    "prepTime": 20,
+    "cookTime": 90,
+    "servings": 6
+  },
+  "culurgiones": {
+    "ingredients": [
+      { "name": "00 flour", "amount": "200", "unit": "g" },
+      { "name": "fine semolina", "amount": "100", "unit": "g" },
+      { "name": "warm water", "amount": "130", "unit": "ml" },
+      { "name": "salt", "amount": "1", "unit": "tsp" },
+      { "name": "starchy potatoes (peeled)", "amount": "600", "unit": "g" },
+      { "name": "aged pecorino sardo (finely grated)", "amount": "150", "unit": "g" },
+      { "name": "fresh sheep cheese or whole-milk ricotta", "amount": "100", "unit": "g" },
+      { "name": "fresh mint leaves (finely chopped)", "amount": "30", "unit": "g" },
+      { "name": "garlic (finely grated)", "amount": "2", "unit": "cloves" },
+      { "name": "extra-virgin olive oil", "amount": "3", "unit": "tbsp" },
+      { "name": "tomato passata", "amount": "400", "unit": "g" }
+    ],
+    "steps": [
+      "Combine the flours and salt in a bowl; drizzle in the warm water and knead 8 minutes into a smooth, elastic dough. Wrap and rest 30 minutes.",
+      "Boil the potatoes whole in salted water until tender, about 25 minutes; peel while warm and pass through a ricer.",
+      "Fold the pecorino, fresh cheese, mint, garlic, and olive oil into the riced potato; season with salt and cool to room temperature.",
+      "Roll the dough to 1.5 mm thick and cut into 8 cm rounds.",
+      "Place a heaped teaspoon of filling on each round; with the seam facing up, pinch and fold the edge in alternating left-right pleats down its length, sealing into a wheat-ear shape.",
+      "Bring a large pot of salted water to a gentle simmer; cook the culurgiones 4 to 5 minutes until they float and the dough is tender.",
+      "Warm the passata with a pinch of salt and a drizzle of olive oil; lift the pasta directly into the sauce and toss gently.",
+      "Serve immediately, finished with grated pecorino and a few torn mint leaves."
+    ],
+    "prepTime": 90,
+    "cookTime": 30,
+    "servings": 4
+  },
+  "plokkfiskur": {
+    "ingredients": [
+      { "name": "haddock or cod fillets (skinless)", "amount": "500", "unit": "g" },
+      { "name": "waxy potatoes", "amount": "500", "unit": "g" },
+      { "name": "unsalted butter", "amount": "60", "unit": "g" },
+      { "name": "all-purpose flour", "amount": "3", "unit": "tbsp" },
+      { "name": "whole milk", "amount": "400", "unit": "ml" },
+      { "name": "yellow onion (finely diced)", "amount": "1", "unit": "medium" },
+      { "name": "bay leaf", "amount": "1", "unit": "leaf" },
+      { "name": "white pepper", "amount": "0.5", "unit": "tsp" },
+      { "name": "mild curry powder (optional)", "amount": "1", "unit": "tsp" },
+      { "name": "salt", "amount": "1", "unit": "tsp" },
+      { "name": "rugbraud or dark rye bread (to serve)", "amount": "1", "unit": "loaf" }
+    ],
+    "steps": [
+      "Boil the potatoes whole in salted water until tender, about 20 minutes; peel while warm and chop into 2 cm chunks.",
+      "Poach the fish gently in lightly salted water with the bay leaf for 6 to 8 minutes, until just flaking. Lift out, drain, and flake into large pieces.",
+      "Melt the butter in a wide pan over medium heat; sweat the onion until translucent, about 5 minutes.",
+      "Stir in the flour and cook 1 minute, then gradually whisk in the warm milk until a smooth, loose bechamel forms.",
+      "Season with white pepper, salt, and curry powder if using.",
+      "Fold in the potatoes and the flaked fish; warm through gently without breaking the fish apart.",
+      "Serve immediately in deep bowls with thick slices of buttered rye bread."
+    ],
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 4
+  },
+  "rfissa": {
+    "ingredients": [
+      { "name": "whole chicken (cut into 8 pieces)", "amount": "1.5", "unit": "kg" },
+      { "name": "yellow onions (finely sliced)", "amount": "3", "unit": "large" },
+      { "name": "garlic (crushed)", "amount": "4", "unit": "cloves" },
+      { "name": "fresh ginger (grated)", "amount": "1", "unit": "tbsp" },
+      { "name": "ras el hanout", "amount": "1", "unit": "tbsp" },
+      { "name": "ground turmeric", "amount": "1", "unit": "tsp" },
+      { "name": "saffron threads (bloomed in 2 tbsp hot water)", "amount": "0.5", "unit": "tsp" },
+      { "name": "whole fenugreek seeds", "amount": "2", "unit": "tbsp" },
+      { "name": "brown or green lentils (rinsed)", "amount": "200", "unit": "g" },
+      { "name": "olive oil", "amount": "4", "unit": "tbsp" },
+      { "name": "smen (or unsalted butter)", "amount": "2", "unit": "tbsp" },
+      { "name": "chicken stock or water", "amount": "1.5", "unit": "L" },
+      { "name": "msemen or day-old khobz", "amount": "8", "unit": "pieces" },
+      { "name": "toasted almonds (to finish)", "amount": "50", "unit": "g" },
+      { "name": "salt", "amount": "1.5", "unit": "tsp" }
+    ],
+    "steps": [
+      "In a heavy pot, warm the olive oil and smen over medium heat; soften the onions and garlic 12 minutes until pale gold.",
+      "Add the ginger, ras el hanout, turmeric, bloomed saffron, fenugreek, and salt; stir for 1 minute.",
+      "Slide in the chicken and turn to coat in the spice paste; pour in 1 liter of stock and bring to a gentle simmer.",
+      "Add the lentils, partially cover, and simmer 45 minutes, topping up stock as needed; the broth should stay generous.",
+      "Tear the msemen into rough strips and warm them briefly in a dry pan.",
+      "Heap the torn msemen across a wide platter; ladle lentils and broth over until the bread softens.",
+      "Arrange the chicken on top, spoon over the caramelized onion sauce, and finish with toasted almonds and a drizzle of smen.",
+      "Eat communally, scooping bread, lentils, and chicken in every bite."
+    ],
+    "prepTime": 25,
+    "cookTime": 75,
+    "servings": 6
+  },
+  "khoresh-e-fesenjan": {
+    "ingredients": [
+      { "name": "chicken thighs or duck legs (skin-on, bone-in)", "amount": "1", "unit": "kg" },
+      { "name": "shelled walnut halves", "amount": "400", "unit": "g" },
+      { "name": "pomegranate molasses (sour)", "amount": "150", "unit": "ml" },
+      { "name": "yellow onion (grated)", "amount": "2", "unit": "medium" },
+      { "name": "saffron threads (bloomed in 3 tbsp hot water)", "amount": "0.25", "unit": "tsp" },
+      { "name": "butter or ghee", "amount": "3", "unit": "tbsp" },
+      { "name": "sugar (only if molasses is very tart)", "amount": "1", "unit": "tsp" },
+      { "name": "salt", "amount": "1.5", "unit": "tsp" },
+      { "name": "ground black pepper", "amount": "0.5", "unit": "tsp" },
+      { "name": "water", "amount": "1.2", "unit": "L" },
+      { "name": "pomegranate arils (to garnish)", "amount": "1", "unit": "handful" }
+    ],
+    "steps": [
+      "Toast the walnuts in a dry pan over low heat for 8 minutes, until fragrant but not darkened; cool, then grind to a fine paste in a food processor.",
+      "In a heavy pot, sweat the grated onion in butter over medium-low heat until deeply golden, about 12 minutes.",
+      "Brown the chicken on all sides in the same pot; remove and set aside.",
+      "Stir the ground walnuts into the onion and cook 5 minutes; pour in the water and bring to a gentle simmer.",
+      "Cover partially and simmer on the lowest possible heat for 45 to 60 minutes, stirring often, until the walnut oil rises and the sauce darkens to amber.",
+      "Stir in the pomegranate molasses, bloomed saffron, salt, pepper, and sugar if using; return the chicken to the pot.",
+      "Simmer uncovered for 30 to 40 minutes more, until the sauce reduces to a glossy near-black gravy and the chicken is meltingly tender.",
+      "Rest 10 minutes; serve over Persian saffron rice (chelow) scattered with pomegranate arils."
+    ],
+    "prepTime": 20,
+    "cookTime": 130,
+    "servings": 5
+  },
+  "kuurdak": {
+    "ingredients": [
+      { "name": "mutton or lamb with fat (cut into 3 cm cubes)", "amount": "1", "unit": "kg" },
+      { "name": "lamb tail fat or rendered fat (curdyuk)", "amount": "100", "unit": "g" },
+      { "name": "lamb liver and kidney (optional, cubed)", "amount": "200", "unit": "g" },
+      { "name": "yellow onions (thickly sliced)", "amount": "4", "unit": "large" },
+      { "name": "garlic (crushed)", "amount": "4", "unit": "cloves" },
+      { "name": "ground cumin", "amount": "1", "unit": "tsp" },
+      { "name": "whole dried red chili (optional)", "amount": "1", "unit": "chili" },
+      { "name": "salt", "amount": "2", "unit": "tsp" },
+      { "name": "fresh dill (chopped, to finish)", "amount": "1", "unit": "handful" },
+      { "name": "non bread or flatbread (to serve)", "amount": "4", "unit": "rounds" }
+    ],
+    "steps": [
+      "Render the tail fat in a heavy cast-iron pan or dutch oven over medium-high heat until crackling and golden; lift out and reserve the cracklings.",
+      "In the rendered fat, sear the mutton cubes in batches until deeply browned on all sides; remove to a plate.",
+      "Lower the heat, add the onions with a pinch of salt, and let them slowly soften and brown in the meat fat for 15 to 20 minutes.",
+      "Return the meat (and offal if using) to the pan with the garlic, cumin, whole chili, and remaining salt.",
+      "Cover tightly and cook on the lowest heat for 1 hour, stirring once or twice; no water is added, the dish must cook in its own juices.",
+      "Uncover, raise the heat, and let the remaining liquid evaporate; the meat should glaze in the dark fat.",
+      "Stir through the dill and the reserved cracklings; serve hot, scooped onto torn non bread."
+    ],
+    "prepTime": 20,
+    "cookTime": 90,
+    "servings": 6
+  },
+  "peka": {
+    "ingredients": [
+      { "name": "lamb shoulder (bone-in, in 5 cm chunks)", "amount": "800", "unit": "g" },
+      { "name": "veal shoulder (in 5 cm chunks)", "amount": "800", "unit": "g" },
+      { "name": "waxy potatoes (peeled, halved if large)", "amount": "1", "unit": "kg" },
+      { "name": "yellow onions (quartered)", "amount": "3", "unit": "medium" },
+      { "name": "garlic (whole peeled cloves)", "amount": "8", "unit": "cloves" },
+      { "name": "fresh rosemary sprigs", "amount": "4", "unit": "sprigs" },
+      { "name": "bay leaves", "amount": "3", "unit": "leaves" },
+      { "name": "extra-virgin olive oil", "amount": "100", "unit": "ml" },
+      { "name": "dry white wine", "amount": "250", "unit": "ml" },
+      { "name": "coarse sea salt", "amount": "2", "unit": "tsp" },
+      { "name": "ground black pepper", "amount": "1", "unit": "tsp" }
+    ],
+    "steps": [
+      "Pat the meats dry and season generously with salt and pepper.",
+      "Arrange the lamb and veal in a single layer in a wide, shallow round pan (cast iron or a traditional Croatian sac).",
+      "Tuck the onions, potatoes, garlic, rosemary, and bay leaves around and on top of the meat.",
+      "Pour the olive oil and white wine over everything and cover with a heavy domed lid (the peka itself).",
+      "Traditional method: build a wood fire, then heap glowing embers and ash up over and around the lid; roast 2.5 to 3 hours, topping up the embers as they cool.",
+      "Home oven alternative: preheat to 220C, place the covered pan on the lowest rack for 30 minutes, then lower to 170C and roast 2 hours undisturbed.",
+      "Lift the lid carefully; the lamb should pull from the bone and the potatoes should be crisp-edged and saturated in juices.",
+      "Bring the pan to the table; serve with crusty bread and a glass of Plavac Mali."
+    ],
+    "prepTime": 20,
+    "cookTime": 180,
+    "servings": 8
   }
 }
