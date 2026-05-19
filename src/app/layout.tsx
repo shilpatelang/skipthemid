@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import Providers from "@/components/Providers";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
@@ -62,6 +63,13 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
+        {process.env.NEXT_PUBLIC_GOATCOUNTER_URL && (
+          <Script
+            data-goatcounter={`${process.env.NEXT_PUBLIC_GOATCOUNTER_URL}/count`}
+            src="https://gc.zgo.at/count.js"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );
