@@ -142,7 +142,7 @@ export default async function DishPage({
   const recipeJsonLdString = JSON.stringify(recipeJsonLd).replace(/</g, "\\u003c");
 
   return (
-    <main className="min-h-screen bg-charcoal px-4 py-10">
+    <main className="min-h-screen bg-cream px-4 py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: recipeJsonLdString }}
@@ -150,7 +150,7 @@ export default async function DishPage({
       <div className="mx-auto max-w-3xl">
         <Link
           href="/"
-          className="group inline-flex items-center gap-2 text-base font-medium text-white/70 transition-colors hover:text-gold"
+          className="group inline-flex items-center gap-2 text-base font-medium text-ink/60 transition-colors hover:text-terracotta"
         >
           <ArrowLeft
             className="h-4 w-4 transition-transform group-hover:-translate-x-1"
@@ -159,7 +159,7 @@ export default async function DishPage({
           Back to dishes
         </Link>
 
-        <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+        <div className="mt-8 overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-[0_24px_70px_rgba(38,59,55,0.1)]">
           {dish.imageUrl && (
             <div className="relative aspect-[2/1] w-full">
               <Image
@@ -177,28 +177,28 @@ export default async function DishPage({
 
           <div className="p-6 sm:p-8">
           <div className="flex flex-wrap items-center gap-2 text-sm font-semibold uppercase tracking-wide">
-            <span className="text-gold">{dish.cuisine}</span>
-            <span className="text-white/30">·</span>
-            <span className="text-white/80">{dish.category}</span>
+            <span className="text-terracotta">{dish.cuisine}</span>
+            <span className="text-ink/25">·</span>
+            <span className="text-ink/65">{dish.category}</span>
           </div>
 
-          <h1 className="mt-3 font-serif text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-3 font-serif text-4xl font-bold tracking-tight text-ink sm:text-5xl">
             {dish.name}
           </h1>
 
-          <p className="mt-3 text-base text-white/80">{dish.origin}</p>
+          <p className="mt-3 text-base text-ink/60">{dish.origin}</p>
 
           <div className="mt-4 flex items-center gap-4">
             <StarRating
               average={avg ? Math.round(avg * 10) / 10 : null}
               count={dish.ratings.length}
             />
-            <div className="h-5 w-px bg-white/10" />
+            <div className="h-5 w-px bg-ink/10" />
             <RatingInput dishId={dish.id} initialRating={userRating} size="sm" />
           </div>
 
           <section className="mt-10">
-            <p className="text-lg leading-relaxed text-white/70">{dish.description}</p>
+            <p className="text-lg leading-relaxed text-ink/70">{dish.description}</p>
           </section>
 
           <section className="mt-10">
@@ -214,8 +214,8 @@ export default async function DishPage({
             />
           </section>
 
-          <section className="mt-12 border-t border-white/10 pt-8">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-gold">
+          <section className="mt-12 border-t border-ink/10 pt-8">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-terracotta">
               Rate this dish
             </h2>
             <div className="mt-3">

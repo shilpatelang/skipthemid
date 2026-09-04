@@ -39,15 +39,15 @@ export default function Header() {
     <header
       className={`sticky top-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-teal-900 border-b border-teal-400/30 shadow-lg shadow-teal-950/40"
-          : "bg-teal-800 border-b border-teal-400/10"
+          ? "border-b border-ink/10 bg-white/95 shadow-md shadow-ink/5 backdrop-blur-xl"
+          : "border-b border-ink/5 bg-cream/95 backdrop-blur-xl"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Wordmark */}
         <Link
           href="/"
-          className="flex items-center gap-2.5 font-serif text-xl font-bold tracking-[0.15em] text-white"
+          className="flex items-center gap-2.5 font-serif text-xl font-bold tracking-[0.12em] text-ink"
         >
           <Image
             src="/icon.png"
@@ -64,7 +64,7 @@ export default function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           <Link
             href="/map"
-            className="text-sm font-medium uppercase tracking-widest text-white/80 hover:text-white"
+            className="text-sm font-medium uppercase tracking-widest text-ink/70 hover:text-terracotta"
           >
             Map
           </Link>
@@ -73,7 +73,7 @@ export default function Header() {
           <div className="relative">
             <button
               onClick={() => setBrowseOpen((v) => !v)}
-              className="flex items-center gap-1 text-sm font-medium uppercase tracking-widest text-white/80 hover:text-white"
+              className="flex items-center gap-1 text-sm font-medium uppercase tracking-widest text-ink/70 hover:text-terracotta"
             >
               Browse
               <ChevronDown size={14} />
@@ -84,16 +84,16 @@ export default function Header() {
                   className="fixed inset-0 z-40"
                   onClick={() => setBrowseOpen(false)}
                 />
-                <div className="absolute right-0 top-full z-50 mt-3 w-48 rounded-xl border border-teal-400/20 bg-teal-900/95 p-2 backdrop-blur-2xl">
+                <div className="absolute right-0 top-full z-50 mt-3 w-48 rounded-xl border border-ink/10 bg-white/95 p-2 shadow-xl backdrop-blur-2xl">
                   <Link
                     href="/dishes"
                     onClick={() => setBrowseOpen(false)}
-                    className="block rounded-lg px-4 py-2.5 text-sm text-white hover:bg-white/10"
+                    className="block rounded-lg px-4 py-2.5 text-sm font-medium text-ink hover:bg-cream"
                   >
                     All dishes
                   </Link>
-                  <div className="my-1 h-px bg-white/10" />
-                  <p className="px-4 py-1 text-[10px] font-semibold uppercase tracking-widest text-white/40">
+                  <div className="my-1 h-px bg-ink/10" />
+                  <p className="px-4 py-1 text-[10px] font-semibold uppercase tracking-widest text-ink/40">
                     Continents
                   </p>
                   {STUB_CONTINENTS.map((c) => (
@@ -101,7 +101,7 @@ export default function Header() {
                       key={c.slug}
                       href={`/dishes?continent=${c.slug}`}
                       onClick={() => setBrowseOpen(false)}
-                      className="block rounded-lg px-4 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white"
+                      className="block rounded-lg px-4 py-2 text-sm text-ink/65 hover:bg-cream hover:text-terracotta"
                     >
                       {c.label}
                     </Link>
@@ -113,7 +113,7 @@ export default function Header() {
 
           <button
             onClick={handleSurprise}
-            className="flex items-center gap-1.5 text-sm font-medium uppercase tracking-widest text-white/80 hover:text-white"
+            className="flex items-center gap-1.5 text-sm font-medium uppercase tracking-widest text-ink/70 hover:text-terracotta"
           >
             <Sparkles size={14} />
             Surprise Me
@@ -122,7 +122,7 @@ export default function Header() {
           <button
             onClick={handleSearch}
             aria-label="Search"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white hover:bg-white/15"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink/70 shadow-sm hover:border-terracotta/30 hover:text-terracotta"
           >
             <Search size={18} />
           </button>
@@ -136,7 +136,7 @@ export default function Header() {
           <button
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Menu"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white text-ink"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -145,23 +145,23 @@ export default function Header() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="border-t border-teal-400/20 bg-teal-900/95 backdrop-blur-xl md:hidden">
+        <div className="border-t border-ink/10 bg-white/95 backdrop-blur-xl md:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6">
             <Link
               href="/map"
               onClick={() => setMobileOpen(false)}
-              className="rounded-lg px-3 py-2 text-sm font-medium uppercase tracking-widest text-white/90 hover:bg-white/10"
+              className="rounded-lg px-3 py-2 text-sm font-medium uppercase tracking-widest text-ink/80 hover:bg-cream"
             >
               Map
             </Link>
             <Link
               href="/dishes"
               onClick={() => setMobileOpen(false)}
-              className="rounded-lg px-3 py-2 text-sm font-medium uppercase tracking-widest text-white/90 hover:bg-white/10"
+              className="rounded-lg px-3 py-2 text-sm font-medium uppercase tracking-widest text-ink/80 hover:bg-cream"
             >
               Browse all dishes
             </Link>
-            <p className="mt-2 px-3 text-[10px] font-semibold uppercase tracking-widest text-white/40">
+            <p className="mt-2 px-3 text-[10px] font-semibold uppercase tracking-widest text-ink/40">
               Continents
             </p>
             {STUB_CONTINENTS.map((c) => (
@@ -169,7 +169,7 @@ export default function Header() {
                 key={c.slug}
                 href={`/dishes?continent=${c.slug}`}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm text-white/80 hover:bg-white/10"
+                className="rounded-lg px-3 py-2 text-sm text-ink/65 hover:bg-cream hover:text-terracotta"
               >
                 {c.label}
               </Link>
@@ -179,7 +179,7 @@ export default function Header() {
                 setMobileOpen(false);
                 handleSurprise();
               }}
-              className="mt-2 flex items-center gap-1.5 rounded-lg px-3 py-2 text-left text-sm font-medium uppercase tracking-widest text-white/90 hover:bg-white/10"
+              className="mt-2 flex items-center gap-1.5 rounded-lg px-3 py-2 text-left text-sm font-medium uppercase tracking-widest text-ink/80 hover:bg-cream"
             >
               <Sparkles size={14} />
               Surprise Me
@@ -189,7 +189,7 @@ export default function Header() {
                 setMobileOpen(false);
                 handleSearch();
               }}
-              className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-left text-sm font-medium uppercase tracking-widest text-white/90 hover:bg-white/10"
+              className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-left text-sm font-medium uppercase tracking-widest text-ink/80 hover:bg-cream"
             >
               <Search size={14} />
               Search

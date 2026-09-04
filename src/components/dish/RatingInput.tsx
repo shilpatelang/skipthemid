@@ -27,7 +27,7 @@ function StarIcon({
   }
   if (fill === "empty") {
     return (
-      <span className={`text-white/20 transition-all duration-150 ${glowClass}`}>
+      <span className={`text-ink/15 transition-all duration-150 ${glowClass}`}>
         ★
       </span>
     );
@@ -35,7 +35,7 @@ function StarIcon({
   // Half star
   return (
     <span className={`relative inline-block transition-all duration-150 ${glowClass}`}>
-      <span className="text-white/20">★</span>
+      <span className="text-ink/15">★</span>
       <span className="absolute inset-0 overflow-hidden" style={{ width: "50%" }}>
         <span className="text-amber-400">★</span>
       </span>
@@ -54,14 +54,14 @@ export default function RatingInput({ dishId, initialRating, size = "md" }: Rati
   const starSize = isSmall ? "text-lg" : "text-2xl";
 
   if (status === "loading") {
-    return <div className={`${isSmall ? "h-6 w-28" : "h-8 w-40"} animate-pulse rounded bg-white/10`} />;
+    return <div className={`${isSmall ? "h-6 w-28" : "h-8 w-40"} animate-pulse rounded bg-ink/10`} />;
   }
 
   if (!session?.user) {
     return (
       <button
         onClick={() => signIn("google")}
-        className={`rounded bg-gold font-medium text-charcoal hover:bg-gold/90 ${isSmall ? "px-3 py-1 text-xs" : "px-4 py-2 text-sm"}`}
+        className={`rounded-full bg-terracotta font-medium text-white hover:bg-terracotta/90 ${isSmall ? "px-3 py-1 text-xs" : "px-4 py-2 text-sm"}`}
       >
         Sign in to rate
       </button>
@@ -125,7 +125,7 @@ export default function RatingInput({ dishId, initialRating, size = "md" }: Rati
       </div>
       {submitted && <span className={`${isSmall ? "text-xs" : "text-sm"} text-green-400`}>Saved!</span>}
       {rating > 0 && !submitted && (
-        <span className={`font-mono ${isSmall ? "text-xs" : "text-sm"} text-white/50`}>Your rating: {rating}/5</span>
+        <span className={`font-mono ${isSmall ? "text-xs" : "text-sm"} text-ink/50`}>Your rating: {rating}/5</span>
       )}
     </div>
   );

@@ -34,6 +34,20 @@ _Decisions pending — pull these into the next conversation._
 
 ---
 
+## Phase 1.7 — Light visual refresh (IN PROGRESS)
+
+- Branch: `codex/white-theme-kitchen-animation`
+- Replace the dark charcoal interface with a warm white visual system so dish photography carries the page color.
+- Switch Mapbox to its light globe treatment and use a restrained Three.js layer of animated cookware around the landing globe.
+- Keep motion decorative, pointer-transparent, and respectful of `prefers-reduced-motion`.
+- Follow-up polish: removed pulsing fallback markers, replaced the sparse floating-prop treatment with a full Three.js kitchen environment, and added original project-local photography for 10 newly seeded dishes whose referenced files were missing.
+- Browser feedback polish: replaced the feathered globe mask with a crisp crop for legible labels and reduced dish-card captions to compact, content-sized overlays.
+- Navigation stability: moved globe source/layer registration out of `react-map-gl`'s Strict Mode-sensitive `<Source>` cleanup lifecycle, preventing Home ↔ Map transitions from tearing down Mapbox terrain state.
+- Globe cleanup: removed the artificial oval mask from the landing map, made Mapbox's surrounding space transparent over the kitchen, and delayed the thumbnail symbol layer until its images are registered.
+- Homepage art direction: replaced the generated Three.js kitchen backdrop behind the landing globe with the user-provided white-kitchen photograph.
+
+---
+
 ## Phase 2 — Curated content & SEO (NEXT)
 
 - Country/region landing pages: `/cuisine/india`, `/region/karnataka`
@@ -81,6 +95,7 @@ _Append-only. Records WHY we chose something, so we don't relitigate later._
 - **2026-04-25:** Phase 1 landing layout = **B3 (hybrid map hero)**. Top ~55vh interactive Mapbox map with overlay title + CTA, then curated rails (capped, NOT full dump), then "Browse all dishes →" link to `/dishes`. Reason: map is the most distinctive UX; burying it at `/map` undersells it. Hybrid keeps storytelling space + SEO-friendly text below the map.
 - **2026-04-26:** Header = **sticky (not fixed-overlay)** with **always-solid teal-900/95 background**. Reverted earlier "transparent over hero, solid on scroll" decision. Reason: user wanted clear, unobstructed view of map content under the header. Teal/turquoise palette chosen as primary header brand color. Scroll listener removed (no longer needed).
 - **2026-04-26:** Filter taxonomy resolved. Added 5 fields to `Dish`: `continent` (required), `country` (required), `region` (optional state/province), `course` (required: street-food/main/dessert/appetizer/side/snack), `dietType` (required: vegan/vegetarian/non-vegetarian/contains-egg). All slug-style for URL safety (`/dishes?continent=asia&course=dessert`). Existing `category` retained as granular display tag separate from the broader `course` filter. Backfill via TAXONOMY map in seed.ts with hard-fail guard for any unmapped dish.
+- **2026-09-04:** Visual direction changed from charcoal/dark to warm white with ink, teal, terracotta, and saffron accents. Reason: the neutral light canvas lets recipe photography feel more colorful. The landing map remains the product centerpiece and gains a subtle Three.js cookware backdrop with reduced-motion support.
 
 ---
 

@@ -49,13 +49,13 @@ export default async function Home() {
   });
 
   return (
-    <main className="bg-charcoal">
+    <main className="bg-cream">
       <MapHero />
       <FeaturedDishes dishes={featured} />
       <div className="flex justify-center pb-20">
         <Link
           href="/dishes"
-          className="group inline-flex items-center gap-2.5 rounded-lg bg-gold px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-charcoal shadow-lg shadow-gold/20 transition-all hover:gap-3.5 hover:shadow-gold/40"
+          className="group inline-flex items-center gap-2.5 rounded-full bg-terracotta px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white shadow-lg shadow-terracotta/20 transition-all hover:gap-3.5 hover:bg-terracotta/90 hover:shadow-terracotta/30"
         >
           Browse all dishes
           <ArrowRight className="h-4 w-4" strokeWidth={2.5} />

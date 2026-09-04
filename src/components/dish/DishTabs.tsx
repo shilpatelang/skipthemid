@@ -58,7 +58,7 @@ export default function DishTabs({
   return (
     <div>
       {/* Tab navigation with sliding indicator */}
-      <div className="border-b border-white/10">
+      <div className="border-b border-ink/10">
         <nav className="-mb-px flex gap-2">
           {TABS.map((tab) => (
             <button
@@ -69,13 +69,13 @@ export default function DishTabs({
               <span
                 className={
                   activeTab === tab.id
-                    ? "text-white"
-                    : "text-white/50 hover:text-white/80"
+                    ? "text-ink"
+                    : "text-ink/45 hover:text-ink/75"
                 }
               >
                 {tab.label}
                 {tab.id === "where" && places.length > 0 && (
-                  <span className="ml-2 inline-flex items-center justify-center rounded-full bg-gold px-2 py-0.5 text-xs font-bold text-charcoal">
+                  <span className="ml-2 inline-flex items-center justify-center rounded-full bg-terracotta px-2 py-0.5 text-xs font-bold text-white">
                     {places.length}
                   </span>
                 )}
@@ -85,7 +85,7 @@ export default function DishTabs({
               {activeTab === tab.id && (
                 <motion.div
                   layoutId="tab-indicator"
-                  className="absolute inset-x-0 -bottom-px h-[3px] rounded-full bg-gold"
+                className="absolute inset-x-0 -bottom-px h-[3px] rounded-full bg-terracotta"
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
               )}
@@ -121,7 +121,7 @@ export default function DishTabs({
                         <span className="text-lg">🍽️</span>
                         <button
                           onClick={() => setTargetServings(Math.max(1, targetServings - 1))}
-                          className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold hover:bg-blue-500/30 transition-colors"
+                          className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/15 text-sm font-bold transition-colors hover:bg-blue-500/25"
                         >
                           −
                         </button>
@@ -130,7 +130,7 @@ export default function DishTabs({
                         </span>
                         <button
                           onClick={() => setTargetServings(targetServings + 1)}
-                          className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold hover:bg-blue-500/30 transition-colors"
+                          className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/15 text-sm font-bold transition-colors hover:bg-blue-500/25"
                         >
                           +
                         </button>
@@ -143,7 +143,7 @@ export default function DishTabs({
                 {ingredients && ingredients.length > 0 && (
                   <div>
                     <div className="mb-4 flex items-center justify-between">
-                      <h3 className="text-lg font-semibold text-white">
+                      <h3 className="text-lg font-semibold text-ink">
                         Ingredients
                       </h3>
                       <div className="flex items-center gap-1 text-sm">
@@ -151,8 +151,8 @@ export default function DishTabs({
                           onClick={() => setUnitSystem("metric")}
                           className={`rounded-full px-3 py-1 transition-colors ${
                             unitSystem === "metric"
-                              ? "bg-gold/20 font-medium text-gold"
-                              : "text-white/40 hover:text-white/60"
+                              ? "bg-terracotta/10 font-medium text-terracotta"
+                              : "text-ink/40 hover:text-ink/65"
                           }`}
                         >
                           Metric
@@ -161,8 +161,8 @@ export default function DishTabs({
                           onClick={() => setUnitSystem("imperial")}
                           className={`rounded-full px-3 py-1 transition-colors ${
                             unitSystem === "imperial"
-                              ? "bg-gold/20 font-medium text-gold"
-                              : "text-white/40 hover:text-white/60"
+                              ? "bg-terracotta/10 font-medium text-terracotta"
+                              : "text-ink/40 hover:text-ink/65"
                           }`}
                         >
                           Imperial
@@ -177,12 +177,12 @@ export default function DishTabs({
                         return (
                           <li
                             key={i}
-                            className="flex items-baseline gap-3 border-b border-white/10 pb-3"
+                            className="flex items-baseline gap-3 border-b border-ink/10 pb-3"
                           >
-                            <span className="min-w-[5.5rem] text-lg font-medium text-white tabular-nums">
+                            <span className="min-w-[5.5rem] text-lg font-medium text-ink tabular-nums">
                               {displayAmt}{displayUnit ? ` ${displayUnit}` : ""}
                             </span>
-                            <span className="text-lg text-white/60">
+                            <span className="text-lg text-ink/60">
                               {ing.name}
                             </span>
                           </li>
@@ -195,16 +195,16 @@ export default function DishTabs({
                 {/* Steps */}
                 {steps && steps.length > 0 && (
                   <div>
-                    <h3 className="mb-4 text-lg font-semibold text-white">
+                    <h3 className="mb-4 text-lg font-semibold text-ink">
                       Directions
                     </h3>
                     <ol className="space-y-5">
                       {steps.map((step, i) => (
                         <li key={i} className="flex gap-4">
-                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold/20 text-sm font-semibold text-gold">
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-terracotta/10 text-sm font-semibold text-terracotta">
                             {i + 1}
                           </span>
-                          <p className="text-lg leading-relaxed text-white/70 pt-0.5">
+                          <p className="pt-0.5 text-lg leading-relaxed text-ink/70">
                             {step}
                           </p>
                         </li>
@@ -215,9 +215,9 @@ export default function DishTabs({
               </div>
             ) : (
               /* Styled empty state */
-              <div className="flex flex-col items-center justify-center rounded-xl bg-white/5 px-8 py-16 text-center">
-                <ChefHat className="mb-4 h-12 w-12 text-white/20" />
-                <p className="font-mono text-sm uppercase tracking-wider text-white/40">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-cream px-8 py-16 text-center">
+                <ChefHat className="mb-4 h-12 w-12 text-ink/20" />
+                <p className="font-mono text-sm uppercase tracking-wider text-ink/40">
                   Recipe coming soon
                 </p>
               </div>
@@ -228,7 +228,7 @@ export default function DishTabs({
         {activeTab === "where" && (
           <div className="space-y-6">
             {mapImageUrl && (
-              <div className="overflow-hidden rounded-lg border border-white/10">
+              <div className="overflow-hidden rounded-2xl border border-ink/10">
                 <img
                   src={mapImageUrl}
                   alt={`Map showing ${origin}`}
@@ -239,16 +239,16 @@ export default function DishTabs({
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium uppercase tracking-wide text-white/40">
+                <p className="text-sm font-medium uppercase tracking-wide text-ink/40">
                   Origin
                 </p>
-                <p className="mt-1 text-xl font-medium text-white">
+                <p className="mt-1 text-xl font-medium text-ink">
                   {origin}
                 </p>
               </div>
               <Link
                 href="/map"
-                className="cta-glow rounded-lg bg-gold px-5 py-2.5 text-base font-medium text-charcoal transition-colors hover:bg-gold/90"
+                className="cta-glow rounded-full bg-terracotta px-5 py-2.5 text-base font-medium text-white transition-colors hover:bg-terracotta/90"
               >
                 View on World Map
               </Link>
@@ -256,16 +256,16 @@ export default function DishTabs({
 
             {places.length > 0 && (
               <div>
-                <h3 className="mb-4 text-sm font-medium uppercase tracking-wide text-white/40">
+                <h3 className="mb-4 text-sm font-medium uppercase tracking-wide text-ink/40">
                   Recommended Places
                 </h3>
-                <ul className="divide-y divide-white/10">
+                <ul className="divide-y divide-ink/10">
                   {places.map((place) => (
                     <li key={place.id} className="py-4 first:pt-0 last:pb-0">
-                      <p className="text-base font-medium text-white">
+                      <p className="text-base font-medium text-ink">
                         {place.name}
                       </p>
-                      <p className="mt-1 text-sm text-white/40">
+                      <p className="mt-1 text-sm text-ink/45">
                         {[place.address, `${place.city}, ${place.country}`]
                           .filter(Boolean)
                           .join(" — ")}
@@ -277,7 +277,7 @@ export default function DishTabs({
             )}
 
             {places.length === 0 && (
-              <p className="text-base text-white/40">
+              <p className="text-base text-ink/45">
                 No places listed yet.
               </p>
             )}

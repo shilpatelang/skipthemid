@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --charcoal: #1a1a1b;
-  --gold: #d4af37;
+  --background: #fffaf2;
+  --foreground: #263b37;
+  --cream: #fffaf2;
+  --paper: #ffffff;
+  --ink: #263b37;
+  --charcoal: #263b37;
+  --gold: #e5a530;
+  --terracotta: #d96c3b;
+  --sage: #6f8f76;
 }
 
 @theme inline {
@@ -12,6 +17,11 @@
   --color-foreground: var(--foreground);
   --color-charcoal: var(--charcoal);
   --color-gold: var(--gold);
+  --color-cream: var(--cream);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-terracotta: var(--terracotta);
+  --color-sage: var(--sage);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-playfair);
@@ -20,8 +30,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   margin: 0;
+}
+
+::selection {
+  background: rgba(217, 108, 59, 0.22);
+  color: var(--ink);
 }
 
 .mapboxgl-popup-content {
@@ -43,16 +58,16 @@ body {
 
 /* Luxury CTA glow */
 .cta-glow {
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 12px 30px rgba(217, 108, 59, 0.22);
   transition: all 0.3s ease;
 }
 .cta-glow:hover {
-  box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+  box-shadow: 0 16px 36px rgba(217, 108, 59, 0.3);
   transform: scale(1.05);
 }
 
 /* Star rating glow on hover */
 .star-glow {
-  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.6));
+  filter: drop-shadow(0 0 6px rgba(229, 165, 48, 0.55));
   transform: scale(1.1);
 }

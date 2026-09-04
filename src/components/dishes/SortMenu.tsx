@@ -37,11 +37,11 @@ export default function SortMenu() {
     <div className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white"
+        className="flex items-center gap-1.5 rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-medium text-ink/75 shadow-sm transition-colors hover:border-ink/20 hover:text-ink"
       >
         <ArrowUpDown size={14} strokeWidth={2.5} />
         <span>Sort</span>
-        <span className="text-white/40">·</span>
+        <span className="text-ink/35">·</span>
         <span>{currentLabel}</span>
         <ChevronDown size={14} strokeWidth={2.5} />
       </button>
@@ -52,15 +52,15 @@ export default function SortMenu() {
             className="fixed inset-0 z-40"
             onClick={() => setOpen(false)}
           />
-          <div className="absolute right-0 top-full z-50 mt-2 min-w-[180px] rounded-xl border border-white/15 bg-charcoal/95 p-2 backdrop-blur-2xl">
+          <div className="absolute right-0 top-full z-50 mt-2 min-w-[180px] rounded-xl border border-ink/10 bg-white/95 p-2 shadow-xl backdrop-blur-2xl">
             {SORT_OPTIONS.map((opt) => (
               <button
                 key={opt.value}
                 onClick={() => setSort(opt.value)}
                 className={`block w-full rounded-lg px-3 py-2 text-left text-sm transition-colors ${
                   current === opt.value
-                    ? "bg-gold/20 font-semibold text-gold"
-                    : "text-white/70 hover:bg-white/5 hover:text-white"
+                    ? "bg-terracotta/10 font-semibold text-terracotta"
+                    : "text-ink/65 hover:bg-cream hover:text-ink"
                 }`}
               >
                 {opt.label}

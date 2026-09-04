@@ -9,12 +9,12 @@ function HalfStar({ fill, className }: { fill: "full" | "half" | "empty"; classN
     return <span className={`text-amber-400 ${className ?? ""}`}>★</span>;
   }
   if (fill === "empty") {
-    return <span className={`text-white/20 ${className ?? ""}`}>★</span>;
+    return <span className={`text-ink/15 ${className ?? ""}`}>★</span>;
   }
   // Half star: overlay a clipped gold star on top of a dim one
   return (
     <span className={`relative inline-block ${className ?? ""}`}>
-      <span className="text-white/20">★</span>
+      <span className="text-ink/15">★</span>
       <span className="absolute inset-0 overflow-hidden" style={{ width: "50%" }}>
         <span className="text-amber-400">★</span>
       </span>
@@ -32,7 +32,7 @@ export default function StarRating({
   if (average === null) {
     return (
       <span
-        className={`font-mono uppercase tracking-wider text-white/40 ${size === "sm" ? "text-xs" : "text-sm"}`}
+        className={`font-mono uppercase tracking-wider text-ink/45 ${size === "sm" ? "text-xs" : "text-sm"}`}
       >
         No ratings yet
       </span>
@@ -55,7 +55,7 @@ export default function StarRating({
         })}
       </div>
       <span
-        className={`font-mono text-white/50 ${size === "sm" ? "text-sm" : "text-base"}`}
+        className={`font-mono text-ink/55 ${size === "sm" ? "text-sm" : "text-base"}`}
       >
         {average.toFixed(1)} ({count})
       </span>

@@ -88,14 +88,14 @@ export default function FilterBar() {
               onClick={() => setOpenKey(isOpen ? null : filter.key)}
               className={`flex items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                 isActive
-                  ? "border-gold/60 bg-gold/15 text-gold"
-                  : "border-white/15 bg-white/5 text-white/80 hover:bg-white/10 hover:text-white"
+                  ? "border-terracotta/40 bg-terracotta/10 text-terracotta"
+                  : "border-ink/10 bg-white text-ink/75 shadow-sm hover:border-ink/20 hover:text-ink"
               }`}
             >
               <span>{filter.label}</span>
               {currentLabel && (
                 <>
-                  <span className={isActive ? "text-gold/60" : "text-white/40"}>·</span>
+                  <span className={isActive ? "text-terracotta/60" : "text-ink/35"}>·</span>
                   <span>{currentLabel}</span>
                 </>
               )}
@@ -108,26 +108,26 @@ export default function FilterBar() {
                   className="fixed inset-0 z-40"
                   onClick={() => setOpenKey(null)}
                 />
-                <div className="absolute left-0 top-full z-50 mt-2 min-w-[200px] rounded-xl border border-white/15 bg-charcoal/95 p-2 backdrop-blur-2xl">
+                <div className="absolute left-0 top-full z-50 mt-2 min-w-[200px] rounded-xl border border-ink/10 bg-white/95 p-2 shadow-xl backdrop-blur-2xl">
                   <button
                     onClick={() => setFilter(filter.key, null)}
                     className={`block w-full rounded-lg px-3 py-2 text-left text-sm transition-colors ${
                       !current
-                        ? "bg-white/10 text-white"
-                        : "text-white/70 hover:bg-white/5 hover:text-white"
+                        ? "bg-teal-50 text-teal-800"
+                        : "text-ink/65 hover:bg-cream hover:text-ink"
                     }`}
                   >
                     All
                   </button>
-                  <div className="my-1 h-px bg-white/10" />
+                  <div className="my-1 h-px bg-ink/10" />
                   {filter.options.map((opt) => (
                     <button
                       key={opt.value}
                       onClick={() => setFilter(filter.key, opt.value)}
                       className={`block w-full rounded-lg px-3 py-2 text-left text-sm transition-colors ${
                         current === opt.value
-                          ? "bg-gold/20 font-semibold text-gold"
-                          : "text-white/70 hover:bg-white/5 hover:text-white"
+                          ? "bg-terracotta/10 font-semibold text-terracotta"
+                          : "text-ink/65 hover:bg-cream hover:text-ink"
                       }`}
                     >
                       {opt.label}
@@ -143,7 +143,7 @@ export default function FilterBar() {
       {hasActive && (
         <button
           onClick={clearAll}
-          className="ml-1 inline-flex items-center gap-1 text-sm font-medium text-white/60 transition-colors hover:text-white"
+          className="ml-1 inline-flex items-center gap-1 text-sm font-medium text-ink/55 transition-colors hover:text-terracotta"
         >
           <X size={14} strokeWidth={2.5} />
           Clear all

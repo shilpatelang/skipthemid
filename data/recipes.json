@@ -1,16 +1,56 @@
 {
   "jackfruit-banana-blossom-skewers": {
     "ingredients": [
-      {"name": "young green jackfruit (canned in brine)", "amount": "400", "unit": "g"},
-      {"name": "fresh banana blossom", "amount": "1", "unit": "large"},
-      {"name": "coconut oil", "amount": "2", "unit": "tbsp"},
-      {"name": "ginger-garlic paste", "amount": "1", "unit": "tbsp"},
-      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
-      {"name": "kashmiri red chili powder", "amount": "1", "unit": "tsp"},
-      {"name": "garam masala", "amount": "1", "unit": "tsp"},
-      {"name": "thick coconut milk", "amount": "100", "unit": "ml"},
-      {"name": "curry leaves", "amount": "10", "unit": "leaves"},
-      {"name": "lemon juice", "amount": "1", "unit": "tbsp"}
+      {
+        "name": "young green jackfruit (canned in brine)",
+        "amount": "400",
+        "unit": "g"
+      },
+      {
+        "name": "fresh banana blossom",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "coconut oil",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "ginger-garlic paste",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "kashmiri red chili powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "thick coconut milk",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "curry leaves",
+        "amount": "10",
+        "unit": "leaves"
+      },
+      {
+        "name": "lemon juice",
+        "amount": "1",
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "Prepare the banana blossom by removing the tough outer purple bracts until you reach the pale heart; slice into thick wedges and soak in acidulated water to prevent browning.",
@@ -27,16 +67,56 @@
   },
   "ceviche-de-conchas-negras": {
     "ingredients": [
-      {"name": "black clams (conchas negras)", "amount": "24", "unit": "pieces"},
-      {"name": "lime juice (freshly squeezed)", "amount": "10", "unit": "limes"},
-      {"name": "red onion (finely diced)", "amount": "1", "unit": "large"},
-      {"name": "ají limo pepper (minced)", "amount": "1", "unit": "pepper"},
-      {"name": "garlic paste", "amount": "1", "unit": "tsp"},
-      {"name": "fresh cilantro (chopped)", "amount": "2", "unit": "tbsp"},
-      {"name": "rocoto pepper paste", "amount": "1", "unit": "tbsp"},
-      {"name": "salt", "amount": "1", "unit": "tsp"},
-      {"name": "boiled sweet potato (slices)", "amount": "2", "unit": "servings"},
-      {"name": "choclo (large-grain Peruvian corn)", "amount": "1", "unit": "cup"}
+      {
+        "name": "black clams (conchas negras)",
+        "amount": "24",
+        "unit": "pieces"
+      },
+      {
+        "name": "lime juice (freshly squeezed)",
+        "amount": "10",
+        "unit": "limes"
+      },
+      {
+        "name": "red onion (finely diced)",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "ají limo pepper (minced)",
+        "amount": "1",
+        "unit": "pepper"
+      },
+      {
+        "name": "garlic paste",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "fresh cilantro (chopped)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "rocoto pepper paste",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "boiled sweet potato (slices)",
+        "amount": "2",
+        "unit": "servings"
+      },
+      {
+        "name": "choclo (large-grain Peruvian corn)",
+        "amount": "1",
+        "unit": "cup"
+      }
     ],
     "steps": [
       "Scrub the black clams thoroughly under cold water to remove any mud or grit.",
@@ -52,16 +132,56 @@
   },
   "adjarian-khachapuri": {
     "ingredients": [
-      {"name": "all-purpose flour", "amount": "500", "unit": "g"},
-      {"name": "warm water", "amount": "150", "unit": "ml"},
-      {"name": "warm milk", "amount": "100", "unit": "ml"},
-      {"name": "dry active yeast", "amount": "7", "unit": "g"},
-      {"name": "sulguni cheese (or mozzarella)", "amount": "300", "unit": "g"},
-      {"name": "imeruli cheese (or feta/ricotta mix)", "amount": "300", "unit": "g"},
-      {"name": "eggs (for topping + dough)", "amount": "5", "unit": "pieces"},
-      {"name": "unsalted butter", "amount": "50", "unit": "g"},
-      {"name": "salt", "amount": "1", "unit": "tsp"},
-      {"name": "sugar", "amount": "1", "unit": "tsp"}
+      {
+        "name": "all-purpose flour",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "warm water",
+        "amount": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "warm milk",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "dry active yeast",
+        "amount": "7",
+        "unit": "g"
+      },
+      {
+        "name": "sulguni cheese (or mozzarella)",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "imeruli cheese (or feta/ricotta mix)",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "eggs (for topping + dough)",
+        "amount": "5",
+        "unit": "pieces"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": "50",
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "sugar",
+        "amount": "1",
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "Mix flour, yeast, sugar, and salt; gradually add warm water, milk, and a splash of oil to form a smooth dough. Let rise for 1.5 hours.",
@@ -78,15 +198,51 @@
   },
   "rendang-padang": {
     "ingredients": [
-      {"name": "beef chuck (cubed)", "amount": "1000", "unit": "g"},
-      {"name": "thick coconut milk", "amount": "1.5", "unit": "l"},
-      {"name": "lemongrass (bruised)", "amount": "2", "unit": "stalks"},
-      {"name": "galangal (thinly sliced)", "amount": "50", "unit": "g"},
-      {"name": "turmeric leaf", "amount": "1", "unit": "piece"},
-      {"name": "shallots", "amount": "100", "unit": "g"},
-      {"name": "garlic", "amount": "50", "unit": "g"},
-      {"name": "red chilies (keriting)", "amount": "150", "unit": "g"},
-      {"name": "toasted coconut (kerisik)", "amount": "3", "unit": "tbsp"}
+      {
+        "name": "beef chuck (cubed)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "thick coconut milk",
+        "amount": "1.5",
+        "unit": "l"
+      },
+      {
+        "name": "lemongrass (bruised)",
+        "amount": "2",
+        "unit": "stalks"
+      },
+      {
+        "name": "galangal (thinly sliced)",
+        "amount": "50",
+        "unit": "g"
+      },
+      {
+        "name": "turmeric leaf",
+        "amount": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "shallots",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "amount": "50",
+        "unit": "g"
+      },
+      {
+        "name": "red chilies (keriting)",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "toasted coconut (kerisik)",
+        "amount": "3",
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "Blend shallots, garlic, ginger, and chilies into a smooth spice paste (bumbu).",
@@ -102,16 +258,56 @@
   },
   "mole-negro": {
     "ingredients": [
-      {"name": "mulato chiles (dried)", "amount": "6", "unit": "pieces"},
-      {"name": "pasilla chiles (dried)", "amount": "4", "unit": "pieces"},
-      {"name": "mexican chocolate (Ibarra/Abuelita)", "amount": "100", "unit": "g"},
-      {"name": "plantain (fried)", "amount": "1/2", "unit": "piece"},
-      {"name": "white bread (bolillo/toasted)", "amount": "1", "unit": "slice"},
-      {"name": "sesame seeds (toasted)", "amount": "1/4", "unit": "cup"},
-      {"name": "almonds", "amount": "1/4", "unit": "cup"},
-      {"name": "cinnamon stick (mexican)", "amount": "1", "unit": "piece"},
-      {"name": "chicken stock", "amount": "1.5", "unit": "l"},
-      {"name": "lard", "amount": "3", "unit": "tbsp"}
+      {
+        "name": "mulato chiles (dried)",
+        "amount": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "pasilla chiles (dried)",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "mexican chocolate (Ibarra/Abuelita)",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "plantain (fried)",
+        "amount": "1/2",
+        "unit": "piece"
+      },
+      {
+        "name": "white bread (bolillo/toasted)",
+        "amount": "1",
+        "unit": "slice"
+      },
+      {
+        "name": "sesame seeds (toasted)",
+        "amount": "1/4",
+        "unit": "cup"
+      },
+      {
+        "name": "almonds",
+        "amount": "1/4",
+        "unit": "cup"
+      },
+      {
+        "name": "cinnamon stick (mexican)",
+        "amount": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "chicken stock",
+        "amount": "1.5",
+        "unit": "l"
+      },
+      {
+        "name": "lard",
+        "amount": "3",
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "Remove seeds from chiles and fry the seeds in a pan until completely charred and black; soak the seeds in water to remove bitterness.",
@@ -127,14 +323,46 @@
   },
   "saksang": {
     "ingredients": [
-      {"name": "pork belly or shoulder (cubed)", "amount": "1000", "unit": "g"},
-      {"name": "pork blood (or beef blood substitute)", "amount": "100", "unit": "ml"},
-      {"name": "andaliman pepper (batak pepper)", "amount": "2", "unit": "tbsp"},
-      {"name": "lime leaves", "amount": "5", "unit": "leaves"},
-      {"name": "shallots", "amount": "10", "unit": "pieces"},
-      {"name": "bird's eye chilies", "amount": "10", "unit": "pieces"},
-      {"name": "galangal", "amount": "3", "unit": "cm"},
-      {"name": "lemongrass", "amount": "2", "unit": "stalks"}
+      {
+        "name": "pork belly or shoulder (cubed)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "pork blood (or beef blood substitute)",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "andaliman pepper (batak pepper)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "lime leaves",
+        "amount": "5",
+        "unit": "leaves"
+      },
+      {
+        "name": "shallots",
+        "amount": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "bird's eye chilies",
+        "amount": "10",
+        "unit": "pieces"
+      },
+      {
+        "name": "galangal",
+        "amount": "3",
+        "unit": "cm"
+      },
+      {
+        "name": "lemongrass",
+        "amount": "2",
+        "unit": "stalks"
+      }
     ],
     "steps": [
       "Grind shallots, garlic, ginger, turmeric, and chilies into a paste; crush the andaliman pepper separately.",
@@ -150,16 +378,56 @@
   },
   "tolma": {
     "ingredients": [
-      {"name": "grape leaves (brined or fresh)", "amount": "50", "unit": "leaves"},
-      {"name": "ground beef (80/20)", "amount": "500", "unit": "g"},
-      {"name": "short-grain rice", "amount": "100", "unit": "g"},
-      {"name": "onion (finely minced)", "amount": "2", "unit": "medium"},
-      {"name": "fresh cilantro (chopped)", "amount": "1", "unit": "bunch"},
-      {"name": "fresh dill (chopped)", "amount": "1", "unit": "bunch"},
-      {"name": "dried purple basil", "amount": "1", "unit": "tbsp"},
-      {"name": "tomato paste", "amount": "2", "unit": "tbsp"},
-      {"name": "matzoon (or greek yogurt)", "amount": "200", "unit": "g"},
-      {"name": "garlic (minced)", "amount": "3", "unit": "cloves"}
+      {
+        "name": "grape leaves (brined or fresh)",
+        "amount": "50",
+        "unit": "leaves"
+      },
+      {
+        "name": "ground beef (80/20)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "short-grain rice",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "onion (finely minced)",
+        "amount": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "fresh cilantro (chopped)",
+        "amount": "1",
+        "unit": "bunch"
+      },
+      {
+        "name": "fresh dill (chopped)",
+        "amount": "1",
+        "unit": "bunch"
+      },
+      {
+        "name": "dried purple basil",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "tomato paste",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "matzoon (or greek yogurt)",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "garlic (minced)",
+        "amount": "3",
+        "unit": "cloves"
+      }
     ],
     "steps": [
       "Blanch grape leaves in boiling water for 2 minutes if fresh, or rinse thoroughly if brined.",
@@ -176,15 +444,51 @@
   },
   "lanzhou-beef-noodles": {
     "ingredients": [
-      {"name": "high-protein wheat flour", "amount": "500", "unit": "g"},
-      {"name": "peng hui (alkaline water)", "amount": "1", "unit": "tsp"},
-      {"name": "beef shank", "amount": "800", "unit": "g"},
-      {"name": "white radish (daikon/sliced)", "amount": "1", "unit": "large"},
-      {"name": "star anise", "amount": "3", "unit": "pieces"},
-      {"name": "cassia bark (cinnamon)", "amount": "1", "unit": "piece"},
-      {"name": "sichuan peppercorns", "amount": "1", "unit": "tsp"},
-      {"name": "chili oil", "amount": "4", "unit": "tbsp"},
-      {"name": "fresh cilantro & scallions", "amount": "50", "unit": "g"}
+      {
+        "name": "high-protein wheat flour",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "peng hui (alkaline water)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "beef shank",
+        "amount": "800",
+        "unit": "g"
+      },
+      {
+        "name": "white radish (daikon/sliced)",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "star anise",
+        "amount": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "cassia bark (cinnamon)",
+        "amount": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "sichuan peppercorns",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "chili oil",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "fresh cilantro & scallions",
+        "amount": "50",
+        "unit": "g"
+      }
     ],
     "steps": [
       "Simmer beef shank with star anise, cassia, ginger, and peppercorns for 3 hours; strain to keep the broth crystal clear.",
@@ -201,15 +505,51 @@
   },
   "thieboudienne": {
     "ingredients": [
-      {"name": "white fish (grouper or snapper)", "amount": "1000", "unit": "g"},
-      {"name": "broken jasmine rice", "amount": "500", "unit": "g"},
-      {"name": "tomato paste", "amount": "150", "unit": "g"},
-      {"name": "guédj (dried fermented fish)", "amount": "50", "unit": "g"},
-      {"name": "cassava (peeled/chunked)", "amount": "1", "unit": "large"},
-      {"name": "eggplant", "amount": "1", "unit": "medium"},
-      {"name": "carrots", "amount": "2", "unit": "large"},
-      {"name": "habanero pepper", "amount": "1", "unit": "pepper"},
-      {"name": "parsley & garlic (for stuffing)", "amount": "1", "unit": "cup"}
+      {
+        "name": "white fish (grouper or snapper)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "broken jasmine rice",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "tomato paste",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "guédj (dried fermented fish)",
+        "amount": "50",
+        "unit": "g"
+      },
+      {
+        "name": "cassava (peeled/chunked)",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "eggplant",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "carrots",
+        "amount": "2",
+        "unit": "large"
+      },
+      {
+        "name": "habanero pepper",
+        "amount": "1",
+        "unit": "pepper"
+      },
+      {
+        "name": "parsley & garlic (for stuffing)",
+        "amount": "1",
+        "unit": "cup"
+      }
     ],
     "steps": [
       "Make a 'rof' (herb paste) by pounding parsley, garlic, and chili; poke holes in the fish and stuff it with this paste.",
@@ -226,15 +566,51 @@
   },
   "mansaf": {
     "ingredients": [
-      {"name": "lamb shoulder (large chunks)", "amount": "1500", "unit": "g"},
-      {"name": "jameed (rehydrated and blended)", "amount": "500", "unit": "g"},
-      {"name": "basmati rice", "amount": "600", "unit": "g"},
-      {"name": "shrak (markook) flatbread", "amount": "2", "unit": "large sheets"},
-      {"name": "turmeric", "amount": "1", "unit": "tsp"},
-      {"name": "toasted pine nuts & almonds", "amount": "100", "unit": "g"},
-      {"name": "ghee (samneh)", "amount": "3", "unit": "tbsp"},
-      {"name": "bay leaves & cardamom pods", "amount": "5", "unit": "pieces"},
-      {"name": "fresh parsley (chopped)", "amount": "1/2", "unit": "cup"}
+      {
+        "name": "lamb shoulder (large chunks)",
+        "amount": "1500",
+        "unit": "g"
+      },
+      {
+        "name": "jameed (rehydrated and blended)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "basmati rice",
+        "amount": "600",
+        "unit": "g"
+      },
+      {
+        "name": "shrak (markook) flatbread",
+        "amount": "2",
+        "unit": "large sheets"
+      },
+      {
+        "name": "turmeric",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "toasted pine nuts & almonds",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "ghee (samneh)",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "bay leaves & cardamom pods",
+        "amount": "5",
+        "unit": "pieces"
+      },
+      {
+        "name": "fresh parsley (chopped)",
+        "amount": "1/2",
+        "unit": "cup"
+      }
     ],
     "steps": [
       "Boil the lamb chunks with cardamom and bay leaves, skimming the foam until the meat is halfway cooked; drain and set the meat aside.",
@@ -251,14 +627,46 @@
   },
   "cuy-asado": {
     "ingredients": [
-      {"name": "whole guinea pig (cleaned)", "amount": "1", "unit": "piece"},
-      {"name": "huacatay (black mint) paste", "amount": "3", "unit": "tbsp"},
-      {"name": "garlic (minced)", "amount": "4", "unit": "cloves"},
-      {"name": "cumin", "amount": "1", "unit": "tsp"},
-      {"name": "ají amarillo paste", "amount": "2", "unit": "tbsp"},
-      {"name": "chicha de jora (corn beer)", "amount": "100", "unit": "ml"},
-      {"name": "vegetable oil", "amount": "4", "unit": "tbsp"},
-      {"name": "salt & pepper", "amount": "1", "unit": "tsp"}
+      {
+        "name": "whole guinea pig (cleaned)",
+        "amount": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "huacatay (black mint) paste",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic (minced)",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "cumin",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "ají amarillo paste",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicha de jora (corn beer)",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt & pepper",
+        "amount": "1",
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "Pat the cuy completely dry; this is the most important step for achieving crispy skin.",
@@ -274,11 +682,31 @@
   },
   "acai-na-tigela": {
     "ingredients": [
-      {"name": "pure unsweetened açaí pulp (frozen)", "amount": "500", "unit": "g"},
-      {"name": "manioc flour (farinha de mandioca d'água)", "amount": "1", "unit": "cup"},
-      {"name": "tapioca pearls (crunchy variety)", "amount": "1/2", "unit": "cup"},
-      {"name": "fried river fish (charaki or snapper)", "amount": "2", "unit": "fillets"},
-      {"name": "sugar (optional/on the side)", "amount": "1", "unit": "tbsp"}
+      {
+        "name": "pure unsweetened açaí pulp (frozen)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "manioc flour (farinha de mandioca d'água)",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "tapioca pearls (crunchy variety)",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "fried river fish (charaki or snapper)",
+        "amount": "2",
+        "unit": "fillets"
+      },
+      {
+        "name": "sugar (optional/on the side)",
+        "amount": "1",
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "Thaw the pure açaí pulp slightly until it reaches a thick, creamy, pudding-like consistency.",
@@ -294,15 +722,51 @@
   },
   "plov": {
     "ingredients": [
-      {"name": "lamb or beef (large cubes)", "amount": "1000", "unit": "g"},
-      {"name": "devzira rice (or laser rice)", "amount": "1000", "unit": "g"},
-      {"name": "carrots (mix of yellow and orange, julienned)", "amount": "1000", "unit": "g"},
-      {"name": "onions (sliced)", "amount": "3", "unit": "large"},
-      {"name": "lamb fat (tail fat/kuyruk) or oil", "amount": "300", "unit": "ml"},
-      {"name": "whole garlic bulbs", "amount": "2", "unit": "pieces"},
-      {"name": "cumin seeds (crushed)", "amount": "2", "unit": "tbsp"},
-      {"name": "dried barberries (zereshk)", "amount": "2", "unit": "tbsp"},
-      {"name": "chickpeas (soaked)", "amount": "100", "unit": "g"}
+      {
+        "name": "lamb or beef (large cubes)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "devzira rice (or laser rice)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "carrots (mix of yellow and orange, julienned)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "onions (sliced)",
+        "amount": "3",
+        "unit": "large"
+      },
+      {
+        "name": "lamb fat (tail fat/kuyruk) or oil",
+        "amount": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "whole garlic bulbs",
+        "amount": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "cumin seeds (crushed)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "dried barberries (zereshk)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "chickpeas (soaked)",
+        "amount": "100",
+        "unit": "g"
+      }
     ],
     "steps": [
       "Heat the fat in a heavy cast-iron Kazan until smoking; sear the meat until deeply browned and remove.",
@@ -319,15 +783,51 @@
   },
   "banh-xeo": {
     "ingredients": [
-      {"name": "rice flour", "amount": "200", "unit": "g"},
-      {"name": "turmeric powder", "amount": "1", "unit": "tsp"},
-      {"name": "coconut milk", "amount": "250", "unit": "ml"},
-      {"name": "pork belly (thinly sliced)", "amount": "150", "unit": "g"},
-      {"name": "shrimp (peeled)", "amount": "150", "unit": "g"},
-      {"name": "mung bean sprouts", "amount": "200", "unit": "g"},
-      {"name": "mustard leaves and lettuce", "amount": "1", "unit": "bunch"},
-      {"name": "nuoc cham (dipping sauce)", "amount": "100", "unit": "ml"},
-      {"name": "sparkling water", "amount": "100", "unit": "ml"}
+      {
+        "name": "rice flour",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "coconut milk",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "pork belly (thinly sliced)",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "shrimp (peeled)",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "mung bean sprouts",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "mustard leaves and lettuce",
+        "amount": "1",
+        "unit": "bunch"
+      },
+      {
+        "name": "nuoc cham (dipping sauce)",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "sparkling water",
+        "amount": "100",
+        "unit": "ml"
+      }
     ],
     "steps": [
       "Whisk rice flour, turmeric, coconut milk, and sparkling water (for extra bubbles) into a thin batter; let rest for 30 minutes.",
@@ -344,14 +844,46 @@
   },
   "doro-wat": {
     "ingredients": [
-      {"name": "red onions (finely minced)", "amount": "2000", "unit": "g"},
-      {"name": "chicken drumsticks (skinned)", "amount": "1000", "unit": "g"},
-      {"name": "niter kibbeh (spiced butter)", "amount": "150", "unit": "g"},
-      {"name": "berbere spice blend", "amount": "1/2", "unit": "cup"},
-      {"name": "hard-boiled eggs", "amount": "6", "unit": "pieces"},
-      {"name": "garlic & ginger paste", "amount": "3", "unit": "tbsp"},
-      {"name": "lemon juice", "amount": "2", "unit": "tbsp"},
-      {"name": "injera (fermented flatbread)", "amount": "4", "unit": "pieces"}
+      {
+        "name": "red onions (finely minced)",
+        "amount": "2000",
+        "unit": "g"
+      },
+      {
+        "name": "chicken drumsticks (skinned)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "niter kibbeh (spiced butter)",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "berbere spice blend",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "hard-boiled eggs",
+        "amount": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "garlic & ginger paste",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "lemon juice",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "injera (fermented flatbread)",
+        "amount": "4",
+        "unit": "pieces"
+      }
     ],
     "steps": [
       "Slow-cook the minced onions in a dry pot over low heat for 45 minutes, stirring constantly until they lose all moisture and turn into a jam-like paste.",
@@ -368,15 +900,51 @@
   },
   "halo-halo": {
     "ingredients": [
-      {"name": "shaved ice", "amount": "2", "unit": "cups"},
-      {"name": "evaporated milk", "amount": "1/2", "unit": "cup"},
-      {"name": "ube halaya (purple yam jam)", "amount": "1", "unit": "scoop"},
-      {"name": "leche flan (custard)", "amount": "1", "unit": "slice"},
-      {"name": "sweetened mung beans", "amount": "1", "unit": "tbsp"},
-      {"name": "macapuno (coconut sport) strings", "amount": "1", "unit": "tbsp"},
-      {"name": "kaong (palm fruit)", "amount": "1", "unit": "tbsp"},
-      {"name": "pinipig (toasted pounded rice)", "amount": "1", "unit": "tsp"},
-      {"name": "ube ice cream", "amount": "1", "unit": "scoop"}
+      {
+        "name": "shaved ice",
+        "amount": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "evaporated milk",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "ube halaya (purple yam jam)",
+        "amount": "1",
+        "unit": "scoop"
+      },
+      {
+        "name": "leche flan (custard)",
+        "amount": "1",
+        "unit": "slice"
+      },
+      {
+        "name": "sweetened mung beans",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "macapuno (coconut sport) strings",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "kaong (palm fruit)",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "pinipig (toasted pounded rice)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "ube ice cream",
+        "amount": "1",
+        "unit": "scoop"
+      }
     ],
     "steps": [
       "In a tall glass, layer the bottom with sweetened beans, macapuno, kaong, and other preserved fruits.",
@@ -392,14 +960,46 @@
   },
   "kokorec": {
     "ingredients": [
-      {"name": "lamb intestines (cleaned/bleached)", "amount": "500", "unit": "g"},
-      {"name": "lamb sweetbreads", "amount": "200", "unit": "g"},
-      {"name": "dried oregano", "amount": "2", "unit": "tbsp"},
-      {"name": "pul biber (aleppo pepper)", "amount": "1", "unit": "tbsp"},
-      {"name": "cumin", "amount": "1", "unit": "tsp"},
-      {"name": "crusty white bread (baguette style)", "amount": "2", "unit": "rolls"},
-      {"name": "tomato (finely diced)", "amount": "1", "unit": "medium"},
-      {"name": "green bell pepper (finely diced)", "amount": "1", "unit": "piece"}
+      {
+        "name": "lamb intestines (cleaned/bleached)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "lamb sweetbreads",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "dried oregano",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "pul biber (aleppo pepper)",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "cumin",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "crusty white bread (baguette style)",
+        "amount": "2",
+        "unit": "rolls"
+      },
+      {
+        "name": "tomato (finely diced)",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "green bell pepper (finely diced)",
+        "amount": "1",
+        "unit": "piece"
+      }
     ],
     "steps": [
       "Thread the lamb sweetbreads onto a horizontal skewer.",
@@ -416,14 +1016,46 @@
   },
   "pierogi-ruskie": {
     "ingredients": [
-      {"name": "all-purpose flour", "amount": "500", "unit": "g"},
-      {"name": "warm water", "amount": "250", "unit": "ml"},
-      {"name": "twaróg (or dry farmer's cheese)", "amount": "300", "unit": "g"},
-      {"name": "russet potatoes (peeled/boiled)", "amount": "500", "unit": "g"},
-      {"name": "onions (finely diced)", "amount": "2", "unit": "large"},
-      {"name": "butter", "amount": "100", "unit": "g"},
-      {"name": "sour cream (for serving)", "amount": "1", "unit": "cup"},
-      {"name": "salt & black pepper", "amount": "1", "unit": "tsp"}
+      {
+        "name": "all-purpose flour",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "warm water",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "twaróg (or dry farmer's cheese)",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "russet potatoes (peeled/boiled)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "onions (finely diced)",
+        "amount": "2",
+        "unit": "large"
+      },
+      {
+        "name": "butter",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "sour cream (for serving)",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "salt & black pepper",
+        "amount": "1",
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "Mash the boiled potatoes while hot and mix with the twaróg until smooth; season heavily with black pepper.",
@@ -440,16 +1072,56 @@
   },
   "bunny-chow": {
     "ingredients": [
-      {"name": "unsliced white bread loaf", "amount": "1", "unit": "loaf"},
-      {"name": "lamb or mutton (cubed)", "amount": "800", "unit": "g"},
-      {"name": "oil", "amount": "3", "unit": "tbsp"},
-      {"name": "onions (finely chopped)", "amount": "2", "unit": "medium"},
-      {"name": "durban curry powder (hot)", "amount": "3", "unit": "tbsp"},
-      {"name": "star anise", "amount": "2", "unit": "pieces"},
-      {"name": "curry leaves", "amount": "12", "unit": "leaves"},
-      {"name": "potatoes (cubed)", "amount": "2", "unit": "large"},
-      {"name": "ginger-garlic paste", "amount": "2", "unit": "tbsp"},
-      {"name": "tomato (chopped)", "amount": "1", "unit": "large"}
+      {
+        "name": "unsliced white bread loaf",
+        "amount": "1",
+        "unit": "loaf"
+      },
+      {
+        "name": "lamb or mutton (cubed)",
+        "amount": "800",
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "onions (finely chopped)",
+        "amount": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "durban curry powder (hot)",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "star anise",
+        "amount": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "curry leaves",
+        "amount": "12",
+        "unit": "leaves"
+      },
+      {
+        "name": "potatoes (cubed)",
+        "amount": "2",
+        "unit": "large"
+      },
+      {
+        "name": "ginger-garlic paste",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "tomato (chopped)",
+        "amount": "1",
+        "unit": "large"
+      }
     ],
     "steps": [
       "Heat oil and sauté star anise, cinnamon stick, and curry leaves; add onions and ginger-garlic paste until golden.",
@@ -466,16 +1138,56 @@
   },
   "khao-soi": {
     "ingredients": [
-      {"name": "egg noodles (fresh)", "amount": "500", "unit": "g"},
-      {"name": "chicken thighs (bone-in)", "amount": "4", "unit": "pieces"},
-      {"name": "coconut milk", "amount": "800", "unit": "ml"},
-      {"name": "khao soi curry paste", "amount": "4", "unit": "tbsp"},
-      {"name": "palm sugar", "amount": "1", "unit": "tbsp"},
-      {"name": "fish sauce", "amount": "3", "unit": "tbsp"},
-      {"name": "pickled mustard greens (sliced)", "amount": "1/2", "unit": "cup"},
-      {"name": "shallots (sliced)", "amount": "4", "unit": "pieces"},
-      {"name": "dried chili oil", "amount": "2", "unit": "tbsp"},
-      {"name": "lime wedges", "amount": "4", "unit": "pieces"}
+      {
+        "name": "egg noodles (fresh)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "chicken thighs (bone-in)",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "coconut milk",
+        "amount": "800",
+        "unit": "ml"
+      },
+      {
+        "name": "khao soi curry paste",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "palm sugar",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "fish sauce",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "pickled mustard greens (sliced)",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "shallots (sliced)",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "dried chili oil",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "lime wedges",
+        "amount": "4",
+        "unit": "pieces"
+      }
     ],
     "steps": [
       "Fry the curry paste in a thick layer of coconut cream until the oil splits and becomes fragrant.",
@@ -491,371 +1203,919 @@
     "servings": 4
   },
   "caldillo-de-congrio": {
-  "ingredients": [
-    { "name": "Conger eel (cleaned and sliced)", "amount": "1.5", "unit": "kg" },
-    { "name": "Dry white wine", "amount": "250", "unit": "ml" },
-    { "name": "Heavy cream", "amount": "100", "unit": "ml" },
-    { "name": "Onion (julienned)", "amount": "1", "unit": "large" },
-    { "name": "Garlic cloves (minced)", "amount": "3", "unit": "pcs" },
-    { "name": "Carrots (sliced)", "amount": "2", "unit": "pcs" },
-    { "name": "Potatoes (peeled and sliced)", "amount": "4", "unit": "medium" },
-    { "name": "Fish stock", "amount": "1.5", "unit": "l" },
-    { "name": "Tomato (peeled and chopped)", "amount": "2", "unit": "pcs" },
-    { "name": "Paprika", "amount": "1", "unit": "tsp" },
-    { "name": "Dried oregano", "amount": "1", "unit": "tsp" },
-    { "name": "Fresh cilantro (chopped)", "amount": "15", "unit": "g" }
-  ],
-  "steps": [
-    "Marinate the eel slices in white wine, salt, and pepper for at least 30 minutes.",
-    "In a large pot, sauté the onions, garlic, carrots, and tomatoes until soft.",
-    "Add the paprika and oregano, then pour in the fish stock and the marinade from the eel.",
-    "Add the potatoes and simmer for 15 minutes until they begin to soften.",
-    "Gently place the eel slices into the pot. Simmer for another 10-12 minutes until the fish is opaque and firm.",
-    "Just before serving, stir in the heavy cream and remove from heat.",
-    "Serve in heated clay bowls, garnished with fresh cilantro."
-  ],
-  "prepTime": 40,
-  "cookTime": 35,
-  "servings": 6
+    "ingredients": [
+      {
+        "name": "Conger eel (cleaned and sliced)",
+        "amount": "1.5",
+        "unit": "kg"
+      },
+      {
+        "name": "Dry white wine",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "Onion (julienned)",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Garlic cloves (minced)",
+        "amount": "3",
+        "unit": "pcs"
+      },
+      {
+        "name": "Carrots (sliced)",
+        "amount": "2",
+        "unit": "pcs"
+      },
+      {
+        "name": "Potatoes (peeled and sliced)",
+        "amount": "4",
+        "unit": "medium"
+      },
+      {
+        "name": "Fish stock",
+        "amount": "1.5",
+        "unit": "l"
+      },
+      {
+        "name": "Tomato (peeled and chopped)",
+        "amount": "2",
+        "unit": "pcs"
+      },
+      {
+        "name": "Paprika",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Dried oregano",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Fresh cilantro (chopped)",
+        "amount": "15",
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Marinate the eel slices in white wine, salt, and pepper for at least 30 minutes.",
+      "In a large pot, sauté the onions, garlic, carrots, and tomatoes until soft.",
+      "Add the paprika and oregano, then pour in the fish stock and the marinade from the eel.",
+      "Add the potatoes and simmer for 15 minutes until they begin to soften.",
+      "Gently place the eel slices into the pot. Simmer for another 10-12 minutes until the fish is opaque and firm.",
+      "Just before serving, stir in the heavy cream and remove from heat.",
+      "Serve in heated clay bowls, garnished with fresh cilantro."
+    ],
+    "prepTime": 40,
+    "cookTime": 35,
+    "servings": 6
   },
   "seco-de-chivo": {
-  "ingredients": [
-    { "name": "Goat meat (with bone, cut into pieces)", "amount": "1000", "unit": "g" },
-    { "name": "Chicha de Jora (or dark beer)", "amount": "500", "unit": "ml" },
-    { "name": "Naranjilla juice (or bitter orange juice)", "amount": "120", "unit": "ml" },
-    { "name": "Red onion (finely chopped)", "amount": "2", "unit": "pcs" },
-    { "name": "Green bell pepper (chopped)", "amount": "1", "unit": "pc" },
-    { "name": "Tomatoes (seeded and chopped)", "amount": "3", "unit": "pcs" },
-    { "name": "Garlic (minced)", "amount": "4", "unit": "cloves" },
-    { "name": "Achiote oil (annatto)", "amount": "30", "unit": "ml" },
-    { "name": "Cumin", "amount": "5", "unit": "g" },
-    { "name": "Panela (or brown sugar)", "amount": "15", "unit": "g" },
-    { "name": "Fresh cilantro (finely chopped)", "amount": "30", "unit": "g" }
-  ],
-  "steps": [
-    "Marinate the goat meat in cumin, garlic, salt, and half of the Chicha de Jora for at least 2 hours.",
-    "In a large heavy-bottomed pot, heat the achiote oil and brown the goat meat in batches. Remove and set aside.",
-    "In the same pot, sauté the onions, bell pepper, and tomatoes until soft and fragrant.",
-    "Return the meat to the pot and add the remaining Chicha de Jora, Naranjilla juice, and panela.",
-    "Bring to a boil, then reduce heat to a low simmer. Cover and cook for 2 to 2.5 hours until the meat is falling off the bone.",
-    "Uncover for the last 20 minutes to allow the sauce to reduce into a thick, glossy consistency.",
-    "Stir in the fresh cilantro just before serving with yellow rice and maduros (fried ripe plantains)."
-  ],
-  "prepTime": 30,
-  "cookTime": 150,
-  "servings": 6
+    "ingredients": [
+      {
+        "name": "Goat meat (with bone, cut into pieces)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "Chicha de Jora (or dark beer)",
+        "amount": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Naranjilla juice (or bitter orange juice)",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "Red onion (finely chopped)",
+        "amount": "2",
+        "unit": "pcs"
+      },
+      {
+        "name": "Green bell pepper (chopped)",
+        "amount": "1",
+        "unit": "pc"
+      },
+      {
+        "name": "Tomatoes (seeded and chopped)",
+        "amount": "3",
+        "unit": "pcs"
+      },
+      {
+        "name": "Garlic (minced)",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "Achiote oil (annatto)",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "Cumin",
+        "amount": "5",
+        "unit": "g"
+      },
+      {
+        "name": "Panela (or brown sugar)",
+        "amount": "15",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh cilantro (finely chopped)",
+        "amount": "30",
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Marinate the goat meat in cumin, garlic, salt, and half of the Chicha de Jora for at least 2 hours.",
+      "In a large heavy-bottomed pot, heat the achiote oil and brown the goat meat in batches. Remove and set aside.",
+      "In the same pot, sauté the onions, bell pepper, and tomatoes until soft and fragrant.",
+      "Return the meat to the pot and add the remaining Chicha de Jora, Naranjilla juice, and panela.",
+      "Bring to a boil, then reduce heat to a low simmer. Cover and cook for 2 to 2.5 hours until the meat is falling off the bone.",
+      "Uncover for the last 20 minutes to allow the sauce to reduce into a thick, glossy consistency.",
+      "Stir in the fresh cilantro just before serving with yellow rice and maduros (fried ripe plantains)."
+    ],
+    "prepTime": 30,
+    "cookTime": 150,
+    "servings": 6
   },
   "jiggs-dinner": {
-  "ingredients": [
-    { "name": "Salt beef (brined brisket or rib)", "amount": "1.5", "unit": "kg" },
-    { "name": "Yellow split peas", "amount": "300", "unit": "g" },
-    { "name": "Butter", "amount": "30", "unit": "g" },
-    { "name": "Large potatoes (peeled and halved)", "amount": "6", "unit": "pcs" },
-    { "name": "Large carrots (peeled and chunked)", "amount": "4", "unit": "pcs" },
-    { "name": "Green cabbage (cut into wedges)", "amount": "1", "unit": "head" },
-    { "name": "Turnip/Rutabaga (peeled and cubed)", "amount": "1", "unit": "large" },
-    { "name": "Black pepper", "amount": "2", "unit": "g" }
-  ],
-  "steps": [
-    "Soak the salt beef in cold water overnight in the refrigerator to remove excess salt. Rinse before cooking.",
-    "Place the yellow split peas into a cotton 'pudding bag' or several layers of cheesecloth, tying it securely but leaving room for the peas to expand.",
-    "Place the salt beef and the pea bag into a large stockpot. Cover with fresh water and bring to a boil.",
-    "Reduce heat and simmer for about 1.5 to 2 hours until the beef begins to soften.",
-    "Add the turnip, carrots, and cabbage wedges to the pot. Simmer for 20 minutes.",
-    "Add the potatoes and continue simmering for another 20-25 minutes until all vegetables are fork-tender.",
-    "Remove the pea bag. Empty the peas into a bowl, add butter and black pepper, and mash until smooth to create the pease pudding.",
-    "Serve the meat and vegetables on a large platter with the pease pudding on the side."
-  ],
-  "prepTime": 20,
-  "cookTime": 150,
-  "servings": 6
+    "ingredients": [
+      {
+        "name": "Salt beef (brined brisket or rib)",
+        "amount": "1.5",
+        "unit": "kg"
+      },
+      {
+        "name": "Yellow split peas",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "amount": "30",
+        "unit": "g"
+      },
+      {
+        "name": "Large potatoes (peeled and halved)",
+        "amount": "6",
+        "unit": "pcs"
+      },
+      {
+        "name": "Large carrots (peeled and chunked)",
+        "amount": "4",
+        "unit": "pcs"
+      },
+      {
+        "name": "Green cabbage (cut into wedges)",
+        "amount": "1",
+        "unit": "head"
+      },
+      {
+        "name": "Turnip/Rutabaga (peeled and cubed)",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "Black pepper",
+        "amount": "2",
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Soak the salt beef in cold water overnight in the refrigerator to remove excess salt. Rinse before cooking.",
+      "Place the yellow split peas into a cotton 'pudding bag' or several layers of cheesecloth, tying it securely but leaving room for the peas to expand.",
+      "Place the salt beef and the pea bag into a large stockpot. Cover with fresh water and bring to a boil.",
+      "Reduce heat and simmer for about 1.5 to 2 hours until the beef begins to soften.",
+      "Add the turnip, carrots, and cabbage wedges to the pot. Simmer for 20 minutes.",
+      "Add the potatoes and continue simmering for another 20-25 minutes until all vegetables are fork-tender.",
+      "Remove the pea bag. Empty the peas into a bowl, add butter and black pepper, and mash until smooth to create the pease pudding.",
+      "Serve the meat and vegetables on a large platter with the pease pudding on the side."
+    ],
+    "prepTime": 20,
+    "cookTime": 150,
+    "servings": 6
   },
   "akutaq": {
-  "ingredients": [
-    { "name": "Reindeer fat or beef tallow (finely shredded)", "amount": "250", "unit": "g" },
-    { "name": "Seal oil (or high-quality vegetable oil)", "amount": "120", "unit": "ml" },
-    { "name": "Wild berries (Cloudberries, Salmonberries, or Blueberries)", "amount": "500", "unit": "g" },
-    { "name": "Fresh clean snow (or crushed ice)", "amount": "250", "unit": "ml" },
-    { "name": "Sugar (optional modern addition)", "amount": "50", "unit": "g" },
-    { "name": "Water", "amount": "60", "unit": "ml" }
-  ],
-  "steps": [
-    "Place the shredded fat in a large bowl and cream it by hand (the heat from your hand is traditional for achieving the right texture) until it becomes light and fluffy.",
-    "Slowly add the seal oil or vegetable oil, a little at a time, while continuing to whip the mixture vigorously.",
-    "Add a small amount of water or snow to the mixture to increase the volume and achieve a white, creamy consistency.",
-    "If using sugar, fold it in slowly until dissolved.",
-    "Gently fold in the wild berries by hand so they remain whole and do not bleed too much color into the white base.",
-    "Chill the mixture in a cold area or freezer until firm but scoopable.",
-    "Serve immediately as a high-energy treat or side dish."
-  ],
-  "prepTime": 45,
-  "cookTime": 0,
-  "servings": 8
+    "ingredients": [
+      {
+        "name": "Reindeer fat or beef tallow (finely shredded)",
+        "amount": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Seal oil (or high-quality vegetable oil)",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "Wild berries (Cloudberries, Salmonberries, or Blueberries)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh clean snow (or crushed ice)",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Sugar (optional modern addition)",
+        "amount": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "amount": "60",
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Place the shredded fat in a large bowl and cream it by hand (the heat from your hand is traditional for achieving the right texture) until it becomes light and fluffy.",
+      "Slowly add the seal oil or vegetable oil, a little at a time, while continuing to whip the mixture vigorously.",
+      "Add a small amount of water or snow to the mixture to increase the volume and achieve a white, creamy consistency.",
+      "If using sugar, fold it in slowly until dissolved.",
+      "Gently fold in the wild berries by hand so they remain whole and do not bleed too much color into the white base.",
+      "Chill the mixture in a cold area or freezer until firm but scoopable.",
+      "Serve immediately as a high-energy treat or side dish."
+    ],
+    "prepTime": 45,
+    "cookTime": 0,
+    "servings": 8
   },
   "chislic": {
-  "ingredients": [
-    { "name": "Lamb leg or shoulder (cubed into 1-inch pieces)", "amount": "1000", "unit": "g" },
-    { "name": "Vegetable oil (for frying)", "amount": "1", "unit": "l" },
-    { "name": "Garlic salt", "amount": "2", "unit": "tbsp" },
-    { "name": "Black pepper", "amount": "1", "unit": "tsp" },
-    { "name": "Saltine crackers (for serving)", "amount": "1", "unit": "sleeve" },
-    { "name": "Toothpicks (for serving)", "amount": "20", "unit": "pcs" }
-  ],
-  "steps": [
-    "Cut the lamb into uniform 1-inch cubes, trimming excess fat but leaving some for flavor.",
-    "Season the cubes generously with garlic salt and black pepper, tossing to coat evenly.",
-    "Heat oil in a deep fryer or heavy pot to 190°C (375°F).",
-    "Fry the cubes in small batches for 3-4 minutes until the exterior is deeply golden and crispy but the interior remains pink and juicy.",
-    "Drain on paper towels and hit immediately with another dusting of garlic salt while still glistening.",
-    "Spear each cube with a toothpick and pile onto a plate alongside saltine crackers."
-  ],
-  "prepTime": 15,
-  "cookTime": 15,
-  "servings": 4
+    "ingredients": [
+      {
+        "name": "Lamb leg or shoulder (cubed into 1-inch pieces)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "Vegetable oil (for frying)",
+        "amount": "1",
+        "unit": "l"
+      },
+      {
+        "name": "Garlic salt",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Saltine crackers (for serving)",
+        "amount": "1",
+        "unit": "sleeve"
+      },
+      {
+        "name": "Toothpicks (for serving)",
+        "amount": "20",
+        "unit": "pcs"
+      }
+    ],
+    "steps": [
+      "Cut the lamb into uniform 1-inch cubes, trimming excess fat but leaving some for flavor.",
+      "Season the cubes generously with garlic salt and black pepper, tossing to coat evenly.",
+      "Heat oil in a deep fryer or heavy pot to 190°C (375°F).",
+      "Fry the cubes in small batches for 3-4 minutes until the exterior is deeply golden and crispy but the interior remains pink and juicy.",
+      "Drain on paper towels and hit immediately with another dusting of garlic salt while still glistening.",
+      "Spear each cube with a toothpick and pile onto a plate alongside saltine crackers."
+    ],
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 4
   },
   "pepperoni-roll": {
-  "ingredients": [
-    { "name": "Bread flour", "amount": "500", "unit": "g" },
-    { "name": "Warm water", "amount": "300", "unit": "ml" },
-    { "name": "Active dry yeast", "amount": "7", "unit": "g" },
-    { "name": "Sugar", "amount": "1", "unit": "tbsp" },
-    { "name": "Salt", "amount": "1", "unit": "tsp" },
-    { "name": "Olive oil", "amount": "2", "unit": "tbsp" },
-    { "name": "Pepperoni sticks (or thick-sliced pepperoni)", "amount": "300", "unit": "g" }
-  ],
-  "steps": [
-    "Dissolve yeast and sugar in warm water. Let it bloom for 5 minutes until frothy.",
-    "Mix flour and salt, then add the yeast mixture and olive oil. Knead for 8 to 10 minutes until the dough is smooth and elastic.",
-    "Cover and let rise in a warm spot for 1 hour until doubled in size.",
-    "Punch down the dough and divide into 8 equal portions. Roll each into a flat oval.",
-    "Place a pepperoni stick (or a row of overlapping slices) along the center of each oval. Fold the dough over and pinch the seam and ends shut tightly.",
-    "Place seam-side down on a parchment-lined baking sheet. Let rise for 20 minutes.",
-    "Bake at 190°C (375°F) for 18 to 20 minutes until golden brown. The rendered pepperoni fat will have soaked into the bread from the inside.",
-    "Cool on a wire rack. Serve at room temperature, exactly as the miners did."
-  ],
-  "prepTime": 90,
-  "cookTime": 20,
-  "servings": 8
+    "ingredients": [
+      {
+        "name": "Bread flour",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Warm water",
+        "amount": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "Active dry yeast",
+        "amount": "7",
+        "unit": "g"
+      },
+      {
+        "name": "Sugar",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Pepperoni sticks (or thick-sliced pepperoni)",
+        "amount": "300",
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Dissolve yeast and sugar in warm water. Let it bloom for 5 minutes until frothy.",
+      "Mix flour and salt, then add the yeast mixture and olive oil. Knead for 8 to 10 minutes until the dough is smooth and elastic.",
+      "Cover and let rise in a warm spot for 1 hour until doubled in size.",
+      "Punch down the dough and divide into 8 equal portions. Roll each into a flat oval.",
+      "Place a pepperoni stick (or a row of overlapping slices) along the center of each oval. Fold the dough over and pinch the seam and ends shut tightly.",
+      "Place seam-side down on a parchment-lined baking sheet. Let rise for 20 minutes.",
+      "Bake at 190°C (375°F) for 18 to 20 minutes until golden brown. The rendered pepperoni fat will have soaked into the bread from the inside.",
+      "Cool on a wire rack. Serve at room temperature, exactly as the miners did."
+    ],
+    "prepTime": 90,
+    "cookTime": 20,
+    "servings": 8
   },
   "ployes": {
-  "ingredients": [
-    { "name": "Buckwheat flour", "amount": "250", "unit": "g" },
-    { "name": "All-purpose flour", "amount": "125", "unit": "g" },
-    { "name": "Baking powder", "amount": "2", "unit": "tsp" },
-    { "name": "Salt", "amount": "1/2", "unit": "tsp" },
-    { "name": "Cold water", "amount": "500", "unit": "ml" },
-    { "name": "Boiling water", "amount": "250", "unit": "ml" },
-    { "name": "Butter (for serving)", "amount": "50", "unit": "g" },
-    { "name": "Maple syrup (for serving)", "amount": "100", "unit": "ml" }
-  ],
-  "steps": [
-    "Whisk together buckwheat flour, all-purpose flour, baking powder, and salt in a large bowl.",
-    "Add the cold water and stir until combined, then pour in the boiling water while stirring constantly. The batter should be thin and pourable, like crepe batter.",
-    "Let the batter rest for 5 minutes. It will thicken slightly.",
-    "Heat a lightly greased griddle or cast-iron skillet over medium heat.",
-    "Pour about 1/3 cup of batter onto the griddle and spread into a thin circle. Do NOT flip. Cook on one side only until the entire surface is covered with tiny holes and the top looks dry (about 2 minutes).",
-    "Slide the ploye off the griddle and stack on a plate. Repeat with the remaining batter.",
-    "Serve warm, spread with butter and rolled up, or use as a wrap for cretons, baked beans, or stew."
-  ],
-  "prepTime": 10,
-  "cookTime": 20,
-  "servings": 10
+    "ingredients": [
+      {
+        "name": "Buckwheat flour",
+        "amount": "250",
+        "unit": "g"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": "125",
+        "unit": "g"
+      },
+      {
+        "name": "Baking powder",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cold water",
+        "amount": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Boiling water",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Butter (for serving)",
+        "amount": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Maple syrup (for serving)",
+        "amount": "100",
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Whisk together buckwheat flour, all-purpose flour, baking powder, and salt in a large bowl.",
+      "Add the cold water and stir until combined, then pour in the boiling water while stirring constantly. The batter should be thin and pourable, like crepe batter.",
+      "Let the batter rest for 5 minutes. It will thicken slightly.",
+      "Heat a lightly greased griddle or cast-iron skillet over medium heat.",
+      "Pour about 1/3 cup of batter onto the griddle and spread into a thin circle. Do NOT flip. Cook on one side only until the entire surface is covered with tiny holes and the top looks dry (about 2 minutes).",
+      "Slide the ploye off the griddle and stack on a plate. Repeat with the remaining batter.",
+      "Serve warm, spread with butter and rolled up, or use as a wrap for cretons, baked beans, or stew."
+    ],
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 10
   },
   "horseshoe-sandwich": {
-  "ingredients": [
-    { "name": "Thick-cut white bread (Texas toast style)", "amount": "4", "unit": "slices" },
-    { "name": "Hamburger patties (or thick-sliced ham)", "amount": "4", "unit": "pieces" },
-    { "name": "Sharp cheddar cheese (shredded)", "amount": "300", "unit": "g" },
-    { "name": "Whole milk", "amount": "250", "unit": "ml" },
-    { "name": "Dry mustard powder", "amount": "1", "unit": "tsp" },
-    { "name": "Worcestershire sauce", "amount": "1", "unit": "tbsp" },
-    { "name": "Cayenne pepper", "amount": "1/4", "unit": "tsp" },
-    { "name": "Beer (lager)", "amount": "60", "unit": "ml" },
-    { "name": "French fries (thick-cut, frozen or fresh)", "amount": "500", "unit": "g" },
-    { "name": "Butter", "amount": "2", "unit": "tbsp" }
-  ],
-  "steps": [
-    "Fry or bake the french fries until golden and crispy. Keep warm.",
-    "Cook the hamburger patties (or warm the ham slices) to your liking. Set aside.",
-    "For the Welsh rarebit sauce: melt butter in a saucepan over medium-low heat. Add milk, beer, mustard powder, Worcestershire, and cayenne. Heat until steaming but not boiling.",
-    "Gradually stir in the shredded cheddar, a handful at a time, stirring constantly until you have a smooth, thick cheese sauce. Do not let it boil or it will break.",
-    "Toast the bread and place two slices on each plate.",
-    "Top each slice with a hamburger patty, then pile the hot french fries over everything.",
-    "Pour the cheese sauce generously over the entire construction. Serve immediately with a knife and fork."
-  ],
-  "prepTime": 15,
-  "cookTime": 25,
-  "servings": 2
+    "ingredients": [
+      {
+        "name": "Thick-cut white bread (Texas toast style)",
+        "amount": "4",
+        "unit": "slices"
+      },
+      {
+        "name": "Hamburger patties (or thick-sliced ham)",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "Sharp cheddar cheese (shredded)",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Whole milk",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Dry mustard powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Worcestershire sauce",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Cayenne pepper",
+        "amount": "1/4",
+        "unit": "tsp"
+      },
+      {
+        "name": "Beer (lager)",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "French fries (thick-cut, frozen or fresh)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Butter",
+        "amount": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Fry or bake the french fries until golden and crispy. Keep warm.",
+      "Cook the hamburger patties (or warm the ham slices) to your liking. Set aside.",
+      "For the Welsh rarebit sauce: melt butter in a saucepan over medium-low heat. Add milk, beer, mustard powder, Worcestershire, and cayenne. Heat until steaming but not boiling.",
+      "Gradually stir in the shredded cheddar, a handful at a time, stirring constantly until you have a smooth, thick cheese sauce. Do not let it boil or it will break.",
+      "Toast the bread and place two slices on each plate.",
+      "Top each slice with a hamburger patty, then pile the hot french fries over everything.",
+      "Pour the cheese sauce generously over the entire construction. Serve immediately with a knife and fork."
+    ],
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2
   },
   "geoduck-sashimi": {
-  "ingredients": [
-    { "name": "Live geoduck clam", "amount": "1", "unit": "whole" },
-    { "name": "Soy sauce (high quality)", "amount": "3", "unit": "tbsp" },
-    { "name": "Fresh wasabi (grated)", "amount": "1", "unit": "tbsp" },
-    { "name": "Rice vinegar", "amount": "1", "unit": "tbsp" },
-    { "name": "Shiso leaves", "amount": "4", "unit": "leaves" },
-    { "name": "Daikon radish (shredded)", "amount": "100", "unit": "g" },
-    { "name": "Lemon wedges", "amount": "2", "unit": "pieces" },
-    { "name": "Ice water", "amount": "1", "unit": "bowl" }
-  ],
-  "steps": [
-    "Bring a large pot of water to a rolling boil. Prepare a large bowl of ice water.",
-    "Separate the geoduck's siphon from the body by cutting around the base of the shell. Remove the gut ball and set aside (can be used for chowder).",
-    "Dunk the siphon into boiling water for exactly 10 seconds, then immediately plunge it into the ice water. The outer skin will loosen.",
-    "Peel away the tough outer skin of the siphon to reveal the smooth, pale flesh underneath.",
-    "Split the siphon lengthwise and rinse under cold water to remove any sand.",
-    "Slice the siphon crosswise into paper-thin pieces, angling the knife at about 45 degrees for maximum surface area.",
-    "Arrange the slices on a chilled plate over shredded daikon and shiso leaves. Serve immediately with soy sauce, fresh wasabi, and lemon wedges."
-  ],
-  "prepTime": 20,
-  "cookTime": 0,
-  "servings": 2
+    "ingredients": [
+      {
+        "name": "Live geoduck clam",
+        "amount": "1",
+        "unit": "whole"
+      },
+      {
+        "name": "Soy sauce (high quality)",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Fresh wasabi (grated)",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rice vinegar",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Shiso leaves",
+        "amount": "4",
+        "unit": "leaves"
+      },
+      {
+        "name": "Daikon radish (shredded)",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Lemon wedges",
+        "amount": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "Ice water",
+        "amount": "1",
+        "unit": "bowl"
+      }
+    ],
+    "steps": [
+      "Bring a large pot of water to a rolling boil. Prepare a large bowl of ice water.",
+      "Separate the geoduck's siphon from the body by cutting around the base of the shell. Remove the gut ball and set aside (can be used for chowder).",
+      "Dunk the siphon into boiling water for exactly 10 seconds, then immediately plunge it into the ice water. The outer skin will loosen.",
+      "Peel away the tough outer skin of the siphon to reveal the smooth, pale flesh underneath.",
+      "Split the siphon lengthwise and rinse under cold water to remove any sand.",
+      "Slice the siphon crosswise into paper-thin pieces, angling the knife at about 45 degrees for maximum surface area.",
+      "Arrange the slices on a chilled plate over shredded daikon and shiso leaves. Serve immediately with soy sauce, fresh wasabi, and lemon wedges."
+    ],
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 2
   },
   "pouding-chomeur": {
-  "ingredients": [
-    { "name": "All-purpose flour", "amount": "250", "unit": "g" },
-    { "name": "Granulated sugar", "amount": "150", "unit": "g" },
-    { "name": "Baking powder", "amount": "2", "unit": "tsp" },
-    { "name": "Whole milk", "amount": "180", "unit": "ml" },
-    { "name": "Butter (melted, for batter)", "amount": "60", "unit": "g" },
-    { "name": "Vanilla extract", "amount": "1", "unit": "tsp" },
-    { "name": "Pure maple syrup (dark/robust)", "amount": "400", "unit": "ml" },
-    { "name": "Heavy cream (35%)", "amount": "250", "unit": "ml" },
-    { "name": "Butter (for sauce)", "amount": "60", "unit": "g" },
-    { "name": "Pinch of salt", "amount": "1", "unit": "pinch" }
-  ],
-  "steps": [
-    "Whisk together flour, sugar, baking powder, and salt. Add milk, melted butter, and vanilla, stirring until just combined. Do not overmix.",
-    "Pour the batter into a buttered 9x13 inch baking dish and spread evenly.",
-    "In a saucepan, combine the maple syrup, heavy cream, and butter. Heat over medium until the butter melts and the mixture is hot and smooth. Do not boil.",
-    "Gently pour the hot maple cream sauce over the raw batter. It will look wrong. Trust the process.",
-    "Bake at 175°C (350°F) for 35 to 40 minutes until the cake layer is golden and a toothpick comes out clean. The syrup will have sunk to the bottom and turned into a thick, caramelized sauce.",
-    "Let cool for 10 minutes (the sauce is volcanic), then scoop into bowls, making sure to spoon up the maple sauce from the bottom with each serving."
-  ],
-  "prepTime": 15,
-  "cookTime": 40,
-  "servings": 8
+    "ingredients": [
+      {
+        "name": "All-purpose flour",
+        "amount": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Granulated sugar",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "Baking powder",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Whole milk",
+        "amount": "180",
+        "unit": "ml"
+      },
+      {
+        "name": "Butter (melted, for batter)",
+        "amount": "60",
+        "unit": "g"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Pure maple syrup (dark/robust)",
+        "amount": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "Heavy cream (35%)",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Butter (for sauce)",
+        "amount": "60",
+        "unit": "g"
+      },
+      {
+        "name": "Pinch of salt",
+        "amount": "1",
+        "unit": "pinch"
+      }
+    ],
+    "steps": [
+      "Whisk together flour, sugar, baking powder, and salt. Add milk, melted butter, and vanilla, stirring until just combined. Do not overmix.",
+      "Pour the batter into a buttered 9x13 inch baking dish and spread evenly.",
+      "In a saucepan, combine the maple syrup, heavy cream, and butter. Heat over medium until the butter melts and the mixture is hot and smooth. Do not boil.",
+      "Gently pour the hot maple cream sauce over the raw batter. It will look wrong. Trust the process.",
+      "Bake at 175°C (350°F) for 35 to 40 minutes until the cake layer is golden and a toothpick comes out clean. The syrup will have sunk to the bottom and turned into a thick, caramelized sauce.",
+      "Let cool for 10 minutes (the sauce is volcanic), then scoop into bowls, making sure to spoon up the maple sauce from the bottom with each serving."
+    ],
+    "prepTime": 15,
+    "cookTime": 40,
+    "servings": 8
   },
   "cochinita-pibil": {
-  "ingredients": [
-    { "name": "Bone-in pork shoulder", "amount": "2000", "unit": "g" },
-    { "name": "Achiote paste (recado rojo)", "amount": "200", "unit": "g" },
-    { "name": "Bitter orange juice (naranja agria)", "amount": "250", "unit": "ml" },
-    { "name": "Banana leaves (thawed if frozen)", "amount": "4", "unit": "large sheets" },
-    { "name": "Garlic cloves", "amount": "6", "unit": "cloves" },
-    { "name": "Black peppercorns", "amount": "1", "unit": "tsp" },
-    { "name": "Dried oregano (Mexican)", "amount": "1", "unit": "tbsp" },
-    { "name": "Salt", "amount": "1", "unit": "tbsp" },
-    { "name": "Red onion (for pickled topping)", "amount": "2", "unit": "large" },
-    { "name": "Habanero pepper", "amount": "1", "unit": "piece" },
-    { "name": "Corn tortillas (for serving)", "amount": "12", "unit": "pieces" }
-  ],
-  "steps": [
-    "Dissolve the achiote paste in bitter orange juice, then blend with garlic, peppercorns, oregano, and salt into a smooth marinade.",
-    "Score the pork deeply and rub the marinade into every cut and surface. Refrigerate overnight or at least 4 hours.",
-    "Pass the banana leaves briefly over an open flame or hot pan to make them pliable.",
-    "Line a deep roasting pan with overlapping banana leaves, leaving enough overhang to wrap the top. Place the marinated pork inside and pour over any remaining marinade.",
-    "Fold the banana leaves tightly over the pork, then seal the pan with a double layer of aluminum foil.",
-    "Roast at 150°C (300°F) for 4 to 5 hours until the pork shreds effortlessly with a fork.",
-    "While the pork roasts, thinly slice the red onions and quick-pickle them in bitter orange juice with a whole habanero and a pinch of salt for at least 1 hour.",
-    "Shred the pork in its juices and serve on warm corn tortillas, topped with the pickled onions and a spoonful of the pan juices."
-  ],
-  "prepTime": 30,
-  "cookTime": 300,
-  "servings": 8
+    "ingredients": [
+      {
+        "name": "Bone-in pork shoulder",
+        "amount": "2000",
+        "unit": "g"
+      },
+      {
+        "name": "Achiote paste (recado rojo)",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Bitter orange juice (naranja agria)",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Banana leaves (thawed if frozen)",
+        "amount": "4",
+        "unit": "large sheets"
+      },
+      {
+        "name": "Garlic cloves",
+        "amount": "6",
+        "unit": "cloves"
+      },
+      {
+        "name": "Black peppercorns",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Dried oregano (Mexican)",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Red onion (for pickled topping)",
+        "amount": "2",
+        "unit": "large"
+      },
+      {
+        "name": "Habanero pepper",
+        "amount": "1",
+        "unit": "piece"
+      },
+      {
+        "name": "Corn tortillas (for serving)",
+        "amount": "12",
+        "unit": "pieces"
+      }
+    ],
+    "steps": [
+      "Dissolve the achiote paste in bitter orange juice, then blend with garlic, peppercorns, oregano, and salt into a smooth marinade.",
+      "Score the pork deeply and rub the marinade into every cut and surface. Refrigerate overnight or at least 4 hours.",
+      "Pass the banana leaves briefly over an open flame or hot pan to make them pliable.",
+      "Line a deep roasting pan with overlapping banana leaves, leaving enough overhang to wrap the top. Place the marinated pork inside and pour over any remaining marinade.",
+      "Fold the banana leaves tightly over the pork, then seal the pan with a double layer of aluminum foil.",
+      "Roast at 150°C (300°F) for 4 to 5 hours until the pork shreds effortlessly with a fork.",
+      "While the pork roasts, thinly slice the red onions and quick-pickle them in bitter orange juice with a whole habanero and a pinch of salt for at least 1 hour.",
+      "Shred the pork in its juices and serve on warm corn tortillas, topped with the pickled onions and a spoonful of the pan juices."
+    ],
+    "prepTime": 30,
+    "cookTime": 300,
+    "servings": 8
   },
   "booyah": {
-  "ingredients": [
-    { "name": "Whole chicken (cut into pieces)", "amount": "1500", "unit": "g" },
-    { "name": "Beef chuck (cubed)", "amount": "500", "unit": "g" },
-    { "name": "Oxtails", "amount": "500", "unit": "g" },
-    { "name": "Green cabbage (chopped)", "amount": "1", "unit": "head" },
-    { "name": "Potatoes (peeled and diced)", "amount": "6", "unit": "medium" },
-    { "name": "Carrots (sliced)", "amount": "4", "unit": "large" },
-    { "name": "Celery stalks (chopped)", "amount": "4", "unit": "stalks" },
-    { "name": "Onions (diced)", "amount": "3", "unit": "large" },
-    { "name": "Canned tomatoes (crushed)", "amount": "800", "unit": "g" },
-    { "name": "Fresh corn kernels", "amount": "2", "unit": "cups" },
-    { "name": "Bay leaves", "amount": "3", "unit": "leaves" },
-    { "name": "Salt and black pepper", "amount": "2", "unit": "tbsp" }
-  ],
-  "steps": [
-    "Place the chicken, beef chuck, and oxtails in a very large stockpot. Cover with cold water and bring to a boil, skimming the foam as it rises.",
-    "Reduce heat and simmer for 2 to 3 hours until all meats are falling apart tender.",
-    "Remove the meats, shred or chop them, and return to the pot. Discard bones and excess fat.",
-    "Add onions, celery, carrots, and crushed tomatoes. Simmer for another hour, stirring occasionally.",
-    "Add potatoes, cabbage, corn, and bay leaves. Continue simmering for 45 minutes until the vegetables are soft and the stew is thick enough that a wooden spoon stands up in it.",
-    "Season generously with salt and pepper. Remove bay leaves.",
-    "Serve in deep bowls with crusty bread. Tastes even better reheated the next day."
-  ],
-  "prepTime": 30,
-  "cookTime": 300,
-  "servings": 12
+    "ingredients": [
+      {
+        "name": "Whole chicken (cut into pieces)",
+        "amount": "1500",
+        "unit": "g"
+      },
+      {
+        "name": "Beef chuck (cubed)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Oxtails",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "Green cabbage (chopped)",
+        "amount": "1",
+        "unit": "head"
+      },
+      {
+        "name": "Potatoes (peeled and diced)",
+        "amount": "6",
+        "unit": "medium"
+      },
+      {
+        "name": "Carrots (sliced)",
+        "amount": "4",
+        "unit": "large"
+      },
+      {
+        "name": "Celery stalks (chopped)",
+        "amount": "4",
+        "unit": "stalks"
+      },
+      {
+        "name": "Onions (diced)",
+        "amount": "3",
+        "unit": "large"
+      },
+      {
+        "name": "Canned tomatoes (crushed)",
+        "amount": "800",
+        "unit": "g"
+      },
+      {
+        "name": "Fresh corn kernels",
+        "amount": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "Bay leaves",
+        "amount": "3",
+        "unit": "leaves"
+      },
+      {
+        "name": "Salt and black pepper",
+        "amount": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Place the chicken, beef chuck, and oxtails in a very large stockpot. Cover with cold water and bring to a boil, skimming the foam as it rises.",
+      "Reduce heat and simmer for 2 to 3 hours until all meats are falling apart tender.",
+      "Remove the meats, shred or chop them, and return to the pot. Discard bones and excess fat.",
+      "Add onions, celery, carrots, and crushed tomatoes. Simmer for another hour, stirring occasionally.",
+      "Add potatoes, cabbage, corn, and bay leaves. Continue simmering for 45 minutes until the vegetables are soft and the stew is thick enough that a wooden spoon stands up in it.",
+      "Season generously with salt and pepper. Remove bay leaves.",
+      "Serve in deep bowls with crusty bread. Tastes even better reheated the next day."
+    ],
+    "prepTime": 30,
+    "cookTime": 300,
+    "servings": 12
   },
   "sonker": {
-  "ingredients": [
-    { "name": "Fresh peaches (peeled and sliced)", "amount": "1000", "unit": "g" },
-    { "name": "Granulated sugar", "amount": "200", "unit": "g" },
-    { "name": "All-purpose flour", "amount": "250", "unit": "g" },
-    { "name": "Whole milk", "amount": "250", "unit": "ml" },
-    { "name": "Baking powder", "amount": "2", "unit": "tsp" },
-    { "name": "Butter (melted)", "amount": "100", "unit": "g" },
-    { "name": "Vanilla extract", "amount": "1", "unit": "tsp" },
-    { "name": "Cinnamon", "amount": "1", "unit": "tsp" },
-    { "name": "Nutmeg", "amount": "1/4", "unit": "tsp" }
-  ],
-  "steps": [
-    "Toss the sliced peaches with half the sugar, cinnamon, and nutmeg. Let them macerate for 20 minutes until juicy.",
-    "Whisk together flour, remaining sugar, baking powder, milk, melted butter, and vanilla into a thin, pourable batter.",
-    "Pour the fruit and all its juices into a large, deep baking dish (at least 9x13 inches).",
-    "Pour the batter evenly over the top of the fruit. Do not stir.",
-    "Bake at 175°C (350°F) for 45 to 50 minutes until the crust is golden brown and the fruit is bubbling through.",
-    "While the sonker bakes, make the 'dip': heat milk, sugar, butter, and vanilla in a small saucepan until warm and smooth.",
-    "Serve generous scoops of the hot sonker in bowls, ladled with the warm milk dip."
-  ],
-  "prepTime": 30,
-  "cookTime": 50,
-  "servings": 8
+    "ingredients": [
+      {
+        "name": "Fresh peaches (peeled and sliced)",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "Granulated sugar",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": "250",
+        "unit": "g"
+      },
+      {
+        "name": "Whole milk",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "Baking powder",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Butter (melted)",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Nutmeg",
+        "amount": "1/4",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Toss the sliced peaches with half the sugar, cinnamon, and nutmeg. Let them macerate for 20 minutes until juicy.",
+      "Whisk together flour, remaining sugar, baking powder, milk, melted butter, and vanilla into a thin, pourable batter.",
+      "Pour the fruit and all its juices into a large, deep baking dish (at least 9x13 inches).",
+      "Pour the batter evenly over the top of the fruit. Do not stir.",
+      "Bake at 175°C (350°F) for 45 to 50 minutes until the crust is golden brown and the fruit is bubbling through.",
+      "While the sonker bakes, make the 'dip': heat milk, sugar, butter, and vanilla in a small saucepan until warm and smooth.",
+      "Serve generous scoops of the hot sonker in bowls, ladled with the warm milk dip."
+    ],
+    "prepTime": 30,
+    "cookTime": 50,
+    "servings": 8
   },
   "piki-bread": {
-  "ingredients": [
-    { "name": "Finely ground blue cornmeal", "amount": "1000", "unit": "g" },
-    { "name": "Juniper ash (culinary grade)", "amount": "30", "unit": "g" },
-    { "name": "Boiling water", "amount": "1.5", "unit": "l" },
-    { "name": "Cold water", "amount": "500", "unit": "ml" },
-    { "name": "Shortening or marrow fat (for greasing stone)", "amount": "15", "unit": "g" }
-  ],
-  "steps": [
-    "Sift the blue cornmeal into a large traditional clay or mixing bowl.",
-    "Dissolve the juniper ash in cold water and strain through a fine cloth into the cornmeal to remove any grit.",
-    "Gradually add the boiling water to the cornmeal mixture, stirring constantly until it forms a smooth, thin, pourable batter with no lumps.",
-    "Heat the Piki stone (sandstone slab) over a steady fire until a drop of water sizzles and dances on the surface (approx. 350°F).",
-    "Lightly grease the stone with a small amount of fat or oil using a clean cloth.",
-    "Using your fingers or a flat scoop, quickly smear a very thin layer of batter across the hot stone in a single, fluid motion.",
-    "Wait seconds for the edges to curl and the bread to turn translucent. Gently peel the sheet away from the stone.",
-    "While still hot and pliable, place the sheet on a flat surface and roll it tightly into a scroll. Repeat the process, often layering two sheets together before rolling.",
-    "Let the rolls cool until crisp and brittle."
-  ],
-  "prepTime": 60,
-  "cookTime": 120,
-  "servings": 10
+    "ingredients": [
+      {
+        "name": "Finely ground blue cornmeal",
+        "amount": "1000",
+        "unit": "g"
+      },
+      {
+        "name": "Juniper ash (culinary grade)",
+        "amount": "30",
+        "unit": "g"
+      },
+      {
+        "name": "Boiling water",
+        "amount": "1.5",
+        "unit": "l"
+      },
+      {
+        "name": "Cold water",
+        "amount": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "Shortening or marrow fat (for greasing stone)",
+        "amount": "15",
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sift the blue cornmeal into a large traditional clay or mixing bowl.",
+      "Dissolve the juniper ash in cold water and strain through a fine cloth into the cornmeal to remove any grit.",
+      "Gradually add the boiling water to the cornmeal mixture, stirring constantly until it forms a smooth, thin, pourable batter with no lumps.",
+      "Heat the Piki stone (sandstone slab) over a steady fire until a drop of water sizzles and dances on the surface (approx. 350°F).",
+      "Lightly grease the stone with a small amount of fat or oil using a clean cloth.",
+      "Using your fingers or a flat scoop, quickly smear a very thin layer of batter across the hot stone in a single, fluid motion.",
+      "Wait seconds for the edges to curl and the bread to turn translucent. Gently peel the sheet away from the stone.",
+      "While still hot and pliable, place the sheet on a flat surface and roll it tightly into a scroll. Repeat the process, often layering two sheets together before rolling.",
+      "Let the rolls cool until crisp and brittle."
+    ],
+    "prepTime": 60,
+    "cookTime": 120,
+    "servings": 10
   },
   "litti-chokha": {
     "ingredients": [
-      {"name": "whole wheat flour", "amount": "2", "unit": "cups"},
-      {"name": "sattu (roasted gram flour)", "amount": "1", "unit": "cup"},
-      {"name": "mustard oil", "amount": "4", "unit": "tbsp"},
-      {"name": "ajwain (carom seeds)", "amount": "1", "unit": "tsp"},
-      {"name": "kalonji (nigella seeds)", "amount": "1/2", "unit": "tsp"},
-      {"name": "green chilies (finely chopped)", "amount": "3", "unit": "pieces"},
-      {"name": "lemon juice", "amount": "2", "unit": "tbsp"},
-      {"name": "ghee (for drenching)", "amount": "4", "unit": "tbsp"},
-      {"name": "large eggplant", "amount": "1", "unit": "whole"},
-      {"name": "tomatoes", "amount": "3", "unit": "medium"},
-      {"name": "potatoes (boiled)", "amount": "2", "unit": "medium"},
-      {"name": "garlic cloves", "amount": "4", "unit": "pieces"},
-      {"name": "fresh coriander (chopped)", "amount": "2", "unit": "tbsp"},
-      {"name": "salt", "amount": "to taste", "unit": ""}
+      {
+        "name": "whole wheat flour",
+        "amount": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "sattu (roasted gram flour)",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "mustard oil",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "ajwain (carom seeds)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "kalonji (nigella seeds)",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "green chilies (finely chopped)",
+        "amount": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "lemon juice",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "ghee (for drenching)",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "large eggplant",
+        "amount": "1",
+        "unit": "whole"
+      },
+      {
+        "name": "tomatoes",
+        "amount": "3",
+        "unit": "medium"
+      },
+      {
+        "name": "potatoes (boiled)",
+        "amount": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "garlic cloves",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "fresh coriander (chopped)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      }
     ],
     "steps": [
       "Prepare the sattu filling by mixing sattu with chopped green chilies, ajwain, kalonji, 2 tablespoons mustard oil, lemon juice, and salt. Add just enough water to make a moist but not wet mixture.",
@@ -872,19 +2132,71 @@
   },
   "pathar-ka-gosht": {
     "ingredients": [
-      {"name": "boneless lamb leg (thinly sliced)", "amount": "500", "unit": "g"},
-      {"name": "raw papaya paste", "amount": "2", "unit": "tbsp"},
-      {"name": "ginger paste", "amount": "1", "unit": "tbsp"},
-      {"name": "garlic paste", "amount": "1", "unit": "tbsp"},
-      {"name": "green chilies (slit)", "amount": "4", "unit": "pieces"},
-      {"name": "lime juice", "amount": "2", "unit": "tbsp"},
-      {"name": "red chili powder", "amount": "1", "unit": "tsp"},
-      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
-      {"name": "coriander powder", "amount": "1", "unit": "tsp"},
-      {"name": "salt", "amount": "to taste", "unit": ""},
-      {"name": "black pepper (coarsely ground)", "amount": "1", "unit": "tsp"},
-      {"name": "fresh mint leaves", "amount": "a handful", "unit": ""},
-      {"name": "fresh coriander leaves", "amount": "2", "unit": "tbsp"}
+      {
+        "name": "boneless lamb leg (thinly sliced)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "raw papaya paste",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "ginger paste",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic paste",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "green chilies (slit)",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "lime juice",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      },
+      {
+        "name": "black pepper (coarsely ground)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "fresh mint leaves",
+        "amount": "a handful",
+        "unit": ""
+      },
+      {
+        "name": "fresh coriander leaves",
+        "amount": "2",
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "Slice the lamb into thin, flat pieces about 5mm thick, trimming off any excess fat or sinew.",
@@ -901,21 +2213,81 @@
   },
   "kottu-roti": {
     "ingredients": [
-      {"name": "godamba roti or paratha (day old)", "amount": "4", "unit": "pieces"},
-      {"name": "boneless chicken (shredded)", "amount": "200", "unit": "g"},
-      {"name": "eggs", "amount": "2", "unit": "large"},
-      {"name": "leeks (finely sliced)", "amount": "1", "unit": "cup"},
-      {"name": "cabbage (shredded)", "amount": "1", "unit": "cup"},
-      {"name": "carrots (julienned)", "amount": "1/2", "unit": "cup"},
-      {"name": "onion (sliced)", "amount": "1", "unit": "medium"},
-      {"name": "garlic (minced)", "amount": "4", "unit": "cloves"},
-      {"name": "curry leaves", "amount": "1", "unit": "sprig"},
-      {"name": "Sri Lankan curry powder", "amount": "1", "unit": "tbsp"},
-      {"name": "chili flakes", "amount": "1", "unit": "tsp"},
-      {"name": "soy sauce", "amount": "1", "unit": "tbsp"},
-      {"name": "salt", "amount": "to taste", "unit": ""},
-      {"name": "vegetable oil", "amount": "3", "unit": "tbsp"},
-      {"name": "curry sauce or gravy", "amount": "1/2", "unit": "cup"}
+      {
+        "name": "godamba roti or paratha (day old)",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "boneless chicken (shredded)",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": "2",
+        "unit": "large"
+      },
+      {
+        "name": "leeks (finely sliced)",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "cabbage (shredded)",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "carrots (julienned)",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "onion (sliced)",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "garlic (minced)",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "curry leaves",
+        "amount": "1",
+        "unit": "sprig"
+      },
+      {
+        "name": "Sri Lankan curry powder",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "chili flakes",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "soy sauce",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      },
+      {
+        "name": "vegetable oil",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "curry sauce or gravy",
+        "amount": "1/2",
+        "unit": "cup"
+      }
     ],
     "steps": [
       "Tear or roughly chop the day old roti into small, irregular strips about the size of your thumb.",
@@ -932,16 +2304,56 @@
   },
   "smoked-pork-with-bamboo-shoot": {
     "ingredients": [
-      {"name": "smoked pork belly (cut into chunks)", "amount": "500", "unit": "g"},
-      {"name": "fermented bamboo shoot", "amount": "1", "unit": "cup"},
-      {"name": "axone (fermented soybean paste)", "amount": "2", "unit": "tbsp"},
-      {"name": "Raja Mircha or Bhut Jolokia (whole)", "amount": "2", "unit": "pieces"},
-      {"name": "ginger (crushed)", "amount": "1", "unit": "inch piece"},
-      {"name": "garlic (crushed)", "amount": "5", "unit": "cloves"},
-      {"name": "onion (roughly chopped)", "amount": "1", "unit": "large"},
-      {"name": "mustard oil", "amount": "2", "unit": "tbsp"},
-      {"name": "water", "amount": "2", "unit": "cups"},
-      {"name": "salt", "amount": "to taste", "unit": ""}
+      {
+        "name": "smoked pork belly (cut into chunks)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "fermented bamboo shoot",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "axone (fermented soybean paste)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "Raja Mircha or Bhut Jolokia (whole)",
+        "amount": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "ginger (crushed)",
+        "amount": "1",
+        "unit": "inch piece"
+      },
+      {
+        "name": "garlic (crushed)",
+        "amount": "5",
+        "unit": "cloves"
+      },
+      {
+        "name": "onion (roughly chopped)",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "mustard oil",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "water",
+        "amount": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      }
     ],
     "steps": [
       "Rinse the smoked pork chunks under water to remove surface soot, then boil them in a pot of water for 15 minutes to soften slightly. Drain and set aside.",
@@ -958,15 +2370,51 @@
   },
   "shorshe-ilish": {
     "ingredients": [
-      {"name": "Hilsa (ilish) fish steaks", "amount": "4", "unit": "pieces"},
-      {"name": "yellow mustard seeds", "amount": "3", "unit": "tbsp"},
-      {"name": "black mustard seeds", "amount": "1", "unit": "tbsp"},
-      {"name": "mustard oil", "amount": "4", "unit": "tbsp"},
-      {"name": "green chilies (slit)", "amount": "4", "unit": "pieces"},
-      {"name": "turmeric powder", "amount": "1", "unit": "tsp"},
-      {"name": "salt", "amount": "to taste", "unit": ""},
-      {"name": "nigella seeds (kalonji)", "amount": "1/2", "unit": "tsp"},
-      {"name": "water", "amount": "1/2", "unit": "cup"}
+      {
+        "name": "Hilsa (ilish) fish steaks",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "yellow mustard seeds",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "black mustard seeds",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "mustard oil",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "green chilies (slit)",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      },
+      {
+        "name": "nigella seeds (kalonji)",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "water",
+        "amount": "1/2",
+        "unit": "cup"
+      }
     ],
     "steps": [
       "Soak the yellow and black mustard seeds in water for at least 30 minutes, then grind them into a smooth, pungent paste using a mortar and pestle or blender with minimal water.",
@@ -983,19 +2431,71 @@
   },
   "goshtaba": {
     "ingredients": [
-      {"name": "boneless lamb (preferably leg, all fat removed)", "amount": "500", "unit": "g"},
-      {"name": "lamb fat or tail fat", "amount": "100", "unit": "g"},
-      {"name": "full-fat yogurt (hung/strained)", "amount": "2", "unit": "cups"},
-      {"name": "fennel powder (saunf)", "amount": "2", "unit": "tsp"},
-      {"name": "dry ginger powder (sonth)", "amount": "1", "unit": "tsp"},
-      {"name": "Kashmiri saffron strands", "amount": "a generous pinch", "unit": ""},
-      {"name": "green cardamom pods", "amount": "4", "unit": "pieces"},
-      {"name": "cloves", "amount": "3", "unit": "pieces"},
-      {"name": "cinnamon stick", "amount": "1", "unit": "small piece"},
-      {"name": "bay leaves", "amount": "2", "unit": "pieces"},
-      {"name": "mustard oil or ghee", "amount": "3", "unit": "tbsp"},
-      {"name": "salt", "amount": "to taste", "unit": ""},
-      {"name": "warm milk (for saffron)", "amount": "2", "unit": "tbsp"}
+      {
+        "name": "boneless lamb (preferably leg, all fat removed)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "lamb fat or tail fat",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "full-fat yogurt (hung/strained)",
+        "amount": "2",
+        "unit": "cups"
+      },
+      {
+        "name": "fennel powder (saunf)",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "dry ginger powder (sonth)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Kashmiri saffron strands",
+        "amount": "a generous pinch",
+        "unit": ""
+      },
+      {
+        "name": "green cardamom pods",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "cloves",
+        "amount": "3",
+        "unit": "pieces"
+      },
+      {
+        "name": "cinnamon stick",
+        "amount": "1",
+        "unit": "small piece"
+      },
+      {
+        "name": "bay leaves",
+        "amount": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "mustard oil or ghee",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      },
+      {
+        "name": "warm milk (for saffron)",
+        "amount": "2",
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "Cut the lamb and lamb fat into small pieces. Using a heavy wooden mallet or meat pounder on a flat stone slab, pound the meat and fat together relentlessly until it becomes a completely smooth, paste like consistency with absolutely no visible fibers. This traditionally takes 1 to 2 hours.",
@@ -1012,23 +2512,91 @@
   },
   "sorpotel": {
     "ingredients": [
-      {"name": "pork shoulder (cubed)", "amount": "300", "unit": "g"},
-      {"name": "pork liver", "amount": "150", "unit": "g"},
-      {"name": "pork heart", "amount": "100", "unit": "g"},
-      {"name": "toddy vinegar or palm vinegar", "amount": "1/2", "unit": "cup"},
-      {"name": "Kashmiri dried red chilies", "amount": "8", "unit": "pieces"},
-      {"name": "cumin seeds", "amount": "1", "unit": "tsp"},
-      {"name": "black peppercorns", "amount": "1", "unit": "tsp"},
-      {"name": "cloves", "amount": "6", "unit": "pieces"},
-      {"name": "cinnamon stick", "amount": "1", "unit": "small piece"},
-      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
-      {"name": "garlic cloves", "amount": "8", "unit": "pieces"},
-      {"name": "ginger (chopped)", "amount": "1", "unit": "inch piece"},
-      {"name": "onions (finely chopped)", "amount": "2", "unit": "medium"},
-      {"name": "tamarind pulp", "amount": "1", "unit": "tbsp"},
-      {"name": "jaggery", "amount": "1", "unit": "tsp"},
-      {"name": "vegetable oil", "amount": "3", "unit": "tbsp"},
-      {"name": "salt", "amount": "to taste", "unit": ""}
+      {
+        "name": "pork shoulder (cubed)",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "pork liver",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "pork heart",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "toddy vinegar or palm vinegar",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "Kashmiri dried red chilies",
+        "amount": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "black peppercorns",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "cloves",
+        "amount": "6",
+        "unit": "pieces"
+      },
+      {
+        "name": "cinnamon stick",
+        "amount": "1",
+        "unit": "small piece"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic cloves",
+        "amount": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "ginger (chopped)",
+        "amount": "1",
+        "unit": "inch piece"
+      },
+      {
+        "name": "onions (finely chopped)",
+        "amount": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "tamarind pulp",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "jaggery",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      }
     ],
     "steps": [
       "Boil the pork shoulder, liver, and heart together in salted water until just cooked through, about 20 minutes. Reserve the cooking liquid. Cut all the meat into small, uniform cubes.",
@@ -1045,18 +2613,66 @@
   },
   "ker-sangri": {
     "ingredients": [
-      {"name": "dried ker (caper berries)", "amount": "1/2", "unit": "cup"},
-      {"name": "dried sangri (desert beans)", "amount": "1", "unit": "cup"},
-      {"name": "mustard oil", "amount": "3", "unit": "tbsp"},
-      {"name": "dried red chilies", "amount": "4", "unit": "pieces"},
-      {"name": "cumin seeds", "amount": "1", "unit": "tsp"},
-      {"name": "mustard seeds", "amount": "1/2", "unit": "tsp"},
-      {"name": "asafoetida (hing)", "amount": "a pinch", "unit": ""},
-      {"name": "turmeric powder", "amount": "1/2", "unit": "tsp"},
-      {"name": "red chili powder", "amount": "1", "unit": "tsp"},
-      {"name": "coriander powder", "amount": "1", "unit": "tsp"},
-      {"name": "amchur (dried mango powder)", "amount": "1", "unit": "tsp"},
-      {"name": "salt", "amount": "to taste", "unit": ""}
+      {
+        "name": "dried ker (caper berries)",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "dried sangri (desert beans)",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "name": "mustard oil",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "dried red chilies",
+        "amount": "4",
+        "unit": "pieces"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "mustard seeds",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "asafoetida (hing)",
+        "amount": "a pinch",
+        "unit": ""
+      },
+      {
+        "name": "turmeric powder",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander powder",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "amchur (dried mango powder)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      }
     ],
     "steps": [
       "Soak the dried sangri beans in water overnight or for at least 8 hours. Soak the dried ker berries separately for 2 hours. Drain both and squeeze out excess water.",
@@ -1073,15 +2689,51 @@
   },
   "khar": {
     "ingredients": [
-      {"name": "raw papaya (peeled, cubed)", "amount": "1", "unit": "medium"},
-      {"name": "khar liquid (banana peel ash filtrate)", "amount": "1/2", "unit": "cup"},
-      {"name": "mustard oil", "amount": "2", "unit": "tbsp"},
-      {"name": "rice (washed, soaked)", "amount": "2", "unit": "tbsp"},
-      {"name": "turmeric powder", "amount": "1/4", "unit": "tsp"},
-      {"name": "green chilies (slit)", "amount": "2", "unit": "pieces"},
-      {"name": "garlic (lightly crushed)", "amount": "3", "unit": "cloves"},
-      {"name": "salt", "amount": "to taste", "unit": ""},
-      {"name": "water", "amount": "1", "unit": "cup"}
+      {
+        "name": "raw papaya (peeled, cubed)",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "khar liquid (banana peel ash filtrate)",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "name": "mustard oil",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "rice (washed, soaked)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": "1/4",
+        "unit": "tsp"
+      },
+      {
+        "name": "green chilies (slit)",
+        "amount": "2",
+        "unit": "pieces"
+      },
+      {
+        "name": "garlic (lightly crushed)",
+        "amount": "3",
+        "unit": "cloves"
+      },
+      {
+        "name": "salt",
+        "amount": "to taste",
+        "unit": ""
+      },
+      {
+        "name": "water",
+        "amount": "1",
+        "unit": "cup"
+      }
     ],
     "steps": [
       "To prepare khar liquid at home, dry the peels of ripe bhim kol bananas in the sun until completely brittle, then burn them to a fine white ash. Place the ash in a muslin cloth, pour water through it slowly, and collect the amber filtrate. Alternatively, use store-bought khar powder dissolved in water.",
@@ -1098,12 +2750,36 @@
   },
   "palusami": {
     "ingredients": [
-      { "name": "young taro leaves (or substitute spinach)", "amount": "30", "unit": "leaves" },
-      { "name": "thick coconut cream", "amount": "400", "unit": "ml" },
-      { "name": "yellow onion (finely diced)", "amount": "1", "unit": "medium" },
-      { "name": "corned beef (optional, diced)", "amount": "200", "unit": "g" },
-      { "name": "sea salt", "amount": "1", "unit": "tsp" },
-      { "name": "breadfruit or banana leaves (for wrapping)", "amount": "8", "unit": "large leaves" }
+      {
+        "name": "young taro leaves (or substitute spinach)",
+        "amount": "30",
+        "unit": "leaves"
+      },
+      {
+        "name": "thick coconut cream",
+        "amount": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "yellow onion (finely diced)",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "corned beef (optional, diced)",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "sea salt",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "breadfruit or banana leaves (for wrapping)",
+        "amount": "8",
+        "unit": "large leaves"
+      }
     ],
     "steps": [
       "Trim the thick stems and central ribs from the taro leaves so they fold without cracking.",
@@ -1121,17 +2797,61 @@
   },
   "tave-kosi": {
     "ingredients": [
-      { "name": "lamb shoulder (cut into 4 cm cubes)", "amount": "1", "unit": "kg" },
-      { "name": "unsalted butter", "amount": "80", "unit": "g" },
-      { "name": "garlic (sliced)", "amount": "4", "unit": "cloves" },
-      { "name": "short-grain rice", "amount": "100", "unit": "g" },
-      { "name": "strained Greek yogurt (full fat)", "amount": "700", "unit": "g" },
-      { "name": "eggs", "amount": "4", "unit": "large" },
-      { "name": "all-purpose flour", "amount": "3", "unit": "tbsp" },
-      { "name": "sweet paprika", "amount": "1", "unit": "tsp" },
-      { "name": "dried oregano", "amount": "1", "unit": "tsp" },
-      { "name": "salt", "amount": "1.5", "unit": "tsp" },
-      { "name": "ground black pepper", "amount": "0.5", "unit": "tsp" }
+      {
+        "name": "lamb shoulder (cut into 4 cm cubes)",
+        "amount": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": "80",
+        "unit": "g"
+      },
+      {
+        "name": "garlic (sliced)",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "short-grain rice",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "strained Greek yogurt (full fat)",
+        "amount": "700",
+        "unit": "g"
+      },
+      {
+        "name": "eggs",
+        "amount": "4",
+        "unit": "large"
+      },
+      {
+        "name": "all-purpose flour",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "sweet paprika",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "dried oregano",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "ground black pepper",
+        "amount": "0.5",
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "Preheat the oven to 180C. Pat the lamb dry and season with salt and pepper.",
@@ -1149,17 +2869,61 @@
   },
   "culurgiones": {
     "ingredients": [
-      { "name": "00 flour", "amount": "200", "unit": "g" },
-      { "name": "fine semolina", "amount": "100", "unit": "g" },
-      { "name": "warm water", "amount": "130", "unit": "ml" },
-      { "name": "salt", "amount": "1", "unit": "tsp" },
-      { "name": "starchy potatoes (peeled)", "amount": "600", "unit": "g" },
-      { "name": "aged pecorino sardo (finely grated)", "amount": "150", "unit": "g" },
-      { "name": "fresh sheep cheese or whole-milk ricotta", "amount": "100", "unit": "g" },
-      { "name": "fresh mint leaves (finely chopped)", "amount": "30", "unit": "g" },
-      { "name": "garlic (finely grated)", "amount": "2", "unit": "cloves" },
-      { "name": "extra-virgin olive oil", "amount": "3", "unit": "tbsp" },
-      { "name": "tomato passata", "amount": "400", "unit": "g" }
+      {
+        "name": "00 flour",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "fine semolina",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "warm water",
+        "amount": "130",
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "starchy potatoes (peeled)",
+        "amount": "600",
+        "unit": "g"
+      },
+      {
+        "name": "aged pecorino sardo (finely grated)",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "fresh sheep cheese or whole-milk ricotta",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "fresh mint leaves (finely chopped)",
+        "amount": "30",
+        "unit": "g"
+      },
+      {
+        "name": "garlic (finely grated)",
+        "amount": "2",
+        "unit": "cloves"
+      },
+      {
+        "name": "extra-virgin olive oil",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "tomato passata",
+        "amount": "400",
+        "unit": "g"
+      }
     ],
     "steps": [
       "Combine the flours and salt in a bowl; drizzle in the warm water and knead 8 minutes into a smooth, elastic dough. Wrap and rest 30 minutes.",
@@ -1177,17 +2941,61 @@
   },
   "plokkfiskur": {
     "ingredients": [
-      { "name": "haddock or cod fillets (skinless)", "amount": "500", "unit": "g" },
-      { "name": "waxy potatoes", "amount": "500", "unit": "g" },
-      { "name": "unsalted butter", "amount": "60", "unit": "g" },
-      { "name": "all-purpose flour", "amount": "3", "unit": "tbsp" },
-      { "name": "whole milk", "amount": "400", "unit": "ml" },
-      { "name": "yellow onion (finely diced)", "amount": "1", "unit": "medium" },
-      { "name": "bay leaf", "amount": "1", "unit": "leaf" },
-      { "name": "white pepper", "amount": "0.5", "unit": "tsp" },
-      { "name": "mild curry powder (optional)", "amount": "1", "unit": "tsp" },
-      { "name": "salt", "amount": "1", "unit": "tsp" },
-      { "name": "rugbraud or dark rye bread (to serve)", "amount": "1", "unit": "loaf" }
+      {
+        "name": "haddock or cod fillets (skinless)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "waxy potatoes",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": "60",
+        "unit": "g"
+      },
+      {
+        "name": "all-purpose flour",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "whole milk",
+        "amount": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "yellow onion (finely diced)",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "bay leaf",
+        "amount": "1",
+        "unit": "leaf"
+      },
+      {
+        "name": "white pepper",
+        "amount": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "mild curry powder (optional)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "rugbraud or dark rye bread (to serve)",
+        "amount": "1",
+        "unit": "loaf"
+      }
     ],
     "steps": [
       "Boil the potatoes whole in salted water until tender, about 20 minutes; peel while warm and chop into 2 cm chunks.",
@@ -1204,21 +3012,81 @@
   },
   "rfissa": {
     "ingredients": [
-      { "name": "whole chicken (cut into 8 pieces)", "amount": "1.5", "unit": "kg" },
-      { "name": "yellow onions (finely sliced)", "amount": "3", "unit": "large" },
-      { "name": "garlic (crushed)", "amount": "4", "unit": "cloves" },
-      { "name": "fresh ginger (grated)", "amount": "1", "unit": "tbsp" },
-      { "name": "ras el hanout", "amount": "1", "unit": "tbsp" },
-      { "name": "ground turmeric", "amount": "1", "unit": "tsp" },
-      { "name": "saffron threads (bloomed in 2 tbsp hot water)", "amount": "0.5", "unit": "tsp" },
-      { "name": "whole fenugreek seeds", "amount": "2", "unit": "tbsp" },
-      { "name": "brown or green lentils (rinsed)", "amount": "200", "unit": "g" },
-      { "name": "olive oil", "amount": "4", "unit": "tbsp" },
-      { "name": "smen (or unsalted butter)", "amount": "2", "unit": "tbsp" },
-      { "name": "chicken stock or water", "amount": "1.5", "unit": "L" },
-      { "name": "msemen or day-old khobz", "amount": "8", "unit": "pieces" },
-      { "name": "toasted almonds (to finish)", "amount": "50", "unit": "g" },
-      { "name": "salt", "amount": "1.5", "unit": "tsp" }
+      {
+        "name": "whole chicken (cut into 8 pieces)",
+        "amount": "1.5",
+        "unit": "kg"
+      },
+      {
+        "name": "yellow onions (finely sliced)",
+        "amount": "3",
+        "unit": "large"
+      },
+      {
+        "name": "garlic (crushed)",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "fresh ginger (grated)",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "ras el hanout",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "ground turmeric",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "saffron threads (bloomed in 2 tbsp hot water)",
+        "amount": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "whole fenugreek seeds",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "brown or green lentils (rinsed)",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "olive oil",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "smen (or unsalted butter)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "chicken stock or water",
+        "amount": "1.5",
+        "unit": "L"
+      },
+      {
+        "name": "msemen or day-old khobz",
+        "amount": "8",
+        "unit": "pieces"
+      },
+      {
+        "name": "toasted almonds (to finish)",
+        "amount": "50",
+        "unit": "g"
+      },
+      {
+        "name": "salt",
+        "amount": "1.5",
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "In a heavy pot, warm the olive oil and smen over medium heat; soften the onions and garlic 12 minutes until pale gold.",
@@ -1236,17 +3104,61 @@
   },
   "khoresh-e-fesenjan": {
     "ingredients": [
-      { "name": "chicken thighs or duck legs (skin-on, bone-in)", "amount": "1", "unit": "kg" },
-      { "name": "shelled walnut halves", "amount": "400", "unit": "g" },
-      { "name": "pomegranate molasses (sour)", "amount": "150", "unit": "ml" },
-      { "name": "yellow onion (grated)", "amount": "2", "unit": "medium" },
-      { "name": "saffron threads (bloomed in 3 tbsp hot water)", "amount": "0.25", "unit": "tsp" },
-      { "name": "butter or ghee", "amount": "3", "unit": "tbsp" },
-      { "name": "sugar (only if molasses is very tart)", "amount": "1", "unit": "tsp" },
-      { "name": "salt", "amount": "1.5", "unit": "tsp" },
-      { "name": "ground black pepper", "amount": "0.5", "unit": "tsp" },
-      { "name": "water", "amount": "1.2", "unit": "L" },
-      { "name": "pomegranate arils (to garnish)", "amount": "1", "unit": "handful" }
+      {
+        "name": "chicken thighs or duck legs (skin-on, bone-in)",
+        "amount": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "shelled walnut halves",
+        "amount": "400",
+        "unit": "g"
+      },
+      {
+        "name": "pomegranate molasses (sour)",
+        "amount": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "yellow onion (grated)",
+        "amount": "2",
+        "unit": "medium"
+      },
+      {
+        "name": "saffron threads (bloomed in 3 tbsp hot water)",
+        "amount": "0.25",
+        "unit": "tsp"
+      },
+      {
+        "name": "butter or ghee",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "sugar (only if molasses is very tart)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "ground black pepper",
+        "amount": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "water",
+        "amount": "1.2",
+        "unit": "L"
+      },
+      {
+        "name": "pomegranate arils (to garnish)",
+        "amount": "1",
+        "unit": "handful"
+      }
     ],
     "steps": [
       "Toast the walnuts in a dry pan over low heat for 8 minutes, until fragrant but not darkened; cool, then grind to a fine paste in a food processor.",
@@ -1264,16 +3176,56 @@
   },
   "kuurdak": {
     "ingredients": [
-      { "name": "mutton or lamb with fat (cut into 3 cm cubes)", "amount": "1", "unit": "kg" },
-      { "name": "lamb tail fat or rendered fat (curdyuk)", "amount": "100", "unit": "g" },
-      { "name": "lamb liver and kidney (optional, cubed)", "amount": "200", "unit": "g" },
-      { "name": "yellow onions (thickly sliced)", "amount": "4", "unit": "large" },
-      { "name": "garlic (crushed)", "amount": "4", "unit": "cloves" },
-      { "name": "ground cumin", "amount": "1", "unit": "tsp" },
-      { "name": "whole dried red chili (optional)", "amount": "1", "unit": "chili" },
-      { "name": "salt", "amount": "2", "unit": "tsp" },
-      { "name": "fresh dill (chopped, to finish)", "amount": "1", "unit": "handful" },
-      { "name": "non bread or flatbread (to serve)", "amount": "4", "unit": "rounds" }
+      {
+        "name": "mutton or lamb with fat (cut into 3 cm cubes)",
+        "amount": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "lamb tail fat or rendered fat (curdyuk)",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "lamb liver and kidney (optional, cubed)",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "yellow onions (thickly sliced)",
+        "amount": "4",
+        "unit": "large"
+      },
+      {
+        "name": "garlic (crushed)",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "ground cumin",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "whole dried red chili (optional)",
+        "amount": "1",
+        "unit": "chili"
+      },
+      {
+        "name": "salt",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "fresh dill (chopped, to finish)",
+        "amount": "1",
+        "unit": "handful"
+      },
+      {
+        "name": "non bread or flatbread (to serve)",
+        "amount": "4",
+        "unit": "rounds"
+      }
     ],
     "steps": [
       "Render the tail fat in a heavy cast-iron pan or dutch oven over medium-high heat until crackling and golden; lift out and reserve the cracklings.",
@@ -1290,17 +3242,61 @@
   },
   "peka": {
     "ingredients": [
-      { "name": "lamb shoulder (bone-in, in 5 cm chunks)", "amount": "800", "unit": "g" },
-      { "name": "veal shoulder (in 5 cm chunks)", "amount": "800", "unit": "g" },
-      { "name": "waxy potatoes (peeled, halved if large)", "amount": "1", "unit": "kg" },
-      { "name": "yellow onions (quartered)", "amount": "3", "unit": "medium" },
-      { "name": "garlic (whole peeled cloves)", "amount": "8", "unit": "cloves" },
-      { "name": "fresh rosemary sprigs", "amount": "4", "unit": "sprigs" },
-      { "name": "bay leaves", "amount": "3", "unit": "leaves" },
-      { "name": "extra-virgin olive oil", "amount": "100", "unit": "ml" },
-      { "name": "dry white wine", "amount": "250", "unit": "ml" },
-      { "name": "coarse sea salt", "amount": "2", "unit": "tsp" },
-      { "name": "ground black pepper", "amount": "1", "unit": "tsp" }
+      {
+        "name": "lamb shoulder (bone-in, in 5 cm chunks)",
+        "amount": "800",
+        "unit": "g"
+      },
+      {
+        "name": "veal shoulder (in 5 cm chunks)",
+        "amount": "800",
+        "unit": "g"
+      },
+      {
+        "name": "waxy potatoes (peeled, halved if large)",
+        "amount": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "yellow onions (quartered)",
+        "amount": "3",
+        "unit": "medium"
+      },
+      {
+        "name": "garlic (whole peeled cloves)",
+        "amount": "8",
+        "unit": "cloves"
+      },
+      {
+        "name": "fresh rosemary sprigs",
+        "amount": "4",
+        "unit": "sprigs"
+      },
+      {
+        "name": "bay leaves",
+        "amount": "3",
+        "unit": "leaves"
+      },
+      {
+        "name": "extra-virgin olive oil",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "dry white wine",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "coarse sea salt",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "ground black pepper",
+        "amount": "1",
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "Pat the meats dry and season generously with salt and pepper.",
@@ -1315,5 +3311,657 @@
     "prepTime": 20,
     "cookTime": 180,
     "servings": 8
+  },
+  "kokoda": {
+    "ingredients": [
+      {
+        "name": "firm white reef fish (walu or mahi-mahi), skinless",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "fresh lime juice",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "thick coconut cream",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "tomato, deseeded and finely diced",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "red onion, finely diced",
+        "amount": "1",
+        "unit": "small"
+      },
+      {
+        "name": "red chili, finely chopped",
+        "amount": "1",
+        "unit": "whole"
+      },
+      {
+        "name": "spring onion, sliced",
+        "amount": "2",
+        "unit": "stalks"
+      },
+      {
+        "name": "salt",
+        "amount": "1",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Cut the fish into 1.5 cm cubes, checking carefully for any bones.",
+      "Place the fish in a glass or ceramic bowl and pour over the combined lime and lemon juice until fully submerged.",
+      "Cover and refrigerate for 2-3 hours, stirring once, until the fish turns opaque and firm ('cooked' by the acid).",
+      "Drain off and discard most of the citrus juice, leaving the fish just moist.",
+      "Gently fold in the coconut cream until the fish is generously coated.",
+      "Stir through the tomato, red onion, chili, and spring onion, then season with salt.",
+      "Chill for a further 30 minutes and serve cold in a halved coconut shell or glass."
+    ],
+    "prepTime": 25,
+    "cookTime": 0,
+    "servings": 4
+  },
+  "rewena-paraoa": {
+    "ingredients": [
+      {
+        "name": "floury potato, peeled and diced",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "plain flour (for the starter 'bug')",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "sugar",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "plain flour (for the dough)",
+        "amount": "600",
+        "unit": "g"
+      },
+      {
+        "name": "warm water",
+        "amount": "300",
+        "unit": "ml"
+      },
+      {
+        "name": "baking soda",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Boil the potato in unsalted water until soft, then mash and reserve the cooking water; cool both to lukewarm.",
+      "Make the 'bug' (starter): mix the mashed potato, 150 g flour, sugar, and enough reserved potato water to form a thick batter in a jar.",
+      "Cover loosely and leave in a warm place for 3-5 days until bubbly, sour, and active, feeding with a little flour and water if needed.",
+      "To bake, combine the 600 g flour and salt in a large bowl and make a well in the centre.",
+      "Dissolve the baking soda in a splash of warm water and stir it through the active starter to mellow its sourness.",
+      "Add the starter and warm water to the flour and mix to a soft dough, then knead for 8-10 minutes until smooth.",
+      "Shape into a round loaf, place in a greased tin, cover, and prove for 1-2 hours until risen.",
+      "Bake at 200C for 35-40 minutes until golden and hollow-sounding when tapped; cool before slicing thickly with butter."
+    ],
+    "prepTime": 45,
+    "cookTime": 40,
+    "servings": 8
+  },
+  "mumu": {
+    "ingredients": [
+      {
+        "name": "pork shoulder, in large chunks",
+        "amount": "1.5",
+        "unit": "kg"
+      },
+      {
+        "name": "sweet potato (kaukau), peeled",
+        "amount": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "taro, peeled and chunked",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "aibika or spinach leaves",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "ripe cooking banana, peeled",
+        "amount": "4",
+        "unit": "whole"
+      },
+      {
+        "name": "thick coconut cream",
+        "amount": "400",
+        "unit": "ml"
+      },
+      {
+        "name": "banana leaves, for wrapping",
+        "amount": "6",
+        "unit": "large"
+      },
+      {
+        "name": "salt",
+        "amount": "2",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Build a fire and heat clean river stones in it until very hot (or use a heavy lidded cast-iron pot and oven at 160C as a home substitute).",
+      "Line a pit or roasting vessel with banana leaves, leaving plenty of overhang.",
+      "Layer the sweet potato and taro on the bottom, then the pork chunks, seasoning each layer with salt.",
+      "Add the bananas and pile the aibika greens over the top.",
+      "Pour the coconut cream evenly over everything so it can steam through the food.",
+      "Fold the banana leaves over to seal the parcel tightly and, in a traditional mumu, cover with hot stones and earth.",
+      "Leave to steam undisturbed for about 2.5-3 hours until the pork is tender and the kaukau is soft.",
+      "Unwrap at the table and serve the meat, root vegetables, and greens together from the leaves."
+    ],
+    "prepTime": 40,
+    "cookTime": 180,
+    "servings": 8
+  },
+  "nkwobi": {
+    "ingredients": [
+      {
+        "name": "cow foot, cleaned and cut into pieces",
+        "amount": "1",
+        "unit": "kg"
+      },
+      {
+        "name": "palm oil",
+        "amount": "200",
+        "unit": "ml"
+      },
+      {
+        "name": "edible potash (akanwu), dissolved in water",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "ground ehu (calabash nutmeg) seeds",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "ground crayfish",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "onion, half sliced for garnish",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "ground dried chili pepper",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "utazi leaves, finely shredded",
+        "amount": "1",
+        "unit": "handful"
+      },
+      {
+        "name": "stock cubes",
+        "amount": "2",
+        "unit": "whole"
+      },
+      {
+        "name": "salt",
+        "amount": "1",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Boil the cow foot with chopped onion, stock cubes, and salt until very tender and gelatinous, about 1.5-2 hours; reserve a little stock.",
+      "Dissolve the potash in a few tablespoons of water and let the sediment settle, then pour off the clear liquid.",
+      "In a clean pot, gently warm the palm oil (do not bleach it) and stir in the potash liquid; it will thicken and turn the oil pale and creamy.",
+      "Stir in the ground ehu seeds, ground crayfish, dried chili, and a little reserved stock to form a thick yellow sauce.",
+      "Fold the warm cow foot pieces through the sauce until every piece is glossy and well coated.",
+      "Season to taste and warm through gently.",
+      "Serve in a wooden mortar (okwa) topped with sliced raw onion and shredded utazi leaves, with chilled stout or palm wine."
+    ],
+    "prepTime": 30,
+    "cookTime": 120,
+    "servings": 4
+  },
+  "mursik": {
+    "ingredients": [
+      {
+        "name": "fresh whole cow or goat milk",
+        "amount": "2",
+        "unit": "litres"
+      },
+      {
+        "name": "charcoal embers from senetwet (African olive) or guava wood",
+        "amount": "1",
+        "unit": "small piece"
+      },
+      {
+        "name": "clean gourd (sotet) or glass jar",
+        "amount": "1",
+        "unit": "whole"
+      }
+    ],
+    "steps": [
+      "Scald the milk by bringing it to a gentle boil, then let it cool to room temperature.",
+      "Char a small piece of clean hardwood until glowing, then use it to scrub and smoke the inside of the dry gourd or jar until coated with fine ash.",
+      "Pour the cooled milk into the smoke-lined gourd and seal it.",
+      "Leave to ferment at room temperature for 3-5 days, swirling once a day, until thick, tangy, and faintly grey from the charcoal.",
+      "Taste from day 3 onward and refrigerate once the desired sourness and smoky flavour develop.",
+      "Shake well and serve cold in a cup or gourd alongside ugali or roast meat."
+    ],
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 8
+  },
+  "tuo-zaafi": {
+    "ingredients": [
+      {
+        "name": "maize (corn) flour",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "millet flour",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "water",
+        "amount": "1.5",
+        "unit": "litres"
+      },
+      {
+        "name": "fermented corn dough (for the sour batter)",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "jute (ayoyo) leaves, for the soup",
+        "amount": "200",
+        "unit": "g"
+      },
+      {
+        "name": "tomatoes",
+        "amount": "3",
+        "unit": "medium"
+      },
+      {
+        "name": "onion",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "name": "dawadawa (fermented locust bean)",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "dried ground pepper",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "1",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Whisk a few tablespoons of maize flour and the fermented corn dough into 500 ml cold water to make a thin slurry.",
+      "Bring the slurry to a simmer, stirring constantly, until it thickens into a light, slightly sour porridge.",
+      "Gradually beat in the remaining maize and millet flour a little at a time, stirring vigorously over low heat until you have a smooth, stretchy, stiff dough.",
+      "Add splashes of hot water as needed and keep turning the dough for 8-10 minutes until glossy and lump-free, then shape into wet balls.",
+      "For the ayoyo soup, boil the jute leaves with chopped tomato, onion, dawadawa, ground pepper, and salt until soft and slippery.",
+      "Blend or mash the soup lightly to release its characteristic mucilaginous texture and simmer to combine.",
+      "Serve the warm TZ balls in a bowl with the ayoyo soup poured alongside, eaten by pinching the dough and dipping."
+    ],
+    "prepTime": 25,
+    "cookTime": 35,
+    "servings": 4
+  },
+  "doubles": {
+    "ingredients": [
+      {
+        "name": "plain flour (for the bara)",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "ground turmeric",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "ground cumin (geera)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "instant yeast",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "sugar",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "dried chickpeas (channa), soaked overnight",
+        "amount": "250",
+        "unit": "g"
+      },
+      {
+        "name": "curry powder",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic, minced",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "ground cumin (for the channa)",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "scotch bonnet pepper",
+        "amount": "1",
+        "unit": "whole"
+      },
+      {
+        "name": "tamarind chutney, to serve",
+        "amount": "4",
+        "unit": "tbsp"
+      },
+      {
+        "name": "oil for frying",
+        "amount": "500",
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": "1.5",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Make the bara dough: combine flour, turmeric, cumin, yeast, sugar, and salt, then add warm water to form a soft, sticky dough.",
+      "Cover and let rise in a warm place for 1.5-2 hours until doubled.",
+      "Meanwhile, boil the soaked channa until very soft, then drain, reserving a little liquid.",
+      "Bloom the curry powder with garlic in hot oil, add the channa, cumin, salt, and a splash of water, and simmer until thick and some chickpeas break down.",
+      "Heat frying oil to 180C. Wet your hands, pull off small balls of dough, and flatten into thin discs.",
+      "Fry each bara for about 20-30 seconds per side until puffed and just cooked but still soft; drain.",
+      "For each serving, overlap two bara, spoon curried channa in the centre, and top with tamarind chutney and pepper sauce to taste.",
+      "Fold and eat immediately while soft."
+    ],
+    "prepTime": 150,
+    "cookTime": 40,
+    "servings": 6
+  },
+  "mannish-water": {
+    "ingredients": [
+      {
+        "name": "goat head and tripe, cleaned and chopped",
+        "amount": "1.5",
+        "unit": "kg"
+      },
+      {
+        "name": "goat feet, chopped",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "name": "green bananas, peeled and halved",
+        "amount": "3",
+        "unit": "whole"
+      },
+      {
+        "name": "yellow yam, peeled and chunked",
+        "amount": "400",
+        "unit": "g"
+      },
+      {
+        "name": "cho-cho (chayote), chopped",
+        "amount": "1",
+        "unit": "whole"
+      },
+      {
+        "name": "flour (for spinners dumplings)",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "scotch bonnet pepper, whole",
+        "amount": "1",
+        "unit": "whole"
+      },
+      {
+        "name": "fresh thyme",
+        "amount": "4",
+        "unit": "sprigs"
+      },
+      {
+        "name": "garlic, crushed",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "scallion, crushed",
+        "amount": "3",
+        "unit": "stalks"
+      },
+      {
+        "name": "white rum",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "salt",
+        "amount": "2",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Wash the goat head, feet, and tripe thoroughly with lime or vinegar, then place in a large pot and cover generously with water.",
+      "Bring to a boil, skim off the foam, then add garlic, scallion, thyme, and salt and simmer for about 2 hours until the meat is tender and the broth is gelatinous.",
+      "Add the green bananas, yam, and cho-cho and cook until soft, about 25 minutes.",
+      "Make spinners by mixing flour with a little water and salt into a stiff dough, then roll pea-sized pieces between your palms into thin dumplings and drop into the pot.",
+      "Add the whole scotch bonnet (do not burst it unless you want intense heat) and simmer 10 minutes more.",
+      "Stir in the white rum at the very end and adjust salt.",
+      "Serve piping hot in bowls as a celebratory starter."
+    ],
+    "prepTime": 30,
+    "cookTime": 165,
+    "servings": 8
+  },
+  "kak-ik": {
+    "ingredients": [
+      {
+        "name": "native turkey, cut into pieces",
+        "amount": "2",
+        "unit": "kg"
+      },
+      {
+        "name": "tomatoes",
+        "amount": "4",
+        "unit": "medium"
+      },
+      {
+        "name": "tomatillos (miltomate)",
+        "amount": "4",
+        "unit": "whole"
+      },
+      {
+        "name": "dried guaque chilies",
+        "amount": "3",
+        "unit": "whole"
+      },
+      {
+        "name": "dried cobanero chilies",
+        "amount": "2",
+        "unit": "whole"
+      },
+      {
+        "name": "achiote paste",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "garlic",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "name": "onion",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "fresh mint",
+        "amount": "4",
+        "unit": "sprigs"
+      },
+      {
+        "name": "fresh cilantro",
+        "amount": "1",
+        "unit": "small bunch"
+      },
+      {
+        "name": "samat (or substitute extra cilantro)",
+        "amount": "2",
+        "unit": "sprigs"
+      },
+      {
+        "name": "salt",
+        "amount": "2",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Simmer the turkey pieces in salted water with half the onion until the meat is tender and a rich broth forms, about 1.5 hours; reserve the broth.",
+      "Toast the dried guaque and cobanero chilies briefly in a dry pan, then soak in hot water until soft.",
+      "Char the tomatoes, tomatillos, garlic, and remaining onion on a comal or under a broiler until blistered.",
+      "Blend the soaked chilies, charred vegetables, achiote, and a ladle of the turkey broth into a smooth red paste.",
+      "Strain the paste back into the broth and bring to a simmer, stirring, until the soup turns clear and deep red.",
+      "Return the turkey to the pot, add the mint, cilantro, and samat, and simmer 15-20 minutes to infuse the herbs.",
+      "Adjust salt and serve hot with small white corn tamalitos and white rice."
+    ],
+    "prepTime": 40,
+    "cookTime": 150,
+    "servings": 8
+  },
+  "chairo": {
+    "ingredients": [
+      {
+        "name": "lamb, cubed",
+        "amount": "400",
+        "unit": "g"
+      },
+      {
+        "name": "beef with bone",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "name": "chuño (freeze-dried potato), soaked",
+        "amount": "150",
+        "unit": "g"
+      },
+      {
+        "name": "fresh potatoes, peeled and diced",
+        "amount": "3",
+        "unit": "medium"
+      },
+      {
+        "name": "dried white corn (mote), pre-soaked",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "wheat berries, pre-soaked",
+        "amount": "80",
+        "unit": "g"
+      },
+      {
+        "name": "fava beans, peeled",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "green peas",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "name": "onion, finely diced",
+        "amount": "1",
+        "unit": "large"
+      },
+      {
+        "name": "garlic, minced",
+        "amount": "3",
+        "unit": "cloves"
+      },
+      {
+        "name": "yellow aji paste",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "name": "cumin",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "fresh oregano",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": "2",
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Soak the chuño in water for several hours, then squeeze out the moisture and break or grate into small pieces.",
+      "In a large pot, brown the lamb and beef, then add the onion, garlic, cumin, and yellow aji paste and fry into a fragrant sofrito.",
+      "Cover with plenty of water and bring to a boil, then add the pre-soaked mote and wheat berries and simmer for about 45 minutes.",
+      "Add the chuño and fresh potatoes and continue cooking until everything is tender, about 30 minutes more.",
+      "Stir in the fava beans and peas and simmer until soft.",
+      "Season with salt and oregano, mashing a few potatoes against the side of the pot to thicken the broth.",
+      "Serve hot in deep bowls, ideally with a spoonful of fresh llajwa chili sauce on the side."
+    ],
+    "prepTime": 40,
+    "cookTime": 90,
+    "servings": 6
   }
 }

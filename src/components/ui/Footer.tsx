@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-teal-400/30 bg-teal-900 text-white">
+    <footer className="border-t border-ink/10 bg-white text-ink">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
         {/* Wordmark with round logo */}
         <div className="flex items-center justify-center gap-3">
@@ -20,47 +20,47 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-white/70">
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-ink/60">
           <a
             href="mailto:skipthemid@gmail.com"
             className="hover:underline"
           >
             <span>Contact us </span>
-            <span className="font-semibold text-white">
+            <span className="font-semibold text-teal-700">
               skipthemid@gmail.com
             </span>
           </a>
         </div>
 
         {/* Divider */}
-        <div className="mt-5 h-px bg-teal-400/20" />
+        <div className="mt-5 h-px bg-ink/10" />
 
         {/* Bottom row: nav | copyright | social */}
         <div className="mt-4 grid grid-cols-1 items-center gap-4 text-center md:grid-cols-3 md:text-left">
           {/* Nav */}
-          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/70 md:justify-start">
-            <Link href="/about" className="hover:text-white">
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-ink/60 md:justify-start">
+            <Link href="/about" className="hover:text-terracotta">
               About us
             </Link>
-            <a href="/sitemap.xml" className="hover:text-white">
+            <a href="/sitemap.xml" className="hover:text-terracotta">
               Site map
             </a>
-            <Link href="/privacy" className="hover:text-white">
+            <Link href="/privacy" className="hover:text-terracotta">
               Privacy
             </Link>
-            <Link href="/terms" className="hover:text-white">
+            <Link href="/terms" className="hover:text-terracotta">
               Terms &amp; conditions
             </Link>
           </nav>
 
           {/* Copyright */}
-          <p className="text-xs text-white/70 md:text-center">
+          <p className="text-xs text-ink/55 md:text-center">
             © 2026 SkipTheMid — All Rights Reserved
           </p>
 
           {/* Social */}
           <div className="flex items-center justify-center gap-3 md:justify-end">
-            <span className="text-xs uppercase tracking-widest text-white/70">
+            <span className="text-xs uppercase tracking-widest text-ink/55">
               Follow us
             </span>
             <a
@@ -68,7 +68,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition-colors hover:bg-white/15 hover:text-white"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-ink/10 bg-cream text-ink/65 transition-colors hover:border-terracotta/30 hover:text-terracotta"
             >
               <XIcon />
             </a>

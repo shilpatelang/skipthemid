@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useEffect, useState } from "react";
-import { Map, Source, Layer } from "react-map-gl/mapbox";
+import { Map } from "react-map-gl/mapbox";
 import type { MapRef, MapMouseEvent } from "react-map-gl/mapbox";
 import type { ExpressionSpecification } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -12,6 +12,7 @@ interface MapContainerProps {
   height?: string;
   interactive?: boolean;
   initialZoom?: number;
+  transparentSpace?: boolean;
 }
 
 const WORLD_VIEW = { longitude: 20, latitude: 20, zoom: 2 };
@@ -48,7 +49,7 @@ async function loadCircularImage(url: string, size = 64): Promise<ImageData> {
       ctx.beginPath();
       ctx.arc(r, r, r - 3, 0, Math.PI * 2);
       ctx.lineWidth = 6;
-      ctx.strokeStyle = "#fbbf24";
+      ctx.strokeStyle = "#d96c3b";
       ctx.stroke();
       resolve(ctx.getImageData(0, 0, dim, dim));
     };
@@ -68,11 +69,11 @@ const clusterLayer = {
     "circle-color": [
       "step",
       ["get", "point_count"],
-      "#fbbf24",
+      "#e8a12b",
       10,
-      "#f59e0b",
+      "#d96c3b",
       25,
-      "#d97706",
+      "#2d7d78",
     ] as ExpressionSpecification,
     "circle-radius": [
       "step",
@@ -84,7 +85,7 @@ const clusterLayer = {
       32,
     ] as ExpressionSpecification,
     "circle-stroke-width": 1.5,
-    "circle-stroke-color": "rgba(251, 191, 36, 0.3)",
+    "circle-stroke-color": "rgba(255, 255, 255, 0.85)",
   },
 };
 
@@ -103,26 +104,7 @@ const clusterCountLayer = {
   },
 };
 
-// Outer glow ring — animated by requestAnimationFrame.
-// Filter: only render for dishes WITHOUT an image (fallback dot pattern).
-const dishGlowLayer = {
-  id: "dish-glow",
-  type: "circle" as const,
-  source: "dishes",
-  filter: [
-    "all",
-    ["!", ["has", "point_count"]],
-    ["!", ["has", "imageUrl"]],
-  ] as ExpressionSpecification,
-  paint: {
-    "circle-radius": 13,
-    "circle-color": "#f59e0b",
-    "circle-opacity": 0.3,
-    "circle-stroke-width": 0,
-  },
-};
-
-// Inner core dot — static, crisp. Fallback for dishes without an image.
+// Quiet, static fallback for dishes whose thumbnail is still loading or absent.
 const dishCoreLayer = {
   id: "dish-core",
   type: "circle" as const,
@@ -133,9 +115,9 @@ const dishCoreLayer = {
     ["!", ["has", "imageUrl"]],
   ] as ExpressionSpecification,
   paint: {
-    "circle-radius": 5,
-    "circle-color": "#fbbf24",
-    "circle-opacity": 0.9,
+    "circle-radius": 7,
+    "circle-color": "#d96c3b",
+    "circle-opacity": 0.88,
     "circle-stroke-width": [
       "case",
       ["boolean", ["feature-state", "hover"], false],
@@ -145,8 +127,8 @@ const dishCoreLayer = {
     "circle-stroke-color": [
       "case",
       ["boolean", ["feature-state", "hover"], false],
+      "#1f5e5a",
       "#ffffff",
-      "#f59e0b",
     ] as ExpressionSpecification,
   },
 };
@@ -189,93 +171,142 @@ const labelLayer = {
     "text-letter-spacing": 0.05,
   },
   paint: {
-    "text-color": "#ffffff",
-    "text-halo-color": "rgba(0, 0, 0, 0.85)",
-    "text-halo-width": 2,
+    "text-color": "#263b37",
+    "text-halo-color": "rgba(255, 255, 255, 0.95)",
+    "text-halo-width": 2.5,
   },
 };
 
 // --- Component ---
 
-export default function MapContainer({ geojson, height = "100vh", interactive = true, initialZoom }: MapContainerProps) {
+export default function MapContainer({
+  geojson,
+  height = "100vh",
+  interactive = true,
+  initialZoom,
+  transparentSpace = false,
+}: MapContainerProps) {
   const mapRef = useRef<MapRef>(null);
   const hoveredId = useRef<string | null>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
 
   const onMapLoad = useCallback(() => {
+    const map = mapRef.current?.getMap();
+    if (map) {
+      map.setFog({
+        color: transparentSpace ? "rgba(255, 250, 242, 0)" : "#fffaf2",
+        "high-color": transparentSpace ? "rgba(217, 239, 235, 0)" : "#d9efeb",
+        "horizon-blend": transparentSpace ? 0 : 0.08,
+        "space-color": transparentSpace ? "rgba(255, 250, 242, 0)" : "#fffaf2",
+        "star-intensity": 0,
+      });
+    }
     setMapLoaded(true);
-  }, []);
+  }, [transparentSpace]);
 
-  // Pre-render dish thumbnails as circular canvas images and register with the map.
-  // Failures are silent — those dishes fall back to the dot layer via the filter.
+  // Register thumbnails before adding their symbol layer, then manage the
+  // source imperatively. react-map-gl's
+  // <Source> cleanup removes and recreates the source when React Strict Mode
+  // replays effects in development. Mapbox can then update globe terrain
+  // against a half-torn-down style, which throws during route transitions.
   useEffect(() => {
     if (!mapLoaded || !geojson) return;
     const map = mapRef.current?.getMap();
     if (!map) return;
 
     let cancelled = false;
-    geojson.features.forEach(async (feature) => {
-      const url = feature.properties.imageUrl;
-      if (!url) return;
-      const iconId = `dish-${feature.properties.id}`;
-      if (map.hasImage(iconId)) return;
-      try {
-        const imageData = await loadCircularImage(url);
-        // Guard against the map being torn down mid-load (StrictMode double-mount).
-        // mapRef.current may now point to a fresh map instance, or the captured
-        // map's style may be gone — both would crash mapbox-gl deep in addImage.
-        if (
-          cancelled ||
-          mapRef.current?.getMap() !== map ||
-          !map.style ||
-          map.hasImage(iconId)
-        )
-          return;
-        map.addImage(iconId, imageData, { pixelRatio: 2 });
-      } catch {
-        // Fall back to dot rendering via filter.
+    let detachStyleListener = () => {};
+
+    const prepareDishLayers = async () => {
+      const registeredImageIds = new Set<string>();
+
+      await Promise.all(
+        geojson.features.map(async (feature) => {
+          const url = feature.properties.imageUrl;
+          if (!url) return;
+
+          const iconId = `dish-${feature.properties.id}`;
+          if (map.hasImage(iconId)) {
+            registeredImageIds.add(feature.properties.id);
+            return;
+          }
+
+          try {
+            const imageData = await loadCircularImage(url);
+            if (
+              cancelled ||
+              mapRef.current?.getMap() !== map ||
+              !map.style
+            )
+              return;
+            if (!map.hasImage(iconId)) {
+              map.addImage(iconId, imageData, { pixelRatio: 2 });
+            }
+            registeredImageIds.add(feature.properties.id);
+          } catch {
+            // A failed asset remains on the quiet dot fallback.
+          }
+        })
+      );
+
+      if (cancelled || mapRef.current?.getMap() !== map || !map.style) return;
+
+      const mapData: DishFeatureCollection = {
+        ...geojson,
+        features: geojson.features.map((feature) => {
+          if (
+            !feature.properties.imageUrl ||
+            registeredImageIds.has(feature.properties.id)
+          ) {
+            return feature;
+          }
+          const properties = { ...feature.properties };
+          delete properties.imageUrl;
+          return { ...feature, properties };
+        }),
+      };
+
+      const source = map.getSource("dishes") as mapboxgl.GeoJSONSource | undefined;
+      if (source) {
+        source.setData(mapData);
+      } else {
+        map.addSource("dishes", {
+          type: "geojson",
+          data: mapData,
+          cluster: true,
+          clusterMaxZoom: 14,
+          clusterRadius: 50,
+          promoteId: "id",
+        });
       }
-    });
+
+      const layers = [
+        clusterLayer,
+        clusterCountLayer,
+        dishCoreLayer,
+        dishThumbnailLayer,
+        labelLayer,
+      ];
+      for (const layer of layers) {
+        if (!map.getLayer(layer.id)) {
+          map.addLayer(layer as mapboxgl.LayerSpecification);
+        }
+      }
+      map.triggerRepaint();
+    };
+
+    if (map.isStyleLoaded()) {
+      void prepareDishLayers();
+    } else {
+      map.once("style.load", prepareDishLayers);
+      detachStyleListener = () => map.off("style.load", prepareDishLayers);
+    }
 
     return () => {
       cancelled = true;
+      detachStyleListener();
     };
-  }, [mapLoaded, geojson]);
-
-  // Pulse animation for the glow layer
-  useEffect(() => {
-    if (!mapLoaded) return;
-    const map = mapRef.current?.getMap();
-    if (!map) return;
-
-    let animationId: number;
-    const startTime = performance.now();
-
-    function animate() {
-      const elapsed = performance.now() - startTime;
-      const t = Math.sin((elapsed / 2000) * Math.PI * 2);
-
-      const radius = 13 + t * 3;
-      const opacity = 0.275 + t * 0.125;
-
-      try {
-        if (map!.getLayer("dish-glow")) {
-          map!.setPaintProperty("dish-glow", "circle-radius", radius);
-          map!.setPaintProperty("dish-glow", "circle-opacity", opacity);
-        }
-      } catch {
-        // Layer may not exist yet during initial render
-      }
-
-      animationId = requestAnimationFrame(animate);
-    }
-
-    animationId = requestAnimationFrame(animate);
-
-    return () => {
-      cancelAnimationFrame(animationId);
-    };
-  }, [mapLoaded]);
+  }, [geojson, mapLoaded]);
 
   const onMouseEnter = useCallback((e: MapMouseEvent) => {
     const map = mapRef.current?.getMap();
@@ -351,33 +382,14 @@ export default function MapContainer({ geojson, height = "100vh", interactive = 
       mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
       initialViewState={{ ...WORLD_VIEW, zoom: initialZoom ?? WORLD_VIEW.zoom }}
       style={{ width: "100%", height }}
-      mapStyle="mapbox://styles/mapbox/dark-v11"
+      mapStyle="mapbox://styles/mapbox/light-v11"
+      projection={{ name: "globe" }}
       interactive={interactive}
-      interactiveLayerIds={["clusters", "dish-thumbnails", "dish-glow", "dish-core"]}
+      interactiveLayerIds={["clusters", "dish-thumbnails", "dish-core"]}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={onClick}
       onLoad={onMapLoad}
-    >
-      {geojson && (
-        <Source
-          id="dishes"
-          type="geojson"
-          data={geojson}
-          cluster={true}
-          clusterMaxZoom={14}
-          clusterRadius={50}
-          promoteId="id"
-        >
-          <Layer {...clusterLayer} />
-          <Layer {...clusterCountLayer} />
-          <Layer {...dishGlowLayer} />
-          <Layer {...dishCoreLayer} />
-          <Layer {...dishThumbnailLayer} />
-          <Layer {...labelLayer} />
-        </Source>
-      )}
-
-    </Map>
+    />
   );
 }

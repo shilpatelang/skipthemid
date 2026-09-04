@@ -13,7 +13,7 @@ export default function AuthButton() {
 
   if (status === "loading") {
     return (
-      <div className="h-10 w-10 animate-pulse rounded-full bg-white/10" />
+      <div className="h-10 w-10 animate-pulse rounded-full bg-ink/10" />
     );
   }
 
@@ -24,7 +24,7 @@ export default function AuthButton() {
       <div className="relative">
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-colors hover:bg-white/15"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white shadow-sm transition-colors hover:border-terracotta/30"
         >
           {img ? (
             <img
@@ -33,7 +33,7 @@ export default function AuthButton() {
               className="h-10 w-10 rounded-full object-cover"
             />
           ) : (
-            <User size={20} className="text-white" />
+            <User size={20} className="text-ink" />
           )}
         </button>
 
@@ -43,13 +43,13 @@ export default function AuthButton() {
               className="fixed inset-0 z-40"
               onClick={() => setMenuOpen(false)}
             />
-            <div className="absolute right-0 top-full z-50 mt-3 rounded-xl border border-white/15 bg-white/10 p-1.5 backdrop-blur-2xl">
+            <div className="absolute right-0 top-full z-50 mt-3 rounded-xl border border-ink/10 bg-white/95 p-1.5 shadow-xl backdrop-blur-2xl">
               <button
                 onClick={() => {
                   setMenuOpen(false);
                   signOut();
                 }}
-                className="whitespace-nowrap rounded-lg px-5 py-2.5 text-base text-gray-200 transition-colors hover:bg-white/10 hover:text-white"
+                className="whitespace-nowrap rounded-lg px-5 py-2.5 text-base text-ink/70 transition-colors hover:bg-cream hover:text-terracotta"
               >
                 Sign out
               </button>
@@ -65,9 +65,9 @@ export default function AuthButton() {
     <>
       <button
         onClick={() => setModalOpen(true)}
-        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition-colors hover:bg-white/15"
+        className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 bg-white shadow-sm transition-colors hover:border-terracotta/30 hover:text-terracotta"
       >
-        <User size={20} className="text-white" />
+        <User size={20} className="text-ink" />
       </button>
 
       {modalOpen && <AuthModal onClose={() => setModalOpen(false)} />}
@@ -154,15 +154,15 @@ function AuthModal({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-md">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/25 px-4 backdrop-blur-sm">
       {/* backdrop click */}
       <div className="absolute inset-0" onClick={onClose} />
 
-      <div className="relative z-10 w-full max-w-lg rounded-3xl border border-white/15 bg-white/10 px-10 py-10 shadow-2xl backdrop-blur-2xl">
+      <div className="relative z-10 w-full max-w-lg rounded-3xl border border-ink/10 bg-white px-8 py-9 shadow-2xl sm:px-10 sm:py-10">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute right-5 top-5 text-gray-400 transition-colors hover:text-white"
+          className="absolute right-5 top-5 text-ink/40 transition-colors hover:text-ink"
         >
           <X size={24} />
         </button>
@@ -170,7 +170,7 @@ function AuthModal({ onClose }: { onClose: () => void }) {
         {/* Google */}
         <button
           onClick={() => signIn("google")}
-          className="flex w-full items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/5 px-5 py-4 text-base font-medium text-white transition-colors hover:bg-white/15"
+          className="flex w-full items-center justify-center gap-3 rounded-xl border border-ink/10 bg-cream px-5 py-4 text-base font-medium text-ink transition-colors hover:border-ink/20"
         >
           <GoogleIcon />
           Continue with Google
@@ -178,11 +178,11 @@ function AuthModal({ onClose }: { onClose: () => void }) {
 
         {/* Divider */}
         <div className="my-8 flex items-center gap-4">
-          <div className="h-px flex-1 bg-white/15" />
-          <span className="text-sm uppercase tracking-widest text-gray-400">
+          <div className="h-px flex-1 bg-ink/10" />
+          <span className="text-sm uppercase tracking-widest text-ink/40">
             or
           </span>
-          <div className="h-px flex-1 bg-white/15" />
+          <div className="h-px flex-1 bg-ink/10" />
         </div>
 
         {/* Form */}
@@ -195,14 +195,14 @@ function AuthModal({ onClose }: { onClose: () => void }) {
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
-                className="w-1/2 rounded-xl border border-white/10 bg-white/5 px-5 py-4 text-base text-white placeholder-gray-500 outline-none transition-colors focus:border-white/30"
+                className="w-1/2 rounded-xl border border-ink/10 bg-cream px-5 py-4 text-base text-ink placeholder:text-ink/35 outline-none transition-colors focus:border-terracotta/40"
               />
               <input
                 type="text"
                 placeholder="Last name"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                className="w-1/2 rounded-xl border border-white/10 bg-white/5 px-5 py-4 text-base text-white placeholder-gray-500 outline-none transition-colors focus:border-white/30"
+                className="w-1/2 rounded-xl border border-ink/10 bg-cream px-5 py-4 text-base text-ink placeholder:text-ink/35 outline-none transition-colors focus:border-terracotta/40"
               />
             </div>
           )}
@@ -213,7 +213,7 @@ function AuthModal({ onClose }: { onClose: () => void }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="mb-5 w-full rounded-xl border border-white/10 bg-white/5 px-5 py-4 text-base text-white placeholder-gray-500 outline-none transition-colors focus:border-white/30"
+            className="mb-5 w-full rounded-xl border border-ink/10 bg-cream px-5 py-4 text-base text-ink placeholder:text-ink/35 outline-none transition-colors focus:border-terracotta/40"
           />
 
           <div className="relative mb-5">
@@ -224,23 +224,23 @@ function AuthModal({ onClose }: { onClose: () => void }) {
               onChange={(e) => setPassword(e.target.value)}
               required
               minLength={6}
-              className="w-full rounded-xl border border-white/10 bg-white/5 px-5 py-4 pr-12 text-base text-white placeholder-gray-500 outline-none transition-colors focus:border-white/30"
+              className="w-full rounded-xl border border-ink/10 bg-cream px-5 py-4 pr-12 text-base text-ink placeholder:text-ink/35 outline-none transition-colors focus:border-terracotta/40"
             />
             <button
               type="button"
               onClick={() => setShowPassword((v) => !v)}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-200"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-ink/40 hover:text-ink"
             >
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </button>
           </div>
 
-          {error && <p className="mb-5 text-base text-red-400">{error}</p>}
+          {error && <p className="mb-5 text-base text-red-600">{error}</p>}
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded-xl bg-amber-700 px-5 py-4 text-base font-semibold text-white transition-colors hover:bg-amber-600 disabled:opacity-50"
+            className="w-full rounded-xl bg-terracotta px-5 py-4 text-base font-semibold text-white transition-colors hover:bg-terracotta/90 disabled:opacity-50"
           >
             {loading
               ? "..."
@@ -251,7 +251,7 @@ function AuthModal({ onClose }: { onClose: () => void }) {
         </form>
 
         {/* Toggle mode */}
-        <p className="mt-8 text-center text-base text-gray-400">
+        <p className="mt-8 text-center text-base text-ink/50">
           {mode === "login" ? (
             <>
               Don&apos;t have an account?{" "}
@@ -260,7 +260,7 @@ function AuthModal({ onClose }: { onClose: () => void }) {
                   resetForm();
                   setMode("register");
                 }}
-                className="font-medium text-white hover:underline"
+                className="font-medium text-terracotta hover:underline"
               >
                 Create account
               </button>
@@ -273,7 +273,7 @@ function AuthModal({ onClose }: { onClose: () => void }) {
                   resetForm();
                   setMode("login");
                 }}
-                className="font-medium text-white hover:underline"
+                className="font-medium text-terracotta hover:underline"
               >
                 Log in
               </button>

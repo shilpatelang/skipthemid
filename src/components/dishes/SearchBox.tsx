@@ -36,20 +36,20 @@ export default function SearchBox() {
       <Search
         size={16}
         strokeWidth={2.5}
-        className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/50"
+        className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink/45"
       />
       <input
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Search dishes, origins, cuisines..."
-        className="w-full rounded-full border border-white/15 bg-white/5 py-2.5 pl-11 pr-10 text-sm text-white placeholder:text-white/40 outline-none transition-colors focus:border-gold/50 focus:bg-white/10"
+        className="w-full rounded-full border border-ink/10 bg-white py-3 pl-11 pr-10 text-sm text-ink shadow-sm placeholder:text-ink/40 outline-none transition-all focus:border-terracotta/40 focus:shadow-md"
       />
       {value && (
         <button
           onClick={() => setValue("")}
           aria-label="Clear search"
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 transition-colors hover:text-white"
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-ink/45 transition-colors hover:text-ink"
         >
           <X size={16} strokeWidth={2.5} />
         </button>

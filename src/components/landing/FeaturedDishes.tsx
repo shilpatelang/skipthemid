@@ -23,14 +23,14 @@ function getBentoSize(index: number): "large" | "wide" | "standard" {
 
 export default function FeaturedDishes({ dishes }: { dishes: FeaturedDish[] }) {
   return (
-    <section id="dishes" className="px-4 pb-20 pt-16">
+    <section id="dishes" className="bg-cream px-4 pb-20 pt-16">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 flex items-center gap-6">
-          <h2 className="font-serif text-2xl font-bold tracking-wide text-white">
-            Featured Dishes
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-ink">
+            Recently discovered
           </h2>
-          <div className="h-px flex-1 bg-white/10" />
-          <span className="text-xs font-medium uppercase tracking-widest text-gold">
+          <div className="h-px flex-1 bg-ink/10" />
+          <span className="text-xs font-medium uppercase tracking-widest text-terracotta">
             {dishes.length} dishes
           </span>
         </div>

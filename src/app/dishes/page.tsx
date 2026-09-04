@@ -102,16 +102,16 @@ export default async function DishesPage({
   });
 
   return (
-    <main className="min-h-screen bg-charcoal px-4 py-10">
+    <main className="min-h-screen bg-cream px-4 py-12">
       <div className="mx-auto max-w-7xl">
         <header className="mb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">
             Browse
           </p>
-          <h1 className="mt-2 font-serif text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-2 font-serif text-4xl font-bold tracking-tight text-ink sm:text-5xl">
             All dishes
           </h1>
-          <p className="mt-3 text-base text-white/70">
+          <p className="mt-3 text-base text-ink/60">
             {total} {total === 1 ? "dish" : "dishes"} —
             hyper-regional and probably new to you.
           </p>
@@ -127,11 +127,11 @@ export default async function DishesPage({
         </div>
 
         {cards.length === 0 ? (
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-12 text-center">
-            <p className="text-base text-white/70">
+          <div className="rounded-2xl border border-ink/10 bg-white p-12 text-center shadow-sm">
+            <p className="text-base text-ink/70">
               No dishes match these filters.
             </p>
-            <p className="mt-1 text-sm text-white/50">
+            <p className="mt-1 text-sm text-ink/50">
               Try removing one filter, or clear all to start over.
             </p>
           </div>

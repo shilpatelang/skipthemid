@@ -53,8 +53,8 @@ export default function Pagination({
   const atEnd = currentPage >= totalPages;
 
   const baseBtn =
-    "flex h-10 min-w-10 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-3 text-sm font-medium text-white/80 transition-colors";
-  const enabled = "hover:bg-white/15 hover:text-white";
+    "flex h-10 min-w-10 items-center justify-center rounded-lg border border-ink/10 bg-white px-3 text-sm font-medium text-ink/70 shadow-sm transition-colors";
+  const enabled = "hover:border-terracotta/30 hover:text-terracotta";
   const disabled = "opacity-40 pointer-events-none";
 
   return (
@@ -71,7 +71,7 @@ export default function Pagination({
         p === "ellipsis" ? (
           <span
             key={`e-${i}`}
-            className="flex h-10 min-w-10 items-center justify-center text-sm text-white/40"
+            className="flex h-10 min-w-10 items-center justify-center text-sm text-ink/35"
           >
             …
           </span>
@@ -79,7 +79,7 @@ export default function Pagination({
           <span
             key={p}
             aria-current="page"
-            className="flex h-10 min-w-10 items-center justify-center rounded-lg bg-gold px-3 text-sm font-semibold text-charcoal"
+            className="flex h-10 min-w-10 items-center justify-center rounded-lg bg-terracotta px-3 text-sm font-semibold text-white"
           >
             {p}
           </span>
