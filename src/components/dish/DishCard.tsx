@@ -64,14 +64,14 @@ export default function DishCard({
 
       {/* Compact label keeps the dish photography visible. */}
       <div className="absolute bottom-3 left-3 z-10 w-fit max-w-[calc(100%-1.5rem)]">
-        <div className="w-fit min-w-48 max-w-full rounded-xl border border-white/80 bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-terracotta">
+        <div className="w-full min-w-48 max-w-full rounded-xl border border-white/80 bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md">
+          <p className="truncate whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.18em] text-terracotta">
             {cuisine}
           </p>
-          <h3 className="mt-0.5 font-serif text-lg font-bold tracking-tight text-ink">
-            {name}
-          </h3>
-          <div className="mt-1.5">
+          <div className="mt-0.5 flex min-w-0 items-center gap-3">
+            <h3 className="min-w-0 truncate font-serif text-lg font-bold tracking-tight text-ink">
+              {name}
+            </h3>
             <StarRating average={avgRating} count={ratingCount} size="sm" />
           </div>
         </div>

@@ -104,19 +104,6 @@ export default async function DishesPage({
   return (
     <main className="min-h-screen bg-cream px-4 py-12">
       <div className="mx-auto max-w-7xl">
-        <header className="mb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">
-            Browse
-          </p>
-          <h1 className="mt-2 font-serif text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            All dishes
-          </h1>
-          <p className="mt-3 text-base text-ink/60">
-            {total} {total === 1 ? "dish" : "dishes"} —
-            hyper-regional and probably new to you.
-          </p>
-        </header>
-
         <div className="mb-6">
           <SearchBox />
         </div>
